@@ -31,6 +31,4 @@ class NumberOfChanges:
   @return: number of coins, rest cents
   """
   def number_of_coin(self, residual, coin):
-    if residual == 0:
-      return 0
     return residual // coin, residual % coin

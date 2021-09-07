@@ -30,11 +30,10 @@ class CoinChanges:
     @return: number of coins, rest cents
     """
     def number_of_coin(self, residual, coin):
-        if residual == 0:
-            return 0
         return residual // coin, residual % coin
 
 
-# if __name__ == '__main__':
-#     cc = CoinChanges()
-#     print(noc.coin_changes(83))
+if __name__ == '__main__':
+    cc = CoinChanges()
+    print(cc.coin_changes(83))
+    print(cc.coin_changes(100))
