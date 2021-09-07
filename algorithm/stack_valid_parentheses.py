@@ -1,0 +1,34 @@
+#
+
+
+class StackValidParentheses:
+    """
+    stack: Last-In/First-Out
+    """
+
+    """
+    423
+    Given a string containing just the characters '(', ')', '{', '}', '[' and ']', 
+    determine if the input string is valid.
+    @param s: A string
+    @return: boolean - whether the string is a valid parentheses
+    """
+    def is_valid_parentheses(self, ps):
+        openx = '{[('
+        mapping = {')': '(', ']': '[', '}': '{'}
+        stack = []
+
+        for p in ps:
+            if p in openx:
+                stack.append(p)
+            elif not stack or stack.pop() is not mapping[p]:
+                return False
+
+        return not stack
+
+
+if __name__ == '__main__':
+    svp = StackValidParentheses()
+    print(svp.is_valid_parentheses('([)]'))  # expect False
+    print(svp.is_valid_parentheses('{[()}'))  # expect False
+    print(svp.is_valid_parentheses('{[()]}'))  # expect True
