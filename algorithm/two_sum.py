@@ -1,4 +1,4 @@
-# Write a function
+from itertools import combinations
 
 
 class TwoSum:
@@ -89,7 +89,7 @@ class TwoSum:
     unsorted array - assume that each input could have multiple solutions
     @param numbers: An unsorted array of Integer
     @param target: target = numbers[index1] + numbers[index2]
-    @return: [index1, index2] (index1 < index2), return [] if not found
+    @return: list of [index1, index2] (index1 < index2), return [] if not found
     """
     def two_sum_multiple(self, L, target):  # good for both sorted and unsorted list L
         if not L or target is None:
@@ -103,6 +103,55 @@ class TwoSum:
             hashmap[num] = ind
 
         return res
+
+    """
+    57
+    unsorted array - assume there could be multiple solutions
+    @param L: an unsorted array of n integer
+    @return: list of [x, y, z] unique triplets in the array which gives the sum of target (x + y + z = sum) 
+    """
+    def three_sum_multiple(self, L, target):  # good for both sorted and unsorted list L
+        if not L or target is None:
+            return []
+
+        res = []
+        for ind, num in enumerate(L):
+            rest = L[:ind] + L[ind + 1:]
+            pairs = self.two_sum_multiple(rest, target - num)  # list of [idx1, idx2]
+            for pair in pairs:
+                ans = sorted([num, rest[pair[0]], rest[pair[1]]])
+                if ans not in res:
+                    res.append(ans)
+
+        return res
+
+
+class ThreeSum:
+    """
+    Given an array of integers,
+    find all possible 3 numbers such that they add up to a specific target number.
+    """
+    def __init__(self):
+        self.sums = {}  # sum -> list of [x, y, z] (sorted values in nums)
+        self.nums = []
+
+    def add(self, number):
+        for i, j in combinations(self.nums, 2):
+            if i + j + number not in self.sums:
+                self.sums[i + j + number] = []
+            combination = sorted([i, j, number])
+            if combination not in self.sums[i + j + number]:
+                self.sums[i + j + number].append(combination)
+        self.nums.append(number)
+
+    def find(self, sum):
+        return sum in self.sums.keys()
+
+    def find_values(self, sum):
+        if self.find(sum):
+            return self.sums[sum]
+        else:
+            return []
 
 
 if __name__ == '__main__':
@@ -120,3 +169,11 @@ if __name__ == '__main__':
     print(ts.two_sum_single([-1, 0, 1], 100))  # []
     print(ts.two_sum_sorted_list([-1, 0, 1], 100))  # []
     print(ts.two_sum_multiple([0, -1, 2, -3, 4], 1)) # [[1,2],[3,4]]
+
+    ths = ThreeSum()
+    ths.add(2)
+    ths.add(7)
+    ths.add(11)
+    ths.add(15)
+
+    print(ths.find_values(20))

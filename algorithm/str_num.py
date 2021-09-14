@@ -80,6 +80,30 @@ class StrNum:
             decimal //= 2
         return ''.join(ret)
 
+    def decimal_to_base_26(self, n):
+        res = ''
+        decimal = n
+        if decimal == 0:
+            return 'A'
+
+        while decimal:
+            if decimal == n:
+                res = chr(decimal % 26 + ord('A')) + res
+            else:
+                decimal -= 1
+                res = chr(decimal % 26 + ord('A')) + res
+            decimal //= 26
+        return res
+
+    """
+    1350
+    Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+    @param n: a integer
+    @return: return a string
+    """
+    def natural_to_excel_col(self, n):
+        return self.decimal_to_base_26(n - 1)
+
     """
     655
     Given two non-negative integers represented as strings,
@@ -116,4 +140,5 @@ if __name__ == '__main__':
     print(sn.add_binary('11', '1'))  # expect '100'
     print(sn.add_decimal('123', '45'))  # expect '168'
     print(sn.add_decimal('19929', '99'))  # expect 20028
+    print(sn.decimal_to_base_26(702))
 

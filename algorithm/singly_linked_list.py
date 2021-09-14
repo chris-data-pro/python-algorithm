@@ -1,7 +1,7 @@
-# # singly-linked list Class
+from heapq import heappush, heappop
 
 
-class SinglyLinkedListNode:
+class ListNode:
     def __init__(self, val, next=None):
         self.val = val
         self.next = next
@@ -49,7 +49,7 @@ class SinglyLinkedList:
 
         # dummy = SinglyLinkedListNode(0)
         # dummy.next = head
-        # left, righ = dummy, dummy
+        # left, right = dummy, dummy
         left, right = head, head
         i = 0
         while i < n and right:
@@ -68,9 +68,32 @@ class SinglyLinkedList:
         left.next = left.next.next
         return head
 
+    """
+    104
+    given k sorted linked lists [2->6->null,5->null,7->null], return 1 sorted list 2->5->6->7->null
+    @param lists: a list of head ListNode
+    @return: The head of one sorted list.
+    """
+    def merge_k_sll(self, lists):
+        if not lists:
+            return None
+
+        heap = []
+        for head in lists:
+            while head:
+                heappush(heap, head.val)  # must push val to sort inside the heap
+                head = head.next
+
+        dummy = ListNode(None)
+        curr = dummy
+        while heap:
+            curr.next = ListNode(heappop(heap))
+            curr = curr.next
+        return dummy.next
+
 
 if __name__ == '__main__':
-    head, n1, n2, n3 = SinglyLinkedListNode(0), SinglyLinkedListNode(1), SinglyLinkedListNode(2), SinglyLinkedListNode(3)
+    head, n1, n2, n3 = ListNode(0), ListNode(1), ListNode(2), ListNode(3)
     head.next = n1
     n1.next = n2
     n2.next = n3

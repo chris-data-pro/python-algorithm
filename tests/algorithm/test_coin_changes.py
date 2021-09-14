@@ -24,12 +24,6 @@ class TestNumberOfChanges(unittest.TestCase):
         self.input_6 = -5
         self.result_6 = []
 
-        self.input_7 = 100
-        self.result_7 = [4, 0, 0, 0]
-
-        self.input_8 = 80
-        self.result_8 = [3, 0, 1, 0]
-
     def test_number_of_changes(self):
         self.assertEqual(self.cc.coin_changes(self.input_1), self.result_1)
         self.assertEqual(self.cc.coin_changes(self.input_2), self.result_2)
@@ -37,8 +31,6 @@ class TestNumberOfChanges(unittest.TestCase):
         self.assertEqual(self.cc.coin_changes(self.input_4), self.result_4)
         self.assertEqual(self.cc.coin_changes(self.input_5), self.result_5)
         self.assertEqual(self.cc.coin_changes(self.input_6), self.result_6)
-        self.assertEqual(self.cc.coin_changes(self.input_7), self.result_7)
-        self.assertEqual(self.cc.coin_changes(self.input_8), self.result_8)
 
 
 if __name__ == '__main__':
