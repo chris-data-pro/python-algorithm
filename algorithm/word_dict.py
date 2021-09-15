@@ -139,7 +139,7 @@ class WordDict:
     @param: dict: a set of string
     @return: a list of lists of string
     """
-    def findLadders(self, start, end, dict):
+    def find_ladders(self, start, end, dict):
         dict.add(start)
         dict.add(end)
         indexes = self.build_indexes(dict)
@@ -167,7 +167,7 @@ class WordDict:
         queue = deque([end])
         while queue:
             word = queue.popleft()
-            for next_word in self.get_next_words(word, indexes):
+            for next_word in self.get_next_words_with_indexes(word, indexes):
                 if next_word not in distance:
                     distance[next_word] = distance[word] + 1
                     queue.append(next_word)
@@ -186,7 +186,7 @@ class WordDict:
             results.append(list(path))
             return
 
-        for word in self.get_next_words(curt, indexes):
+        for word in self.get_next_words_with_indexes(curt, indexes):
             if distance[word] != distance[curt] - 1:
                 continue
             path.append(word)
@@ -200,4 +200,5 @@ if __name__ == '__main__':
     next_of_abc = wd.get_next_words("abc")
     print(next_of_abc)
     print(sum([not wd.is_one_edit_distance(n, "abc") for n in next_of_abc]))  # expect 0
-    print(wd.word_ladder_min_length("hit", "cog", ["hot","dot","dog","lot","log"]))
+    print(wd.word_ladder_min_length("hit", "cog", ["hot", "dot", "dog", "lot", "log"]))
+    print(wd.find_ladders("hit", "cog", {"hot", "dot", "dog", "lot", "log"}))
