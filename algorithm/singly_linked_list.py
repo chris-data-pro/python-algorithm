@@ -91,6 +91,62 @@ class SinglyLinkedList:
             curr = curr.next
         return dummy.next
 
+    """
+    450
+    reverse nodes in k-group
+    @param head: a ListNode
+    @param k: An integer
+    @return: a ListNode
+    """
+    def reverse_k_group(self, head, k):
+        # D->[1->2->3]->[4->5->6]->7 (k = 3)
+        # D->[3->2->1]->[6->5->4]->7
+        dummy = ListNode(0)
+        dummy.next = head # connect dummy node to head D-> head -> .....
+
+        prev = dummy
+        while prev:
+            prev = self.reverse_next_k_node(prev, k)
+
+        return dummy.next # D-> head'
+
+    def find_kth_node(self, head, k):
+        # head -> n1 -> n2 -> ... ->nk
+        curr = head
+        count = 0
+        for i in range(k):
+            if curr is None:
+                return curr
+            curr = curr.next
+        return curr
+
+    def reverse(self, head):
+        prev = None
+        curr = head
+        while curr:
+            next_node = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next_node
+        return prev
+
+    def reverse_next_k_node(self, head, k):
+        # head -> n1 -> n2 -> ... ->nk -> nk+1
+        # head -> nk -> nk-1 -> ... ->n1 -> nk+1
+        n1 = head.next
+        nk = self.find_kth_node(head, k)
+        if nk is None:
+            return None
+        nk_plus = nk.next
+        # Reverse k nodes
+        nk.next = None # separate the nk and nk+1
+        nk = self.reverse(n1) # nk->nk-1->nk-2->......n1
+        # Connect head and nk -> nk-1 -> ... ->n1,  n1 and nk+1 -> nk+2 ->...
+        head.next = nk
+        n1.next = nk_plus
+
+        return n1
+
 
 if __name__ == '__main__':
     head, n1, n2, n3 = ListNode(0), ListNode(1), ListNode(2), ListNode(3)

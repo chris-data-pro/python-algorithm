@@ -1,4 +1,33 @@
 import unittest
+from itertools import combinations, permutations
+from collections import OrderedDict, deque
+from heapq import heapreplace, heappushpop, heappush, heappop
+
+'''
+sorted(list(permutations([5, 1, 4])))  # list of tuples: [(1, 4, 5), (1, 5, 4), (4, 1, 5), (4, 5, 1), (5, 1, 4), (5, 4, 1)]
+list(combinations([5, 1, 4], 2))  # list of tuples: [(5, 1), (5, 4), (1, 4)]
+list(reversed([5, 1, 4]))  # [4, 1, 5]
+'''
+
+'''
+cache = OrderedDict()
+cache.move_to_end(key)
+cache.popitem(last=False)  # this is FIFO, last=True -> LIFO
+'''
+
+'''
+queue = deque()
+queue.appendleft(el)
+queue.popleft()
+'''
+
+'''
+heap = []
+heappush(heap, item)
+heappop(heap)
+heappushpop(heap, item)  # Push item first, then pop and return the smallest item from the heap. could pop the new
+heapreplace(heap, item)  # Pop and return the smallest item from the heap, and then push the new item.
+'''
 
 
 class Solution:

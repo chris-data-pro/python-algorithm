@@ -87,6 +87,8 @@ class AmplitudeUnsorted:
 
         A.sort()
         # return min(A[i - 1 - k] - A[i] for i in range(k + 1))
+        # above is the same as below
+        # fixed-length moving window
         a = A[end] - A[start]
         i = 0
 

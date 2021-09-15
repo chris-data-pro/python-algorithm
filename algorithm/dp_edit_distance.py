@@ -155,6 +155,7 @@ class DPEditDistance:
         return dp[-1][-1]
 
     """
+    640
     @param s: a string
     @param t: a string
     @return: true if they are one edit distance apart or false
