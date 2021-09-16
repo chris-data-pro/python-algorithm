@@ -74,11 +74,11 @@ class Solution:
 #         self.assertEqual(self.s.my_func(self.input_3), self.result_3)
 
 
-if __name__ == '__main__':
-    # unittest.main()
-    s = Solution()
-    # print(s.say_hello([5, 1, 4], 20))  # expect 0
-    print(s.my_func(1))
+# if __name__ == '__main__':
+#     # unittest.main()
+#     s = Solution()
+#     # print(s.say_hello([5, 1, 4], 20))  # expect 0
+#     print(s.my_func(1))
 
 
 '''
@@ -265,8 +265,7 @@ n no of rows
 '''
 
 
-
-class Solution:
+class FBSolution:
 
     def max_distance_o2g(self, input):
         if not input or not input[0]:
@@ -277,56 +276,55 @@ class Solution:
         down = rows - 1
         right = cols - 1
 
-        self.visted = set()
         max_distance = 0
 
-        i, j = 0, 0
         for i in range(rows):
             for j in range(cols):
                 if input[i][j] == 'O':
-                    self.visted.add((i, j))
-                    max_distance = max(max_distance, self.helper(i, j, input, 1))
+                    self.visited = set([(i, j)])
+                    self.res = rows * cols
+                    self.helper(i, j, input, 0)
+                    max_distance = max(max_distance, float('inf') if self.res == rows * cols else self.res)
 
         return max_distance
 
-    def helper(self, x, y, matrix, maxd):
-        if not matrix or not matrix[0]:
-            return float('inf')
+    def helper(self, x, y, matrix, steps):
 
-        count = maxd
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-        rows, cols = len(matrix), len(matrix[0])
-        up = left = 0
-        down = rows - 1
-        right = cols - 1
+        for dx, dy in directions:
+            newx, newy = x + dx, y + dy
 
-        directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
-
-        if left <= x <= right and up <= y <= down:
-            for dx, dy in directions:
-                newx, newy = x + dx, y + dy
-
-                if not (left <= newx <= right and up <= newy <= down):
+            if 0 <= newx < len(matrix) and 0 <= newy < len(matrix[0]) and (newx, newy) not in self.visited:
+                if matrix[newx][newy] == 'G':
+                    steps += 1
+                    self.res = min(self.res, steps)
+                    return
+                elif matrix[newx][newy] == 'X':
                     continue
-
-                if left <= newx <= right and up <= newy <= down and (newx, newx) not in self.visted:
-                    if matrix[newx][newy] == 'O':
-                        count += 1
-                        self.helper(newx, newy, matrix, count)
-                elif left <= newx <= right and up <= newy <= down and (newx, newx) not in self.visted:
-                    if matrix[newx][newy] == 'G':
-                        return maxd
-                elif left <= newx <= right and up <= newy <= down and (newx, newx) not in self.visted:
-                    if matrix[newx][newy] == 'X':
-                        continue
-
-                self.visted.add((newx, newx))
+                elif matrix[newx][newy] == 'O':
+                    steps += 1
+                    self.visited.add((newx, newy))
+                    self.helper(newx, newy, matrix, steps)
+                    self.visited.remove((newx, newy))
+                    steps -= 1
+        return
 
 
-O(M * N)
-
-
-
+if __name__ == '__main__':
+    fbs = FBSolution()
+    print(fbs.max_distance_o2g([['X', 'X', 'X', 'X', 'O', 'O', 'O', 'X', 'X', 'O'],
+                                ['X', 'X', 'G', 'O', 'O', 'X', 'X', 'O', 'O', 'G'],
+                                ['G', 'O', 'O', 'O', 'X', 'X', 'G', 'O', 'X', 'O']]))  # expect 5
+    print(fbs.max_distance_o2g([['X', 'X', 'X', 'X'],
+                                ['O', 'O', 'G', 'O'],
+                                ['X', 'X', 'X', 'X']]))  # expect 2
+    print(fbs.max_distance_o2g([['X', 'X', 'X', 'X'],
+                                ['X', 'O', 'O', 'X'],
+                                ['X', 'X', 'X', 'X']]))  # expect inf
+    print(fbs.max_distance_o2g([['O', 'O', 'O'],
+                                ['O', 'G', 'O'],
+                                ['O', 'O', 'O']]))  # expect 2
 
 
 
