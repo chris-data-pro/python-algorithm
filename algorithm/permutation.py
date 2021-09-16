@@ -83,8 +83,10 @@ if __name__ == '__main__':
     # unittest.main()
     p = Permutation()
     print(p.all_unique_permutations([5, 1, 4]))  # list of lists
+
     print(sorted(list(permutations([5, 1, 4]))))  # list of tuples
     print(list(combinations([5, 1, 4], 2)))  # list of tuples
+
     print(p.next_permutation([5, 1, 4]))  # expect [5, 4, 1]
     print(p.previous_permutation([5, 1, 4]))  # expect [4, 5, 1]
     print(list(reversed([5, 1, 4])))

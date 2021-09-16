@@ -53,7 +53,7 @@ class Matrix2D:
     @param grid: list of list of integers - a boolean 2D matrix
     @return: integer - the number of islands
     """
-    def num_islands_dfs(self, grid):
+    def num_islands_bfs(self, grid):
         return
 
     """
@@ -64,7 +64,6 @@ class Matrix2D:
     @return: an integer
     """
     def max_rectangle(self, matrix):
-        # write your code here
         def get_max_area(nums):
             nums += [-1]
             st = []
@@ -91,6 +90,46 @@ class Matrix2D:
         for r in matrix:
             max_area = max(max_area, get_max_area(r))
         return max_area
+
+    """
+    1563
+    Given a 2D boolean matrix filled with 0 - space, 1 - wall, 2 - target
+    Starting from [0,0], find the shortest path that can reach target, and return the length of the path.
+    You can only go up, down, left and right. 
+    """
+    """
+    @param targetMap: 
+    @return: nothing
+    """
+    def shortest_path_2target(self, targetMap):
+        if not targetMap:
+            return 0
+
+        self.directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        self.visited = set([(0, 0)])
+        self.res = len(targetMap) * len(targetMap[0])
+
+        self.dfs_shortest_path(targetMap, 0, (0, 0))
+        return -1 if self.res == len(targetMap) * len(targetMap[0]) else self.res
+
+    def dfs_shortest_path(self, targetMap, steps, node):
+        x, y = node[0], node[1]
+        for d_x, d_y in self.directions:
+            n_x, n_y = x + d_x, y + d_y
+            if 0 <= n_x < len(targetMap) and 0 <= n_y < len(targetMap[0]) and (n_x, n_y) not in self.visited:
+                if targetMap[n_x][n_y] == 2:
+                    steps += 1
+                    self.res = min(self.res, steps)
+                    return
+                elif targetMap[n_x][n_y] == 1:
+                    continue
+                elif targetMap[n_x][n_y] == 0:
+                    steps += 1
+                    self.visited.add((n_x, n_y))
+                    self.dfs_shortest_path(targetMap, steps, (n_x, n_y))
+                    self.visited.remove((n_x, n_y))
+                    steps -= 1
+        return
 
 
 if __name__ == '__main__':
