@@ -24,3 +24,8 @@ class FindTargetStr:
                 return i - lt
 
         return -1
+
+
+if __name__ == '__main__':
+    fts = FindTargetStr()
+    print(fts.first_idx_target_in_source("abcdabcdefg", "bcd"))

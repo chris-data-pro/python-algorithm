@@ -45,7 +45,54 @@ class TPPalindrome:
 
         return True
 
+    """
+    200
+    Given a string S, 
+    find the longest palindromic substring in S
+    @param s: input string
+    @return: a string as the longest palindromic substring
+    """
+    def longest_palindrome_bf(self, s):
+        ans = ''
+
+        for i in range(len(s) * 2 - 1):
+            left = i // 2
+            right = left + i % 2
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                left -= 1
+                right += 1
+            ans = max(ans, s[left + 1:right], key=len)
+
+        return ans
+
+    def longest_palindrome_manacher(self, s):
+        T = '#'.join('^{}$'.format(s))
+        pLen = [0] * len(T)
+        right, center, maxLen, maxCenter = 0, 0, 0, 0
+        for i in range(1, len(T) - 1):
+            if i < right:
+                pLen[i] = min(pLen[2 * center - i], right - i)
+                # if right - i > pLen[2 * center - i] then pLen[i] = pLen[2 * center - i]
+
+            while T[i+(pLen[i]+1)] == T[i-(pLen[i]+1)]:
+                pLen[i] += 1
+
+            # update right and center
+            if i + pLen[i] > right:
+                right, center = i + pLen[i], i
+
+            if pLen[i] > maxLen:
+                maxLen = pLen[i]
+                maxCenter = i
+
+        print(T)
+        print(pLen)
+        start = (maxCenter - maxLen) // 2
+        return s[start: start + maxLen]
+
 
 if __name__ == '__main__':
     p = TPPalindrome()
     print(p.is_palindrome("A man, a plan, a canal: Panama*"))  # expect True
+    print(p.longest_palindrome_bf("lbcbgdcdcdgdcdcgggggggt"))
+    print(p.longest_palindrome_manacher("lbcbgdcdcdgdcdcgggggggt"))

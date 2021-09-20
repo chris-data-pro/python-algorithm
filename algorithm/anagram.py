@@ -29,3 +29,8 @@ class Anagram:
                 res += memo[i]
 
         return res
+
+
+if __name__ == '__main__':
+    a = Anagram()
+    print(a.anagrams(["lint", "intl", "inlt", "code"]))
