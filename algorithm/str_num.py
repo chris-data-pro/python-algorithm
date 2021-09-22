@@ -272,6 +272,40 @@ class StrNum:
             return INT_MIN
         return final_result
 
+    """
+    420
+    The count-and-say sequence is the sequence of integers beginning as follows: 1, 11, 21, 1211, 111221, ...
+    1st: 1 is read off as "one 1" or 11.
+    2nd: 11 is read off as "two 1s" or 21.
+    3rd: 21 is read off as "one 2, then one 1" or 1211.
+    Given an integer n, generate the nth sequence.
+    """
+    def count_and_say(self, n):
+        result = '1'
+        for _ in range(n - 1):
+            result = self.count_and_say_func(result)
+        return result
+
+    def count_and_say_func(self, s):
+        count = 0
+        num = None
+        result = ''
+
+        for c in s:
+            if num is None:
+                count = 1
+                num = c
+            elif num == c:
+                count += 1
+            else:
+                result += (str(count) + num)
+                count = 1
+                num = c
+        if count != 0:
+            result += (str(count) + num)
+
+        return result
+
 
 if __name__ == '__main__':
     sn = StrNum()
@@ -285,4 +319,4 @@ if __name__ == '__main__':
     print(sn.add_decimal('19929', '99'))  # expect 20028
     print(sn.decimal_to_base_26(702))
     print(sn.phone_letter_combinations('23'))
-
+    print(sn.count_and_say(5))  # expect '111221'

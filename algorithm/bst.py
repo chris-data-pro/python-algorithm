@@ -65,7 +65,6 @@ class BST:
         return SubTree(largest, n, min(node.val, left.min), max(node.val, right.max))
         # call self.largest_bst_subtree(root) and return largest
 
-
     """
     bst, insert node of val under root. 
     *** If changing any connections, we need to return the TreeNode ***
@@ -334,7 +333,6 @@ class BST:
             ans += self.bst_trim_sum(root.right, L, R)
         return ans
 
-
     """
     1126
     merge 2 bt into a new binary tree. 
@@ -365,7 +363,6 @@ class BST:
         self.invert_tree(node.left)
         self.invert_tree(node.right)
         return node
-
 
     """
     check 2 trees are the same

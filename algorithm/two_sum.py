@@ -125,6 +125,14 @@ class TwoSum:
 
         return res
 
+    def three_sum_multiple_bf(self, L, target):
+        L.sort()
+        res = {}
+        for c in combinations(L, 3):
+            if sum(c) == target and c not in res:
+                res[c] = 1
+        return [list(x) for x in res.keys()]
+
 
 class ThreeSum:
     """

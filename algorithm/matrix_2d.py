@@ -202,6 +202,85 @@ class Matrix2D:
                                        float('inf') if shortest_2target_from_ij == -1 else shortest_2target_from_ij)
         return max_distance
 
+    """
+    33
+    N Queens Puzzle
+    placing n queens on an n×n chessboard, Any two queens can't be in the same row, same column, same diagonal line
+    Given an integer n, return all distinct solutions to the N-queens puzzle
+    """
+    def n_queens_solutions(self, n):
+        boards = []
+        visited = {
+            'col': set(),
+            'sum': set(),
+            'diff': set(),
+        }
+        self.dfs_nqueens(n, [], visited, boards)
+        return boards
+
+    def dfs_nqueens(self, n, permutation, visited, boards):
+        if n == len(permutation):
+            boards.append(self.draw(permutation))
+            return
+
+        row = len(permutation)
+        for col in range(n):
+            if not self.is_valid(permutation, visited, col):
+                continue
+            permutation.append(col)
+            visited['col'].add(col)
+            visited['sum'].add(row + col)
+            visited['diff'].add(row - col)
+            self.dfs_nqueens(n, permutation, visited, boards)
+            visited['col'].remove(col)
+            visited['sum'].remove(row + col)
+            visited['diff'].remove(row - col)
+            permutation.pop()
+
+    # O(1)
+    def is_valid(self, permutation, visited, col):
+        row = len(permutation)
+        if col in visited['col']:
+            return False
+        if row + col in visited['sum']:
+            return False
+        if row - col in visited['diff']:
+            return False
+        return True
+
+    def draw(self, permutation):
+        board = []
+        n = len(permutation)
+        for col in permutation:
+            row_string = ''.join(['Q' if c == col else '.' for c in range(n)])
+            board.append(row_string)
+        return board
+
+    """
+    34
+    return the total number of distinct solutions.
+    """
+    def n_queens_total(self, n):
+        li = [str(i) for i in range(n)]
+        self.result = 0
+        self.dfs_nqueens_total("", li)
+        return self.result
+
+    def dfs_nqueens_total(self, path, nums):
+        if not nums:
+            self.result += 1
+            return
+        for i in range(len(nums)):
+            if not self.valid(path, nums[i]):
+                continue
+            self.dfs_nqueens_total(path+nums[i], nums[:i]+nums[i+1:])
+
+    def valid(self, path, num):
+        for i in range(len(path)):
+            if abs(int(num) - int(path[i])) == abs(len(path)-i):
+                return False
+        return True
+
 
 if __name__ == '__main__':
     m2d = Matrix2D()

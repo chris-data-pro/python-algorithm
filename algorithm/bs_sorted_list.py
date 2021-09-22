@@ -1,4 +1,4 @@
-# Template of binary search
+import math
 
 
 class BSSortedList:
@@ -166,6 +166,51 @@ class BSSortedList:
 
         return end
 
+    """
+    141
+    sqrt(int x), return the largest integer y that y*y <= x
+    """
+    def sqrt_bs(self, x):
+        start, end = 0, x
+
+        while start + 1 < end:
+            mid = (start + end) // 2
+
+            if mid * mid < x:
+                start = mid
+            elif mid * mid == x:
+                end = mid
+            else:
+                end = mid
+
+        if end * end <= x:
+            return end
+        return start
+
+    def sqrt_newton(self, x):
+        """
+        求i 使 i * i - x = 0, so f(i) = i * i - x, f_(i) = 2 * i
+        i_n+1 = i_n - (i_n * i_n - x) / 2 * i_n = (i_n + x / i_n) / 2
+        """
+        def f(i):
+            return i * i - x
+
+        def f_(i):
+            return 2 * i
+
+        last_j, j = x, x + 1
+        while abs(j - last_j) > 0.0001:
+            last_j = j
+            j = last_j - f(last_j) / f_(last_j)
+        return int(j)  # floor
+
+    def sqrt_bf(self, x):
+        y = 0
+        while y * y <= x:
+            y += 1
+
+        return y - 1
+
 
 if __name__ == '__main__':
     sl = BSSortedList()
@@ -173,3 +218,6 @@ if __name__ == '__main__':
     print(sl.binary_search([2, 7, 11, 15], 7))  # expect (1, 7)
     print(sl.binary_search([-1, 0, 1][1:], 1))  # expect (1, 1)
     print(sl.binary_search([], 5))  # expect (None, None)
+    print(sl.sqrt_newton(2))
+    print(sl.sqrt_bs(3))
+    print(sl.sqrt_bf(3))

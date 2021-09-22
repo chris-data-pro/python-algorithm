@@ -9,7 +9,7 @@ class ListNode:
 
 class SinglyLinkedList:
     """
-
+    Singly Linked List implementations
     """
 
     """
@@ -69,7 +69,7 @@ class SinglyLinkedList:
         return head
 
     """
-    104
+    104, 165
     given k sorted linked lists [2->6->null,5->null,7->null], return 1 sorted list 2->5->6->7->null
     @param lists: a list of head ListNode
     @return: The head of one sorted list.
@@ -147,6 +147,77 @@ class SinglyLinkedList:
 
         return n1
 
+    """
+    36
+    Reverse a linked list from position m to n.  1 ≤ m ≤ n ≤ lengthoflist
+    linked list = 1->2->3->4->5->NULL, m = 2, n = 4
+    return 1->4->3->2->5->NULL
+    """
+    def reverse_between(self, head, m, n):
+        if not head:
+            return
+
+        if m == 1:  # head变
+            start, end = None, None
+            curr = head
+            for i in range(m, n + 1):
+                if i == m:  # 第一轮, 把第一个node标记为end
+                    end = curr
+                next_node = curr.next
+                curr.next = start
+                start = curr
+                curr = next_node
+
+            end.next = next_node
+            return start
+        else:  # m > 1 head不变
+            prev_node = head
+            for _ in range(m - 2):
+                prev_node = prev_node.next
+
+            start, end = None, None
+            curr = prev_node.next
+            if not curr:  # 第m个node已经到达Null，则不需要reverse直接return head
+                return head
+            for i in range(m, n + 1):
+                if i == m:  # 第一轮, 把第一个node标记为end
+                    end = curr
+                next_node = curr.next
+                curr.next = start
+                start = curr
+                curr = next_node
+
+            prev_node.next = start
+            end.next = next_node
+            return head
+
+    def dummy_reverse_between(self, head, m, n):
+        if not head:
+            return
+
+        dummy = ListNode(None)
+        dummy.next = head
+        prev_node = dummy
+        for _ in range(m - 1):
+            prev_node = prev_node.next
+
+        start, end = None, None
+        curr = prev_node.next
+        if not curr:
+            return head
+        for i in range(m, n + 1):
+            if i == m:
+                end = curr
+            next_node = curr.next
+            curr.next = start
+            start = curr
+            curr = next_node
+
+        prev_node.next = start
+        end.next = next_node
+
+        return head if m > 1 else prev_node.next
+
 
 if __name__ == '__main__':
     head, n1, n2, n3 = ListNode(0), ListNode(1), ListNode(2), ListNode(3)
@@ -165,4 +236,6 @@ if __name__ == '__main__':
 
     sll.printSLL(sll.remove_nth_from_end(head, 2))  # expect 0->1->3->
     sll.printSLL(head)  # expect 0->1->3->
+
+
 

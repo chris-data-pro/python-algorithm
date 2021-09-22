@@ -9,7 +9,7 @@ class GreedyAlgorithm:
     116
     given an array of positive integers. initially positioned at the 1st index
     each element represents the max jump length at that position
-    return the min number of jumps to reach the last index
+    Determine if you are able to reach the last index.
     """
     def can_jump_to_end(self, arr):
         far, length = 0, len(arr)
@@ -25,7 +25,7 @@ class GreedyAlgorithm:
                 return False  # 说明无法跳到index位置，肯定不能到最后位置，所以直接False
         return far >= length - 1
 
-    def can_jump_to_end_sbs(self, A):
+    def can_jump_to_end_sbs(self, A):  # step by step
         far, length = 0, len(A)
         if length == 0:
             return False
@@ -65,3 +65,11 @@ class GreedyAlgorithm:
             end = far
 
         return steps
+
+
+if __name__ == '__main__':
+    ga = GreedyAlgorithm()
+    print(ga.can_jump_to_end([3, 2, 1, 0, 4]))
+    print(ga.can_jump_to_end_sbs([3, 2, 1, 0, 4]))
+    print(ga.min_jump_to_end([2, 3, 1, 1, 4]))  # expect 2
+

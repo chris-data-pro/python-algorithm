@@ -1,4 +1,5 @@
-# Write
+from collections import deque
+from itertools import combinations
 
 
 class ListElement:
@@ -26,7 +27,103 @@ class ListElement:
 
         return len(A)
 
+    """
+    135
+    Given a set of candidate numbers candidates and a target number target. All numbers are positive integers.
+    Find all unique combinations in candidates where the numbers sums to target.
+    The same repeated number may be chosen from candidates unlimited number of times.
+    """
+    def combination_sum_repeat_dfs(self, candidates, target):
+        results = []
+        # 集合为空
+        if len(candidates) == 0:
+            return results
+
+        # 利用set去重后排序
+        candidates = sorted(list(set(candidates)))
+        # dfs
+        self.dfs_repeat(candidates, target, 0, [], results)
+        return results
+
+    def dfs_repeat(self, candidates, target, start, combination,  results):
+        # 到达边界
+        if target == 0:
+            results.append(list(combination))
+            return
+
+        # 递归的拆解：挑一个数放入current
+        for i in range(start, len(candidates)):
+            # 剪枝
+            if target < candidates[i]:
+                break
+
+            combination.append(candidates[i])
+            self.dfs_repeat(candidates, target - candidates[i], i, combination, results)
+            combination.pop()
+
+    def combination_sum_repeat_bfs(self, candidates, target):
+        candidates.sort()
+        results = []
+        self.bfs_repeat(candidates, target, results)
+        return results
+
+    def bfs_repeat(self, candidates, target, results):
+        q = deque([])
+        for i in range(len(candidates)):
+            # 去重
+            if i > 0 and candidates[i] == candidates[i - 1]:
+                continue
+            q.append([candidates[i]])
+
+        while q:
+            tmp = q.popleft()
+            if sum(tmp) == target:
+                results.append(tmp)
+            for i in range(len(candidates)):
+                # 去重 && 同时去掉比小于当前遍历的最后一个（也是最大）值，只取大于等于的那些
+                if i > 0 and candidates[i] == candidates[i - 1] or candidates[i] < tmp[-1]:
+                    continue
+                if sum(tmp) + candidates[i] <= target:
+                    list_in_q = tmp[:]
+                    list_in_q.append(candidates[i])
+                    q.append(list_in_q)
+
+    """
+    153
+    Given an array num and a number target. All numbers are positive integers.
+    Find all unique combinations in num where the numbers sum to target.
+    Each number in num can only be used once in one combination
+    """
+    def combination_sum_wo_repeat(self, num, target):
+        results = []
+        # 集合为空
+        if len(num) == 0:
+            return results
+
+        nums = sorted(num)
+        self.dfs_wo_repeat(nums, target, 0, [], results)
+        return results
+
+    def dfs_wo_repeat(self, candidates, target, start, combination, results):
+        # combination sum 例题的出口
+        if target == 0:
+            results.append(list(combination))
+            return
+
+        for i in range(start, len(candidates)):
+            if target < candidates[i]:
+                break
+            # 如果第二次遇到相同的candidates[i] == candidates[i-1]，上一轮从candidates[i-1]开始所有组合都已经试过了
+            if i > start and candidates[i] == candidates[i-1]:
+                continue
+            combination.append(candidates[i])
+            self.dfs_wo_repeat(candidates, target - candidates[i], i + 1, combination, results)
+            combination.pop()
+
 
 if __name__ == '__main__':
     le = ListElement()
     print(le.remove_element([0, 4, 4, 0, 0, 2, 4, 4], 4))
+    print(le.combination_sum_repeat_bfs([7, 1, 2, 5, 1, 6, 10], 8))
+    print(le.combination_sum_repeat_dfs([7, 1, 2, 5, 1, 6, 10], 8))
+    print(le.combination_sum_wo_repeat([7, 1, 2, 5, 1, 6, 10], 8))
