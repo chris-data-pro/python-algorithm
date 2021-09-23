@@ -87,8 +87,8 @@ class TPPalindrome:
 
         print(T)
         print(pLen)
-        start = (maxCenter - maxLen) // 2
-        return s[start: start + maxLen]
+        start = (maxCenter - maxLen) // 2  # starting point in the original string
+        return s[start: start + maxLen]  # length is maxLen
 
 
 if __name__ == '__main__':

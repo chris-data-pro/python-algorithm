@@ -97,8 +97,9 @@ class BSSortedList:
     62
     a sorted array is rotated at some pivot, e.g. [4, 5, 6, 7, 0, 1, 2]
     If found the target in the array return its index, otherwise return -1
+    no duplicate exists in the array
     """
-    def search_rotated_list(self, A, target):
+    def search_rotated_list_wo_duplicates(self, A, target):
         if not A:
             return -1
         left = 0
@@ -126,6 +127,102 @@ class BSSortedList:
             return right
         return -1
 
+    """
+    63
+    a sorted array is rotated at some pivot, e.g. [3, 4, 4, 5, 7, 0, 1, 2]
+    If found the target in the array return its index, otherwise return -1
+    duplicate is allowed in the array
+    """
+    def search_rotated_list_w_duplicates(self, A, target):
+        if not len(A):
+            return False
+        # step1: find pivot
+        left, right = 0, len(A)-1
+        while(left < right):
+            mid = left + (right-left)//2
+            if A[mid] > A[right]:
+                left = mid + 1
+            elif A[mid] < A[right]:
+                right = mid
+            else:
+                if (right > 0 and A[right - 1] > A[right]):
+                    left = right
+                else:
+                    right -= 1
+        pivot = left
+        # step2: split
+        if pivot == 0:
+            left, right = 0, len(A)-1
+        elif target >= A[0]:
+            left, right = 0, pivot - 1
+        else:
+            left, right = pivot, len(A) - 1
+        # step3: find target
+        while left + 1 < right:
+            mid = left + (right - left) // 2
+            if A[mid] < target:
+                left = mid
+            else:
+                right = mid
+        if A[left] == target:
+            return True
+        if A[right] == target:
+            return True
+        return False
+
+    """
+    159
+    a sorted array is rotated at some pivot, e.g. [4, 5, 6, 7, 0, 1, 2]
+    find and return the minimum element
+    no duplicate exists in the array
+    """
+    def min_rotated_list_wo_duplicates(self, nums):
+        if not nums:
+            return
+
+        left, right = 0, len(nums) - 1
+        # 二分法
+        while left + 1 < right:
+            if nums[left] < nums[right]:
+                return nums[left]
+
+            mid = left + (right - left)//2
+            # 最小值在[left, mid]
+            if nums[left] > nums[mid]:
+                right = mid
+            # 最小值在(mid, right]
+            else:
+                left = mid + 1
+
+        return min(nums[left], nums[right])
+
+    """
+    160
+    a sorted array is rotated at some pivot, e.g. [4, 5, 6, 7, 0, 1, 2]
+    find and return the minimum element
+    duplicate is allowed in the array
+    """
+    def min_rotated_list_w_duplicates(self, nums):
+        if not nums:
+            return
+
+        left, right = 0, len(nums) - 1
+        # 二分法
+        while left + 1 < right:
+            if nums[left] < nums[right]:
+                return nums[left]
+
+            mid = left + (right - left)//2
+            # 最小值在[left, mid]
+            if nums[left] > nums[mid]:
+                right = mid
+            # 最小值在(mid, right]
+            elif nums[left] < nums[mid]:
+                left = mid + 1
+            # 最小值在[left + 1, right]
+            else:
+                left += 1
+        return min(nums[left], nums[right])
     """
     437
     Given a list of n tasks, i-th task needs tasks[i] hours to finish. There are k persons. 

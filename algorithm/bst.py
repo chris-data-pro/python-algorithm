@@ -640,6 +640,18 @@ class BST:
         max_sum(root)
         return max(self.sums)
 
+    """
+    375
+    Clone a BT, return a deep copy of it
+    """
+    def clone_tree(self, root):
+        if root is None:
+            return None
+        clone_root = TreeNode(root.val)
+        clone_root.left = self.clone_tree(root.left)
+        clone_root.right = self.clone_tree(root.right)
+        return clone_root
+
 
 if __name__ == '__main__':
     bst = BST()

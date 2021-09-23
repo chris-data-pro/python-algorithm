@@ -30,7 +30,7 @@ class ListElement:
     """
     135
     Given a set of candidate numbers candidates and a target number target. All numbers are positive integers.
-    Find all unique combinations in candidates where the numbers sums to target.
+    Find all unique combinations in candidates where the numbers sums to target. (x sum w repeat, x_sum_w_repeat)
     The same repeated number may be chosen from candidates unlimited number of times.
     """
     def combination_sum_repeat_dfs(self, candidates, target):
@@ -91,7 +91,7 @@ class ListElement:
     """
     153
     Given an array num and a number target. All numbers are positive integers.
-    Find all unique combinations in num where the numbers sum to target.
+    Find all unique combinations in num where the numbers sum to target. (x sum wo repeat, x_sum_wo_repeat)
     Each number in num can only be used once in one combination
     """
     def combination_sum_wo_repeat(self, num, target):
@@ -119,6 +119,45 @@ class ListElement:
             combination.append(candidates[i])
             self.dfs_wo_repeat(candidates, target - candidates[i], i + 1, combination, results)
             combination.pop()
+
+    """
+    82
+    Given 2 * n + 1 numbers, every numbers occurs twice except one, return it.
+    A = [1,1,2,2,3,4,4] => 3
+    A = [0,1,0] => 1
+    """
+    def single_number_list(self, A):
+        l = []
+        for a in A:
+            if a in l:
+                l.remove(a)  # removes the first matching element (which is passed as an argument) from the list.
+            else:
+                l.append(a)
+        return l[0]
+
+    def single_number_dict(self, A):
+        d = {}
+        for a in A:
+            if a in d:
+                d.pop(a)  # removes and returns the value of the given key a. (.popitem() removes the last item)
+            else:
+                d[a] = 1
+        return list(d.keys())[0]
+
+    def single_number_set(self, A):
+        s = set()
+        for num in A:
+            if num in s:
+                s.remove(num)  # removes the specified element from the set. (.discard(num) no error if not exist)
+            else:
+                s.add(num)
+        return s.pop()
+
+    def single_number_xor(self, A):
+        rst = 0
+        for i in A:
+            rst ^= i  # (1) integer y, 0 ^ y = y (2) same integer x, x ^ x = 0 (3) y ^ x ^ x = x ^ y ^ x = y
+        return rst
 
 
 if __name__ == '__main__':

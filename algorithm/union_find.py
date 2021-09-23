@@ -8,7 +8,7 @@ class UnionFind:
         self.weight = {}
 
     def add(self, item):
-        if item in self.parent:
+        if item in self.parent:  # first check if it's already in
             return
         self.parent[item] = item  # initially each point's parent is itself
         self.weight[item] = 1  # initially each tree has 1 point
@@ -17,7 +17,7 @@ class UnionFind:
     def union(self, p, q):
         rootP = self.find(p)
         rootQ = self.find(q)
-        if rootP == rootQ:
+        if rootP == rootQ:  # first check if they are already connected
             return
 
         # to form a balanced tree, so that tree height will be around logN
@@ -69,6 +69,53 @@ class UnionFind:
                             uf.union((i, j), (newx, newy))
         return uf.count
 
+    """
+    477
+    Given a 2D board containing 'X' and 'O'
+    flip all 'O''s into 'X''s in all regions surrounded by 'X'
+    Input:
+      X X X X
+      X O O X
+      X X O X
+      X O X X
+    Output:
+      X X X X
+      X X X X
+      X X X X
+      X O X X
+    """
+    def surrounded_regionns_uf(self, board):
+        if not board or not board[0]:
+            return
+        rows, cols = len(board), len(board[0])
+        if rows <= 2 or cols <= 2:
+            return
+        dummy = (-1, -1)  # index that doesn't exist
+        ufo = UnionFind()
+        ufo.add(dummy)
+
+        for i in range(rows):
+            for j in range(cols):
+                if board[i][j] == 'O':
+                    ufo.add((i, j))
+                    if self.inbound(board, (i, j)):
+                        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                            newx, newy = i + dx, j + dy
+                            if board[newx][newy] == "O":
+                                ufo.add((newx, newy))  # it will check if (newx, newy) is already in before adding
+                                ufo.union((i, j), (newx, newy))  # will check if they are already connected
+                    else:  # on edge
+                        ufo.union((i, j), dummy)
+
+        for x in range(rows):
+            for y in range(cols):
+                if board[x][y] == "O" and not ufo.connected((x, y), dummy):
+                    board[x][y] = "X"
+
+    def inbound(self, matrix, node):
+        x, y = node[0], node[1]
+        return 0 < x < len(matrix) - 1 and 0 < y < len(matrix[0]) - 1
+
 
 if __name__ == '__main__':
     uf = UnionFind()
@@ -77,4 +124,4 @@ if __name__ == '__main__':
                [0, 0, 0, 1, 1],
                [1, 0, 1, 0, 0],
                [1, 0, 0, 0, 1]]
-    print(uf.num_islands(input_1))  # expect 5
+    print(uf.num_islands_uf(input_1))  # expect 5

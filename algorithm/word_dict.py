@@ -10,7 +10,14 @@ class WordDict:
     """
     107
     determine if s can be broken into a sequence of one or more dictionary words.
-    @param s: A string
+    
+    Input: s = "lintcode", dict = ["lint", "code"]
+    Output: True
+    (有多种可能使 word_break_dp(s, word_set) = True)
+    Input："lintcode"，["de","ding","co","code","lint"]
+    Output：True ( ["lint code", "lint co de"] )
+
+    @param s: A strings
     @param wordSet: A dictionary of words dict
     @return: A boolean
     """
@@ -21,16 +28,106 @@ class WordDict:
             return False
 
         n = len(s)
-        dp = [False] * (n + 1)
-        maxLen = max([len(w) for w in word_set])
-
+        dp = [False] * (n + 1)  # dp[i] 表示前 i 个字符是否能够被划分为若干个单词
         dp[0] = True
+
+        max_length = max([len(word) for word in word_set]) if word_set else 0
+
         for i in range(1, n + 1):
-            for j in range(max(i - maxLen, 0), i):
-                if dp[j] and s[j:i] in word_set:
+            for j in range(1, max_length + 1):  # j 代表最后一个词的长度
+                if i < j:
+                    break
+                if not dp[i - j]:
+                    continue
+                word = s[i - j:i]  # 长度为j
+                if word in word_set:
                     dp[i] = True
                     break
+
         return dp[n]
+
+    """
+    582
+    Given a string s and a dictionary of words dict, 
+    add spaces in s to construct a sentence where each word is a valid dictionary word.
+    Return all such possible sentences.
+    
+    Input: "helloworld", ["hell", "world", "o", "l", "he", "low", "orld", "hel"]
+    Output: ["he l l o world","he l low orld","hel l o world","hel low orld","hell o world"]
+    
+    @param: s: string
+    @param: word_dict: set of words.
+    @return: list of strings - All possible sentences.
+    """
+    def word_break_sentences(self, s, word_dict):  # 记忆化搜索剪枝 memo + DFS
+        memo = {}  # s -> [all possible partitions for s]
+        return self.dfs_wbs(s, word_dict, memo)
+
+    # 找到 s 的所有切割方案并 return
+    def dfs_wbs(self, s, word_dict, memo):
+        if s in memo:
+            return memo[s]
+        if len(s) == 0:
+            return []
+
+        partitions = []  # list of strings, each string is one sentence / partition
+
+        # 取整个字符串s
+        if s in word_dict:
+            partitions.append(s)
+
+        # 取字符串s的前缀子串作为word，word长度为1到len(s) - 1
+        for i in range(1, len(s)):
+            prefix = s[:i]
+            if prefix not in word_dict:
+                continue
+
+            sub_partitions = self.dfs_wbs(s[i:], word_dict, memo)  # [all possible partitions for s[i:]]
+            for sub_partition in sub_partitions:
+                partitions.append(prefix + " " + sub_partition)
+
+        memo[s] = partitions
+        return partitions
+
+    """
+    683
+    Given a string s and a dictionary of words dict, ignore cases
+    add spaces in s to construct a sentence where each word is a valid dictionary word.
+    Return the number of sentences you can form. 
+    
+    Input: "helloworld", ["hell", "world", "o", "l", "he", "low", "orld", "hel"]
+    Output: 5 ( ["he l l o world","he l low orld","hel l o world","hel low orld","hell o world"] )
+
+    @param: s: string
+    @param: word_dict: set of words.
+    @return: integer - the number of all possible sentences.
+    """
+    def word_break_nos(self, s, dict):  # number of sentences
+        self.max_length = 0
+        lower_dict = set()
+        for word in dict:
+            self.max_length = max(self.max_length, len(word))
+            lower_dict.add(word.lower())
+
+        return self.dfs_wbnos(s.lower(), 0, lower_dict, {})
+
+    def dfs_wbnos(self, s, index, lower_dict, memo):
+        if index == len(s):
+            return 1
+
+        if index in memo:
+            return memo[index]
+
+        memo[index] = 0
+        for i in range(index, len(s)):
+            if i + 1 - index > self.max_length:
+                break
+            word = s[index: i + 1]
+            if word not in lower_dict:
+                continue
+            memo[index] += self.dfs_wbnos(s, i + 1, lower_dict, memo)
+
+        return memo[index]
 
     """
     given a string word
@@ -197,6 +294,7 @@ class WordDict:
 if __name__ == '__main__':
     wd = WordDict()
     print(wd.word_break_dp("helloworld", ["hell", "world", "o"]))
+    print(wd.word_break_sentences("zzz", ["z", "zz", "zzz"]))
     next_of_abc = wd.get_next_words("abc")
     print(next_of_abc)
     print(sum([not wd.is_one_edit_distance(n, "abc") for n in next_of_abc]))  # expect 0

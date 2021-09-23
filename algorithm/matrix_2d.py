@@ -212,8 +212,8 @@ class Matrix2D:
         boards = []
         visited = {
             'col': set(),
-            'sum': set(),
-            'diff': set(),
+            'sum': set(),  # row + col: /
+            'diff': set(),  # row - col: \
         }
         self.dfs_nqueens(n, [], visited, boards)
         return boards
@@ -280,6 +280,107 @@ class Matrix2D:
             if abs(int(num) - int(path[i])) == abs(len(path)-i):
                 return False
         return True
+
+    """
+    477
+    Given a 2D board containing 'X' and 'O'
+    flip all 'O''s into 'X''s in all regions surrounded by 'X'
+    Input:
+      X X X X
+      X O O X
+      X X O X
+      X O X X
+    Output:
+      X X X X
+      X X X X
+      X X X X
+      X O X X
+    """
+    def surrounded_regions_bfs(self, board):
+        if not board or not board[0]:
+            return
+
+        rows, cols = len(board), len(board[0])
+        self.visited = {}
+
+        for i in range(1, rows - 1):
+            for j in range(1, cols - 1):
+                if board[i][j] == 'O' and (i, j) not in self.visited:
+                    self.bfs_surrounded(board, (i, j))
+        return
+
+    def bfs_surrounded(self, matrix, node):
+        points = deque([node])  # only 'O's
+        self.visited[node] = 1
+        group = {node: 1}
+        valid = True
+
+        while points:
+            x, y = points.popleft()
+
+            if x == 0 or x == len(matrix) - 1 or y == 0 or y == len(matrix[0]) - 1:
+                valid = False
+
+            for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                newx, newy = x + dx, y + dy
+                if (newx, newy) in group:
+                    continue
+                if 0 <= newx < len(matrix) and 0 <= newy < len(matrix[0]) and matrix[newx][newy] == 'O':
+                    points.append((newx, newy))
+                    group[(newx, newy)] = 1
+                    self.visited[(newx, newy)] = 1
+
+        if valid:
+            for i, j in group.keys():
+                matrix[i][j] = 'X'
+
+    """
+    bfs in one
+    """
+    def surroundedRegions_bfs(self, board):
+        if not board or not board[0]:
+            return
+
+        rows, cols = len(board), len(board[0])
+        points = deque([])
+        visited, group = {}, {}
+        change = []
+        valid = True
+
+        for i in range(1, rows - 1):
+            for j in range(1, cols - 1):
+                if board[i][j] == 'O' and (i, j) not in visited:
+                    points.append((i, j))  # only 'O's
+                    group[(i, j)] = 1
+                    visited[(i, j)] = 1
+
+                    while points:
+                        curr = points.popleft()
+
+                        x, y = curr[0], curr[1]
+
+                        if x == 0 or x == len(board) - 1 or y == 0 or y == len(board[0]) - 1:
+                            valid = False
+
+                        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                            newx, newy = x + dx, y + dy
+                            if (newx, newy) in group:
+                                continue
+                            if 0 <= newx < len(board) and 0 <= newy < len(board[0]) and board[newx][newy] == 'O':
+                                points.append((newx, newy))
+                                group[(newx, newy)] = 1
+                                visited[(newx, newy)] = 1
+                    if valid:
+                        change += list(group.keys())
+                    else:
+                        group = {}
+
+                    valid = True
+
+        for x, y in change:
+            board[x][y] = 'X'
+
+        return
 
 
 if __name__ == '__main__':

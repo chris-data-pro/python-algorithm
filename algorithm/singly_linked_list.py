@@ -218,6 +218,59 @@ class SinglyLinkedList:
 
         return head if m > 1 else prev_node.next
 
+    """
+    105 - 138
+    A linked list, each node has an additional random pointer which could point to any node in the list or null.
+    Return the head of a deep copy of the original list.
+    
+    Deep copy should consist of exactly n brand new nodes, 
+    where each new node has its value set to the value of its corresponding original node. 
+    Both the next and random pointer of the new nodes should point to new nodes in the copied list 
+    None of the pointers in the new list should point to nodes in the original list.
+
+    For example, if there are two nodes X and Y in the original list, where X.random --> Y, 
+    then for the corresponding two nodes x and y in the copied list, x.random --> y
+
+    @param head: A RandomListNode
+    @return: A RandomListNode
+    """
+    def clone_random_list(self, head):
+        if not head:
+            return None
+
+        original2copy = {}
+        copiedHead = RandomListNode(head.label)
+        original2copy[head] = copiedHead
+
+        original = head
+        copy = copiedHead
+
+        while original:
+            copy.random = original.random
+            if original.next:
+                copy.next = RandomListNode(original.next.label)
+                original2copy[original.next] = copy.next
+            else:
+                copy.next = None
+
+            original = original.next
+            copy = copy.next
+
+        curr = copiedHead
+        while curr:
+            if curr.random:
+                curr.random = original2copy[curr.random]
+            curr = curr.next
+
+        return copiedHead
+
+
+class RandomListNode:
+    def __init__(self, x):
+        self.label = x
+        self.next = None
+        self.random = None
+
 
 if __name__ == '__main__':
     head, n1, n2, n3 = ListNode(0), ListNode(1), ListNode(2), ListNode(3)
