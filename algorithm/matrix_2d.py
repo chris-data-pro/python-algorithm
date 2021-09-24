@@ -50,11 +50,55 @@ class Matrix2D:
     433
     Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. 
     If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
+    
+    输入：
+    [
+      [1,1,0,0,0],
+      [0,1,0,0,1],
+      [0,0,0,1,1],
+      [0,0,0,0,0],
+      [0,0,0,0,1]
+    ]
+    输出：
+    3
+    
     @param grid: list of list of integers - a boolean 2D matrix
     @return: integer - the number of islands
     """
     def num_islands_bfs(self, grid):
-        return
+        if not grid or not grid[0]:
+            return 0
+
+        islands = 0
+        self.visited_set = set()
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] and (i, j) not in self.visited_set:
+                    self.bfs_ni(grid, i, j)  # 每次bfs处理完一个岛屿里的所有node
+                    islands += 1
+
+        return islands
+
+    def bfs_ni(self, grid, x, y):
+        queue = deque([(x, y)])
+        self.visited_set.add((x, y))
+        while queue:
+            x, y = queue.popleft()
+            for delta_x, delta_y in [(1, 0), (0, -1), (-1, 0), (0, 1)]:
+                next_x = x + delta_x
+                next_y = y + delta_y
+                if not self.is_valid_ni(grid, next_x, next_y) or grid[next_x][next_y] == 0:
+                    continue
+                queue.append((next_x, next_y))
+                self.visited_set.add((next_x, next_y))
+
+    def is_valid_ni(self, grid, x, y):
+        n, m = len(grid), len(grid[0])
+        if not (0 <= x < n and 0 <= y < m):
+            return False
+        if (x, y) in self.visited_set:
+            return False
+        return True  # return grid[x][y]: 1 - True (valid), or 0 - False (invalid)
 
     """
     510

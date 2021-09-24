@@ -131,9 +131,12 @@ class StrNum:
 
     """
     419
-    Given a roman numeral, convert it to an integer.
+    Given a rome / roman numeral, convert it to an integer.
+    
+    Input: "IV"
+    Output: 4
     """
-    def romen_to_int(self, s):
+    def roman_to_int(self, s):
         mapping = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         res = 0
         for i in range(len(s)):
@@ -145,7 +148,10 @@ class StrNum:
 
     """
     418
-    Given an integer, convert it to a roman str
+    Given an integer, convert it to a rome / roman str
+    
+    Input: 99
+    Output: "XCIX"
     """
     def int_to_roman(self, n):
         # write your code here

@@ -153,6 +153,44 @@ class Intervals:
 
         return ans
 
+    """
+    1889
+    given two string intervals (in lexicographic order), please judge whether the two intervals can be merged.
+    If two intervals A and B satisfy that A ⋃ B is a continuous interval, then A and B can be merged.
+    
+    input："(b,c)" "[a,b]"
+    output：true
+    input："[a,b)" "(b,c]"
+    output：false
+    input: "[a,b]" "[ba,c)"
+    output: true
+    
+    @param interval_A: a string represent a interval.
+    @param interval_B: a string represent a interval.
+    @return: if two intervals can merge return true, otherwise false.
+    """
+    def string_intervals_can_merge(self, interval_A, interval_B):
+        first_ch_A = interval_A.split(interval_A[0])[1].split(',')[0]
+        last_ch_A = interval_A.split(',')[1].split(interval_A[-1])[0]
+        first_ch_B = interval_B.split(interval_B[0])[1].split(',')[0]
+        last_ch_B = interval_B.split(',')[1].split(interval_B[-1])[0]
+        if first_ch_A > first_ch_B:  # 排序，interval_B在左，所以比较last_ch_B和first_ch_A
+            if last_ch_B > first_ch_A:
+                return True
+            if (last_ch_B == first_ch_A) and ((interval_B[-1] == ']') or (interval_A[0] == '[')):  # 不同时为开区间就行
+                return True
+            if ((last_ch_B + "a") == first_ch_A) and (interval_B[-1] == ']') and (interval_A[0] == '['):  # 同时为闭区间
+                return True
+            return False
+        else:  # interval_A在左，所以比较last_ch_A和first_ch_B
+            if last_ch_A > first_ch_B:
+                return True
+            if (last_ch_A == first_ch_B) and ((interval_A[-1] == ']') or (interval_B[0] == '[')):
+                return True
+            if ((last_ch_A + "a") == first_ch_B) and (interval_A[-1] == ']') and (interval_B[0] == '['):
+                return True
+            return False
+
 
 if __name__ == '__main__':
     itvs = Intervals()

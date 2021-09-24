@@ -591,6 +591,14 @@ class BST:
     """
     88
     find the lowest common ancestor (LCA) of two given nodes in the BT.
+    
+    Input: tree = {4,3,7,#,#,5,6}， A = 3， B = 5
+    Output: 4
+    
+    @param: root: The root of the binary search tree.
+    @param: A: A TreeNode in a Binary.
+    @param: B: A TreeNode in a Binary.
+    @return: Return the least common ancestor(LCA) of the two nodes.
     """
     def lowestCommonAncestor(self, root, A, B):
         if root is None:

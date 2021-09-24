@@ -88,6 +88,18 @@ class QuickSortSelect:
         idx, res = self.quick_select(L, 0, len(L) - 1, k - 1)
         return L[:idx + 1]
 
+    """
+    5, 606
+    Find K-th largest element in an unsorted array
+    Note that it is the kth largest element in the sorted order, not the kth distinct element.
+    
+    Input:[9,3,2,4,8],3
+    Output:4
+
+    @param L: an integer unsorted array
+    @param k: an integer from 1 to n
+    @return: the kth largest element
+    """
     def kth_largest(self, L, k):
         if not L or k <= 0:
             return None

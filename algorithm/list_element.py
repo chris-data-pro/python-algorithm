@@ -159,6 +159,56 @@ class ListElement:
             rst ^= i  # (1) integer y, 0 ^ y = y (2) same integer x, x ^ x = 0 (3) y ^ x ^ x = x ^ y ^ x = y
         return rst
 
+    """
+    1212
+    Given a binary array which only contain 0 and 1, find the maximum number of consecutive 1s in this array.
+    
+    Input: [1,1,0,1,1,1]
+    Output: 3
+    
+    @param nums: a binary array
+    @return:  the maximum number of consecutive 1s
+    """
+    def find_max_consecutive_ones(self, nums):
+        result = 0
+        count = 0
+        for i in range(len(nums)):
+            if nums[i] == 1:
+                count = count + 1
+            else:
+                result = max(count, result)
+                count = 0
+
+        if count > 0:
+            result = max(count, result)
+        return result
+
+    """
+    883
+    Given a binary array , find the maximum number of consecutive 1s in this array if you can flip at most one 0.
+    
+    Input:  nums = [1,0,1,1,0]
+    Output:  4
+
+    @param nums: a list of integer
+    @return: return a integer, denote  the maximum number of consecutive 1s
+    """
+    def max_consecutive_ones_1flip(self, nums):
+        can_still_flip, no_more_flips, max_ones = 0, 0, 0
+
+        for num in nums:
+
+            if num == 1:
+                can_still_flip += 1
+                no_more_flips += 1
+            else:
+                can_still_flip += 1
+                no_more_flips, can_still_flip = can_still_flip, 0
+
+            max_ones = max(max_ones, can_still_flip, no_more_flips)
+
+        return max_ones
+
 
 if __name__ == '__main__':
     le = ListElement()
