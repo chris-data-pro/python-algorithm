@@ -10,6 +10,10 @@ class Matrix2D:
     769 - 54
     Given an m x n matrix, 
     return all element's indices [i][j] of the matrix in spiral order
+    
+    Input: 3, 3
+    Output: [(0, 0), (0, 1), (0, 2), (1, 2), (2, 2), (2, 1), (2, 0), (1, 0), (1, 1)]  右下左上 - 右下左上 - ...
+    
     @param rows: integer - number of rows
     @param cols: integer - number of columns
     @return: list of tuples - indices (i, j) in spiral order
@@ -104,6 +108,17 @@ class Matrix2D:
     510
     Given a 2D boolean matrix filled with False and True, 
     find the largest rectangle containing all True and return its area.
+    
+    Input:
+    [
+      [1, 1, 0, 0, 1],
+      [0, 1, 0, 0, 1],
+      [0, 0, 1, 1, 1],
+      [0, 0, 1, 1, 1],
+      [0, 0, 0, 0, 1]
+    ]
+    Output: 6  最大长方形的面积6
+    
     @param matrix: a boolean 2D matrix
     @return: an integer
     """
@@ -141,6 +156,16 @@ class Matrix2D:
     Starting from [0,0], find the shortest path that can reach target, and return the length of the path.
     You can only go up, down, left and right. 
     It is guaranteed target_map[0][0] = 0. There is only one target in the map.
+    
+    Input:
+    [
+     [0, 0, 0],
+     [0, 0, 1],
+     [0, 0, 2]
+    ]
+    Output: 4
+    Explanation: [0,0] -> [1,0] -> [2,0] -> [2,1] -> [2,2]
+    
     @param target_map: list of list
     @return: integer
     """
@@ -154,7 +179,7 @@ class Matrix2D:
 
         return self.bfs(target_map, (0, 0))
 
-    def bfs(self, matrix, node):
+    def bfs(self, matrix, node):  # 返回node到最近2的最短距离
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         points = deque([(node[0], node[1])])  # points only store value 0 or 2
         point_step = {(node[0], node[1]): 0}
@@ -189,7 +214,7 @@ class Matrix2D:
         self.dfs(target_map, 0, (0, 0))
         return -1 if self.res == rows * cols else self.res
 
-    def dfs(self, matrix, steps, node):
+    def dfs(self, matrix, steps, node):  # 会修改外部global self.res
         x, y = node[0], node[1]
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         for d_x, d_y in directions:
@@ -211,8 +236,19 @@ class Matrix2D:
 
     """
     0 - space, 1 - wall, 2 - target
-    Find the maximum distance between any 0 to its nearest target 2.
+    for each O, there might exists a shortest distance to its nearest G, otherwise it's infinity. 
+    among all these shortest distance, find the max
     Starting from any point who's value is 0
+    
+    XXXXOOOXXO
+    XXGOOXXOOG maximum distance is 5
+    GOOOXXGOXO 
+    
+    OOO
+    OGO  max distance = 2
+    OOO
+
+    bfs is the better solution
     """
     def max_shortest_path_2target_dfs(self, input):
         if not input or not input[0]:
@@ -225,7 +261,7 @@ class Matrix2D:
             for j in range(cols):
                 if input[i][j] == 0:
                     self.visited = set([(i, j)])
-                    self.res = rows * cols
+                    self.res = rows * cols  # 对每一个0都找到最短距离
                     self.dfs(input, 0, (i, j))
                     max_distance = max(max_distance, float('inf') if self.res == rows * cols else self.res)
 
@@ -249,15 +285,33 @@ class Matrix2D:
     """
     33
     N Queens Puzzle
-    placing n queens on an n×n chessboard, Any two queens can't be in the same row, same column, same diagonal line
+    placing n queens on an n×n chessboard, Any two queens can't be in the same row, same column, same diagonal line 斜线
     Given an integer n, return all distinct solutions to the N-queens puzzle
+    
+    Input: n = 4
+    Output:
+    [
+      // Solution 1
+      [". Q . .",
+       ". . . Q",
+       "Q . . .",
+       ". . Q ."
+      ],
+      // Solution 2
+      [". . Q .",
+       "Q . . .",
+       ". . . Q",
+       ". Q . ."
+      ]
+    ]
+    
     """
     def n_queens_solutions(self, n):
         boards = []
         visited = {
             'col': set(),
-            'sum': set(),  # row + col: /
-            'diff': set(),  # row - col: \
+            'sum': set(),  # row + col: /  sum相同的所有点都在同一斜线 / 上
+            'diff': set(),  # row - col: \  diff相同的所有点都在同一斜线 \ 上
         }
         self.dfs_nqueens(n, [], visited, boards)
         return boards
@@ -426,6 +480,55 @@ class Matrix2D:
 
         return
 
+    """
+    1205
+    Given a matrix of M x N elements (M rows, N columns), 
+    return all elements of the matrix in diagonal order as shown in the following example.
+    
+    Input:
+    [
+        [ 1, 2, 3 ],
+        [ 4, 5, 6 ],
+        [ 7, 8, 9 ]
+    ]
+    Output:
+    [1,2,4,7,5,3,6,8,9]   /向右上 (sum(i, j) == 0), /向左下 (sum(i, j) == 1), /向右上 (sum(i, j) == 2), /向左下 ...
+
+    @param matrix: a 2D array
+    @return: return a list of integers
+    """
+    def find_diagonal_order(self, matrix):
+        rows, cols = len(matrix), len(matrix[0])
+
+        ans = [[]] * (rows + cols - 1)  # ans里每个list都reference to the same object
+        # ans = [[] for _ in range(rows + cols - 1)]  # ans里每个list都reference to不同的object，下面可以用 += 或 append
+        for i in range(0, rows, 1):
+            for j in range(0, cols, 1):
+                if (i + j) % 2:
+                    # print(i, j, ans)
+                    ans[i + j] = ans[i + j] + [matrix[i][j]]  # 不能用 ans[i + j] += [matrix[i][j]] 或 ans[i + j].append
+                    # print(i, j, ans)
+                else:
+                    ans[i + j] = [matrix[i][j]] + ans[i + j]
+        return [x for y in ans for x in y]
+
+    def find_diagonal_order_bf(self, matrix):
+        rows, cols = len(matrix), len(matrix[0])
+
+        ans = []
+        for rc_sum in range(rows + cols - 1):
+            if rc_sum % 2:
+                for i in range(0, rows, 1):
+                    for j in range(0, cols, 1):
+                        if i + j == rc_sum:
+                            ans.append(matrix[i][j])
+            else:
+                for i in range(rows - 1, -1, -1):
+                    for j in range(cols - 1, -1, -1):
+                        if i + j == rc_sum:
+                            ans.append(matrix[i][j])
+        return ans
+
 
 if __name__ == '__main__':
     m2d = Matrix2D()
@@ -467,3 +570,6 @@ if __name__ == '__main__':
     print(m2d.max_shortest_path_2target_bfs([[0, 0, 0],
                                              [0, 2, 0],
                                              [0, 0, 0]]))  # expect 2
+    print(m2d.find_diagonal_order([[1, 2, 3],
+                                   [4, 5, 6],
+                                   [7, 8, 9]]))

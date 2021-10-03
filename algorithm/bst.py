@@ -12,6 +12,10 @@ class BSTIterator:
     86
     Design an iterator over a bst with the following rules:
     next() returns the next smallest element in the BST. Elements pop in ascending order (i.e. an in-order traversal)
+
+    Input: tree = {10,1,11,#,6,#,12}
+    Output: _next().val [1,6,10,11,12]  in-order 从小到大
+
     """
     def __init__(self, root):
         self.stack = []
@@ -50,12 +54,33 @@ class BST:
     """
     910
     Given a BT, find the largest subtree which is a BST, largest means subtree with largest number of nodes in it.
+    The subtree which you find must be a full binary tree.
+    A binary tree is full if each node is either a leaf or possesses exactly two child nodes.
+        
+    Input: {10,5,15,1,8,#,7}
+    Output：3
+    
+    Explanation:
+        10
+        / \
+       5  15
+      / \   \ 
+     1   8   7
+    The Largest BST Subtree in this case is :
+       5
+      / \
+     1   8. 
+    The return value is the subtree's size, which is 3.
     """
-    def largest_bst_subtree(self, node):
+    def largest_bst_subtree(self, root):
+        res = self.dfs_largest_bst_subtree(root)
+        return res.largest
+
+    def dfs_largest_bst_subtree(self, node):
         if not node:
             return SubTree(0, 0, float('inf'), float('-inf'))
-        left = self.largest_bst_subtree(node.left)
-        right = self.largest_bst_subtree(node.right)
+        left = self.dfs_largest_bst_subtree(node.left)
+        right = self.dfs_largest_bst_subtree(node.right)
 
         if left.max < node.val < right.min:  # valid BST
             n = left.n + right.n + 1
@@ -63,7 +88,6 @@ class BST:
             n = float('-inf')
         largest = max(n, left.largest, right.largest)
         return SubTree(largest, n, min(node.val, left.min), max(node.val, right.max))
-        # call self.largest_bst_subtree(root) and return largest
 
     """
     bst, insert node of val under root. 
@@ -72,7 +96,6 @@ class BST:
     def bst_insert(self, root, key):
         if not root:
             root = TreeNode(key)
-
         if key < root.val:
             root.left = self.bst_insert(root.left, key)
         if key > root.val:
@@ -87,18 +110,27 @@ class BST:
         if not root:
             return
         if root.val == key:
-            if (not root.left) and (not root.right): return
+            if (not root.left) and (not root.right): return  # the node is a leaf
             if (not root.left) and root.right: return root.right
             if root.left and (not root.right): return root.left
-            rmin = self.bst_get_min(root.right)
+            rmin = self.bst_get_min(root.right)  # always left get the min
             root.val = rmin.val
             root.right = self.bst_delete(root.right, rmin.val)
-        elif root.val > key:
+        elif root.val > key:  # delete from the left subtree
             root.left = self.bst_delete(root.left, key)
-        elif root.val < key:
+        elif root.val < key:  # delete from the right subtree
             root.right = self.bst_delete(root.right, key)
-
         return root
+
+    """
+    get the the node with min val under node in bst
+    """
+    def bst_get_min(self, node):
+        if not node:
+            return
+        while node.left:
+            node = node.left
+        return node
 
     """
     convert all nodes in a bt into a list, left - root - right
@@ -400,17 +432,6 @@ class BST:
         return self.are_symmetric(root.left, root.right)
 
     """
-    get the the node with min val under node in bst
-    """
-    def bst_get_min(self, node):
-        if not node:
-            return
-        while node.left:
-            node = node.left
-
-        return node
-
-    """
     get the the node with max val under node in bst
     """
     def bst_get_max(self, node):
@@ -671,6 +692,12 @@ if __name__ == '__main__':
     bst.bst_insert(root_1, 31)
     bst.bst_insert(root_1, 42)
     print(bst.inorder_traverse(root_1))
+    bsti = BSTIterator(root_1)
+    print(bsti._next().val)
+    print(bsti._next().val)
+    print(bsti._next().val)
+    print()
+
     bst.plus_one(root_1)
     print(bst.inorder_traverse(root_1))
     node_1 = bst.bst_get_min(root_1)
@@ -724,11 +751,9 @@ if __name__ == '__main__':
     print('root_3 is bst: {}'.format(bst.bst_is_valid(root_3)))
     deleted_2 = bst.bst_delete(root_3, 1)
     print(bst.vertical_order_dfs(deleted_2))
-    bst.serialize(root_3)
+    bst.serialize_preorder(root_3)
 
     print()
-    bsti = BSTIterator(root_1)
-    print(bsti._next().val)
 
 
 

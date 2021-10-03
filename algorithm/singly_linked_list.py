@@ -37,6 +37,11 @@ class SinglyLinkedList:
 
     """
     174
+    Remove the nth node from the end
+    
+    Input: list = 1->2->3->4->5->null， n = 2
+    Output: 1->2->3->5->null  从后数第二个node是4
+
     @param head: The first node of linked list.
     @param n: An integer
     @return: The head of linked list.
@@ -57,7 +62,7 @@ class SinglyLinkedList:
             i += 1
 
         # now i is the total steps taken
-        if not right:  # then i is the length og the original linked list
+        if not right:  # then i is the length of the original linked list
             # return head
             return head if i < n else head.next
 
@@ -71,6 +76,10 @@ class SinglyLinkedList:
     """
     104, 165
     given k sorted linked lists [2->6->null,5->null,7->null], return 1 sorted list 2->5->6->7->null
+    
+    Input: lists = [2->6->null, 5->null, 7->null]
+    Output: 2->5->6->7->null  merge排序
+    
     @param lists: a list of head ListNode
     @return: The head of one sorted list.
     """
@@ -93,7 +102,12 @@ class SinglyLinkedList:
 
     """
     450
-    reverse nodes in k-group
+    reverse nodes in k-group (k at a time)
+    
+    Input: list = 1->2->3->4->5->null
+    k = 2
+    Output: 2->1->4->3->5->null
+    
     @param head: a ListNode
     @param k: An integer
     @return: a ListNode
@@ -102,13 +116,13 @@ class SinglyLinkedList:
         # D->[1->2->3]->[4->5->6]->7 (k = 3)
         # D->[3->2->1]->[6->5->4]->7
         dummy = ListNode(0)
-        dummy.next = head # connect dummy node to head D-> head -> .....
+        dummy.next = head  # connect dummy node to head D-> head -> .....
 
         prev = dummy
         while prev:
             prev = self.reverse_next_k_node(prev, k)
 
-        return dummy.next # D-> head'
+        return dummy.next  # D-> head
 
     def find_kth_node(self, head, k):
         # head -> n1 -> n2 -> ... ->nk
@@ -139,8 +153,8 @@ class SinglyLinkedList:
             return None
         nk_plus = nk.next
         # Reverse k nodes
-        nk.next = None # separate the nk and nk+1
-        nk = self.reverse(n1) # nk->nk-1->nk-2->......n1
+        nk.next = None  # separate the nk and nk+1
+        nk = self.reverse(n1)  # nk->nk-1->nk-2->......n1
         # Connect head and nk -> nk-1 -> ... ->n1,  n1 and nk+1 -> nk+2 ->...
         head.next = nk
         n1.next = nk_plus
@@ -149,9 +163,10 @@ class SinglyLinkedList:
 
     """
     36
-    Reverse a linked list from position m to n.  1 ≤ m ≤ n ≤ lengthoflist
-    linked list = 1->2->3->4->5->NULL, m = 2, n = 4
-    return 1->4->3->2->5->NULL
+    Reverse a linked list from position m to n.  1 ≤ m ≤ n ≤ length_of_list
+    
+    Input: linked list = 1->2->3->4->5->6->NULL, m = 2, n = 5
+    Output: 1->5->4->3->2->6->NULL
     """
     def reverse_between(self, head, m, n):
         if not head:
@@ -221,7 +236,7 @@ class SinglyLinkedList:
     """
     105 - 138
     A linked list, each node has an additional random pointer which could point to any node in the list or null.
-    Return the head of a deep copy of the original list.
+    Return the head of a DEEP COPY of the original list.
     
     Deep copy should consist of exactly n brand new nodes, 
     where each new node has its value set to the value of its corresponding original node. 

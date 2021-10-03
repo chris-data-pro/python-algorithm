@@ -4,7 +4,7 @@
 class UnionFind:
     def __init__(self):
         self.count = 0  # initially 0 disconnected points
-        self.parent = {}  # element -> parent element (element can't be Point(x, y) objects)
+        self.parent = {}  # element -> parent element (element can't be Point(x, y) objects, can be (x, y) instead)
         self.weight = {}  # element -> int (size of the same group)
 
     def add(self, item):
@@ -47,6 +47,15 @@ class UnionFind:
     433
     Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. 
     If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
+    
+    Input: 
+    [[1,1,0,0,0],
+     [0,1,0,0,1],
+     [0,0,0,1,1],
+     [0,0,0,0,0],
+     [0,0,0,0,1]]
+    Output: 3
+    
     @param grid: list of list of integers - a boolean 2D matrix
     @return: integer - the number of islands
     """
@@ -111,7 +120,7 @@ class UnionFind:
 
     """
     860
-    Count the number of distinct islands. 
+    Count the number of DISTINCT islands. 
     An island is considered to be the same as another if and only if one island has the same shape as another island
     Do NOT consider rotated or reflected 
     
@@ -122,7 +131,7 @@ class UnionFind:
         [1,0,0,1,1],
         [1,1,0,0,1]
       ]
-    Output: 2
+    Output: 2 三个islands里有两个形状一样
     """
     def num_distinct_islands(self, grid):
         if not grid or not grid[0]:
@@ -155,16 +164,16 @@ class UnionFind:
     move island (a list of coordinates) to top left corner
     """
     def move_tl(self, shape):
-        shape.sort(key=lambda v: (v[0], v[1]))  # island = sorted(island)
+        shape.sort(key=lambda v: (v[0], v[1]))  # shape = sorted(shape)
         min_x, min_y = shape[0]
         # return [(i - min_x, j - min_y) for i, j in shape]  # error when add to set: unhashable type: 'list'
         return ",".join('(' + str(i - min_x) + ',' + str(j - min_y) + ')' for i, j in shape)  # string
 
     """
     804
-    Count the number of distinct islands. 
+    Count the number of DISTINCT islands. 
     An island is considered to be the same as another if and only if one island has the same shape as another island
-    Do NOT consider rotated or reflected 
+    Do consider rotated or reflected 
     
     Input:
       [
@@ -173,7 +182,7 @@ class UnionFind:
         [0,0,0,1,0],
         [0,1,1,1,0]
       ]
-    Output: 1
+    Output: 1  两个islands翻转或对调后形状一样
     """
     def num_distinct_islands_rotate_flip(self, grid):
         if not grid or not grid[0]:
@@ -318,7 +327,7 @@ class UnionFind:
             return
         dummy = (-1, -1)  # index that doesn't exist
         ufo = UnionFind()
-        ufo.add(dummy)
+        ufo.add(dummy)  # 把dummy point跟所有边线上的O union起来
 
         for i in range(rows):
             for j in range(cols):
@@ -335,7 +344,7 @@ class UnionFind:
 
         for x in range(rows):
             for y in range(cols):
-                if board[x][y] == "O" and not ufo.connected((x, y), dummy):
+                if board[x][y] == "O" and not ufo.connected((x, y), dummy):  # 不和dummy相连的island全换成X
                     board[x][y] = "X"
 
     def inbound(self, matrix, node):
