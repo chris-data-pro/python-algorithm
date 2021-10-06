@@ -134,6 +134,14 @@ class BST:
 
     """
     convert all nodes in a bt into a list, left - root - right
+    
+         27
+        /  \
+       14   35
+      / \   / \ 
+    10  19 31  42
+    
+    [10, 14, 19, 27, 31, 35, 42]  如果是bst，inorder就是从小到大排序
     """
     def inorder_traverse(self, node):
         if not node:
@@ -147,13 +155,22 @@ class BST:
 
     """
     convert all nodes in a bt into a list, root - left - right
+    
+         27
+        /  \
+       14   35
+      / \   / \ 
+    10  19 31  42
+    
+    [27, 14, 10, 19, 35, 31, 42]
     """
     def preorder_traverse(self, node):
         if not node:
             return []
 
         res = []
-        res.append(node)  # for further use
+        # res.append(node)  # for further use
+        res.append(node.val)
         res += self.preorder_traverse(node.left)
         res += self.preorder_traverse(node.right)
         return res
@@ -162,13 +179,21 @@ class BST:
     453 - 114
     Flatten a binary tree to a fake "linked list" in pre-order traversal.
     use the right pointer in TreeNode as the next pointer in ListNode. and mark the left child of each node to null.
+    
+         27
+        /  \
+       14   35
+      / \   / \ 
+    10  19 31  42
+    
+    [27, 14, 10, 19, 35, 31, 42]  each node's right points to the next node, left -> null
     """
     def preorder_flatten_right(self, root):
         if not root:
             return
         ans = self.preorder_traverse(root)
 
-        for i in range(1, len(ans)):
+        for i in range(1, len(ans)):  # 1 to len(ans) - 1
             ans[i - 1].left = None
             ans[i - 1].right = ans[i]
 
@@ -190,6 +215,24 @@ class BST:
     """
     7
     Serialize and Deserialize BT
+    
+         27
+        /  \ 
+       14   35
+      / \   / \ 
+    10  19 31  42
+    
+    serialize_preorder: ['27', '14', '10', '#', '#', '19', '#', '#', '35', '31', '#', '#', '42', '#', '#']
+    deserialize_preorder: [27, 14, 10, 19, 35, 31, 42]
+    
+         1
+        /  \ 
+       2    3
+        \ 
+         4 
+         
+    serialize_preorder: ['1', '2', '#', '4', '#', '#', '3', '#', '#']
+    deserialize_preorder: [1, 2, 4, 3]
     """
     def serialize_preorder(self, root):
         if not root:
@@ -200,69 +243,93 @@ class BST:
         ans += self.serialize_preorder(root.right)
         return ans
 
-    def deserialize_preoder(self, data):
+    def deserialize_preorder(self, data):
         ch = data.pop(0)
         if ch == '#':
             return None
         else:
             root = TreeNode(int(ch))
-        root.left = self.deserialize_preoder(data)
-        root.right = self.deserialize_preoder(data)
+        root.left = self.deserialize_preorder(data)
+        root.right = self.deserialize_preorder(data)
         return root
 
     """
-    check if a binary tree is uni valued
+         1
+        /  \
+       2    3
+        \
+         4 
+    
+    ['1', '2', '3', '#', '4', '#', '#']
+    commented: [['1'], ['2', '3'], ['#', '4', '#', '#']]
     """
-    def is_uni_valued(self, node):
-        return len(set(self.inorder_traverse(node))) == 1
+    def serialize_horizontal_order(self, root):
+        if not root:
+            return []
+        res = self.horizontal_nodes(root)
 
-    """
-    1115
-    tree in horizontal order
-    """
-    def horizontal_order(self, node):
-        if not node:
+        ans = []
+        for values in res.values():
+            if values.count(None) == len(values) or not values:  # 此层为空 或 全是None
+                continue
+            for node in values:
+                if node:
+                    ans.append(str(node.val))
+                else:
+                    ans.append('#')
+        return ans  # ['1', '2', '3', '#', '4', '#', '#']
+
+        # anses = []
+        # for items in res.items():
+        #     key, values = items[0], items[1]
+        #     ans = []
+        #     if values.count(None) == len(values) or not values:  # 此层为空 或 全是None
+        #         continue
+        #     for node in values:
+        #         if node:
+        #             ans.append(str(node.val))
+        #         else:
+        #             ans.append('#')
+        #     anses.append(ans)
+        # return anses  # [['1'], ['2', '3'], ['#', '4', '#', '#']]
+
+    def horizontal_nodes(self, root):
+        if not root:
             return []
 
-        res = {0: [node]}
+        res = {0: [root]}  # 层数 -> [本层所有nodes从左到右]
         level = 1
-        while res[level - 1]:
+        while res[level - 1]:  # 上一层的 [nodes] 不为空
+            if res[level - 1].count(None) == len(res[level - 1]):  # 上一层 [nodes] 都是None
+                break
             res[level] = []
             for i in res[level - 1]:
+                if not i:  # or not (i.left or i.right):  加这句3下边不会有 '#', '#'
+                    continue
                 if i.left:
                     res[level].append(i.left)
+                else:
+                    res[level].append(None)
                 if i.right:
                     res[level].append(i.right)
+                else:
+                    res[level].append(None)
             level += 1
-
-        return [[x.val for x in y] for y in res.values() if y]
-        # return [sum(el.val for el in y) / len(y) for y in res.values() if y]  # Average of Levels in the tree
+        return res
 
     """
-    1115
-    tree in horizontal order dfs
+          1
+        /  \
+       2    3
+        \
+         4 
+    
+    1,2,3,#,4,#,#,#,#,
     """
-    def horizontal_order_dfs(self, root):
-        if not root:
-            return []
-        res = {}
-
-        def dfs(node, depth):  # don't need col here, left first below
-            if node:
-                if depth not in res:
-                    res[depth] = []
-                res[depth].append(node)
-                dfs(node.left, depth + 1)
-                dfs(node.right, depth + 1)
-
-        dfs(root, 0)
-        return [[x.val for x in y] for y in res.values() if y]
-        # return [sum(el.val for el in y) / len(y) for y in res.values() if y]  # Average of Levels in the tree
-
-    def serialize_horizontal(self, root):
+    def serialize_horizontal_order_dfs(self, root):
         if not root:
             return
-        res = {}
+        res = {}  # 层数 -> 'node1.val,node2.val,...' 本层所有node.val的str
 
         def dfs(node, depth):
             if node:
@@ -280,21 +347,97 @@ class BST:
         return ''.join(res.values())
 
     """
+    check if a binary tree is uni valued
+    """
+    def is_uni_valued(self, node):
+        return len(set(self.inorder_traverse(node))) == 1
+
+    """
+    1115
+    tree in horizontal order
+    
+          1
+        /  \
+       2    3
+        \
+         4 
+    
+    [[1], [2, 3], [4]]
+    commented: [1, 2.5, 4]
+    """
+    def horizontal_order(self, node):
+        if not node:
+            return []
+
+        res = {0: [node]}  # 层数 -> [本层所有nodes]
+        level = 1
+        while res[level - 1]:
+            res[level] = []
+            for i in res[level - 1]:
+                if i.left:
+                    res[level].append(i.left)
+                if i.right:
+                    res[level].append(i.right)
+            level += 1
+        print(res)
+        return [[x.val for x in y] for y in res.values() if y]
+        # return [sum(el.val for el in y) / len(y) for y in res.values() if y]  # Average of Levels in the tree
+
+    """
+    1115
+    tree in horizontal order dfs
+        
+          1
+        /  \
+       2    3
+        \
+         4 
+    
+    [[1], [2, 3], [4]]
+    commented: [1, 2.5, 4]
+    """
+    def horizontal_order_dfs(self, root):
+        if not root:
+            return []
+        res = {}  # 层数 -> [本层所有nodes]
+
+        def dfs(node, depth):  # don't need col here, left first below
+            if node:
+                if depth not in res:
+                    res[depth] = []
+                res[depth].append(node)
+                dfs(node.left, depth + 1)
+                dfs(node.right, depth + 1)
+
+        dfs(root, 0)
+        return [[x.val for x in y] for y in res.values() if y]
+        # return [sum(el.val for el in y) / len(y) for y in res.values() if y]  # Average of Levels in the tree
+
+    """
     760
     return the values of the nodes you can see from the right side, ordered from top to bottom
+    
+    Input: {1,2,3,#,5,#,4}  this is the serialize in horizontal order to represent the bt
+    Output: [1,3,4] 
+    Explanation:
+       1            
+     /   \
+    2     3         
+     \     \
+      5     4    
     """
     def right_side_view(self, root):
         if not root:
             return []
-        res = {}
+        res = {}  # 层数 -> 本层最右边的node.val
 
         def dfs(node, depth):
             if node:
                 if depth not in res:
                     res[depth] = None
-                if not res[depth]:
+                if not res[depth]:  # 如果这层还没有->赋予当前node.val  如果这层已经有值->什么都不做
                     res[depth] = node.val
-                dfs(node.right, depth + 1)  # right first
+                dfs(node.right, depth + 1)  # right first 先扫右边
                 dfs(node.left, depth + 1)
 
         dfs(root, 0)
@@ -302,12 +445,21 @@ class BST:
 
     """
     651
-    tree in vertical order dfs, for those in the same col, order by depth
+    tree in vertical order dfs, for those in the same col, order by depth from top to bottom
+    
+    Input: {3,9,8,4,0,1,7}
+    Output: [[4],[9],[3,0,1],[8],[7]]  
+    Explanation:
+          3
+        /  \
+        9   8
+      /  \/  \
+      4  01   7   If two nodes are in the same row and column, the order should be from left to right.
     """
     def vertical_order_dfs(self, root):
         if not root:
             return []
-        res = {}
+        res = {}  # 列数 -> [本列所有 (node, 层数) 从上到下]
 
         def dfs(node, col, depth):
             if node:
@@ -318,7 +470,7 @@ class BST:
                 dfs(node.right, col + 1, depth + 1)
 
         dfs(root, 0, 0)
-        return [[x[0].val for x in sorted(res[y], key=lambda x: x[1])] for y in sorted(res)]
+        return [[x[0].val for x in sorted(res[y], key=lambda x: x[1])] for y in sorted(res)]  # y是col 负-0-正
 
     """
     all 1 to each node in the bt
@@ -334,6 +486,22 @@ class BST:
     """
     701
     trim a bst, all nodes val should be between min and max inclusive. result is valid bst
+    
+    Input: {8,3,10,1,6,#,14,#,#,4,7,13} min=5 max=13
+          8
+        /   \
+       3     10
+      /  \     \
+      1   6     14
+         / \    /
+        4   7  13
+        
+    Output: {8, 6, 10, #, 7, #, 13}
+          8
+        /   \
+       6     10
+        \      \
+         7      13
     """
     def bst_trim(self, root, minimum, maximum):
         if not root:
@@ -692,6 +860,10 @@ if __name__ == '__main__':
     bst.bst_insert(root_1, 31)
     bst.bst_insert(root_1, 42)
     print(bst.inorder_traverse(root_1))
+    serialize_1 = bst.serialize_preorder(root_1)
+    print(serialize_1)
+    deserialized_1 = bst.deserialize_preorder(serialize_1)
+    print(bst.preorder_traverse(deserialized_1))
     bsti = BSTIterator(root_1)
     print(bsti._next().val)
     print(bsti._next().val)
@@ -746,14 +918,35 @@ if __name__ == '__main__':
     node_4.left, node_4.right = TreeNode(1), TreeNode(7)
     node_4.left.left = TreeNode(5)
     print(bst.horizontal_order(root_3))
+    print(bst.serialize_horizontal_order(root_3))
     print((bst.vertical_order_dfs(root_3)))
     print(bst.vertical_order_dfs(root_3))
     print('root_3 is bst: {}'.format(bst.bst_is_valid(root_3)))
     deleted_2 = bst.bst_delete(root_3, 1)
     print(bst.vertical_order_dfs(deleted_2))
-    bst.serialize_preorder(root_3)
 
     print()
+
+    '''
+         1
+        /  \
+       2    3
+        \
+         4 
+    '''
+    root_4 = TreeNode(1)
+    root_4.left, root_4.right = TreeNode(2), TreeNode(3)
+    root_4.left.right = TreeNode(4)
+    serialize_4 = bst.serialize_preorder(root_4)
+    print(serialize_4)
+    deserialized_4 = bst.deserialize_preorder(serialize_4)
+    print(bst.preorder_traverse(deserialized_4))
+    print(bst.serialize_horizontal_order(root_4))
+    print(bst.horizontal_order(root_4))
+    print(bst.serialize_horizontal_order_dfs(root_4))
+    print(bst.horizontal_nodes(root_4))
+
+
 
 
 
