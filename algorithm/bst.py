@@ -518,6 +518,15 @@ class BST:
     """
     1704
     Given the root of a BST, return the sum of values of all nodes with value between L and R (inclusive).
+    
+    Input: {10,5,15,3,7,#,18} min=7 max=15
+          10
+        /   \
+       5     15
+      /  \     \
+      3   7     18
+    
+    Output: 32 (= 10 + 15 + 7)
     """
     def bst_trim_sum(self, root, L, R):
         if not root:
@@ -538,6 +547,21 @@ class BST:
     merge 2 bt into a new binary tree. 
     if two nodes overlap, then sum node values up as the new value of the merged node. 
     Otherwise, the NOT null node will be used as the node of new tree.
+    
+    Inputs:
+        Tree 1                     Tree 2                  
+              1                         2                             
+             / \                       / \
+            3   2                     1   3                        
+           /                           \   \
+          5                             4   7                  
+
+    Output tree:
+             3
+            / \
+           4   5
+          / \   \ 
+         5   4   7
     """
     def merge_trees(self, t1, t2):
         if not t1:
@@ -554,7 +578,14 @@ class BST:
 
     """
     175
-    invert a bt
+    invert a bt, left right 对调
+    
+    Input => Output: 
+      1         1
+     / \       / \
+    2   3  => 3   2
+       /       \
+      4         4
     """
     def invert_tree(self, node):
         if not node:
@@ -565,20 +596,16 @@ class BST:
         return node
 
     """
-    check 2 trees are the same
-    """
-    def is_same_tree(self, root1, root2):
-        if (not root1) and (not root2):
-            return True
-        if (not root1) or (not root2):
-            return False
-        if root1.val != root2.val:
-            return False
-
-        return self.is_same_tree(root1.left, root2.left) and self.is_same_tree(root1.right, root2.right)
-
-    """
     check 2 trees are symmetric, i.e. a left right mirror
+    
+    Input: tree1, tree2
+      1         1
+     / \       / \
+    2   3     3   2
+       /       \
+      4         4
+      
+    Output: true
     """
     def are_symmetric(self, node1, node2):
         if (not node1) and (not node2):
@@ -593,11 +620,33 @@ class BST:
     """
     468
     check whether a BT is a mirror of itself (i.e., symmetric around its center).
+    
+    Input:
+         1
+        / \
+       2   2
+      / \ / \
+      3 4 4 3
+      
+    Output: true
     """
     def is_symmetric_tree(self, root):
         if not root:
             return True
         return self.are_symmetric(root.left, root.right)
+
+    """
+    check 2 trees are the same
+    """
+    def is_same_tree(self, root1, root2):
+        if (not root1) and (not root2):
+            return True
+        if (not root1) or (not root2):
+            return False
+        if root1.val != root2.val:
+            return False
+
+        return self.is_same_tree(root1.left, root2.left) and self.is_same_tree(root1.right, root2.right)
 
     """
     get the the node with max val under node in bst
@@ -647,7 +696,7 @@ class BST:
         if not node:
             return False
         if node.val == target:
-            return True  # can return node
+            return True  # can return node 返回以target为val的node，和它下面的tree
 
         if node.val > target:
             return self.bst_val_in_tree(node.left, target)
@@ -683,6 +732,15 @@ class BST:
 
     """
     bt to graph
+    
+    Inputs: tree, graph = {}  
+          1
+        /  \
+       2    3
+        \
+         4 
+    
+    Output: graph = {1: {2, 3}, 2: {1, 4}, 4: {2}, 3: {1}}  treeNode -> set(treeNode1, treeNode2, ...) all neighbors
     """
     def bt_to_graph_dfs(self, root, graph):  # initialize graph as {} outside this function, {node -> set(neighbor nodes)}
         if not root:
@@ -703,11 +761,24 @@ class BST:
             self.bt_to_graph_dfs(root.right, graph)
 
     """
-    given a start node in BT, return all nodes' distances from start
+    given a start node in graph, return all nodes' distances from start
+    
+    tree
+          1
+        /  \
+       2    3
+        \
+         4 
+    
+    Input: graph = {1: {2, 3}, 2: {1, 4}, 4: {2}, 3: {1}}  treeNode -> set(treeNode1, treeNode2, ...) all neighbors
+           start node = node(2)
+
+    Output: {start node: 0, neighbor node: 1, neighbor node: 1, neighbor's neighbor: 2, ...}
+            {node(2): 0, node(1): 1, node(4): 1, node(3): 2}
     """
-    def node_distance_bfs(self, graph, start):
+    def node_distance_bfs(self, graph, start):  # start is a node
         queue = collections.deque([start])
-        distance = {start: 0}  # hash map {node -> distance to start int}, no duplicate nodes
+        distance = {start: 0}  # hash map {node -> node's distance to start int}, no duplicate nodes
 
         while queue:
             node = queue.popleft()
@@ -722,6 +793,17 @@ class BST:
     """
     1506
     given BT, return a list of values of all nodes that distance K from target node
+    
+    Input: {8,3,10,1,6,#,14,#,#,4,7,13}, target = node(3), K = 2
+          8
+        /   \
+       3     10
+      /  \     \
+      1   6     14
+         / \    /
+        4   7  13
+        
+    Output: [4, 7, 10]
     """
     def distance_k(self, root, target, K):
         graph = {}
@@ -733,11 +815,20 @@ class BST:
     """
     find the path to a target in a bst, starting from root
     1. All of the nodes' values will be unique. 2. target will exist in the BST.
+    
+    Input: tree
+         28
+        /  \
+       20   36
+            /
+           32
+    
+    Output: {0: Node(28), 1: Node(36), 2: Node(32)}
     """
-    def bst_path_to(self, root, target):
+    def bst_path_to(self, root, target):  # target是val
         if not root:
             return
-        self.path = {}
+        self.path = {}  # 步数 -> Node 从root到target
 
         def dfs(node, depth):
             if node.val == target:
@@ -754,8 +845,19 @@ class BST:
 
     """
     1311
-    find the lowest common ancestor (LCA) of two given nodes in the BST.
+    find the lowest common ancestor (LCA) of two given nodes in the BST. bst的最近公共祖先
     1. All of the nodes' values will be unique. 2. p and q are different and both values will exist in the BST.
+    
+    Input: {6,2,8,0,4,7,9,#,#,3,5}, node(2), node(4)
+          6
+        /   \
+       2      8
+      / \    /  \
+     0   4   7   9
+        / \
+       3   5  
+       
+    Output: Node(2)
     """
     def bst_lowest_common_ancestor(self, root, p, q):
         path_p = self.bst_path_to(root, p.val)
@@ -771,18 +873,24 @@ class BST:
     def bst_lowestCommonAncestor(self, root, p, q):
         if root == p or root == q:
             return root
-        if p.val < root.val and q.val < root.val:
+        if p.val < root.val and q.val < root.val:  # p, q 都在左子树
             return self.bst_lowestCommonAncestor(root.left, p, q)
-        if p.val > root.val and q.val > root.val:
+        if p.val > root.val and q.val > root.val:  # p, q 都在右子树
             return self.bst_lowestCommonAncestor(root.right, p, q)
-        return root
+        return root  # p, q 分别在左右子树，那么root即为结果
 
     """
     88
-    find the lowest common ancestor (LCA) of two given nodes in the BT.
+    find the lowest common ancestor (LCA) of two given nodes in the BT. bt的最近公共祖先
     
-    Input: tree = {4,3,7,#,#,5,6}， A = 3， B = 5
-    Output: 4
+    Input: tree = {4,3,7,#,#,5,6}， A = Node(3)， B = Node(5)
+          4
+        /   \
+       3     7
+            /  \
+            5   6
+    
+    Output: Node(4)
     
     @param: root: The root of the binary search tree.
     @param: A: A TreeNode in a Binary.
@@ -807,7 +915,7 @@ class BST:
         if left_result:
             return left_result
 
-        # 右子树有一个点或者右子树有LCA
+        # 右子树有一个点或者右子树有LCAs
         if right_result:
             return right_result
 
@@ -816,8 +924,16 @@ class BST:
 
     """
     94
-    max path sum in bt
-    The path may start and end at any node in the tree.
+    max path sum in bt. The path may start and end at any node in the tree.
+    
+    Input: tree = {10,-5,15,#,#,6,20}
+          10
+        /   \
+       -5    15
+            /  \
+           6   20
+           
+    Output: 45
     """
     def max_path_sum(self, root):
         if not root:
@@ -832,7 +948,7 @@ class BST:
             node_max = max(node.val, node.val + left, node.val + right, node.val + left + right)
             self.sums.append(node_max)
 
-            return max(node.val, node.val + left, node.val + right)
+            return max(node.val, node.val + left, node.val + right)  # 只能加一枝
 
         max_sum(root)
         return max(self.sums)
@@ -844,7 +960,7 @@ class BST:
     def clone_tree(self, root):
         if root is None:
             return None
-        clone_root = TreeNode(root.val)
+        clone_root = TreeNode(root.val)  # 这个clone_root 不等于 root
         clone_root.left = self.clone_tree(root.left)
         clone_root.right = self.clone_tree(root.right)
         return clone_root
@@ -877,7 +993,7 @@ if __name__ == '__main__':
     print(bst.count_node(root_1))
     print(bst.max_depth(root_1))
     print('root_1 is bst: {}'.format(bst.bst_is_valid(root_1, None, None)))
-    print(bst.horizontal_order(root_1))
+    print(bst.horizontal_order(root_1))  # will print intermediate res, expect [[28], [15, 36], [11, 20, 32, 43]]
     deleted_1 = bst.bst_delete(root_1, 11)
     print(bst.horizontal_order_dfs(deleted_1))
     print(bst.vertical_order_dfs(deleted_1))
@@ -886,11 +1002,19 @@ if __name__ == '__main__':
         print('The parent of node 43 is {}'.format(parent_of_43.val))
     print()
     trimed = bst.bst_trim(root_1, 16, 40)
-    print(bst.horizontal_order_dfs(trimed))
+    print(bst.horizontal_order_dfs(trimed))  # expect [[28], [20, 36], [32]]
     print(bst.vertical_order_dfs(trimed))
+    # bst.bst_path_to returns {0: Node(28), 1: Node(36), 2: Node(32)}
     print('path to 32: {}'.format([(i, bst.bst_path_to(trimed, 32)[i].val) for i in bst.bst_path_to(trimed, 32)]))
+    print('path to 32: %s' % [(item[0], item[1].val) for item in bst.bst_path_to(trimed, 32).items()])
     print()
 
+    # root_2
+    #                  10
+    #                 /  \
+    #               -5   15
+    #                    / \
+    #                   6  20
     root_2 = TreeNode(10)
     root_2.left = TreeNode(-5)
     node_2 = TreeNode(15)
@@ -899,7 +1023,7 @@ if __name__ == '__main__':
     node_2.right = TreeNode(20)
     print('root_2 is bst: {}'.format(bst.bst_is_valid(root_2, None, None)))
     print(bst.bst_val_in_tree(root_2, 20))
-    print(bst.horizontal_order(root_2))
+    print(bst.horizontal_order(root_2))  # will print intermediate res, expect [[10], [-5, 15], [6, 20]]
     print(bst.horizontal_order_dfs(root_2))
     print(bst.vertical_order_dfs(root_2))
     print(bst.max_path_sum(root_2))  # expect 45
@@ -945,6 +1069,21 @@ if __name__ == '__main__':
     print(bst.horizontal_order(root_4))
     print(bst.serialize_horizontal_order_dfs(root_4))
     print(bst.horizontal_nodes(root_4))
+
+    graph = {}
+    # use dfs to build graph
+    bst.bt_to_graph_dfs(root_4, graph)
+    ans = {}
+    for item in graph.items():
+        key = item[0].val
+        values = set()
+        for value in item[1]:
+            values.add(value.val)
+        ans[key] = values
+    print(ans)
+
+    print(bst.node_distance_bfs(graph, root_4.left))
+
 
 
 

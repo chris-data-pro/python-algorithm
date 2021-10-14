@@ -50,9 +50,12 @@ class QuickSortSelect:
     @param L: An array
     @start: beginning index
     @end: ending index
-    @return: after sorted, the index (k - 1) and the Kth smallest element
+    @return: after sorted, the index k and the (K+1)th smallest element
+    
+    Input: [5, -3, 9, 1], 0, 3, 2
+    Output: 2, 5
     """
-    def quick_select(self, L, start, end, k):  # O(NlogN)
+    def quick_select(self, L, start, end, k):  # O(NlogN)  # k is the index
         if start == end:
             return start, L[start]
 
@@ -79,7 +82,7 @@ class QuickSortSelect:
     def kth_smallest(self, L, k):
         if not L or k <= 0:
             return None
-        _, res = self.quick_select(L, 0, len(L) - 1, k - 1)
+        _, res = self.quick_select(L, 0, len(L) - 1, k - 1)  # quick_select returns the (k - 1 + 1)th smallest element
         return res
 
     def k_smallest(self, L, k):
@@ -95,6 +98,8 @@ class QuickSortSelect:
     
     Input:[9,3,2,4,8],3
     Output:4
+    Input:[5, -3, 9, 1],2
+    Output:5
 
     @param L: an integer unsorted array
     @param k: an integer from 1 to n
@@ -103,7 +108,7 @@ class QuickSortSelect:
     def kth_largest(self, L, k):
         if not L or k <= 0:
             return None
-        _, res = self.quick_select(L, 0, len(L) - 1, len(L) - k)
+        _, res = self.quick_select(L, 0, len(L) - 1, len(L) - k)  # index len - 1 => 1st largest, len - k => kth largest
         return res
 
     def k_largest(self, L, k):
@@ -177,3 +182,4 @@ if __name__ == '__main__':
     print(qss.heapq_nlargest(3, [9, 3, 2, 6, 8]))
     print(qss.python_sort(3, [9, 3, 2, 6, 8]))
     print(qss.python_sorted(3, [9, 3, 2, 6, 8]))
+    print(qss.quick_select([5, -3, 9, 1], 0, 3, 2))

@@ -1,3 +1,4 @@
+import random
 import unittest
 from itertools import combinations, permutations
 from collections import OrderedDict, deque
@@ -137,16 +138,6 @@ For these 100 objects, which one has the highest chance to be marked?
 
 # queue = collections.deque([start])
 
-'''
-Welcome to Facebook!
-
-This is just a simple shared plaintext pad, with no execution capabilities.
-
-When you know what language you would like to use for your interview,
-simply choose it from the dropdown in the top bar.
-
-Enjoy your interview!
-'''
 
 '''
 (1) Problem description:
@@ -329,6 +320,122 @@ if __name__ == '__main__':
 
 
 
+
+
+"""
+
+Given an integer array and an integer number k. Return the k-th largest element in the array.
+
+Examples:
+array = [5, -3, 9, 1]
+* k = 1 => return: 9
+* k = 2 => return: 5
+* k = 4 => return: -3
+
+
+
+"""
+
+
+class Soluition:
+
+    def quick_select(self, L, start, end, k):  # k 0-indexed
+        if start == end:
+            return start, L[start]
+
+        left, right = start, end
+        pivot = L[(start + end) // 2]
+
+        while left <= right:
+            while left <= right and L[left] < pivot:
+                left += 1
+            while left <= right and L[right] > pivot:
+                right -=1
+
+            if left <= right:
+                L[left], L[right] =  L[right], L[left]
+                left += 1
+                right -= 1
+
+        if start <= right and k <= right:
+            return self.quick_select(L, start, right, k)
+        if left <= end and k >= left:
+            return self.quick_select(L, left, end, k)
+
+        return L[k]
+
+
+    def kth_largest(self, array, k):
+        if not array or k <= 0:
+            return
+
+        res = self.quick_select(array, 0, len(array) - 1, len(array) - k)
+        return res
+
+
+"""
+array = [5, -3, 9, 1], k = 2
+"""
+# k = 2, left 0, right 3
+# right 2
+# right 1
+#
+# [-3, 5, 9, 1] left 1 right 0
+
+#     def kth_largest_sorted(self, array, k):
+#         if not L or k <= 0:
+#             return
+
+#         array.sort()
+
+
+# O(NlogN)
+#
+# heapq
+# O(N + (N - k)logN)
+
+
+
+
+"""
+
+Given a list of city names and their corresponding populations, write a function to output a random city name subject to the following constraint: the probability of the function to output a city's name is based on its population divided by the sum of all cities' population.
+For example:
+
+NY: 7
+SF: 5
+LA: 8
+The probability to generate NY is 7/20, SF is 1/4.
+
+
+"""
+
+input = {'NY': 7, 'SF': 5, 'LA': 8}
+input1 = []
+lv = []
+
+def random_city_name(input):
+    total = sum(input.values())
+    r = random.random()
+
+    lv = list(input.values())  # [5, 5, 8]
+    sum = 0
+    moving_sum = []
+    for v in lv:
+        sum += v
+        moving_sum.append(sum)  # [7, 12, 20]
+
+    for i in range(len(moving_sum) - 1):  # 0 to len(moving_sum) - 2
+        if r * total < moving_sum[i]:
+            return [item[0] for item in input.items() if item[1] == lv[i]][0]
+
+        # ith key-value from a dict
+
+# What if r * total = 6
+
+# input = {'NY': 5, 'SF': 5, 'LA': 8}
+# [5, 10, 18]
+# r * total = 9
 
 
 

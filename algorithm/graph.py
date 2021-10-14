@@ -1,4 +1,4 @@
-from collections import deque
+from collections import deque, defaultdict
 
 
 class GraphNode:
@@ -115,7 +115,7 @@ class Graph:
     @return: a boolean value
     """
 
-    def has_route(self, graph, s, t):
+    def directed_has_route(self, graph, s, t):
         countrd = {}
         for x in graph:
             countrd[x] = 0
@@ -135,21 +135,25 @@ class Graph:
     """
     616
     There are a total of n courses you have to take, labeled from 0 to n - 1.
-    prerequisites：to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+    prerequisites：to take course 1 you have to first take course 0, which is expressed as a pair: [1,0]
     Given the total number of courses numCourses， and a list of prerequisite pairs, 
     return the ordering of courses you should take to finish all courses.
 
     There may be multiple correct orders, you just need to return one of them. 
     If it is impossible to finish all courses, return an empty array.
     
-    Input: n = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]] 
+    Input: n = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]] 有方向directed graph
+    0 --> 1 --> 3
+    |           ^
+    --> 2 ______|
+    
     Output: [0,1,2,3] or [0,2,1,3]
 
-    @param: numCourses: a total of n courses
-    @param: prerequisites: a list of prerequisite pairs
-    @return: the course order
+    @param: numCourses: a total of n courses  - integer
+    @param: prerequisites: a list of prerequisite pairs - list of lists
+    @return: the course order - list of numbers
     """
-    def findOrder(self, numCourses, prerequisites):
+    def directed_find_order(self, numCourses, prerequisites):
         graph = [[] for i in range(numCourses)]
         in_degree = [0] * numCourses
 
@@ -181,6 +185,52 @@ class Graph:
             return topo_order
         return []
 
+    """
+    178
+    Given n nodes labeled from 0 to n - 1 and a list of undirected edges 
+    write a function to check whether these edges make up a valid tree.
+    You can assume that no duplicate edges will appear in edges. 
+    Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+    
+    Inputs: n = 5， edges = [[0, 1], [0, 2], [0, 3], [1, 4]]  无方向undirected graph
+       0 - 1 - 4
+      / \
+      2  3
+    Output: True
+    
+    Inputs: n = 5， edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]
+       0 - 1 - 4
+          / \
+         2 - 3
+    Output: False
+    
+    n个点，m条边。空间复杂度为O(n^2)。
+    建图时每条边都会访问 1 次，搜索时每个点都会被询问1次，时间复杂度为O(max(n, m))。
+    """
+    def valid_tree(self, n, edges):  # 树是连通的，没有环的
+        if len(edges) != n - 1:  # 已知给定的边不重复，n个结点的树一定有(n - 1)个边，所以如果 len(edges) > (n - 1) 一定有环
+            return False
+
+        neighbors = defaultdict(list)  # x -> [x所有的neighbors]
+        for u, v in edges:
+            neighbors[u].append(v)
+            neighbors[v].append(u)  # {0: [1], 1: [0, 2, 3, 4], 2: [1, 3], 3: [2, 1], 4: [1]} 第二个例子的edges
+
+        visited = {}
+        queue = deque()
+
+        queue.append(0)
+        visited[0] = True
+        while queue:
+            cur = queue.popleft()
+            visited[cur] = True
+            for node in neighbors[cur]:
+                if node not in visited:
+                    visited[node] = True
+                    queue.append(node)
+
+        return len(visited) == n  # 如果 len(visited) 不等于 n 说明不联通
+
 
 if __name__ == '__main__':
     g = Graph()
@@ -197,4 +247,4 @@ if __name__ == '__main__':
     node2.neighbors = [node1, node4]
     node3.neighbors = [node4]
 
-    print(g.has_route([node0, node1, node2, node3, node4], node4, node1))  # expect False
+    print(g.directed_has_route([node0, node1, node2, node3, node4], node4, node1))  # expect False

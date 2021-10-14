@@ -580,3 +580,788 @@ values
 '2021-03-02', 1.0, 'enabled', 'Assignment.New', 35178.0),
 ('e2d4fd29b8e543c4f8042acf12d51701', 'all', 'all', 'all', 'all', 'all', 'all', '2021-03-01',
 '2021-03-02', 1.0, 'control', 'Assignment.New', 35070.0);
+
+
+-- 90 minutes SQL for data engineer
+begin;
+DROP TABLE IF EXISTS development.older_table;
+commit;
+
+begin;
+create table development.older_table (
+	order_day                        char varying(50)
+	, order_id                       char varying(5)
+	, product_id                     char varying(5)
+	, quantity                       int
+	, price                          int
+);
+commit;
+
+SELECT * FROM development.older_table;
+
+begin;
+INSERT INTO development.older_table
+(order_day, order_id, product_id, quantity, price) VALUES
+('01-JUL-2011', 'O1', 'P1', 5, 5),
+('01-JUL-2011', 'O2', 'P2', 2, 10),
+('01-JUL-2011', 'O3', 'P3', 10, 25),
+('01-JUL-2011', 'O4', 'P1', 20, 5),
+('02-JUL-2011', 'O5', 'P3', 5, 25),
+('02-JUL-2011', 'O6', 'P4', 6, 20),
+('02-JUL-2011', 'O7', 'P1', 2, 5),
+('02-JUL-2011', 'O8', 'P5', 1, 50),
+('02-JUL-2011', 'O9', 'P6', 2, 50),
+('02-JUL-2011', 'O10', 'P2', 4, 10);
+commit;
+
+
+select
+order_day,
+order_id,
+quantity,
+sum(quantity) over (partition by order_day) as total_quantity  -- or max, min
+from development.older_table
+order by 1;
+
+--01-JUL-2011	O1	5	37
+--01-JUL-2011	O2	2	37
+--01-JUL-2011	O3	10	37
+--01-JUL-2011	O4	20	37
+--02-JUL-2011	O10	4	20
+--02-JUL-2011	O5	5	20
+--02-JUL-2011	O6	6	20
+--02-JUL-2011	O7	2	20
+--02-JUL-2011	O8	1	20
+--02-JUL-2011	O9	2	20
+
+
+select order_day, listagg(order_id::varchar, ';') within group (order by quantity desc) as order_list
+from development.older_table
+group by 1;
+
+--01-JUL-2011	O4;O3;O1;O2
+--02-JUL-2011	O6;O5;O10;O7;O9;O8
+
+
+-- 1 get all products that got sold both the days, and the number of times sold
+select product_id, count(distinct order_id) as time_sold
+from development.older_table
+where product_id in (
+select distinct d1.product_id --, d1.order_id as day1order, d1.order_day as day1, d2.order_id as day2order, d2.order_day as day2
+from development.older_table d1
+join development.older_table d2
+on d1.product_id = d2.product_id
+and d1.order_day = '01-JUL-2011'
+and d2.order_day = '02-JUL-2011'
+)
+group by 1;
+
+
+select product_id, count(distinct order_id) as time_sold
+from development.older_table
+where product_id in (
+select product_id from (
+select product_id, order_day, order_id, dense_rank() over (partition by product_id order by order_day) as rk
+from development.older_table
+order by 1,2,3) foo
+where rk = 2)
+group by 1;
+
+
+-- 2 get products that was ordered on '02-JUL-2011' but not on '01-JUL-2011'
+select product_id from (
+select product_id, order_day, order_id, dense_rank() over (partition by product_id order by order_day) as rk
+from development.older_table
+order by 1,2,3) foo
+where rk = 1 and order_day = '02-JUL-2011';
+
+
+-- 3 get the highest sold products () on these 2 days
+select order_day, product_id, sold_amount
+from
+(select order_day, product_id, sum(quantity * price) as sold_amount, row_number() over (partition by order_day order by sold_amount desc) as rk
+from development.older_table
+group by 1, 2) foo
+where rk = 1
+order by 1;
+
+
+-- 4 get all products and the total sales on day 1 and day 2
+select
+nvl(d1.product_id, d2.product_id) as product_id,
+nvl(d1.total_sales_01, 0) as total_sales_01,
+nvl(d2.total_sales_02, 0) as total_sales_02
+from
+(select product_id, sum(quantity * price) as total_sales_01
+from development.older_table
+where order_day = '01-JUL-2011'
+group by 1) d1 full outer join
+(select product_id, sum(quantity * price) as total_sales_02
+from development.older_table
+where order_day = '02-JUL-2011'
+group by 1) d2 on d1.product_id = d2.product_id
+order by 1;
+
+
+-- 5 get all order_day product_id vis, that was ordered more than once
+select order_day, product_id, count(*) as ct
+from development.older_table
+group by 1, 2
+having ct > 1
+
+select order_day, product_id
+from
+(select order_day, product_id, count(*)
+from development.older_table
+group by order_day,product_id
+having count(*)>1
+);
+
+
+-- 6 explode the data into single unit level records
+begin;
+DROP TABLE IF EXISTS development.order_table;
+commit;
+
+begin;
+create table development.order_table (
+	order_id                   char varying(5)
+	, item                     char varying(5)
+	, qty                      int
+);
+commit;
+
+SELECT * FROM development.order_table;
+
+begin;
+INSERT INTO development.order_table
+(order_id, item, qty) VALUES
+('O1', 'A1', 5),
+('O2', 'A2', 1),
+('O3', 'A3', 3);
+commit;
+
+
+WITH RECURSIVE RCTE (ORDER_ID,ITEM,QTY,EXPLODEROWS) AS
+( SELECT ORDER_ID,ITEM,QTY, 1 FROM development.order_table
+  UNION ALL
+  SELECT ORDER_ID,ITEM,QTY,EXPLODEROWS + 1 FROM RCTE WHERE EXPLODEROWS < QTY)
+SELECT ORDER_ID , ITEM , 1 AS  CNT FROM RCTE
+ORDER BY ORDER_ID;
+
+-- common table expression
+WITH RECURSIVE cte (n) AS
+(
+  SELECT 1
+  UNION ALL
+  SELECT n + 1 FROM cte WHERE n < 5  -- limit 4
+)
+SELECT * FROM cte;
+
+
+with recursive base (x, y) as
+(
+select 0, 1
+union all
+select y, x + y from base where y < 20
+)
+select * from base;
+
+
+WITH RECURSIVE fibonacci (n, fib_n, next_fib_n) AS
+(
+  SELECT cast(1 as int), cast(0 as BIGINT), cast(1 as BIGINT)
+  UNION ALL
+  SELECT n + 1, next_fib_n, fib_n + next_fib_n
+    FROM fibonacci WHERE n < 50
+)
+SELECT fib_n FROM fibonacci where n = 50;
+
+
+
+WITH RECURSIVE cte (n, str) AS
+(
+  SELECT 1 AS n, cast('abc' as char(20)) AS str
+  UNION ALL
+  SELECT n + 1, concat(str, str) FROM cte WHERE n < 3
+)
+SELECT * FROM cte;
+
+
+WITH RECURSIVE cte (n, p, q) AS
+(
+  SELECT 1 AS n, 1 AS p, -1 AS q
+  UNION ALL
+  SELECT n + 1, q * 2, p * 2 FROM cte WHERE n < 5
+)
+SELECT * FROM cte;
+
+
+begin;
+DROP TABLE IF EXISTS development.sales_table;
+commit;
+
+begin;
+create table development.sales_table (
+	sale_date                   date
+	, price                     float
+);
+commit;
+
+SELECT * FROM development.sales_table;
+
+begin;
+INSERT INTO development.sales_table
+(sale_date, price) VALUES
+(date('2017-01-03'), 100.0),
+(date('2017-01-03'), 200.0),
+(date('2017-01-06'), 50.0),
+(date('2017-01-08'), 10.0),
+(date('2017-01-08'), 20.0),
+(date('2017-01-08'), 150.0),
+(date('2017-01-10'), 5.0),
+(date('2017-01-10'), 25.0);
+commit;
+
+
+with recursive base (sale_date) as (
+select min(sale_date) from development.sales_table
+union all
+select date(sale_date + interval '1 day') from base where sale_date < (select max(sale_date) from development.sales_table)
+)
+select b.sale_date, isnull(sum(st.price), 0) as sum_price
+from base b left join development.sales_table st on b.sale_date = st.sale_date
+group by 1
+order by 1;
+
+
+begin;
+DROP TABLE IF EXISTS development.employees;
+commit;
+
+begin;
+create table development.employees (
+  id         INT PRIMARY KEY NOT NULL,
+  name       VARCHAR(100) NOT NULL,
+  manager_id INT NULL
+);
+commit;
+
+SELECT * FROM development.employees;
+
+begin;
+INSERT INTO development.employees
+(id, name, manager_id) VALUES
+(333, 'Yasmina', NULL),
+(198, 'John', 333),
+(692, 'Tarek', 333),
+(29, 'Pedro', 198),
+(4610, 'Sarah', 29),
+(72, 'Pierre', 29),
+(123, 'Adil', 692);
+commit;
+
+
+WITH RECURSIVE employee_paths (id, name, path) AS
+(
+  SELECT id, name, CAST(id AS CHAR(200))
+    FROM development.employees
+    WHERE manager_id IS NULL
+  UNION ALL
+  SELECT e.id, e.name, ep.path||','||e.id
+    FROM employee_paths AS ep JOIN development.employees AS e
+      ON ep.id = e.manager_id
+)
+SELECT * FROM employee_paths;
+
+
+-- 7 give the top product by sales in each of. the group, and additionally gather glance views, inventory and ad spend
+begin;
+DROP TABLE IF EXISTS development.product_dimension;
+commit;
+
+begin;
+create table development.product_dimension (
+  product_id                 VARCHAR(10),
+  product_group              VARCHAR(100),
+  product_name               VARCHAR(100)
+);
+commit;
+
+SELECT * FROM development.product_dimension;
+
+begin;
+INSERT INTO development.product_dimension
+(product_id, product_group, product_name) VALUES
+('P1', 'Book', 'Harry Potter 1'),
+('P2', 'Book', 'Harry Potter 2'),
+('P3', 'Electronics', 'Nikon 10 MPS'),
+('P4', 'Electronics', 'Cannon 8 MPS'),
+('P5', 'Electronics', 'Cannon 10 MPS'),
+('P6', 'Video DVD', 'Pirates 1'),
+('P7', 'Video DVD', 'Pirates 2'),
+('P8', 'Video DVD', 'HP 1'),
+('P9', 'Video DVD', 'HP 2'),
+('P10', 'Shoes', 'Nike 10'),
+('P11', 'Shoes', 'Nike 11'),
+('P12', 'Shoes', 'Adidas 10'),
+('P13', 'Shoes', 'Adidas 09'),
+('P14', 'Book', 'God Father 1'),
+('P15', 'Book', 'God Father 2');
+commit;
+
+
+begin;
+DROP TABLE IF EXISTS development.sale_fact;
+commit;
+
+begin;
+create table development.sale_fact (
+  day                        date,
+  product_id                 VARCHAR(10),
+  sales_amt                  int
+);
+commit;
+
+SELECT * FROM development.sale_fact;
+
+begin;
+INSERT INTO development.sale_fact
+(day, product_id, sales_amt) VALUES
+(date('2011-07-20'), 'P1', 10),
+(date('2011-07-20'), 'P2', 5),
+(date('2011-07-20'), 'P8', 100),
+(date('2011-07-20'), 'P3', 5),
+(date('2011-07-20'), 'P4', 25),
+(date('2011-07-20'), 'P5', 15),
+(date('2011-07-20'), 'P6', 35),
+(date('2011-07-20'), 'P7', 5),
+(date('2011-07-20'), 'P9', 30),
+(date('2011-07-20'), 'P10', 8),
+(date('2011-07-20'), 'P11', 45);
+commit;
+
+
+begin;
+DROP TABLE IF EXISTS development.view_fact;
+commit;
+
+begin;
+create table development.view_fact (
+  day                        date,
+  product_id                 VARCHAR(10),
+  glance_views               int
+);
+commit;
+
+SELECT * FROM development.view_fact;
+
+begin;
+INSERT INTO development.view_fact
+(day, product_id, glance_views) VALUES
+(date('2011-07-20'), 'P1', 1000),
+(date('2011-07-20'), 'P2', 800),
+(date('2011-07-20'), 'P8', 700),
+(date('2011-07-20'), 'P3', 800),
+(date('2011-07-20'), 'P4', 500),
+(date('2011-07-20'), 'P5', 250),
+(date('2011-07-20'), 'P6', 10),
+(date('2011-07-20'), 'P7', 1000),
+(date('2011-07-20'), 'P9', 1500),
+(date('2011-07-20'), 'P10', 600),
+(date('2011-07-20'), 'P12', 670),
+(date('2011-07-20'), 'P13', 300),
+(date('2011-07-20'), 'P14', 230);
+commit;
+
+
+begin;
+DROP TABLE IF EXISTS development.inventory_fact;
+commit;
+
+begin;
+create table development.inventory_fact (
+  day                            date,
+  product_id                     VARCHAR(10),
+  on_hand_quantity               int
+);
+commit;
+
+SELECT * FROM development.inventory_fact;
+
+begin;
+INSERT INTO development.inventory_fact
+(day, product_id, on_hand_quantity) VALUES
+(date('2011-07-20'), 'P1', 100),
+(date('2011-07-20'), 'P2', 70),
+(date('2011-07-20'), 'P8', 90),
+(date('2011-07-20'), 'P3', 10),
+(date('2011-07-20'), 'P4', 30),
+(date('2011-07-20'), 'P5', 100),
+(date('2011-07-20'), 'P6', 120),
+(date('2011-07-20'), 'P7', 70),
+(date('2011-07-20'), 'P9', 90);
+commit;
+
+
+begin;
+DROP TABLE IF EXISTS development.ad_spend;
+commit;
+
+begin;
+create table development.ad_spend (
+  day                            date,
+  product_id                     VARCHAR(10),
+  ad_spend                       int
+);
+commit;
+
+SELECT * FROM development.ad_spend;
+
+begin;
+INSERT INTO development.ad_spend
+(day, product_id, ad_spend) VALUES
+(date('2011-07-20'), 'P1', 10),
+(date('2011-07-20'), 'P2', 5),
+(date('2011-07-20'), 'P8', 100),
+(date('2011-07-20'), 'P3', 5),
+(date('2011-07-20'), 'P4', 25),
+(date('2011-07-20'), 'P5', 15),
+(date('2011-07-20'), 'P6', 35),
+(date('2011-07-20'), 'P7', 5),
+(date('2011-07-20'), 'P9', 30),
+(date('2011-07-20'), 'P10', 8),
+(date('2011-07-20'), 'P11', 45);
+commit;
+
+
+select foo.product_group, foo.product_id, foo.sales_amt, nvl(vf.glance_views, 0), nvl(inf.on_hand_quantity, 0), nvl(ads.ad_spend, 0)
+from (
+select
+pd.product_group,
+sf.product_id,
+sf.sales_amt,
+row_number() over (partition by product_group order by sales_amt desc) as rk
+from development.product_dimension pd join development.sale_fact sf on pd.product_id = sf.product_id) foo
+left join development.view_fact vf on foo.product_id = vf.product_id
+left join development.inventory_fact inf on foo.product_id = inf.product_id
+left join development.ad_spend ads on foo.product_id = ads.product_id
+where foo.rk = 1
+order by 1;
+
+
+-- 8 give all products that have glance views but no sales
+select
+vf.product_id
+from development.sale_fact sf right join development.view_fact vf
+on sf.product_id = vf.product_id
+where sf.product_id is null --and vf.product_id is not null
+;
+
+
+-- 9 give the sales of electronics as a precentage of books
+with a as (select 1 as id,
+pd.product_group,
+sum(sf.sales_amt) as sum_electronics
+from development.product_dimension pd join development.sale_fact sf on pd.product_id = sf.product_id
+where pd.product_group = 'Electronics'
+GROUP by 1, 2),
+b as (select 1 as id,
+pd.product_group,
+sum(sf.sales_amt) as sum_books
+from development.product_dimension pd join development.sale_fact sf on pd.product_id = sf.product_id
+where pd.product_group = 'Book'
+GROUP by 1, 2)
+select a.sum_electronics / b.sum_books::float * 100
+from a join b on a.id = b.id;
+
+
+-- 10
+begin;
+DROP TABLE IF EXISTS development.phone_dial;
+commit;
+
+begin;
+create table development.phone_dial (
+  source_number                  int,
+  destination_number             int,
+  call_start_date                datetime
+);
+commit;
+
+SELECT * FROM development.phone_dial;
+
+begin;
+INSERT INTO development.phone_dial
+(source_number, destination_number, call_start_date) VALUES
+(1234, 4567, CONVERT(datetime, '2011-07-20 10:00:00')),
+(1234, 2345, CONVERT(datetime, '2011-07-20 11:00:00')),
+(1234, 3456, CONVERT(datetime, '2011-07-20 12:00:00')),
+(1234, 3456, CONVERT(datetime, '2011-07-20 13:00:00')),
+(1234, 4567, CONVERT(datetime, '2011-07-20 15:00:00')),
+(1222, 7890, CONVERT(datetime, '2011-07-20 10:00:00')),
+(1222, 7680, CONVERT(datetime, '2011-07-20 12:00:00')),
+(1222, 2345, CONVERT(datetime, '2011-07-20 13:00:00'));
+commit;
+
+with asc_order as (
+select source_number, destination_number as first_called from (
+select source_number, destination_number,
+rank() over (partition by source_number order by call_start_date) as rk
+from development.phone_dial) a
+where a.rk = 1),
+desc_order as (
+select source_number, destination_number as last_called from (
+select source_number, destination_number,
+rank() over (partition by source_number order by call_start_date desc) as rk
+from development.phone_dial) b
+where b.rk = 1)
+select ao.source_number, (case when ao.first_called = deo.last_called then 'Y' else 'N' end) as flag
+from asc_order ao join desc_order deo on ao.source_number = deo.source_number;
+
+
+-- 11
+begin;
+DROP TABLE IF EXISTS development.customer_orders;
+commit;
+
+begin;
+create table development.customer_orders (
+  order_day                       date,
+  customer_id                     int
+);
+commit;
+
+SELECT * FROM development.customer_orders;
+
+begin;
+INSERT INTO development.customer_orders
+(order_day, customer_id) VALUES
+(date('2020-07-20'), 1),
+(date('2020-09-20'), 2),
+(date('2021-07-20'), 3);
+commit;
+
+begin;
+DROP TABLE IF EXISTS development.customer_orders_daily;
+commit;
+
+begin;
+create table development.customer_orders_daily (
+  snapshot_day                    date,
+  order_day                       date,
+  customer_id                     int
+);
+commit;
+
+SELECT * FROM development.customer_orders_daily;
+
+begin;
+INSERT INTO development.customer_orders_daily
+(snapshot_day, order_day, customer_id) VALUES
+(date('2020-10-11'), date('2020-10-11'), 1),
+(date('2020-10-11'), date('2020-10-11'), 2),
+(date('2020-10-11'), date('2020-10-11'), 4),
+(date('2020-10-11'), date('2020-10-11'), 4);
+commit;
+
+with customers as (select distinct customer_id from development.customer_orders),
+ly_customers as (select distinct customer_id from development.customer_orders where order_day >= current_date - interval '1 year')
+select
+foo.snapshot_day,
+sum(case when foo.customer_id not in (
+select customer_id from customers
+) then 1 else 0 end) as new_custormers,
+sum(case when foo.customer_id in (
+select customer_id from customers
+) and foo.customer_id not in (
+select customer_id from ly_customers
+) then 1 else 0 end) as reactivated_customers
+from (select distinct snapshot_day, customer_id from development.customer_orders_daily) foo
+group by 1;
+
+
+-- 1) identify managers (name, not id) with the biggest team size
+begin;
+DROP TABLE IF EXISTS development.employee;
+commit;
+
+begin;
+create table development.employee (
+  emp_id         INT PRIMARY KEY NOT NULL,
+  emp_name       VARCHAR(100) NOT NULL,
+  manager_id INT NULL
+);
+commit;
+
+SELECT * FROM development.employee;
+
+begin;
+INSERT INTO development.employee
+(emp_id, emp_name, manager_id) VALUES
+(101, 'John', 104),
+(102, 'Mary', 104),
+(103, 'Smith', 104),
+(104, 'Bill', 105),
+(105, 'Kelly', 106),
+(106, 'Will', null);
+commit;
+
+select a.emp_name
+from
+(
+SELECT foo.emp_name, rank() over (order by ct desc) as rk
+from
+(select a.emp_name, count(distinct b.emp_id) as ct
+from development.employee a
+join development.employee b
+  on a.emp_id = b.manager_id
+group by 1) foo
+) a
+where a.rk = 1;
+
+
+-- 2) identify customers (customer_id) who placed more than 3 orders in both year 2014 and year 2015.
+begin;
+create table development.cust_orders (
+  order_id                        int,
+  customer_id                     int,
+  order_date                      date
+);
+commit;
+
+SELECT * FROM development.cust_orders;
+
+begin;
+INSERT INTO development.cust_orders
+(order_id, customer_id, order_date) VALUES
+(101, 201, date('2014-01-01')),
+(102, 202, date('2014-02-12')),
+(103, 203, date('2014-03-05')),
+(104, 204, date('2014-04-15')),
+(105, 202, date('2014-05-15')),
+(106, 202, date('2014-07-10')),
+(107, 203, date('2014-09-15')),
+(108, 202, date('2014-12-15')),
+(109, 201, date('2015-01-01')),
+(110, 202, date('2015-02-12')),
+(111, 202, date('2015-03-05')),
+(112, 201, date('2015-04-15')),
+(113, 202, date('2015-05-15')),
+(114, 202, date('2015-07-10')),
+(115, 205, date('2015-09-15'));
+commit;
+
+
+select a.customer_id
+FROM
+(
+select DATE_PART(y, order_date) as year, customer_id, count(distinct order_id) as cnt
+from development.cust_orders
+where DATE_PART(y, order_date) = '2014'
+group by 1, 2
+HAVING count(distinct order_id) > 3
+) a
+inner join
+(
+select DATE_PART(y, order_date) as year, customer_id, count(distinct order_id) as cnt
+from development.cust_orders
+where DATE_PART(y, order_date) = '2015'
+group by 1, 2
+HAVING count(distinct order_id) > 3
+) b
+on a.customer_id = b.customer_id
+order by 1;
+
+
+-- 3) get a list of customers (cust_id) who have placed less than 2 orders or have ordered for less than $100
+begin;
+DROP TABLE IF EXISTS development.cust_orders;
+commit;
+
+begin;
+create table development.cust_orders (
+  order_id                        int,
+  cust_id                         int,
+  order_date                      date,
+  product                         VARCHAR(20),
+  order_amount                    int
+
+);
+commit;
+
+SELECT * FROM development.cust_orders;
+
+begin;
+INSERT INTO development.cust_orders
+(order_id, cust_id, order_date, product, order_amount) VALUES
+(50001, 101, date('2015-08-29'), 'Camera', 100),
+(50002, 102, date('2015-08-30'), 'Shoes', 90),
+(50003, 103, date('2015-05-31'), 'Laptop', 400),
+(50004, 101, date('2015-08-29'), 'Mobile', 100),
+(50005, 104, date('2015-08-29'), 'FrozenMeals', 30),
+(50006, 104, date('2015-08-30'), 'Cloths', 65);
+commit;
+
+
+select foo.cust_id
+FROM
+(
+select cust_id, count(distinct order_id) as no_orders, sum(order_amount) as total_amt
+from development.cust_orders
+group by 1
+HAVING count(distinct order_id) < 2 or sum(order_amount) < 100
+) foo
+order by 1;
+
+
+-- 5) identify callers who made their first call and the last call to the same recipient on a given day
+begin;
+DROP TABLE IF EXISTS development.phone_log;
+commit;
+
+begin;
+create table development.phone_log (
+  caller_id                  int,
+  recipient_id               int,
+  call_start_time            datetime
+);
+commit;
+
+SELECT * FROM development.phone_log;
+
+begin;
+INSERT INTO development.phone_log
+(caller_id, recipient_id, call_start_time) VALUES
+(101, 201, CONVERT(datetime, '2015-08-31 02:35:00')),
+(101, 301, CONVERT(datetime, '2015-08-31 02:37:00')),
+(101, 501, CONVERT(datetime, '2015-08-31 02:39:00')),
+(101, 201, CONVERT(datetime, '2015-09-01 02:41:00')),
+(101, 201, CONVERT(datetime, '2015-09-01 05:00:00')),
+(103, 401, CONVERT(datetime, '2015-08-31 05:35:00')),
+(104, 501, CONVERT(datetime, '2015-08-31 06:35:00')),
+(104, 601, CONVERT(datetime, '2015-08-31 07:35:00'));
+commit;
+
+
+with asc_order as (
+select day, caller_id, recipient_id
+from
+(
+select cast(call_start_time as date) as day, caller_id, recipient_id, rank() over (partition by day, caller_id order by call_start_time) as rk
+from development.phone_log
+) foo
+where foo.rk = 1),
+desc_order as (
+select day, caller_id, recipient_id
+from
+(
+select cast(call_start_time as date) as day, caller_id, recipient_id, rank() over (partition by day, caller_id order by call_start_time desc) as rk
+from development.phone_log
+) b
+where b.rk = 1)
+select ao.caller_id, ao.recipient_id, ao.day as call_date
+from asc_order ao
+join desc_order deo
+on ao.day = deo.day and ao.caller_id = deo.caller_id and ao.recipient_id = deo.recipient_id
+;
