@@ -128,14 +128,14 @@ def linear_regression_All(x_train, y_train, x_test, y_test,use_poly_l,use_ridge_
     else:
         x_train_use = x_train
         x_test_use = x_test
-    print ("Starting the training")
+    print("Starting the training")
     try:
-        print ('Fitting the model')
+        print('Fitting the model')
         model = lm.fit(x_train_use, y_train)
         print('Done fitting')
     except:
-        print ('There is an exception')
-        print model
+        print('There is an exception')
+        print(model)
     predictions = model.predict(x_test_use)
     error = mean_squared_error(y_test, predictions)
     print("Finished Training")
@@ -221,12 +221,12 @@ def mlp_regression_All(x_train, y_train, x_test, y_test,
     print ("the smallest prediction: " + str(min(predictions)))
     if np.nan in list(predictions):
         print("Found NaN values in the predictions")
-        print predictions
+        print(predictions)
     else:
         print("No Nans Found")
     if np.inf in list(predictions):
         print("Found Inf values in the predictions")
-        print predictions
+        print(predictions)
     else:
         print("No Infs found")
     error = mean_squared_error(y_test, predictions)
@@ -263,7 +263,7 @@ def TF_mlp_regression_All(x_train, y_train, x_test, y_test,
 def LGB_regression_All(x_train, y_train, x_test, y_test,num_leaves_loc = 150, max_depth_loc = 7,learning_rate_loc = 0.05,max_bin_loc = 200,num_round_loc=50):
     # https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
     train_data = lgb.Dataset(x_train, label=y_train)
-    print "Running LGB with max_depth: %s"%max_depth_loc
+    print("Running LGB with max_depth: %s"%max_depth_loc)
     param = {'num_leaves': num_leaves_loc,'max_depth': max_depth_loc,'learning_rate': learning_rate_loc,'max_bin': max_bin_loc,'objective': ['mse'], 'metric': ['mse']}
     num_round = num_round_loc
     model = lgb.train(param, train_data, num_round)
@@ -639,7 +639,7 @@ def ParseMLpipelineResults(FullPredsDict_l):
                 matchterms = [modparamnames[xx]+"_%s"%FullPredsDict_l['modelParameters'][modparamnames[xx]][inds[xx]] for xx in range(len(modparamnames))]
                 thiskey =[xx for xx in thesekeys if all([matchterms[zz] in xx for zz in range(len(matchterms))])]
                 if len(thiskey) > 1:
-                    print "Problem with too many matches"
+                    print("Problem with too many matches")
                 mmse[inds] = FullPredsDict_l['MSE_mean'][thiskey[0]]
                 smse[inds] = FullPredsDict_l['MSE_std'][thiskey[0]]
             FullPredsDict_l['ResultsByMethod_MLxFS_mean'][FullPredsDict_l['modtype']+"_NoFS"] = mmse
@@ -655,7 +655,7 @@ def ParseMLpipelineResults(FullPredsDict_l):
                               for xx in range(len(modparamnames))] +['NumFS_%s'%FSnums[inds[len(modparamnames)]]]
                     thiskey = [xx for xx in thesekeys if all([matchterms[zz] in xx for zz in range(len(matchterms))])]
                     if len(thiskey) > 1:
-                        print "Problem with too many matches"
+                        print("Problem with too many matches")
                     mmse[inds] = FullPredsDict_l['MSE_mean'][thiskey[0]]
                     smse[inds] = FullPredsDict_l['MSE_std'][thiskey[0]]
                 FullPredsDict_l['ResultsByMethod_MLxFS_mean'][FullPredsDict_l['modtype'] + "_" + fsm] = mmse

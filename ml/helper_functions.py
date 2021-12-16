@@ -2,8 +2,6 @@
 """
     This is an importable collection of functions that are used by other scripts in the repository.
     We are now following the convention that all function names are lowercase, underscore separated.
-
-    Refactored on Aug 7, 2018.  Matt Woods
 """
 import os
 import copy
@@ -212,14 +210,14 @@ def linear_regression_all(x_train, y_train, x_test, y_test, use_poly_l, use_ridg
     else:
         x_train_use = x_train
         x_test_use = x_test
-    print ("Starting the training")
+    print("Starting the training")
     try:
-        print ('Fitting the model')
+        print('Fitting the model')
         model = lm.fit(x_train_use, y_train)
         print('Done fitting')
     except:
-        print ('There is an exception')
-        print model
+        print('There is an exception')
+        print(model)
     predictions = model.predict(x_test_use)
     check_preds(predictions)
     error = mean_squared_error(y_test, predictions)

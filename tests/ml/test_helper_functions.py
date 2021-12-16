@@ -5,8 +5,8 @@ import random
 import sklearn
 import xgboost
 import unittest
-import StringIO
-from helper_functions import *
+from io import StringIO
+from ml.helper_functions import *
 from nose.tools import assert_dict_equal
 from sklearn.tree import DecisionTreeRegressor
 from pandas.util.testing import assert_frame_equal
