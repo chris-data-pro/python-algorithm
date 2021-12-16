@@ -31,7 +31,7 @@ heapreplace(heap, item)  # Pop and return the smallest item from the heap, and t
 '''
 
 
-class Solution:
+class SolutionCW:
     def my_func(self, input):
 
         return 10
@@ -302,6 +302,87 @@ class FBSolution:
         return
 
 
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+        self.left, self.right = None, None
+
+
+class SolutionG:
+
+    def make_horizontal_order(self, node):
+        if not node:
+            return []
+
+        res = {0: [node]}
+        level = 1
+
+        while res[level - 1]:
+            res[level] = []
+            for i in res[level - 1]:
+                if i.left:
+                    res[level].append(i.left)
+                if i.right:
+                    res[level].append(i.right)
+
+            level += 1
+
+        return [[x for x in y] for y in res.values() if y]   # [[node(1)], [node(2), node(3)], ....]
+
+
+    def make_ll(self, inputList):
+        if not inputList:
+            return []
+
+        ans = [inputList[0][0]]  # 第一个错 不是[]
+        for nodes in inputList:
+            for i in range(len(nodes) - 1):
+                if i == 0:  # 第二个错, 不是 i = 0
+                    ans.append(nodes[i])
+                nodes[i].next = nodes[i+1]
+
+        return ans
+
+
+    def make_horizontal_ll(self, node):
+        if not node:
+            return []
+
+        res = {0: [node]}
+        level = 1
+        ans = [node]  # 第一个错 不是[[node]]
+
+        while res[level - 1]:
+            res[level] = []
+
+            for i in res[level - 1]:
+
+                if i.left:
+                    if len(res[level]) == 0:
+                        res[level].append(i.left)
+                    else:
+                        res[level].append(i.left)  # 第二个错
+                        res[level][-1].next = i.left
+
+                    if len(res[level]) == 1:
+                        ans.append(res[level][0])
+
+                if i.right:
+                    if len(res[level]) == 0:
+                        res[level].append(i.right)
+                    else:
+                        res[level].append(i.right)  # 第二个错
+                        res[level][-1].next = i.right
+
+                    if len(res[level]) == 1:
+                        ans.append(res[level][0])
+
+            level += 1
+
+        return ans  # [head1, head2]
+
+
 if __name__ == '__main__':
     fbs = FBSolution()
     print(fbs.max_distance_o2g([['X', 'X', 'X', 'X', 'O', 'O', 'O', 'X', 'X', 'O'],
@@ -316,6 +397,25 @@ if __name__ == '__main__':
     print(fbs.max_distance_o2g([['O', 'O', 'O'],
                                 ['O', 'G', 'O'],
                                 ['O', 'O', 'O']]))  # expect 2
+
+    # root
+    #                  10
+    #                 /  \
+    #               -5   15
+    #                    / \
+    #                   6  20
+    gs = SolutionG()
+    root = Node(10)
+    root.left = Node(-5)
+    node_2 = Node(15)
+    root.right = node_2
+    node_2.left = Node(6)
+    node_2.right = Node(20)
+    il = gs.make_horizontal_order(root)
+    print(il)
+    print([[x.val, x.next.val if x.next else None] for x in gs.make_ll(il)])
+    res = gs.make_horizontal_ll(root)
+    print([[x.val, x.next.val if x.next else None] for x in res])
 
 
 
@@ -337,40 +437,40 @@ array = [5, -3, 9, 1]
 """
 
 
-class Soluition:
-
-    def quick_select(self, L, start, end, k):  # k 0-indexed
-        if start == end:
-            return start, L[start]
-
-        left, right = start, end
-        pivot = L[(start + end) // 2]
-
-        while left <= right:
-            while left <= right and L[left] < pivot:
-                left += 1
-            while left <= right and L[right] > pivot:
-                right -=1
-
-            if left <= right:
-                L[left], L[right] =  L[right], L[left]
-                left += 1
-                right -= 1
-
-        if start <= right and k <= right:
-            return self.quick_select(L, start, right, k)
-        if left <= end and k >= left:
-            return self.quick_select(L, left, end, k)
-
-        return L[k]
-
-
-    def kth_largest(self, array, k):
-        if not array or k <= 0:
-            return
-
-        res = self.quick_select(array, 0, len(array) - 1, len(array) - k)
-        return res
+# class Soluition:
+#
+#     def quick_select(self, L, start, end, k):  # k 0-indexed
+#         if start == end:
+#             return start, L[start]
+#
+#         left, right = start, end
+#         pivot = L[(start + end) // 2]
+#
+#         while left <= right:
+#             while left <= right and L[left] < pivot:
+#                 left += 1
+#             while left <= right and L[right] > pivot:
+#                 right -=1
+#
+#             if left <= right:
+#                 L[left], L[right] =  L[right], L[left]
+#                 left += 1
+#                 right -= 1
+#
+#         if start <= right and k <= right:
+#             return self.quick_select(L, start, right, k)
+#         if left <= end and k >= left:
+#             return self.quick_select(L, left, end, k)
+#
+#         return L[k]
+#
+#
+#     def kth_largest(self, array, k):
+#         if not array or k <= 0:
+#             return
+#
+#         res = self.quick_select(array, 0, len(array) - 1, len(array) - k)
+#         return res
 
 
 """
@@ -410,24 +510,24 @@ The probability to generate NY is 7/20, SF is 1/4.
 
 """
 
-input = {'NY': 7, 'SF': 5, 'LA': 8}
-input1 = []
-lv = []
-
-def random_city_name(input):
-    total = sum(input.values())
-    r = random.random()
-
-    lv = list(input.values())  # [5, 5, 8]
-    sum = 0
-    moving_sum = []
-    for v in lv:
-        sum += v
-        moving_sum.append(sum)  # [7, 12, 20]
-
-    for i in range(len(moving_sum) - 1):  # 0 to len(moving_sum) - 2
-        if r * total < moving_sum[i]:
-            return [item[0] for item in input.items() if item[1] == lv[i]][0]
+# input = {'NY': 7, 'SF': 5, 'LA': 8}
+# input1 = []
+# lv = []
+#
+# def random_city_name(input):
+#     total = sum(input.values())
+#     r = random.random()
+#
+#     lv = list(input.values())  # [5, 5, 8]
+#     sum = 0
+#     moving_sum = []
+#     for v in lv:
+#         sum += v
+#         moving_sum.append(sum)  # [7, 12, 20]
+#
+#     for i in range(len(moving_sum) - 1):  # 0 to len(moving_sum) - 2
+#         if r * total < moving_sum[i]:
+#             return [item[0] for item in input.items() if item[1] == lv[i]][0]
 
         # ith key-value from a dict
 
@@ -436,6 +536,560 @@ def random_city_name(input):
 # input = {'NY': 5, 'SF': 5, 'LA': 8}
 # [5, 10, 18]
 # r * total = 9
+
+
+# [E] Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each level. If the height of a binary search tree is k, we should have k linked lists.
+# 1
+# / \
+#     2        3
+# /  \    / \
+#     4   5  6   7
+# / \
+#     8
+#
+# 0= 1
+# 1= 2->3
+# 2= 4->5->6->7
+# 3=8
+#
+# class LinkedListNode:
+#     def __init__(self, val, next=None):
+#         self.val = val
+#         self.next = next
+#
+# class Solution:
+#
+#     def make_horizontal_order(self, node):
+#         if not node:
+#             return []
+#
+#         res = {0: [node]}
+#         level = 1
+#
+#         while res[level - 1]:
+#             res[level] = []
+#             for i in res[level - 1]:
+#                 if i.left:
+#                     res[level].append(i.left)
+#                 if i.right:
+#                     res[level].append(i.right)
+#
+#             level += 1
+#
+#         return [[x for x in y] for y in res.values() if y]   # [[node(1)], [node(2), node(3)], ....]
+#
+#
+#     def make_ll(self, inputList):
+#         if not inputList:
+#             return []
+#
+#         ans = []
+#         for nodes in inputList:
+#             for i in range(len(nodes) - 1):
+#                 if i = 0:
+#                     ans.append(nodes[i])
+#                 nodes[i].next = nodes[i+1]
+#
+#         return ans
+#
+#
+#
+# # O(n)
+#
+#
+#
+# class Solution2:
+#
+#     def make_horizontal_ll(self, node):
+#         if not node:
+#             return []
+#
+#         res = {0: [node]}
+#         level = 1
+#         ans = [[node]]
+#
+#         while res[level - 1]:
+#             res[level] = []
+#
+#             for i in res[level - 1]:
+#                 if i.left:
+#                     if len(res[level]) = 0:
+#                         res[level].append(i.left)
+#                     else:
+#                         res[level][-1].next = i.left
+#
+#                     if len(res[level]) = 1:
+#                         ans.append(res[level][0])
+#
+#                 if i.right:
+#                     if len(res[level]) = 0:
+#                         res[level].append(i.right)
+#                 else:
+#                     res[level][-1].next = i.right
+#
+#                 if len(res[level]) = 1:
+#                     ans.append(res[level][0])
+#
+#             level += 1
+#
+#         return ans  # [head1, head2]
+#
+#
+#
+# import unittest
+#
+# class Test
+#
+#
+# 1
+#
+#
+#
+# [E] Stack with max api
+#
+# from heapq import heappush, heappop
+#
+# class MaxStack:
+#     def __init__(self):
+#         self.stack = []
+#         self.count = 0
+#         self.heap = []
+#         self.popped_set = set()
+#
+#     def push(self, x):
+#         item = (-x, -self.count)
+#         self.stack.append(item)
+#         heappush(self.heap, item)
+#         self.count += 1
+#
+#     def _clear_popped_in_stack(self):
+#         while self.stack and self.stack[-1] in self.popped_set:
+#             self.popped_set.remove(self.stack[-1])
+#             self.stack.pop()
+#
+#     def _clear_popped_in_heap(self):
+#         while self.heap and self.heap[0] in self.popped_set:
+#             self.popped_set.remove(self.heap[0])
+#             self.stack.pop()
+#
+#
+#     def popMax(self):
+#         self._clear_popped_in_heap()
+#         item = heappop(self.heap)
+#         self.popped_set.add(item)
+#         return -item[0]
+#
+#
+#
+#     def max_stack(self, inputs):
+#         maxi = 0
+#         for input in inputs:
+#             if input > maxi:
+#                 maxi = input
+#             # maxi = max(maxi, input)
+#
+#         return maxi
+#
+#
+#     # O(N)
+#     # O(NlogN)
+
+
+# SQL Question: given 2 tables parents and children, provide the sql to give me all parents that have at least one male child and one female child
+#
+# select pname
+# from parents p
+# where parent_id in
+# (with mparents as (
+#  select parent_id, count(distinct child_id) as mct
+# from children
+#     where child_gender = 'male'
+# group by 1
+# having count(distinct child_id) > 0
+# ),
+# fparents as (
+#     select parent_id, count(distinct child_id) as fct
+# from children
+#     where child_gender = 'female'
+# group by 1
+# having count(distinct child_id) > 0
+# )
+# select l.parent_id
+# from mparents l inner join fparents r
+# on l.parent_id = r.parent_id
+# order by 1)
+# ;
+#
+# select pname
+# from parents p
+# where parent_id in
+# (
+#     select distinct parent_id
+# from children
+# where child_gender = 'male'
+# )
+# and parent_id in
+# (
+#     select parent_id
+# from children
+# where child_gender = 'female'
+# )
+# ;
+#
+#
+# select pname
+# from parents p
+# join (
+# select distinct parent_id
+# from children
+#     where child_gender = 'male'
+# ) a
+# on p.parent_id = a.parent_id
+# join
+# (
+# select distinct parent_id
+# from children
+# where child_gender = 'female'
+# ) b
+# on p.parent_id = b.parent_id
+# ;
+#
+# Python: Convert a sorted array into a binary search tree
+# Input:  Array {1, 2, 3}
+# Output: A Balanced BST
+# 2
+# / \
+#     1    3
+#
+# Input: Array {4, 5, 6, 7}
+# Output: A Balanced BST
+# 6
+# / \
+#     5    7
+# /
+# 4
+#
+#
+#
+# 5
+# / \
+#     4    6
+# \
+# 7
+#
+# class TreeNode:
+#     def __init__(self, val):
+#         self.val = val
+#         self.left, self.right = None, None
+#
+#
+# class Solution:
+#
+#     def array_2_bst(self, data):
+#         if len(data) == 1:
+#             return TreeNode(data[0])
+#
+#         mid = len(data) // 2
+#         root = TreeNode(data[mid])
+#
+#         root.left = self.array_2_bst(data[:mid])
+#
+#         root.right = self.array_2_bst(data[mid+1:])
+#
+#         return self.root
+#
+#
+#     def preorder_traverse(self, node):
+#         if not node:
+#             return []
+#
+#         res = []
+#         res.append(node.val)
+#         res += self.preorder_traverse(node.left)
+#         res += self.preorder_traverse(node.right)
+#
+#         return res
+#
+#
+#     def solution(self, array):
+#         if not array:
+#             return []
+#
+#         root = self.array_2_bst(array)
+#         return self.preorder_traverse(root)
+#
+#
+
+# Logs table:
+# +------------+
+# | log_id     |
+# +------------+
+# | 1          |
+# | 2          |
+# | 3          |
+# | 7          |
+# | 8          |
+# | 10         |
+# +------------+
+#
+# Result table:
+# +------------+--------------+
+# | start_id   | end_id       |
+# +------------+--------------+
+# | 1          | 3            |
+# | 7          | 8            |
+# | 10         | 10           |
+# +------------+--------------+
+# The result table should contain all ranges in table Logs.
+# From 1 to 3 is contained in the table.
+# From 4 to 6 is missing in the table
+# From 7 to 8 is contained in the table.
+# Number 9 is missing in the table.
+# Number 10 is contained in the table.
+#
+#
+# 1  1  0
+# 2  2  0
+# 3  3  0
+# 7  4  3
+# 8  5  3
+# 10 6  4
+#
+# select min(log_id) over (partition by flag) as start_id, max(log_id) over (partition by flag) as end_id
+# from
+# (select log_id, row_number() over (order by log_id) as rk, log_id - rk as flag
+# from Logs)
+# group by flag;
+#
+#
+# select distinct min(log_id) over (partition by flag) as start_id, max(log_id) over (partition by flag) as end_id
+# from
+# (select log_id, row_number() over (order by log_id) as rk, log_id - rk as flag
+# from development.logs)
+# group by flag, log_id;
+#
+# ---------------------
+#
+#
+# Taxi Company would like to design a data model to capture all critical data elements and capture some of the critical business questions.
+#
+# Example Quuestions:
+#
+# Track rides done by driver and their Performance
+# How many rides are happening to a common/famous destinations each day( Airports , Parks , Museums etc)
+# How many trips are cancelled per day.
+# How many rides and the average price during the peak hour per day.
+#
+#
+# create table rides (
+#     ride_id  int,
+#              start_time  datatime,
+#                          end_time    datetime,
+#                                      destination  varchar(100),
+#                                                   start        varchar(100)
+# );
+#
+# create table trips (
+#     trip_id  int,
+#              start_time  datatime,
+#                          end_time    datetime,
+#                                      status   boolean
+# );
+#
+# create table prices (
+#     ride_id   int,
+#               start_time  datatime,
+#                           end_time    datetime,
+#                                       price     float
+# );
+#
+#
+# ----------------------------------
+#
+# Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+#
+# Example 1:
+#
+# Input: nums = [0,1,0,3,12]
+# Output: [1,3,12,0,0]
+#
+#
+# class Solution:
+#     def move_0_to_end(self, nums):
+#         res = []
+#         cnt = 0
+#         for i in range(len(nums)):
+#             if nums[i] == 0:
+#                 cnt += 1
+#             else:
+#                 res.append(nums[i])
+#         res += [0] * cnt
+#         return res
+
+
+"""
+1. ask clarifying questions - gather requirements (scale, performance, APIs), documenting requirements right away
+   scale: how many DAU users? transactions per second? Queries per second (QPS) API supports 500 transactions/second?
+   functionalities: what functionalities do I need to implement?
+   
+2. translate requirements into application / system design
+3. start with requirement analysis
+4. propose meaningful functionalities / services
+5. UI front end (button invokes an API) - 
+   web server, APIs (how the data is gonna be served) representation / services (payment, order) - 
+   database schema data model (entities, key attributes, relationships, security)
+6. API: Domain/resource/{parameters} - 
+   Rest API uses HTTP requests to GET, POST, PUT (update) and DELETE data.
+   HTTP: a request-response protocol between a client and server. 
+   http request POST to insert，send data (JSON object) to server (RDS) to create/update
+   http request GET to request data from the server (RDS)
+   Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client.
+7. architecture - tradeoff
+8. audience / users - security (internal / external) - reliability (consistency of response) - 
+   recovery (crash in-between and restart from last) - monitoring / logging (at different APIs)
+9. ask for feedback - discuss options, pros and cons
+10. focus on customer satisfaction and user experience
+"""
+
+"""
+ 
+"""
+
+# Q: Process user activity events files, set up ingestion, build dataset that track logins (a specific type of event).
+#
+# Source: daily data dump from the service, contains events from the beginning of the previous day till a certain time in current day.
+# ```
+# user_activity_yyyy-mm-dd HH:MM:SS.csv
+# (event_time; user_id; event_type, event_details, result)
+# ```
+#
+# day  user how many events login?
+# time - day
+# group by 1, 2, count(distinct successful logins)
+#
+# df.coalesce(k).write("s3://pathtofoloder/ds=20211103/") 200GB
+#
+# 200MB per partition
+#
+# 200GB / 200MB = k
+#
+# parquet
+# json
+#
+# write
+# read
+#
+#
+#
+#
+# For the following input:
+# ```
+# Server StartDate EndDate
+# A 01/12/2020 5/20/2020
+# B 04/01/2020 10/10/2020
+# ...
+# Z 05/01/2020 12/11/2020
+# A1 99/02/2020 12/01/2020
+# A 11/12/2020 12/20/2020
+# ```
+#
+# write function to validate data and generate the monthly activity report, put records that failed validation into error list
+#
+# error_list (invalid file records)
+# ```
+# 'A1 99/02/2020 12/01/2020'
+# ```
+#
+# ```
+# monthly_report
+# Year_Month Active_Servers New_Active_Servers
+# 2020_01 1 1
+# 2020_02 1 0
+# ...
+# 2020_04 2 1
+# 2020_05 3 1
+# ```
+#
+#
+# def solution(input):
+#     errorList =  []
+#     tot = []
+#     for row in input:
+#         server = row['Server']
+#         start = row['StartDate']
+#         end = row['EndDate']
+#         start_month, end_month = start.split('/')[1], end.split('/')[1]
+#         start_year, end_year = start.split('/')[-1], end.split('/')[-1]
+#         if start_month < 1 or start_month > 12:
+#             errorList.append(row)
+#         if end_month < 1 or end_month > 12:
+#             errorList.append(row)
+#         if start_month in ('1', '3', '5', '7', '8' ...) and start_day > 31:
+#             errorList.append(row)
+#
+#         for month in range(int(start_month), int(end_month) + 1):
+#             tot.append(start_year + '_' + str(month))
+#     res = []
+#     for m in set(tot):
+#         Active_Servers = tot.count(m)
+#         Year_Month = m
+#         New_Active_Servers = tot.countFirst()
+#         res.append((Year_Month, Active_Servers, New_Active_Servers))
+#
+#     return res # array of tuples
+
+
+
+#
+# Lets say we have an HR system with lots of downstream data consumers. Everytime somebody changes their name, it needs to be reflected in these other systems. How would you design such integration?
+#
+# HR -> data - middleware -> upstream data source to downstream systems
+#
+#
+#
+#
+#
+# Data model
+#
+# Entities attributes
+#
+#
+#
+# employee
+#
+# employeeID, name, salary, modified_at
+#
+#
+#
+#
+# Name
+# John - johnny
+#
+# Ds System 1 resquest: ts, name, dob, address
+# Job will export df.select(ts, name, dob, address).filter(modified_at = ‘2021-11-14’).write(path)
+# Path s3://path/2021/11/14/data.json
+#
+# Run daily
+#
+# domain/resource/parameter
+#
+# ourHRsystem.com/v1/employee/1/modifiedAt=xxxx&modifiedAt=xxxx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
