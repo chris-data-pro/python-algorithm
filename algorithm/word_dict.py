@@ -13,6 +13,7 @@ class WordDict:
     
     Input: s = "lintcode", dict = ["lint", "code"]
     Output: True
+    
     (有多种可能使 word_break_dp(s, word_set) = True)
     Input："lintcode"，["de","ding","co","code","lint"]
     Output：True ( ["lint code", "lint co de"] )

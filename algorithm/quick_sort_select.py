@@ -169,8 +169,7 @@ class QuickSortSelect:
         return sorted(nums)[-k]
 
 
-if __name__ == '__main__':
-    qss = QuickSortSelect()
+
     print(qss.k_smallest([3, 10, 1000, -99, 4, 100], 3))  # expect [-99, 3, 4]
     L = [9, 3, 2, 6, 8]
     print(qss.quick_sort_return_new(L))

@@ -135,13 +135,14 @@ class BST:
     """
     convert all nodes in a bt into a list, left - root - right
     
+    Input: root of tree Node(27)
          27
         /  \
        14   35
       / \   / \ 
     10  19 31  42
     
-    [10, 14, 19, 27, 31, 35, 42]  如果是bst，inorder就是从小到大排序
+    Output: [10, 14, 19, 27, 31, 35, 42]  如果是bst，inorder就是从小到大排序
     """
     def inorder_traverse(self, node):
         if not node:
@@ -251,6 +252,39 @@ class BST:
             root = TreeNode(int(ch))
         root.left = self.deserialize_preorder(data)
         root.right = self.deserialize_preorder(data)
+        return root
+
+    """
+    deserialize inorder array without #
+    
+    Input: [4, 5, 6, 7]
+    
+    Output: tree root Node(6)
+           6
+          / \
+         5   7
+        /
+       4
+       
+           5
+          / \
+         4   6
+              \
+               7
+    """
+    def array_2_bst(self, data):
+        if not data:
+            return
+        if len(data) == 1:
+            return TreeNode(data[0])
+
+        mid = len(data) // 2
+        root = TreeNode(data[mid])
+
+        root.left = self.array_2_bst(data[:mid])
+
+        root.right = self.array_2_bst(data[mid+1:])
+
         return root
 
     """
@@ -915,7 +949,7 @@ class BST:
         if left_result:
             return left_result
 
-        # 右子树有一个点或者右子树有LCAs
+        # 右子树有一个点或者右子树有LCA
         if right_result:
             return right_result
 
@@ -1084,6 +1118,19 @@ if __name__ == '__main__':
 
     print(bst.node_distance_bfs(graph, root_4.left))
 
+    '''
+           6
+          / \
+         5   7
+        /
+       4
+    '''
+    # root_5 = TreeNode(6)
+    # root_5.left = TreeNode(5)
+
+    root_5 = bst.array_2_bst([1, 2, 3])
+    print(bst.inorder_traverse(root_5))
+    print(root_5.val, root_5.left.val, root_5.right.val)
 
 
 
