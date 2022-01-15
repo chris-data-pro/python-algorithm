@@ -315,14 +315,34 @@ INSERT INTO development.page_visits
 commit;
 
 
+-- this has rows with empty previous_month & previous_visits & percentage & p
 SELECT source,
-       CAST WHEN month < 10 THEN '0' || cast(month as varchar(1)) ELSE cast(month as varchar(2)) END as str_month,
-       cast(year as varchar(4)) || str_month as year_month,
+       CASE WHEN month < 10 THEN '0' || cast(month as varchar(1)) ELSE cast(month as varchar(2)) END as str_month,
+       cast(year as varchar(4)) || '-' || str_month as year_month,
        number_of_visits,
        lag(year_month, 1) over (partition by source order by year_month) as previous_month,
        lag(number_of_visits, 1) over (partition by source order by year_month) as previous_visits,
-       round((number_of_visits - previous_visits) / previous_visits::float * 100, 2) as percentage,
-       cast(percentage as varchar(4)) || '%' as percent
+       round((number_of_visits - previous_visits) / previous_visits::float * 100, 4) as percentage,
+       cast(percentage as varchar) || '%' as p
 FROM development.page_visits
+ORDER BY 1, 3
+
+
+-- or, no rows with empty previous_month & previous_visits & percentage & p
+SELECT c.source,
+       CASE WHEN c.month < 10 THEN '0' || cast(c.month as varchar(1)) ELSE cast(c.month as varchar(2)) END as current_str_month,
+       cast(c.year as varchar(4)) || '-' || current_str_month as year_month,
+       c.number_of_visits,
+       CASE WHEN p.month < 10 THEN '0' || cast(p.month as varchar(1)) ELSE cast(p.month as varchar(2)) END as previous_str_month,
+       cast(p.year as varchar(4)) || '-' || previous_str_month as previous_month,
+       p.number_of_visits as previous_visits,
+       round((c.number_of_visits - previous_visits) / previous_visits::float * 100, 4) as percentage,
+       (cast(percentage as varchar) || '%') as p
+FROM development.page_visits c
+JOIN development.page_visits p
+ON c.source = p.source AND
+   (c.year = p.year AND c.month = p.month + 1) OR
+   (c.year = p.year + 1 AND c.month = 1 AND p.month = 12)
+ORDER BY 1, 3
 
 
