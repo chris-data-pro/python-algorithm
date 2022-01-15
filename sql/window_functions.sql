@@ -94,7 +94,7 @@ QUALIFY LAG(ud.TOT_MTGS, 1) OVER (PARTITION BY ud.SUBSCRIPTION_ID ORDER BY ud.MO
 begin;
 create table development.inputs (
   employee_id  int
-	,name                        char(50)
+	,name                        varchar(50)
 	, annual_salary                   int
 	, manager_id                  int
 );
@@ -134,7 +134,7 @@ qualify rk = 2
 
 begin;
 create table development.page_visits (
-source char(50),
+source varchar(50),
 month int,
 year int,
 number_of_visits int

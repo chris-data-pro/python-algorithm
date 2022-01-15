@@ -14,3 +14,16 @@ Page            counts
 Product_Page        8
 Warranty_Page       8
 Home_Page           8
+
+
+-- this is a cross join and it's inefficient
+SELECT Customers.CustomerID, Customers.Name, Sales.LastSaleDate
+FROM Customers, Sales
+WHERE Customers.CustomerID = Sales.CustomerID
+
+
+-- instead, use inner join
+SELECT Customers.CustomerID, Customers.Name, Sales.LastSaleDate
+FROM Customers
+   INNER JOIN Sales
+   ON Customers.CustomerID = Sales.CustomerID

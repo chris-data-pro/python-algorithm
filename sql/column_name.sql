@@ -25,7 +25,7 @@ commit;
 
 begin;
 create table development.col_name_table (
-	column_name  char varying(50)
+	column_name  varchar(50)
 );
 commit;
 
