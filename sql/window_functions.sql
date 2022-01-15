@@ -92,7 +92,7 @@ QUALIFY LAG(ud.TOT_MTGS, 1) OVER (PARTITION BY ud.SUBSCRIPTION_ID ORDER BY ud.MO
 --Codelity 1
 --------------
 begin;
-create table development.inputs (
+create table development.salary (
   employee_id  int
 	,name                        varchar(50)
 	, annual_salary                   int
@@ -122,7 +122,7 @@ commit;
 
 -- given the above table, manager_id = NULL means this row is the manager.
 -- return the 2nd largest annual_salary row for each team
-SELECT employee_id, name, annual_salary, manager_id, NVL(manager_id, id) as team,
+SELECT employee_id, name, annual_salary, manager_id, NVL(manager_id, employee_id) as team,
        dense_rank() over (partition by team order by annual_salary DESC) as rk
 FROM development.salary
 qualify rk = 2
