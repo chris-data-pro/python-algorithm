@@ -1,3 +1,11 @@
+select
+parent_id, parent_name,
+row_number() over (order by parent_id, parent_name) as row_number, -- 1,2,3,4,...
+rank() over (order by parent_id, parent_name) as rank, -- 1,1,3,4,5,5,5,8,9,...
+dense_rank() over (order by parent_id, parent_name) as dense_rank -- 1,1,2,3,4,4,4,5,6,...
+from development.parents
+order by 1;
+
 -----------------------------------------
 -- assignment
 -----------------------------------------

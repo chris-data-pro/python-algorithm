@@ -7,3 +7,5 @@ WHERE EXISTS (SELECT NULL)
 ORDER BY Name ASC ;
 
 
+SELECT * FROM development.children a WHERE EXISTS (
+SELECT 1/0 FROM development.parents b WHERE a.parent_id = b.parent_id)

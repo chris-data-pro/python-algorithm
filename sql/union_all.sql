@@ -26,7 +26,7 @@ commit;
 
 --SELECT * FROM development.input_table;
 
--- Use UNION ALL instead of UNION
+-- Use UNION ALL (no dedup) instead of UNION (UNION does a dedup at the last step before returning)
 SELECT 'Home_Page' AS Page, SUM(Home_Page) AS sums, COUNT(*) AS counts
 FROM development.input_table
 UNION ALL

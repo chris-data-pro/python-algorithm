@@ -13,6 +13,7 @@ Chris
 select 1 from tableA WHERE false
 -- returns 0 row
 
+select 1 from development.parents where true
 select 1 from tableA WHERE true -- every row will be selected first, and then select 1 from each row
 -- returns
 

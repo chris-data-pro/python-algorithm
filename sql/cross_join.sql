@@ -17,6 +17,9 @@ Home_Page           8
 
 
 -- this is a cross join and it's inefficient
+select * from development.children, development.parents;
+
+
 SELECT Customers.CustomerID, Customers.Name, Sales.LastSaleDate
 FROM Customers, Sales
 WHERE Customers.CustomerID = Sales.CustomerID
