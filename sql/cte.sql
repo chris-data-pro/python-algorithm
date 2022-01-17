@@ -1,4 +1,16 @@
 -- common table expression
+begin;
+DROP TABLE IF EXISTS development.order_table;
+commit;
+
+begin;
+create table development.order_table (
+	order_id                   char varying(5)
+	, item                     char varying(5)
+	, qty                      int
+);
+commit;
+
 SELECT * FROM development.order_table;
 
 begin;
