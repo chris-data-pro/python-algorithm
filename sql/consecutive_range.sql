@@ -1,3 +1,4 @@
+--n consecutive， n is a constant
 begin;
 drop table IF EXISTS development.participation;
 commit;
@@ -29,7 +30,6 @@ commit;
 SELECT * FROM development.participation
 
 --Show only the Names in the table where the users have participated for 3 consecutive years or more
-
 SELECT name,
        LAG(year, 2) OVER (PARTITION BY name ORDER BY year) as year_lag2,
        LAG(year, 1) OVER (PARTITION BY name ORDER BY year) as year_lag1,
@@ -60,6 +60,18 @@ JOIN development.participation l1
 ON c.name = l1.name AND c.year = l1.year + 1
 JOIN development.participation l2
 ON c.name = l2.name AND c.year = l2.year + 2
+
+
+--or generic way
+select name, flag, count(*) as ct
+from
+(SELECT name,
+       year,
+       row_number() over (partition by name order by year) as rn,
+       year - rn as flag
+FROM development.participation)
+group by name, flag
+having ct >= 3
 
 
 --# Logs table:
@@ -97,6 +109,8 @@ ON c.name = l2.name AND c.year = l2.year + 2
 --# 8  5  3
 --# 10 6  4
 
+
+-- x consecutive
 select distinct min(log_id) over (partition by flag) as start_id, max(log_id) over (partition by flag) as end_id
 from
 (select log_id, row_number() over (order by log_id) as rk, log_id - rk as flag
@@ -112,7 +126,7 @@ group by flag
 order by 1;
 
 
--- with group_id
+-- x consecutive with group_id
 begin;
 drop table IF EXISTS development.logs;
 commit;
@@ -167,3 +181,111 @@ order by 1,2
 --A         8   9
 --B        11   11
 --C         1   3
+
+
+
+-- 找到所有team的连胜场次
+begin;
+drop table IF EXISTS development.games;
+commit;
+
+begin;
+CREATE TABLE development.games (
+   home_team varchar(1),
+   home_score int,
+   away_team varchar(1),
+   away_score int,
+   game_date date
+);
+commit;
+
+begin;
+INSERT INTO development.games VALUES
+('A', 3, 'B', 2, date('2021-08-01')),
+('C', 0, 'D', 0, date('2021-08-02')),
+('A', 3, 'D', 1, date('2021-08-12')),
+('C', 1, 'B', 2, date('2021-08-12')),
+('A', 0, 'C', 2, date('2021-08-22')),
+('B', 4, 'D', 1, date('2021-08-23')),
+('B', 0, 'A', 5, date('2021-09-01')),
+('D', 0, 'C', 3, date('2021-09-02')),
+('D', 0, 'A', 1, date('2021-09-12')),
+('B', 0, 'C', 2, date('2021-09-12')),
+('C', 0, 'A', 1, date('2021-09-22')),
+('D', 2, 'B', 2, date('2021-09-23'));
+commit;
+
+
+SELECT * FROM development.games;
+
+
+with wins AS (
+SELECT home_team as team, home_score > away_score AS win, CAST(game_date AS VARCHAR) as game_date
+FROM development.games
+UNION ALL
+SELECT away_team as team, home_score < away_score AS win, CAST(game_date AS VARCHAR) as game_date
+FROM development.games),
+ranks AS (
+select team, win, rank() OVER (PARTITION BY team ORDER BY game_date) AS round
+from wins),
+flags AS (
+SELECT team, round - row_number() over (partition by team order by round) as flag
+FROM ranks
+where win)
+select team, count(*)
+from flags
+GROUP by team, flag
+
+
+--team count
+--A     2
+--A     3
+--B     2
+--C     3
+
+
+--or create a mid table
+begin;
+
+CREATE TABLE development.team_logs AS
+with results AS (
+SELECT home_team as team,
+       CASE WHEN home_score > away_score THEN 'win' WHEN home_score < away_score THEN 'lose' ELSE 'draw' END AS result,
+       CAST(game_date AS VARCHAR) as game_date
+FROM development.games
+UNION ALL
+SELECT away_team as team,
+       CASE WHEN home_score < away_score THEN 'win' WHEN home_score > away_score THEN 'lose' ELSE 'draw' END AS result,
+       CAST(game_date AS VARCHAR) as game_date
+FROM development.games)
+select team, result, game_date, rank() OVER (PARTITION BY team ORDER BY game_date) AS round
+from results;
+
+commit;
+
+SELECT * FROM development.team_logs
+
+-- 找出有过3连胜的team
+select team, listagg(result, '-') within group (order by game_date) as all_results
+from development.team_logs
+group by 1
+having all_results like '%win-win-win%'
+
+--team         all_results
+--B   lose-win-win-lose-lose-draw
+--C   draw-lose-win-win-win-lose
+--D   draw-lose-lose-lose-lose-draw
+--A   win-win-lose-win-win-win
+
+--or
+
+WITH flags AS (
+SELECT team, round - row_number() over (partition by team order by round) as flag
+FROM development.team_logs
+where win)
+select team
+from flags
+GROUP by team, flag
+HAVING count(*) >= 3
+
+
