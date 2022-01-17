@@ -51,7 +51,8 @@ INSERT INTO development.games VALUES
 commit;
 
 
-SELECT EXTRACT(YEAR FROM game_date), EXTRACT(MONTH FROM game_date), EXTRACT(DAY FROM game_date),
+SELECT game_date，date(game_date + interval '1 day') as next_date,
+       EXTRACT(YEAR FROM game_date), EXTRACT(MONTH FROM game_date), EXTRACT(DAY FROM game_date),
        EXTRACT(DOW FROM game_date), EXTRACT(DOY FROM game_date), EXTRACT(QUARTER FROM game_date)
 FROM development.games;
 

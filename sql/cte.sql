@@ -21,24 +21,64 @@ INSERT INTO development.order_table
 ('O3', 'A3', 3);
 commit;
 
+WITH RECURSIVE RCTE (ORDER_ID, ITEM, QTY, EXPLODEROWS) AS
+( SELECT ORDER_ID, ITEM, QTY, 1 FROM development.order_table  -- EXPLODEROWS 1只是initialize第一行
+  UNION ALL
+  SELECT ORDER_ID, ITEM, QTY, EXPLODEROWS + 1 FROM RCTE WHERE EXPLODEROWS < QTY)  -- 第二行：1+1=2 where 1 < 5, ... 第五行：4+1=5 where 4 < 5
+SELECT *
+FROM RCTE
+ORDER BY ORDER_ID;
+
+--ORDER_ID ITEM QTY EXPLODEROWS
+--O1        A1   5         1
+--O1        A1   5         2
+--O1        A1   5         3
+--O1        A1   5         4
+--O1        A1   5         5
+--O2        A2   1         1
+--O3        A3   3         1
+--O3        A3   3         2
+--O3        A3   3         3
+
 
 WITH RECURSIVE RCTE (ORDER_ID,ITEM,QTY,EXPLODEROWS) AS
-( SELECT ORDER_ID,ITEM,QTY, 1 FROM development.order_table
+( SELECT ORDER_ID, ITEM, QTY, 1 FROM development.order_table  -- EXPLODEROWS 1只是initialize第一行
   UNION ALL
-  SELECT ORDER_ID,ITEM,QTY,EXPLODEROWS + 1 FROM RCTE WHERE EXPLODEROWS < QTY)
-SELECT ORDER_ID , ITEM , 1 AS  CNT FROM RCTE
+  SELECT ORDER_ID, ITEM, QTY, EXPLODEROWS + 1 FROM RCTE WHERE EXPLODEROWS < QTY)  --O2没有第二行：1+1=2 where 1 < 1不成立
+SELECT ORDER_ID , ITEM , 1 AS CNT
+FROM RCTE
 ORDER BY ORDER_ID;
+
+--ORDER_ID ITEM CNT
+--O1        A1   1
+--O1        A1   1
+--O1        A1   1
+--O1        A1   1
+--O1        A1   1
+--O2        A2   1
+--O3        A3   1
+--O3        A3   1
+--O3        A3   1
+
 
 -- common table expression
 WITH RECURSIVE cte (n) AS
 (
   SELECT 1
   UNION ALL
-  SELECT n + 1 FROM cte WHERE n < 5  -- limit 4
+  SELECT n + 1 FROM cte WHERE n < 5  -- limit 4 最大到4
 )
 SELECT * FROM cte;
 
+--n
+--1
+--2
+--3
+--4
+--5
 
+
+-- x是从0开始的fibonacci数列，y是从1开始的fibonacci数列
 with recursive base (x, y) as
 (
 select 0, 1
@@ -48,6 +88,7 @@ select y, x + y from base where y < 20
 select * from base;
 
 
+--求 从0开始的fibonacci数列 里的第50个数
 WITH RECURSIVE fibonacci (n, fib_n, next_fib_n) AS
 (
   SELECT cast(1 as int), cast(0 as BIGINT), cast(1 as BIGINT)
@@ -67,14 +108,26 @@ WITH RECURSIVE cte (n, str) AS
 )
 SELECT * FROM cte;
 
+--n  str
+--1  abc
+--2  abcabc
+--3  abcabcabcabc
+
 
 WITH RECURSIVE cte (n, p, q) AS
 (
   SELECT 1 AS n, 1 AS p, -1 AS q
   UNION ALL
-  SELECT n + 1, q * 2, p * 2 FROM cte WHERE n < 5
+  SELECT n + 1, q * 2, p * 2 FROM cte WHERE n < 5  -- 每次recursive都从上一行取
 )
 SELECT * FROM cte;
+
+--n   p  q
+--1   1  -1
+--2  -2  2
+--3   4  -4
+--4  -8  8
+--5  16  -16
 
 
 begin;
@@ -113,6 +166,16 @@ select b.sale_date, isnull(sum(st.price), 0) as sum_price
 from base b left join development.sales_table st on b.sale_date = st.sale_date
 group by 1
 order by 1;
+
+--sale_date   sum_price
+--2017-01-03    300.0
+--2017-01-04    0.0
+--2017-01-05    0.0
+--2017-01-06    50.0
+--2017-01-07    0.0
+--2017-01-08    180.0
+--2017-01-09    0.0
+--2017-01-10    30.0
 
 
 begin;
@@ -153,3 +216,13 @@ WITH RECURSIVE employee_paths (id, name, path) AS
       ON ep.id = e.manager_id
 )
 SELECT * FROM employee_paths;
+
+
+--id     name       path
+--333    Yasmina    333
+--692    Tarek      333,692
+--198    John       333,198
+--123    Adil       333,692,123
+--29     Pedro      333,198,29
+--72     Pierre     333,198,29,72
+--4610   Sarah      333,198,29,4610
