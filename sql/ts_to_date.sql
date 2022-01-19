@@ -29,6 +29,13 @@ SELECT datefromparts(2020, 07, 25), datefromparts('2020', '07', '25'), '2021-01-
 SELECT '2021-01-31'::date, date('2021-01-31')
 
 
+-- timestamp to double to str to date
+SELECT CONVERT(datetime, '2015-11-30 02:35:00') as ts,
+       date_part('year', ts) as y, date_part('month', ts) as m, date_part('day', ts) as d,
+       y::varchar||'-'||(CASE WHEN m < 10 THEN '0'||m::varchar ELSE m::varchar END)||'-'||d::varchar as d_str,
+       d_str::date, date(d_str)
+
+
 begin;
 drop table IF EXISTS development.games;
 commit;
