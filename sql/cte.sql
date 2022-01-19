@@ -226,3 +226,56 @@ SELECT * FROM employee_paths;
 --29     Pedro      333,198,29
 --72     Pierre     333,198,29,72
 --4610   Sarah      333,198,29,4610
+
+
+-- 如果只看一层的team
+-- 1) identify managers (name, not id) with the biggest team size
+begin;
+DROP TABLE IF EXISTS development.employee;
+commit;
+
+begin;
+create table development.employee (
+  emp_id         INT PRIMARY KEY NOT NULL,
+  emp_name       VARCHAR(100) NOT NULL,
+  manager_id INT NULL
+);
+commit;
+
+SELECT * FROM development.employee;
+
+begin;
+INSERT INTO development.employee
+(emp_id, emp_name, manager_id) VALUES
+(101, 'John', 104),
+(102, 'Mary', 104),
+(103, 'Smith', 104),
+(104, 'Bill', 105),
+(105, 'Kelly', 106),
+(106, 'Will', null);
+commit;
+
+
+select m.emp_id, m.emp_name, count(*) as ct
+from development.employee m
+join development.employee e
+  on m.emp_id = e.manager_id
+group by 1, 2
+order by ct desc
+limit 1
+
+
+--or
+select a.emp_name
+from
+(
+SELECT foo.emp_name, rank() over (order by ct desc) as rk
+from
+(select a.emp_name, count(distinct b.emp_id) as ct
+from development.employee a
+join development.employee b
+  on a.emp_id = b.manager_id
+group by 1) foo
+) a
+where a.rk = 1;
+

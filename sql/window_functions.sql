@@ -84,7 +84,7 @@ SELECT site_name,
        TOT_MTGS as current_tot
 FROM "COLLAB_DB"."COLLAB_DS2_CSSTG"."PM_WBX_SITE_USAGE_MLY_WITH_PREDICTIVE_FEATURES"
 WHERE site_name = 'uson'
-QUALIFY current_tot > last_tot  -- window function can only be outside SELECT, QUALIFY or ORDER BY clauses
+QUALIFY current_tot > last_tot  -- window function can only be inside SELECT, QUALIFY or ORDER BY clauses
 
 
 --5) Show the subscriptions with decrease in TOTAL_MEETINGS from previous month to current month

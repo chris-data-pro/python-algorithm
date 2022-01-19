@@ -186,13 +186,13 @@ commit;
 
 
 
--- sum without group by
+
 begin;
-DROP TABLE IF EXISTS development.older_table;
+DROP TABLE IF EXISTS development.product_sales;
 commit;
 
 begin;
-create table development.older_table (
+create table development.product_sales (
 	order_day                        char varying(50)
 	, order_id                       char varying(5)
 	, product_id                     char varying(5)
@@ -201,10 +201,10 @@ create table development.older_table (
 );
 commit;
 
-SELECT * FROM development.older_table;
+SELECT * FROM development.product_sales;
 
 begin;
-INSERT INTO development.older_table
+INSERT INTO development.product_sales
 (order_day, order_id, product_id, quantity, price) VALUES
 ('01-JUL-2011', 'O1', 'P1', 5, 5),
 ('01-JUL-2011', 'O2', 'P2', 2, 10),
@@ -219,12 +219,14 @@ INSERT INTO development.older_table
 commit;
 
 
+-- sum without group by
+--find orders with quantity, plus the total quantity sold for the day
 select
 order_day,
 order_id,
 quantity,
 sum(quantity) over (partition by order_day) as total_quantity
-from development.older_table
+from development.product_sales
 order by 1;
 
 --01-JUL-2011	O1	5	37
@@ -237,3 +239,81 @@ order by 1;
 --02-JUL-2011	O7	2	20
 --02-JUL-2011	O8	1	20
 --02-JUL-2011	O9	2	20
+
+
+--with group by
+--get all products that got sold both the days, and the number of times sold
+SELECT product_id, COUNT(order_id) as time_sold
+FROM development.product_sales
+GROUP BY 1
+HAVING COUNT(DISTINCT order_day) > 1
+
+--or
+
+select product_id, count(distinct order_id) as time_sold
+from development.product_sales
+where product_id in (
+select distinct d1.product_id --, d1.order_id as day1order, d1.order_day as day1, d2.order_id as day2order, d2.order_day as day2
+from development.product_sales d1
+join development.product_sales d2
+on d1.product_id = d2.product_id
+and d1.order_day = '01-JUL-2011'
+and d2.order_day = '02-JUL-2011'
+)
+group by 1;
+
+
+--product_id  time_sold
+--P1              3
+--P2              2
+--P3              2
+
+
+-- 3) get a list of customers (cust_id) who have placed less than 2 orders or have ordered for less than $100
+begin;
+DROP TABLE IF EXISTS development.orders;
+commit;
+
+begin;
+create table development.orders (
+  order_id                        int,
+  cust_id                         int,
+  order_date                      date,
+  product                         VARCHAR(20),
+  order_amount                    int
+
+);
+commit;
+
+SELECT * FROM development.orders;
+
+begin;
+INSERT INTO development.orders
+(order_id, cust_id, order_date, product, order_amount) VALUES
+(50001, 101, date('2015-08-29'), 'Camera', 100),
+(50002, 102, date('2015-08-30'), 'Shoes', 90),
+(50003, 103, date('2015-05-31'), 'Laptop', 400),
+(50004, 101, date('2015-08-29'), 'Mobile', 100),
+(50005, 104, date('2015-08-29'), 'FrozenMeals', 30),
+(50006, 104, date('2015-08-30'), 'Cloths', 65);
+commit;
+
+
+--select foo.cust_id
+--FROM
+--(
+--select cust_id, count(distinct order_id) as no_orders, sum(order_amount) as total_amt
+--from development.orders
+--group by 1
+--HAVING count(distinct order_id) < 2 or sum(order_amount) < 100
+--) foo
+--order by 1;
+
+
+select cust_id
+from development.orders
+group by 1
+HAVING count(distinct order_id) < 2 or sum(order_amount) < 100
+order by 1;
+
+
