@@ -30,7 +30,7 @@ WHERE EXISTS (SELECT 1/0
               WHERE o.supplier_id = s.supplier_id)
 
 -- will scan each row in s, treat this row's s.supplier_id as a constant, then run the subquery
--- if table o has at lease 1 supplier_id equals to this constant, the subquery returns true then return the row scanned
+-- if table o has at lease 1 supplier_id equals to this constant, the subquery returns true then return the row in s scanned
 
 
 SELECT *
@@ -40,4 +40,4 @@ WHERE NOT EXISTS (SELECT 1/0
                   WHERE o.supplier_id = s.supplier_id)
 
 -- 扫描s里的每一行，把当前行的s.supplier_id看作一个常量，放到subquery里run
--- 如果table o里找不到任何一个supplier_id等于这个常量，subquery返回false，打印当前行
+-- 如果table o里找不到任何一个supplier_id等于这个常量，subquery返回false，不打印当前行，否则打印s里的当前这一行

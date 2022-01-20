@@ -1,3 +1,64 @@
+"""
+1. ask clarifying questions - gather requirements (scale, performance, APIs), documenting requirements right away
+   scale: how many DAU users? transactions per second? Queries per second (QPS) API supports 500 transactions/second?
+   functionalities: what functionalities do I need to implement?
+
+2. translate requirements into application / system design
+
+3. start with requirement analysis
+
+4. propose meaningful functionalities / services
+
+5. UI front end (button invokes an API) -
+   web server, APIs (how the data is gonna be served) representation / services (payment, order) -
+   database schema data model (entities, key attributes, relationships, security)
+
+6. API: Domain/resource/{parameters} -
+   Rest API uses HTTP requests to GET, POST, PUT (update) and DELETE data.
+   HTTP: a request-response protocol between a client and server.
+   http request POST to insert，send data (JSON object) to server (RDS) to create/update
+   http request GET to request data from the server (RDS)
+   Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client.
+
+7. architecture - tradeoff
+
+8. audience / users - security (internal / external) - reliability (consistency of response) -
+   recovery (crash in-between and restart from last) - monitoring / logging (at different APIs)
+
+9. ask for feedback - discuss options, pros and cons
+
+10. focus on customer satisfaction and user experience
+"""
+
+
+"""
+Data Schema:
+
+I tend to lean towards a Relational Databases for most of this type of problems. Reasonably speaking you could probably 
+go into more of a no sql types of solution. But just more of my expertise lies in the relational DB side. So presumably 
+like some type of PostgresSQL, or MySQL is what we'll be working with here. So I'll be designing the data schema with 
+that sort of perspective in mind.
+
+id, primary key, serial that way it can increment as you add more and more. that's totally reasonable
+presumably we're going to make a table down the line with this column. so we call it foreign key...
+I think it's pretty reasonable to add ...
+
+cool that seems pretty reasonable for a xxx table. Obviously we could end up adding, like user_id or such kind of fields
+but like for now this is the important part. I think this is good to start with
+
+For now I'm gonna call this a enum. There's sort of a trade-off there, when you end up adding enums. Particularly in 
+like a Relational DB, just simply because so it's more performant because you have all the benefits sort of being int
+but the trade off is there's some flexibility issues down the line. I know in PostgreSQL specifically when you add enum
+you can never remove it, like you can never remove the type afterwards. So that's like sth. to consider when you end up
+choosing enum. I think for this specific case, like compact, regular and large, I don't those are things that like ever 
+gonna be like totally out of phase in a parking garage type of system. so I think it's totally reasonable to have enum 
+here. But like I mentioned before I don't think we're gonna run into issues of scale here, it'll be totally reasonable 
+to be like just varchar as well, for like flexibility and then sort of have that vetting on the application layer side
+
+So yeah, I think that probably covers our requirements here. I mean obviously I can add more as we go through the 
+problem but for now does that seem like a reasonable data model?
+"""
+
 import random
 import unittest
 from itertools import combinations, permutations
