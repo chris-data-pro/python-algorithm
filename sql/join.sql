@@ -315,3 +315,43 @@ from (select distinct snapshot_day, customer_id from development.customer_orders
 group by 1;
 
 
+--self join
+begin;
+DROP TABLE IF EXISTS development.scores;
+commit;
+
+begin;
+create table development.scores (
+  id         INT PRIMARY KEY NOT NULL,
+  student       VARCHAR(100) NOT NULL,
+  score     INT NULL
+);
+commit;
+
+
+begin;
+INSERT INTO development.scores
+(id, student, score) VALUES
+(1, 'Jack', 1700),
+(2, 'Alice', 2010),
+(3, 'Miles', 2200),
+(4, 'Scott', 2100);
+commit;
+
+SELECT * FROM development.scores;
+
+
+SELECT s.student as one_student, l.student as other_student,
+       CASE WHEN s.score > l.score THEN s.score - l.score ELSE l.score - s.score END as score_diff
+FROM development.scores s JOIN development.scores l ON s.id < l.id
+ORDER BY 3, 1, 2
+
+
+--one_student other_student score_diff
+--Alice           Scott       90
+--Miles           Scott       100
+--Alice           Miles       190
+--Jack            Alice       310
+--Jack            Scott       400
+--Jack            Miles       500
+
