@@ -39,6 +39,14 @@ go into more of a no sql types of solution. But just more of my expertise lies i
 like some type of PostgresSQL, or MySQL is what we'll be working with here. So I'll be designing the data schema with 
 that sort of perspective in mind.
 
+?
+Four-Step Dimensional Design Process:
+1. Select the Business Process - clarify the question / requirement itself
+2. Declare the Grain (“How do you describe a single row in the fact table?”)
+3. Identify Dimensions (“How do business people describe the data resulting from the business process measurement 
+   events?”) “who, what, where, when, why, and how” associated with the event.
+4. Identify Facts
+
 id, PK, primary key, serial that way it can increment as you add more and more. that's totally reasonable
 FK, presumably we're going to make a table down the line with this column. so we call it foreign key...
 I think it's pretty reasonable to add ...
