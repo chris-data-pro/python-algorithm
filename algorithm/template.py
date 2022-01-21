@@ -39,24 +39,80 @@ go into more of a no sql types of solution. But just more of my expertise lies i
 like some type of PostgresSQL, or MySQL is what we'll be working with here. So I'll be designing the data schema with 
 that sort of perspective in mind.
 
-id, primary key, serial that way it can increment as you add more and more. that's totally reasonable
-presumably we're going to make a table down the line with this column. so we call it foreign key...
+id, PK, primary key, serial that way it can increment as you add more and more. that's totally reasonable
+FK, presumably we're going to make a table down the line with this column. so we call it foreign key...
 I think it's pretty reasonable to add ...
 
 cool that seems pretty reasonable for a xxx table. Obviously we could end up adding, like user_id or such kind of fields
 but like for now this is the important part. I think this is good to start with
 
-For now I'm gonna call this a enum. There's sort of a trade-off there, when you end up adding enums. Particularly in 
-like a Relational DB, just simply because so it's more performant because you have all the benefits sort of being int
+?
+For now I'm gonna call this a enum. There's sort of a TRADE_OFF there, when you end up adding enums. Particularly in 
+like a Relational DB, just simply because it's more performant since you have all the benefits sort of being int
 but the trade off is there's some flexibility issues down the line. I know in PostgreSQL specifically when you add enum
 you can never remove it, like you can never remove the type afterwards. So that's like sth. to consider when you end up
-choosing enum. I think for this specific case, like compact, regular and large, I don't those are things that like ever 
-gonna be like totally out of phase in a parking garage type of system. so I think it's totally reasonable to have enum 
-here. But like I mentioned before I don't think we're gonna run into issues of scale here, it'll be totally reasonable 
-to be like just varchar as well, for like flexibility and then sort of have that vetting on the application layer side
+choosing enum. I think for this specific case, like (compact, regular and large) I don't think those are things that 
+like gonna be totally out of phase in a (parking garage) type of system. so I think it's totally reasonable to have enum 
+here. (But like I mentioned before I don't think we're gonna run into issues of scale here, it'll be totally reasonable 
+to be like just varchar as well, for like flexibility and then sort of have that vetting on the application layer side)
 
 So yeah, I think that probably covers our requirements here. I mean obviously I can add more as we go through the 
 problem but for now does that seem like a reasonable data model?
+"""
+
+"""
+Next I wanna very briefly talk about The end to end data lifecycle. Obviously we already created the schema
+
+Ingest: Actually the 1st stage in the data lifecycle, is ingest, or to pull in the raw data. such as streaming data 
+        from devices, on-premises batch data, app logs, or mobile-app user events. Here in this particular example,
+        I think it's reasonable to assume that ...
+        
+        (There are a number of ways to collect raw data, based on the data’s size, source, and latency)
+        1. App: Data from app events, such as log files or user events, is typically collected in a PUSH model, where 
+                the app calls an API to send the data to storage. 
+                I know, When you host your apps on Google Cloud, you gain access to built-in tools to send your 
+                data to Google Cloud’s ecosystem of data management services.
+                for example: Writing data to a database: our app writes data to one of the databases that Google Cloud 
+                provides, such as the managed MySQL of Cloud SQL (or the NoSQL databases provided by Datastore and Cloud 
+                Bigtable.)
+        
+        ?        
+        2. Streaming: The data consists of a continuous stream of small, asynchronous messages.
+        3. Batch: Large amounts of data are stored in a set of files that are transferred to storage in bulk.
+                  Bulk data consists of large datasets where ingestion requires high aggregate bandwidth between a small 
+                  number of sources and the target. The data could be stored in files, such as CSV, JSON, or 
+                  Parquet files, or in other relational or NoSQL database. 
+                  The source data could be located on-premises or on other cloud platforms.
+                  (For example: Moving data stored in an on-premises Oracle database to a fully managed Cloud SQL 
+                               database using Informatica.)
+
+Store: After the data has been retrieved, it needs to be stored in a format that is durable and can be easily accessed.
+       We're talking about Storage like RDBMS, that you can use to store your relational data, 
+       or NoSQL for non-relational data.
+       
+       For example, Cloud SQL is appropriate for typical (online transaction processing) OLTP workloads. such as
+       1. Financial transactions: Storing financial transactions requires ACID database semantics, and data is often 
+                                  spread across multiple tables, so complex transaction support is required.
+       2. User credentials: Storing passwords or other secure data requires complex field support and enforcement along 
+                            with schema validation.
+       3. Customer orders: Orders or invoices typically include highly normalized relational data and multi-table 
+                           transaction support when capturing inventory changes.
+
+       ?
+       Cloud SQL is not an appropriate storage system for (online analytical processing) OLAP workloads or data that 
+       requires dynamic schemas on a per-object basis. (If your workload requires dynamic schemas, consider Datastore. 
+       For OLAP workloads, consider BigQuery. If your workload requires wide-column schemas, consider Bigtable.)
+
+Process and analyze: In this stage, the data is transformed from raw form into actionable information. Here presumably
+                     we already have the data processed into the tables above. And then the analyze or querying, which I 
+                     guess we will cover by actually doing it next.
+                     
+Explore and visualize: The final stage is to convert the results of the analysis into a format that is easy to draw 
+                       INSIGHTS from and to share with colleagues and peers. This is using the SQL output results for 
+                       some data science/visualization work. Hopefully the SQL I write next will be good enough for 
+                       these purposes.
+                    
+Ok that's all I wanna cover for end to end data lifecycle. Let's move on ...
 """
 
 import random
