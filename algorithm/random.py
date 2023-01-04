@@ -5,4 +5,4 @@ if __name__ == '__main__':
         random = int(time.time()*1000)
         return random % input_int
 
-    print(rand(5))
+    print(rand(1000))
