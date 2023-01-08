@@ -227,7 +227,7 @@ class BSSortedList:
     437
     Given a list of n tasks, i-th task needs tasks[i] hours to finish. There are k persons. 
     Return the shortest time to finish all tasks
-    @param pages: an array of integers
+    @param tasks: an array of integers
     @param k: A positive integer
     @return: an integer
     """
@@ -265,48 +265,48 @@ class BSSortedList:
 
     """
     141
-    sqrt(int x), return the largest integer y that y*y <= x
+    sqrt(int n), return the largest integer x that x*x <= n
     """
-    def sqrt_bs(self, x):
-        start, end = 0, x
+    def sqrt_bf(self, n):  # brute force O(N)
+        y = 0
+        while y * y <= n:
+            y += 1
+
+        return y - 1
+
+    def sqrt_bs(self, n):  # O(logN)
+        start, end = 0, n
 
         while start + 1 < end:
             mid = (start + end) // 2
 
-            if mid * mid < x:
+            if mid * mid < n:
                 start = mid
-            elif mid * mid == x:
+            elif mid * mid == n:
                 end = mid
             else:
                 end = mid
 
-        if end * end <= x:
+        if end * end <= n:
             return end
         return start
 
-    def sqrt_newton(self, x):
+    def sqrt_newton(self, n):  # newton's method O(1)
         """
-        求i 使 i * i - x = 0, so f(i) = i * i - x, f_(i) = 2 * i
-        i_n+1 = i_n - (i_n * i_n - x) / 2 * i_n = (i_n + x / i_n) / 2
+        求i 使 i * i - b = 0, so f(i) = i * i - b, f_(i) = 2 * i
+        i_n+1 = i_n - f(i) / f_(i) = (i_n + b / i_n) / 2
         """
-        def f(i):
-            return i * i - x
+        def f(x):
+            return x * x - n
 
-        def f_(i):
-            return 2 * i
+        def f_(x):
+            return 2 * x
 
-        last_j, j = x, x + 1
-        while abs(j - last_j) > 0.0001:
-            last_j = j
-            j = last_j - f(last_j) / f_(last_j)
-        return int(j)  # floor
-
-    def sqrt_bf(self, x):
-        y = 0
-        while y * y <= x:
-            y += 1
-
-        return y - 1
+        last, current = 0, n / 2  # initial guess current such that f(last) is close to 0
+        while abs(current - last) > 0.0001:
+            last = current
+            current = last - f(last) / f_(last)
+        return int(current)  # floor
 
 
 if __name__ == '__main__':
@@ -315,6 +315,6 @@ if __name__ == '__main__':
     print(sl.binary_search([2, 7, 11, 15], 7))  # expect (1, 7)
     print(sl.binary_search([-1, 0, 1][1:], 1))  # expect (1, 1)
     print(sl.binary_search([], 5))  # expect (None, None)
-    print(sl.sqrt_newton(2))
-    print(sl.sqrt_bs(3))
-    print(sl.sqrt_bf(3))
+    print(sl.sqrt_bf(10))
+    print(sl.sqrt_bs(10))
+    print(sl.sqrt_newton(10))

@@ -99,7 +99,7 @@ class BestBuySellStock:
         return memo[(index, state, count)]
 
     """
-    1691
+    1691 (same as 150)
     Rules: 1. can only trade at most once a day 2. don't have to sell before buy new stock 3. trade any times
     @return: the maximum profit
     """
@@ -121,6 +121,8 @@ if __name__ == '__main__':
     print(bbss.buy_sell_multiple([4, 3, 7, 1, 5]))
     print(bbss.buy_sell_multiple_dfs([4, 3, 7, 1, 5]))
     print(bbss.buy_sell_multiple([1, 2, 4, 2, 5, 7, 2, 4, 9, 0]))
-    print(bbss.buy_sell_multiple_dfs([1, 2, 4, 2, 5, 7, 2, 4, 9, 0]))
+    print(bbss.buy_sell_multiple_dfs([1, 2, 4, 2, 5, 7, 2, 4, 9, 0]))  # expect 15
     print(bbss.buy_sell_twice_dfs([1, 2, 4, 2, 5, 7, 2, 4, 9, 0]))  # expect 13
     print(bbss.max_profit([29, 52, 12, 51, 8, 38, 77, 10, 54, 90, 26, 8, 13, 97, 40, 96, 87, 80]))  # expect 500
+    print(bbss.max_profit([4, 3, 7, 1, 5]))  # expect 8
+    print(bbss.buy_sell_multiple_dfs([1, 2, 4, 2, 5, 7, 2, 4, 9, 0]))  # expect 15
