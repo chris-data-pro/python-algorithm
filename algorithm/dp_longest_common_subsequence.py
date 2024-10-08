@@ -40,7 +40,7 @@ def length_of_lcs(str1, str2):
                 ss += str1[j - 1]
             else:
                 dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
-    print(ss)
+    # print(ss)
     return dp[-1][-1]
 
 
@@ -110,5 +110,5 @@ def solution(P, Q):
 
 
 if __name__ == '__main__':
-    print(length_of_lcs("daabeddbcedeabcbcbec", "daceeaeeaabbabbacedd"))  # daced daabed
+    print(length_of_lcs("daabeddbcedeabcbcbec", "daceeaeeaabbabbacedd"))  # daced daabed daabbabbce
     print(length_of_lcs("abcdekk", "acexxxk"))  # acek
