@@ -1,0 +1,94 @@
+Module Number: 6250037842001_13
+Section Number: 6250037842001_13.5
+Video Number: 6250037842001_13.5.4
+Video Title: Typical Home Network Setup __eng
+Video URL: 
+ - In this video, we're going to discuss some of the equipment that exists in a typical home network. Most home networks consist of at least two separate networks. The first network is the public network that's coming in from the service provider. Usually in a home, this would be a cable provider or a DSL provider. The DSL provider or cable provider network does not use the same protocols and transmission methods as does an Ethernet network. So the one thing that you're going to see in almost every home network is some type of modem. And what the modem does is it converts the signals coming in from the provider, in the case of this modem, this is a cable TV modem, from the cable television provider, it has an input for the coaxial cable coming in for the cable, and it also has an output port that goes to the local home network. Now, some home networking devices come with the modem built in. As you can see, this one in particular has the connector for the cable company to connect to, and then the outputs are the typical LAN outputs that you would see on a normal home networking device. Now, almost all home networking devices also provide wireless. So once we have our connection made to the outside world, we then have to connect the Internet provider to our home network. And you'll notice on this device, it has a yellow port, which is marked Internet. Now, one thing you'll notice about all home networking devices from no matter what vendor they are is they're typically configured very similarly. You'll notice on this one here, it has an Internet in port and also has the LAN connectivity ports. These ports are usually switched ports. On this one, it doesn't require the connection from the modem because it has the modem built in, but it also does have the same network LAN ports that you can attach devices. And it has a built in wireless access point. Wired ports on a home networking device, and usually these are typically called wireless routers, and the reason that they are called routers is that the ports are separated into two separate networks. The first network is the local network. Now, that local network can be either wired, in other words, I can plug in an Ethernet cable and connect it into a device. I can put my standard Ethernet port, and all of those devices will be on the same network. Usually on a home network, wireless devices connect into the same local network as the wired ports. So if you are looking at what the IP addressing is on your home network, you will see that in most cases, the wireless users receive an IP address that is on the same network as the wired users.
+Timestamp: 00:00:06.217 - 00:00:08.226 Text: - In this video, we're going to discuss
+Timestamp: 00:00:08.226 - 00:00:12.963 Text: some of the equipment that
+exists in a typical home network.
+Timestamp: 00:00:12.963 - 00:00:14.499 Text: Most home networks consist
+Timestamp: 00:00:14.499 - 00:00:17.677 Text: of at least two separate networks.
+Timestamp: 00:00:17.677 - 00:00:19.797 Text: The first network is the public network
+Timestamp: 00:00:19.797 - 00:00:22.477 Text: that's coming in from
+the service provider.
+Timestamp: 00:00:22.477 - 00:00:24.760 Text: Usually in a home, this would be
+Timestamp: 00:00:24.760 - 00:00:28.230 Text: a cable provider or a DSL provider.
+Timestamp: 00:00:28.230 - 00:00:31.661 Text: The DSL provider or cable provider network
+Timestamp: 00:00:31.661 - 00:00:35.530 Text: does not use the same protocols
+and transmission methods
+Timestamp: 00:00:35.530 - 00:00:38.189 Text: as does an Ethernet network.
+Timestamp: 00:00:38.189 - 00:00:40.963 Text: So the one thing that you're going to see
+Timestamp: 00:00:40.963 - 00:00:45.819 Text: in almost every home network
+is some type of modem.
+Timestamp: 00:00:45.819 - 00:00:48.200 Text: And what the modem does is it converts
+Timestamp: 00:00:48.200 - 00:00:51.283 Text: the signals coming in from the provider,
+Timestamp: 00:00:51.283 - 00:00:55.670 Text: in the case of this modem,
+this is a cable TV modem,
+Timestamp: 00:00:55.670 - 00:00:58.038 Text: from the cable television provider,
+Timestamp: 00:00:58.038 - 00:01:00.736 Text: it has an input for the coaxial cable
+Timestamp: 00:01:00.736 - 00:01:02.659 Text: coming in for the cable,
+Timestamp: 00:01:02.659 - 00:01:05.944 Text: and it also has an output port
+Timestamp: 00:01:05.944 - 00:01:08.944 Text: that goes to the local home network.
+Timestamp: 00:01:09.990 - 00:01:12.982 Text: Now, some home networking devices
+Timestamp: 00:01:12.982 - 00:01:15.227 Text: come with the modem built in.
+Timestamp: 00:01:15.227 - 00:01:17.971 Text: As you can see, this one in particular
+Timestamp: 00:01:17.971 - 00:01:22.176 Text: has the connector for the
+cable company to connect to,
+Timestamp: 00:01:22.176 - 00:01:26.013 Text: and then the outputs are
+the typical LAN outputs
+Timestamp: 00:01:26.013 - 00:01:30.180 Text: that you would see on a
+normal home networking device.
+Timestamp: 00:01:31.515 - 00:01:34.536 Text: Now, almost all home networking devices
+Timestamp: 00:01:34.536 - 00:01:36.369 Text: also provide wireless.
+Timestamp: 00:01:37.960 - 00:01:41.947 Text: So once we have our connection
+made to the outside world,
+Timestamp: 00:01:41.947 - 00:01:45.675 Text: we then have to connect
+the Internet provider
+Timestamp: 00:01:45.675 - 00:01:47.521 Text: to our home network.
+Timestamp: 00:01:47.521 - 00:01:50.938 Text: And you'll notice on this device,
+Timestamp: 00:01:50.938 - 00:01:54.727 Text: it has a yellow port,
+which is marked Internet.
+Timestamp: 00:01:54.727 - 00:01:56.423 Text: Now, one thing you'll notice
+Timestamp: 00:01:56.423 - 00:01:59.258 Text: about all home networking devices
+Timestamp: 00:01:59.258 - 00:02:01.466 Text: from no matter what vendor they are
+Timestamp: 00:02:01.466 - 00:02:04.688 Text: is they're typically
+configured very similarly.
+Timestamp: 00:02:04.688 - 00:02:08.922 Text: You'll notice on this one here,
+it has an Internet in port
+Timestamp: 00:02:08.922 - 00:02:12.272 Text: and also has the LAN connectivity ports.
+Timestamp: 00:02:12.272 - 00:02:15.522 Text: These ports are usually switched ports.
+Timestamp: 00:02:18.029 - 00:02:20.248 Text: On this one, it doesn't require
+Timestamp: 00:02:20.248 - 00:02:21.712 Text: the connection from the modem
+Timestamp: 00:02:21.712 - 00:02:24.224 Text: because it has the modem built in,
+Timestamp: 00:02:24.224 - 00:02:28.505 Text: but it also does have the
+same network LAN ports
+Timestamp: 00:02:28.505 - 00:02:30.429 Text: that you can attach devices.
+Timestamp: 00:02:30.429 - 00:02:34.096 Text: And it has a built in
+wireless access point.
+Timestamp: 00:02:38.308 - 00:02:41.641 Text: Wired ports on a home networking device,
+Timestamp: 00:02:43.018 - 00:02:47.731 Text: and usually these are typically
+called wireless routers,
+Timestamp: 00:02:47.731 - 00:02:50.025 Text: and the reason that
+they are called routers
+Timestamp: 00:02:50.025 - 00:02:54.170 Text: is that the ports are separated
+into two separate networks.
+Timestamp: 00:02:54.170 - 00:02:56.960 Text: The first network is the local network.
+Timestamp: 00:02:56.960 - 00:03:00.301 Text: Now, that local network
+can be either wired,
+Timestamp: 00:03:00.301 - 00:03:03.725 Text: in other words, I can
+plug in an Ethernet cable
+Timestamp: 00:03:03.725 - 00:03:06.034 Text: and connect it into a device.
+Timestamp: 00:03:06.034 - 00:03:09.730 Text: I can put my standard Ethernet port,
+Timestamp: 00:03:09.730 - 00:03:13.485 Text: and all of those devices
+will be on the same network.
+Timestamp: 00:03:13.485 - 00:03:17.293 Text: Usually on a home network,
+wireless devices connect into
+Timestamp: 00:03:17.293 - 00:03:20.687 Text: the same local network as the wired ports.
+Timestamp: 00:03:20.687 - 00:03:24.136 Text: So if you are looking at
+what the IP addressing is
+Timestamp: 00:03:24.136 - 00:03:27.449 Text: on your home network, you
+will see that in most cases,
+Timestamp: 00:03:27.449 - 00:03:31.470 Text: the wireless users receive an IP address
+Timestamp: 00:03:31.470 - 00:03:35.387 Text: that is on the same
+network as the wired users.

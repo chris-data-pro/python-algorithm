@@ -1,0 +1,36 @@
+Module Number: 3
+Section Number: 3.0
+Video Number: 3.0.1
+Video Title: What is ML and AI
+Video URL: 
+ AI and machine learning are helping businesses make faster, better decisions, from helping us find potential cures for cancer, to better securing our financial transactions, to making autonomous vehicles safer and more. Why is this happening now at scale? Because processing and storage are rapidly becoming faster and cheaper, algorithms are smarter, and the AI ecosystem is larger. Let's take a closer look at an autonomous driving example to see the impact. There are several key stages in an AI and machine learning project. First, data is collected and prepared by data scientists. Then, training is performed to teach the required skills. And finally, inference is performed to make decisions based on new data. The value of AI is enormous, but there are challenges. For example, data preparation is very time-consuming, requiring up to 80% of data scientists' efforts. And data is often located across many sources. Data volumes are huge and growing fast, and that data is often sensitive or regulated, requiring workloads to be deployed on premises. Data volume and velocity create challenges across all stages, requiring high-performance systems that are adaptable to power these workloads at scale.
+Timestamp: 00:00:00.780 - 00:00:02.370 Text: AI and machine learning
+Timestamp: 00:00:02.370 - 00:00:05.910 Text: are helping businesses make faster, better decisions,
+Timestamp: 00:00:05.910 - 00:00:08.940 Text: from helping us find potential cures for cancer,
+Timestamp: 00:00:08.940 - 00:00:11.760 Text: to better securing our financial transactions,
+Timestamp: 00:00:11.760 - 00:00:15.240 Text: to making autonomous vehicles safer and more.
+Timestamp: 00:00:15.240 - 00:00:18.090 Text: Why is this happening now at scale?
+Timestamp: 00:00:18.090 - 00:00:19.890 Text: Because processing and storage
+Timestamp: 00:00:19.890 - 00:00:22.260 Text: are rapidly becoming faster and cheaper,
+Timestamp: 00:00:22.260 - 00:00:23.760 Text: algorithms are smarter,
+Timestamp: 00:00:23.760 - 00:00:26.580 Text: and the AI ecosystem is larger.
+Timestamp: 00:00:26.580 - 00:00:29.760 Text: Let's take a closer look at an autonomous driving example
+Timestamp: 00:00:29.760 - 00:00:31.440 Text: to see the impact.
+Timestamp: 00:00:31.440 - 00:00:33.210 Text: There are several key stages
+Timestamp: 00:00:33.210 - 00:00:35.940 Text: in an AI and machine learning project.
+Timestamp: 00:00:35.940 - 00:00:40.290 Text: First, data is collected and prepared by data scientists.
+Timestamp: 00:00:40.290 - 00:00:44.250 Text: Then, training is performed to teach the required skills.
+Timestamp: 00:00:44.250 - 00:00:46.350 Text: And finally, inference is performed
+Timestamp: 00:00:46.350 - 00:00:49.260 Text: to make decisions based on new data.
+Timestamp: 00:00:49.260 - 00:00:51.600 Text: The value of AI is enormous,
+Timestamp: 00:00:51.600 - 00:00:53.400 Text: but there are challenges.
+Timestamp: 00:00:53.400 - 00:00:56.730 Text: For example, data preparation is very time-consuming,
+Timestamp: 00:00:56.730 - 00:01:00.930 Text: requiring up to 80% of data scientists' efforts.
+Timestamp: 00:01:00.930 - 00:01:04.053 Text: And data is often located across many sources.
+Timestamp: 00:01:05.100 - 00:01:08.490 Text: Data volumes are huge and growing fast,
+Timestamp: 00:01:08.490 - 00:01:11.400 Text: and that data is often sensitive or regulated,
+Timestamp: 00:01:11.400 - 00:01:14.403 Text: requiring workloads to be deployed on premises.
+Timestamp: 00:01:15.300 - 00:01:17.070 Text: Data volume and velocity
+Timestamp: 00:01:17.070 - 00:01:19.260 Text: create challenges across all stages,
+Timestamp: 00:01:19.260 - 00:01:22.170 Text: requiring high-performance systems that are adaptable
+Timestamp: 00:01:22.170 - 00:01:24.303 Text: to power these workloads at scale.

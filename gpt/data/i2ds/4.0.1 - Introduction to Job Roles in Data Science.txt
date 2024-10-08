@@ -1,0 +1,21 @@
+Module Number: 4
+Section Number: 4.0
+Video Number: 4.0.1
+Video Title: Introduction to Job Roles in Data Science
+Video URL: 
+ It's been great to have you here working with us at Data Crunchers these last few days. I'd like a chance to review with you what you've experienced and talk to you a little bit about your future plans. We want to make sure that your internship propels you forward towards your career goals. You've had a chance to see how data and analytics are changing almost every facet of our lives. There are many opportunities for you to jump in and get started. Let's discuss some of the job roles and how you can prepare to take them on. (soft music)
+Timestamp: 00:00:00.780 - 00:00:02.460 Text: It's been great to have you here working
+Timestamp: 00:00:02.460 - 00:00:05.100 Text: with us at Data Crunchers these last few days.
+Timestamp: 00:00:05.100 - 00:00:06.810 Text: I'd like a chance to review with you
+Timestamp: 00:00:06.810 - 00:00:08.970 Text: what you've experienced and talk to you a little bit
+Timestamp: 00:00:08.970 - 00:00:10.590 Text: about your future plans.
+Timestamp: 00:00:10.590 - 00:00:12.420 Text: We want to make sure that your internship
+Timestamp: 00:00:12.420 - 00:00:15.360 Text: propels you forward towards your career goals.
+Timestamp: 00:00:15.360 - 00:00:17.220 Text: You've had a chance to see how data
+Timestamp: 00:00:17.220 - 00:00:19.830 Text: and analytics are changing almost every facet
+Timestamp: 00:00:19.830 - 00:00:21.060 Text: of our lives.
+Timestamp: 00:00:21.060 - 00:00:22.410 Text: There are many opportunities
+Timestamp: 00:00:22.410 - 00:00:25.080 Text: for you to jump in and get started.
+Timestamp: 00:00:25.080 - 00:00:26.850 Text: Let's discuss some of the job roles
+Timestamp: 00:00:26.850 - 00:00:29.042 Text: and how you can prepare to take them on.
+Timestamp: 00:00:29.042 - 00:00:31.459 Text: (soft music)

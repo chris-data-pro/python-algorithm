@@ -1,0 +1,24 @@
+Module Number: 3
+Section Number: 3.1
+Video Number: 3.1.1
+Video Title: Popular Conceptions of Artifical Intelligence
+Video URL: 
+ At Data Crunchers, there are a few projects that are garnering a lot of attention from both our employees and clients. These projects are among our first that involve artificial intelligence, robots, and machine learning, the stuff that used to be only in science-fiction movies. One project that we're working on involves gathering data from images and GPS information. This will be used to train a robot to use AI-enabled recognition, to differentiate between weeds and crops, to reduce the use of chemical herbicides. That may not sound like a big project, but it requires a significant amount of unstructured data in the form of images and video that must be analyzed throughout the machine learning process. (upbeat music)
+Timestamp: 00:00:00.900 - 00:00:03.090 Text: At Data Crunchers, there are a few projects
+Timestamp: 00:00:03.090 - 00:00:04.620 Text: that are garnering a lot of attention
+Timestamp: 00:00:04.620 - 00:00:07.200 Text: from both our employees and clients.
+Timestamp: 00:00:07.200 - 00:00:09.030 Text: These projects are among our first
+Timestamp: 00:00:09.030 - 00:00:11.730 Text: that involve artificial intelligence, robots,
+Timestamp: 00:00:11.730 - 00:00:13.230 Text: and machine learning,
+Timestamp: 00:00:13.230 - 00:00:16.740 Text: the stuff that used to be only in science-fiction movies.
+Timestamp: 00:00:16.740 - 00:00:19.530 Text: One project that we're working on involves gathering data
+Timestamp: 00:00:19.530 - 00:00:22.620 Text: from images and GPS information.
+Timestamp: 00:00:22.620 - 00:00:24.570 Text: This will be used to train a robot
+Timestamp: 00:00:24.570 - 00:00:26.970 Text: to use AI-enabled recognition,
+Timestamp: 00:00:26.970 - 00:00:29.490 Text: to differentiate between weeds and crops,
+Timestamp: 00:00:29.490 - 00:00:32.670 Text: to reduce the use of chemical herbicides.
+Timestamp: 00:00:32.670 - 00:00:34.500 Text: That may not sound like a big project,
+Timestamp: 00:00:34.500 - 00:00:37.470 Text: but it requires a significant amount of unstructured data
+Timestamp: 00:00:37.470 - 00:00:40.590 Text: in the form of images and video that must be analyzed
+Timestamp: 00:00:40.590 - 00:00:43.142 Text: throughout the machine learning process.
+Timestamp: 00:00:43.142 - 00:00:45.391 Text: (upbeat music)

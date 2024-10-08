@@ -1,0 +1,116 @@
+Module Number: 6250019532001_10
+Section Number: 6250019532001_10.1
+Video Number: 6250019532001_10.1.1
+Video Title: Gateways to Other Networks__eng
+Video URL: 
+ - In this lesson, I'm going to talk about gateways, and in particular, default gateways. So what's a gateway? Okay, a gateway, as the word implies, is a way for traffic to leave one local network and be forwarded to other remote networks. So basically, think about the default gateway as the door out of the room. Okay, the room that I'm in right now, if I want to go out to the hallway, I'm going to have to exit through the door. When a computer wants to send a message off of its same local network, it needs to also exit its local network, and to go out and be forwarded to the actual destination. As we learned earlier, computers figure out whether or not a destination is on their same local network by going through a process of binary ANDing, which takes the subnet mask and ANDs it with the destination IP address to determine if the network portion of the address is exactly the same as the network portion of the sending host. So in the case of where that is not true, the computer has to actually send the packet to the gateway. We learned that every host on a network has to have, at the very minimum, an IP address and a subnet mask. Now, if that host intends on speaking to destinations that are not on its local network, it also has to be configured with the address of its default gateway. Usually in today's network, the default gateway configured on a device is the router interface that the traffic would come to first on its path to the internet. So basically, if we were to look at me, over here in the network management department, and if I was trying to reach a server that was out on the internet, my traffic would basically travel up through my switch and it would end up at the address assigned to the interface, router interface closest to me on the path to the internet. Now, if we go to a different host, say, for example, this one in the accounting department, and they were trying to reach the exact same server, their traffic would travel again through their switch, but they would enter the router at a different router interface. So the default gateway configured on hosts in the accounting department is different than my default gateway configured in my network management department. Once the host determines that the address of the destination is not on its same local network, what it does is it ARPs for the MAC address of the default gateway. Now, this is important to remember, because one of the problems that you find in networks frequently is because there's a mistake made, the default gateway address is not on the same local network. For example, if I accidentally configured this with 11 instead of one... My computer would not be able to send traffic using ARP to its default gateway address. So we have to be very careful when we are configuring network settings that we have the correct IP address, the correct subnet masks, so that my computer can accurately predict who is on its own local network and who is off the local network located on a remote network, and the default gateway address so that it knows what router to send traffic to in order to go off of its own local network.
+Timestamp: 00:00:06.452 - 00:00:09.492 Text: - In this lesson, I'm going
+to talk about gateways,
+Timestamp: 00:00:09.492 - 00:00:12.932 Text: and in particular, default gateways.
+Timestamp: 00:00:12.932 - 00:00:15.070 Text: So what's a gateway?
+Timestamp: 00:00:15.070 - 00:00:18.153 Text: Okay, a gateway, as the word implies,
+Timestamp: 00:00:19.043 - 00:00:22.960 Text: is a way for traffic to
+leave one local network
+Timestamp: 00:00:24.553 - 00:00:28.497 Text: and be forwarded to other remote networks.
+Timestamp: 00:00:28.497 - 00:00:31.807 Text: So basically, think
+about the default gateway
+Timestamp: 00:00:31.807 - 00:00:34.029 Text: as the door out of the room.
+Timestamp: 00:00:34.029 - 00:00:36.448 Text: Okay, the room that I'm in right now,
+Timestamp: 00:00:36.448 - 00:00:38.852 Text: if I want to go out to the
+hallway, I'm going to have
+Timestamp: 00:00:38.852 - 00:00:41.229 Text: to exit through the door.
+Timestamp: 00:00:41.229 - 00:00:44.569 Text: When a computer wants to
+send a message off of its
+Timestamp: 00:00:44.569 - 00:00:47.569 Text: same local network, it needs to also
+Timestamp: 00:00:48.873 - 00:00:51.956 Text: exit its local network, and to go out
+Timestamp: 00:00:52.963 - 00:00:57.167 Text: and be forwarded to
+the actual destination.
+Timestamp: 00:00:57.167 - 00:01:00.048 Text: As we learned earlier,
+computers figure out
+Timestamp: 00:01:00.048 - 00:01:02.430 Text: whether or not a destination is on their
+Timestamp: 00:01:02.430 - 00:01:05.892 Text: same local network by
+going through a process
+Timestamp: 00:01:05.892 - 00:01:09.773 Text: of binary ANDing, which
+takes the subnet mask
+Timestamp: 00:01:09.773 - 00:01:13.356 Text: and ANDs it with the
+destination IP address
+Timestamp: 00:01:14.809 - 00:01:17.849 Text: to determine if the network
+portion of the address
+Timestamp: 00:01:17.849 - 00:01:20.837 Text: is exactly the same as the network portion
+Timestamp: 00:01:20.837 - 00:01:22.504 Text: of the sending host.
+Timestamp: 00:01:23.389 - 00:01:27.550 Text: So in the case of where that is not true,
+Timestamp: 00:01:27.550 - 00:01:31.717 Text: the computer has to actually
+send the packet to the gateway.
+Timestamp: 00:01:32.829 - 00:01:37.389 Text: We learned that every host
+on a network has to have,
+Timestamp: 00:01:37.389 - 00:01:41.892 Text: at the very minimum, an IP
+address and a subnet mask.
+Timestamp: 00:01:41.892 - 00:01:45.710 Text: Now, if that host intends
+on speaking to destinations
+Timestamp: 00:01:45.710 - 00:01:48.048 Text: that are not on its local network,
+Timestamp: 00:01:48.048 - 00:01:51.389 Text: it also has to be
+configured with the address
+Timestamp: 00:01:51.389 - 00:01:53.306 Text: of its default gateway.
+Timestamp: 00:01:54.847 - 00:01:58.073 Text: Usually in today's network,
+the default gateway
+Timestamp: 00:01:58.073 - 00:02:01.972 Text: configured on a device
+is the router interface
+Timestamp: 00:02:01.972 - 00:02:05.167 Text: that the traffic would come to first on
+Timestamp: 00:02:05.167 - 00:02:07.250 Text: its path to the internet.
+Timestamp: 00:02:08.449 - 00:02:11.849 Text: So basically, if we were to look at me,
+Timestamp: 00:02:11.849 - 00:02:14.692 Text: over here in the network
+management department,
+Timestamp: 00:02:14.692 - 00:02:17.123 Text: and if I was trying to
+reach a server that was out
+Timestamp: 00:02:17.123 - 00:02:20.814 Text: on the internet, my
+traffic would basically
+Timestamp: 00:02:20.814 - 00:02:24.669 Text: travel up through my switch and it would
+Timestamp: 00:02:24.669 - 00:02:28.669 Text: end up at the address
+assigned to the interface,
+Timestamp: 00:02:29.652 - 00:02:32.489 Text: router interface closest to me on the
+Timestamp: 00:02:32.489 - 00:02:34.287 Text: path to the internet.
+Timestamp: 00:02:34.287 - 00:02:37.070 Text: Now, if we go to a different host,
+Timestamp: 00:02:37.070 - 00:02:40.127 Text: say, for example, this one
+in the accounting department,
+Timestamp: 00:02:40.127 - 00:02:43.567 Text: and they were trying to
+reach the exact same server,
+Timestamp: 00:02:43.567 - 00:02:46.649 Text: their traffic would travel
+again through their switch,
+Timestamp: 00:02:46.649 - 00:02:48.612 Text: but they would enter the router
+Timestamp: 00:02:48.612 - 00:02:51.088 Text: at a different router interface.
+Timestamp: 00:02:51.088 - 00:02:53.807 Text: So the default gateway configured on hosts
+Timestamp: 00:02:53.807 - 00:02:56.889 Text: in the accounting department is different
+Timestamp: 00:02:56.889 - 00:02:59.807 Text: than my default gateway configured in my
+Timestamp: 00:02:59.807 - 00:03:02.307 Text: network management department.
+Timestamp: 00:03:03.568 - 00:03:07.673 Text: Once the host determines that the address
+Timestamp: 00:03:07.673 - 00:03:12.030 Text: of the destination is not
+on its same local network,
+Timestamp: 00:03:12.030 - 00:03:15.613 Text: what it does is it ARPs
+for the MAC address
+Timestamp: 00:03:16.953 - 00:03:19.229 Text: of the default gateway.
+Timestamp: 00:03:19.229 - 00:03:21.593 Text: Now, this is important to
+remember, because one of the
+Timestamp: 00:03:21.593 - 00:03:24.990 Text: problems that you find
+in networks frequently
+Timestamp: 00:03:24.990 - 00:03:27.652 Text: is because there's a mistake made,
+Timestamp: 00:03:27.652 - 00:03:30.692 Text: the default gateway address is not
+Timestamp: 00:03:30.692 - 00:03:33.390 Text: on the same local network.
+Timestamp: 00:03:33.390 - 00:03:36.607 Text: For example, if I accidentally
+Timestamp: 00:03:36.607 - 00:03:40.024 Text: configured this with 11 instead of one...
+Timestamp: 00:03:43.193 - 00:03:45.993 Text: My computer would not
+be able to send traffic
+Timestamp: 00:03:45.993 - 00:03:49.993 Text: using ARP to its default gateway address.
+Timestamp: 00:03:49.993 - 00:03:51.993 Text: So we have to be very careful when we are
+Timestamp: 00:03:51.993 - 00:03:55.603 Text: configuring network settings that we have
+Timestamp: 00:03:55.603 - 00:04:00.179 Text: the correct IP address,
+the correct subnet masks,
+Timestamp: 00:04:00.179 - 00:04:02.852 Text: so that my computer can accurately predict
+Timestamp: 00:04:02.852 - 00:04:06.809 Text: who is on its own local
+network and who is off
+Timestamp: 00:04:06.809 - 00:04:10.270 Text: the local network located
+on a remote network,
+Timestamp: 00:04:10.270 - 00:04:13.470 Text: and the default gateway
+address so that it knows
+Timestamp: 00:04:13.470 - 00:04:16.750 Text: what router to send
+traffic to in order to go
+Timestamp: 00:04:16.750 - 00:04:19.167 Text: off of its own local network.

@@ -1,0 +1,28 @@
+Module Number: 2
+Section Number: 2.1
+Video Number: 2.1.1
+Video Title: 2.1.1 Clients and Servers
+Video URL: 
+ In modern networks, computer hosts can act as a client, a server, or both. The software installed on the computer determines which role the computer plays. Servers are hosts that have software installed which enable them to provide information to other hosts on the network, like email or webpages. Each server service requires a separate server software. Clients are computer hosts that have software installed that enables the host to request and display the information obtained from the server. An example of client software is a web browser such as Chrome, Edge, Safari, or Firefox. Using web browser software, the client can request the webpage from the server. The web server will respond with the webpage. Another example is email. Clients use an email client software such as Microsoft Outlook to access email on the server. Clients can both send and receive email messages from the email server.
+Timestamp: 00:00:00.110 - 00:00:01.540 Text: In modern networks,
+Timestamp: 00:00:01.540 - 00:00:05.910 Text: computer hosts can act as a client, a server, or both.
+Timestamp: 00:00:05.910 - 00:00:07.920 Text: The software installed on the computer
+Timestamp: 00:00:07.920 - 00:00:10.880 Text: determines which role the computer plays.
+Timestamp: 00:00:10.880 - 00:00:13.590 Text: Servers are hosts that have software installed
+Timestamp: 00:00:13.590 - 00:00:16.050 Text: which enable them to provide information
+Timestamp: 00:00:16.050 - 00:00:17.679 Text: to other hosts on the network,
+Timestamp: 00:00:17.679 - 00:00:20.090 Text: like email or webpages.
+Timestamp: 00:00:20.090 - 00:00:23.090 Text: Each server service requires a separate server software.
+Timestamp: 00:00:23.090 - 00:00:26.938 Text: Clients are computer hosts that have software installed
+Timestamp: 00:00:26.938 - 00:00:29.330 Text: that enables the host to request
+Timestamp: 00:00:29.330 - 00:00:32.560 Text: and display the information obtained from the server.
+Timestamp: 00:00:32.560 - 00:00:35.700 Text: An example of client software is a web browser
+Timestamp: 00:00:35.700 - 00:00:39.580 Text: such as Chrome, Edge, Safari, or Firefox.
+Timestamp: 00:00:39.580 - 00:00:41.229 Text: Using web browser software,
+Timestamp: 00:00:41.229 - 00:00:45.120 Text: the client can request the webpage from the server.
+Timestamp: 00:00:45.120 - 00:00:48.399 Text: The web server will respond with the webpage.
+Timestamp: 00:00:48.399 - 00:00:50.660 Text: Another example is email.
+Timestamp: 00:00:50.660 - 00:00:53.100 Text: Clients use an email client software
+Timestamp: 00:00:53.100 - 00:00:57.020 Text: such as Microsoft Outlook to access email on the server.
+Timestamp: 00:00:57.020 - 00:00:58.670 Text: Clients can both send
+Timestamp: 00:00:58.670 - 00:01:01.863 Text: and receive email messages from the email server.

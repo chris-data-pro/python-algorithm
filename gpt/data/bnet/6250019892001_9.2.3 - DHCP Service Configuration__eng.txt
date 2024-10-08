@@ -1,0 +1,108 @@
+Module Number: 6250019892001_9
+Section Number: 6250019892001_9.2
+Video Number: 6250019892001_9.2.3
+Video Title: DHCP Service Configuration__eng
+Video URL: 
+ - There are two ways to get an IP address on a device. One way is to manually configure it, or statically configure it, as it's called in Microsoft Windows. And the other way to do it, is to get it automatically from a device that provides DHCP. In the little network here that we're showing in Packet Tracer, we have three PCs attached to a DHCP-enabled router. Basically, what this is, is a very similar device to what you would have at home. If you look here on the device itself, you'll notice that this device has a switch port, an antenna for wireless, and an internet connection. This type of configuration is available on almost every home wireless router. So basically, what we're going to do, is we're going to go in and we're going to look at how DHCP is configured on this device. Most home devices, home networking devices, have a GUI interface to make it easy to set them up. In the case of this device, you can see that I have some settings that are basic router settings. On this router, we are going to enable DHCP and as you can see by default, it's normally enabled. And you can see that an IP address has been already assigned to the router interface that faces the LAN. When the automatic configuration is received by the PCs, they're going to see this address as their default gateway. Now, the way that DHCP is configured, is a group of addresses are reserved on a particular network to be handed out to hosts, one by one. If you look here at the settings, it will say that the DHCP range will start at 172.16.0.100. So if we save this configuration, and then we go to our PCs and enable each PC to get their IP address via DHCP, rather than via the static configuration. So we're going to go to the desktop here, and we're going to look at our IP configuration, and then we're going to change it from the static configuration to getting it's IP address via DHCP. And you will notice that immediately, the device sent out a request for a DHCP address and received one from the DHCP server. You'll notice from the information that this, since this is the first PC to be configured for DHCP, it got the first available address. When we look at the other PCs, and look at their IP configurations, if we change them over to DHCP, they will also get addresses but it will not be the same address. It will be the next number up. Since we have our IP addresses set, now we can go out and test our network connectivity. So if I'm on PC zero, I'm going to go ahead and ping one of the other PCs. We know that since I have the address 100, the other two devices have the addresses 101 and 102. So we're going to try pinging both of those computers. And as you can see, we can reach that 101 computer, which is PC1 on our diagram. And then we will attempt to configure, I mean, to ping PC2. And you can see we can reach PC2 also. So the information that was on the router configuration for DHCP determined what IP addresses would be assigned to all of the PCs on the network.
+Timestamp: 00:00:12.283 - 00:00:16.153 Text: - There are two ways to get
+an IP address on a device.
+Timestamp: 00:00:16.153 - 00:00:19.114 Text: One way is to manually configure it,
+Timestamp: 00:00:19.114 - 00:00:21.505 Text: or statically configure it,
+Timestamp: 00:00:21.505 - 00:00:24.108 Text: as it's called in Microsoft Windows.
+Timestamp: 00:00:24.108 - 00:00:28.421 Text: And the other way to do it,
+is to get it automatically
+Timestamp: 00:00:28.421 - 00:00:31.386 Text: from a device that provides DHCP.
+Timestamp: 00:00:31.386 - 00:00:33.759 Text: In the little network
+here that we're showing
+Timestamp: 00:00:33.759 - 00:00:36.516 Text: in Packet Tracer, we have three PCs
+Timestamp: 00:00:36.516 - 00:00:39.349 Text: attached to a DHCP-enabled router.
+Timestamp: 00:00:40.223 - 00:00:43.449 Text: Basically, what this is,
+is a very similar device
+Timestamp: 00:00:43.449 - 00:00:45.975 Text: to what you would have at home.
+Timestamp: 00:00:45.975 - 00:00:49.142 Text: If you look here on the device itself,
+Timestamp: 00:00:50.024 - 00:00:54.822 Text: you'll notice that this
+device has a switch port,
+Timestamp: 00:00:54.822 - 00:00:59.393 Text: an antenna for wireless,
+and an internet connection.
+Timestamp: 00:00:59.393 - 00:01:02.736 Text: This type of configuration is available
+Timestamp: 00:01:02.736 - 00:01:06.033 Text: on almost every home wireless router.
+Timestamp: 00:01:06.033 - 00:01:07.775 Text: So basically, what we're going to do,
+Timestamp: 00:01:07.775 - 00:01:10.091 Text: is we're going to go in and we're going to
+Timestamp: 00:01:10.091 - 00:01:14.135 Text: look at how DHCP is
+configured on this device.
+Timestamp: 00:01:14.135 - 00:01:17.121 Text: Most home devices, home
+networking devices,
+Timestamp: 00:01:17.121 - 00:01:21.675 Text: have a GUI interface to
+make it easy to set them up.
+Timestamp: 00:01:21.675 - 00:01:24.554 Text: In the case of this
+device, you can see that
+Timestamp: 00:01:24.554 - 00:01:28.838 Text: I have some settings that
+are basic router settings.
+Timestamp: 00:01:28.838 - 00:01:32.421 Text: On this router, we are
+going to enable DHCP
+Timestamp: 00:01:34.128 - 00:01:38.452 Text: and as you can see by default,
+it's normally enabled.
+Timestamp: 00:01:38.452 - 00:01:43.377 Text: And you can see that an IP
+address has been already assigned
+Timestamp: 00:01:43.377 - 00:01:47.320 Text: to the router interface
+that faces the LAN.
+Timestamp: 00:01:47.320 - 00:01:51.487 Text: When the automatic configuration
+is received by the PCs,
+Timestamp: 00:01:53.113 - 00:01:57.280 Text: they're going to see this
+address as their default gateway.
+Timestamp: 00:01:58.150 - 00:02:01.233 Text: Now, the way that DHCP is configured,
+Timestamp: 00:02:02.647 - 00:02:07.081 Text: is a group of addresses are
+reserved on a particular network
+Timestamp: 00:02:07.081 - 00:02:10.248 Text: to be handed out to hosts, one by one.
+Timestamp: 00:02:11.091 - 00:02:14.411 Text: If you look here at the
+settings, it will say
+Timestamp: 00:02:14.411 - 00:02:18.328 Text: that the DHCP range will
+start at 172.16.0.100.
+Timestamp: 00:02:22.748 - 00:02:25.498 Text: So if we save this configuration,
+Timestamp: 00:02:26.785 - 00:02:28.868 Text: and then we go to our PCs
+Timestamp: 00:02:32.302 - 00:02:36.469 Text: and enable each PC to get
+their IP address via DHCP,
+Timestamp: 00:02:37.998 - 00:02:41.415 Text: rather than via the static configuration.
+Timestamp: 00:02:44.749 - 00:02:47.918 Text: So we're going to go to the desktop here,
+Timestamp: 00:02:47.918 - 00:02:51.114 Text: and we're going to look
+at our IP configuration,
+Timestamp: 00:02:51.114 - 00:02:53.496 Text: and then we're going to change it
+Timestamp: 00:02:53.496 - 00:02:55.745 Text: from the static configuration
+Timestamp: 00:02:55.745 - 00:02:59.276 Text: to getting it's IP address via DHCP.
+Timestamp: 00:02:59.276 - 00:03:01.727 Text: And you will notice that immediately,
+Timestamp: 00:03:01.727 - 00:03:05.727 Text: the device sent out a
+request for a DHCP address
+Timestamp: 00:03:06.911 - 00:03:10.435 Text: and received one from the DHCP server.
+Timestamp: 00:03:10.435 - 00:03:14.217 Text: You'll notice from the
+information that this,
+Timestamp: 00:03:14.217 - 00:03:18.609 Text: since this is the first PC
+to be configured for DHCP,
+Timestamp: 00:03:18.609 - 00:03:22.311 Text: it got the first available address.
+Timestamp: 00:03:22.311 - 00:03:24.811 Text: When we look at the other PCs,
+Timestamp: 00:03:27.880 - 00:03:30.686 Text: and look at their IP configurations,
+Timestamp: 00:03:30.686 - 00:03:34.887 Text: if we change them over to DHCP,
+they will also get addresses
+Timestamp: 00:03:34.887 - 00:03:37.597 Text: but it will not be the same address.
+Timestamp: 00:03:37.597 - 00:03:40.097 Text: It will be the next number up.
+Timestamp: 00:03:41.030 - 00:03:42.941 Text: Since we have our IP addresses set,
+Timestamp: 00:03:42.941 - 00:03:47.773 Text: now we can go out and test
+our network connectivity.
+Timestamp: 00:03:47.773 - 00:03:49.523 Text: So if I'm on PC zero,
+Timestamp: 00:03:52.095 - 00:03:55.951 Text: I'm going to go ahead and
+ping one of the other PCs.
+Timestamp: 00:03:55.951 - 00:03:59.451 Text: We know that since I have the address 100,
+Timestamp: 00:04:00.520 - 00:04:05.132 Text: the other two devices have
+the addresses 101 and 102.
+Timestamp: 00:04:05.132 - 00:04:09.299 Text: So we're going to try pinging
+both of those computers.
+Timestamp: 00:04:18.733 - 00:04:22.956 Text: And as you can see, we can
+reach that 101 computer,
+Timestamp: 00:04:22.956 - 00:04:25.289 Text: which is PC1 on our diagram.
+Timestamp: 00:04:27.879 - 00:04:32.046 Text: And then we will attempt to
+configure, I mean, to ping PC2.
+Timestamp: 00:04:50.143 - 00:04:53.560 Text: And you can see we can reach PC2 also.
+Timestamp: 00:04:53.560 - 00:04:58.553 Text: So the information that was
+on the router configuration
+Timestamp: 00:04:58.553 - 00:05:01.577 Text: for DHCP determined what IP addresses
+Timestamp: 00:05:01.577 - 00:05:05.744 Text: would be assigned to all
+of the PCs on the network.

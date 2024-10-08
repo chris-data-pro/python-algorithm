@@ -1,0 +1,42 @@
+Module Number: 1
+Section Number: 1.0
+Video Number: 1.0.1
+Video Title: The Data Analyst
+Video URL: 
+ El análisis de datos está cambiando nuestro mundo ahora mismo mientras miras este video. Nos está ayudando a tomar decisiones, navegar a través del tráfico, e incluso predecir los mejores emparejamientos en la alineación de tu equipo favorito. Los análisis nos permiten abordar desafíos que parecían imposible hace poco tiempo. Todos los días en las noticias, hay historias emocionantes sobre innovaciones basadas en datos en manufactura, salud, exploración espacial, y muchas áreas mas. Datos recopilados durante la pandemia de COVID-19 permiteron a los gobiernos y organizaciones de todo el mundo rastrear brotes y movilizar recursos. Taiwán, por ejemplo, usó su Seguro Nacional de Salud y Bases de Datos de Inmigración para crear un esquema de las historias de viaje y los síntomas de cada persona que salió o entró al país. Este tipo de solución analítica creativa de problemas permitió a los profesionales de la salud estar mejor preparados para diagnosticar e identificar la enfermedad. En este curso, aprenderá las características básicas y funciones del análisis de datos, cómo se recopilan los datos y dónde se almacenan, cómo los datos permiten la inteligencia artificial y el aprendizaje automático, y comenzarás tu viaje para convertirte en un profesional de los datos. Hay muchas oportunidades para ayudar a impulsar estas innovaciones como analistas de datos, científicos de datos e ingenieros de datos. Esta es una carrera gratificante con el potencial de realmente hacer una diferencia. Únete a nosotros mientras exploramos lo que es posible. (música ligera continúa)
+Timestamp: 00:00:00.660 - 00:00:02.880 Text: El análisis de datos está cambiando nuestro mundo
+Timestamp: 00:00:02.880 - 00:00:05.340 Text: ahora mismo mientras miras este video.
+Timestamp: 00:00:05.340 - 00:00:07.080 Text: Nos está ayudando a tomar decisiones,
+Timestamp: 00:00:07.080 - 00:00:08.370 Text: navegar a través del tráfico,
+Timestamp: 00:00:08.370 - 00:00:10.140 Text: e incluso predecir los mejores emparejamientos
+Timestamp: 00:00:10.140 - 00:00:11.640 Text: en la alineación de tu equipo favorito.
+Timestamp: 00:00:11.640 - 00:00:14.400 Text: Los análisis nos permiten abordar desafíos
+Timestamp: 00:00:14.400 - 00:00:17.250 Text: que parecían imposible hace poco tiempo.
+Timestamp: 00:00:17.250 - 00:00:18.690 Text: Todos los días en las noticias,
+Timestamp: 00:00:18.690 - 00:00:21.570 Text: hay historias emocionantes sobre innovaciones basadas en datos
+Timestamp: 00:00:21.570 - 00:00:25.080 Text: en manufactura, salud, exploración espacial,
+Timestamp: 00:00:25.080 - 00:00:26.580 Text: y muchas áreas mas.
+Timestamp: 00:00:26.580 - 00:00:29.520 Text: Datos recopilados durante la pandemia de COVID-19
+Timestamp: 00:00:29.520 - 00:00:32.760 Text: permiteron a los gobiernos y organizaciones de todo el mundo
+Timestamp: 00:00:32.760 - 00:00:36.240 Text: rastrear brotes y movilizar recursos.
+Timestamp: 00:00:36.240 - 00:00:39.660 Text: Taiwán, por ejemplo, usó su Seguro Nacional de Salud
+Timestamp: 00:00:39.660 - 00:00:41.370 Text: y Bases de Datos de Inmigración
+Timestamp: 00:00:41.370 - 00:00:44.490 Text: para crear un esquema de las historias de viaje y los síntomas
+Timestamp: 00:00:44.490 - 00:00:47.610 Text: de cada persona que salió o entró al país.
+Timestamp: 00:00:47.610 - 00:00:50.280 Text: Este tipo de solución analítica creativa de problemas
+Timestamp: 00:00:50.280 - 00:00:52.800 Text: permitió a los profesionales de la salud estar mejor preparados
+Timestamp: 00:00:52.800 - 00:00:55.020 Text: para diagnosticar e identificar la enfermedad.
+Timestamp: 00:00:55.020 - 00:00:57.090 Text: En este curso, aprenderá las características básicas
+Timestamp: 00:00:57.090 - 00:00:59.250 Text: y funciones del análisis de datos,
+Timestamp: 00:00:59.250 - 00:01:01.770 Text: cómo se recopilan los datos y dónde se almacenan,
+Timestamp: 00:01:01.770 - 00:01:04.080 Text: cómo los datos permiten la inteligencia artificial
+Timestamp: 00:01:04.080 - 00:01:05.490 Text: y el aprendizaje automático,
+Timestamp: 00:01:05.490 - 00:01:06.840 Text: y comenzarás tu viaje
+Timestamp: 00:01:06.840 - 00:01:08.670 Text: para convertirte en un profesional de los datos.
+Timestamp: 00:01:08.670 - 00:01:11.130 Text: Hay muchas oportunidades para ayudar a impulsar
+Timestamp: 00:01:11.130 - 00:01:13.410 Text: estas innovaciones como analistas de datos,
+Timestamp: 00:01:13.410 - 00:01:15.810 Text: científicos de datos e ingenieros de datos.
+Timestamp: 00:01:15.810 - 00:01:17.610 Text: Esta es una carrera gratificante
+Timestamp: 00:01:17.610 - 00:01:20.250 Text: con el potencial de realmente hacer una diferencia.
+Timestamp: 00:01:20.250 - 00:01:22.710 Text: Únete a nosotros mientras exploramos lo que es posible.
+Timestamp: 00:01:22.710 - 00:01:26.127 Text: (música ligera continúa)

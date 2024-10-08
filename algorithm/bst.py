@@ -39,10 +39,10 @@ class BSTIterator:
 
 class SubTree():
     def __init__(self, largest, n, min, max):
-        self.largest = largest
-        self.n = n
-        self.min = min
-        self.max = max
+        self.largest = largest  # number of nodes in the largest subtree which is a BST
+        self.n = n  # total number of nodes under node
+        self.min = min  # smallest node value under node
+        self.max = max  # biggest node value under node
 
 
 class BST:

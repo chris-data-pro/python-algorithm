@@ -1,0 +1,97 @@
+Module Number: 10
+Section Number: 10.2
+Video Number: 10.2.1
+Video Title: Introduction to NAT
+Video URL: 
+ In this lesson, we're going to talk about private IP networks and the need for network address translation when we go from a privately addressed network to a publicly addressed network. IPv4 addresses have two categories. The first one is private addressing. Private addressing is addresses that can be used within an organization. They work perfectly well. You can assign them to hosts. They can be routed between different networks. But when you need to go outside of your organization across the publicly addressed internet, you have to have a registered public IP address. Now, the people who designed IP reserved certain networks that you could use them within your enterprise, but they will not route across the internet. Those addresses are 192.168, 172.16, and 10. Now, most of you who have a home network, if you look at what the IP addresses are that are assigned to your various devices, you will find that usually they are assigned to the 192.168 network, the reason being is that it uses a subnet mask of 24 bits, which only leaves eight bits for host addressing. Those eight bits only have 254 possible host addresses. So they're used for smaller organizations and smaller networks. 172.16 now uses 16 bits as identifying the network portion, so you can have many more. And 10, it only uses eight bits for the network portion, so it's used primarily for very large enterprises. Now, if we have a network addressed with private addressing, as we do in our little organization here, we would have difficulty sending this traffic out to a server that is located on the internet. The internet will only route registered public IP addresses. So 192.168 does not fall into that category. So a function was developed called network address translation. In network address translation, a private addressed host can actually send traffic across the internet. And the manner in which it does this is that the router, and you can see here is our router that connects us to the internet and also to our two privately addressed networks. The router performs a function that keeps a table in which 192.168.2.1 is actually represented on the internet with a publicly registered address. And we'll say that it's in the same network here, so it's 200.100.58.50. And then if my host here decides also to communicate with a device out on the internet, it would be added in the table and assigned another registered address. So to host out on the internet, I am represented by this registered address. So when my packet goes out my network, so it leaves me, when it comes up here, the source address is my privately assigned address, 192.168.1.15. And the destination address in my packet would be the 210.100.5.5 address of the destination server. When it comes up here, the router looks at its network address translation table and sees that I will be represented on the internet by this address. So it changes the packet, my little packet here. When it leaves, the packet then looks like the source address of 200.100.58.51, and the destination address of 210.100.5.5. So when the packet actually reaches the server, the server will send its response back to my registered address that was assigned to me here. So it'll address its packet with the source 210.100.5.5, and the destination address of my registered address, 200.100.58.51. This packet will make its way back to my router, and my router will see 200.100.58.51 and it will say who has that address assigned to it? And it will look in its table, and it will see that that address is assigned to me. So it will change the packet back to show my local address as being the destination, and then it will forward it back out to me. So I will happily get the packet from the server and be able to display the webpage.
+Timestamp: 00:00:06.420 - 00:00:08.070 Text: In this lesson, we're going to talk
+Timestamp: 00:00:08.070 - 00:00:11.030 Text: about private IP networks
+Timestamp: 00:00:11.030 - 00:00:14.760 Text: and the need for network address translation
+Timestamp: 00:00:14.760 - 00:00:17.610 Text: when we go from a privately addressed network
+Timestamp: 00:00:17.610 - 00:00:20.013 Text: to a publicly addressed network.
+Timestamp: 00:00:23.290 - 00:00:26.540 Text: IPv4 addresses have two categories.
+Timestamp: 00:00:26.540 - 00:00:29.840 Text: The first one is private addressing.
+Timestamp: 00:00:29.840 - 00:00:32.380 Text: Private addressing is addresses that can be used
+Timestamp: 00:00:32.380 - 00:00:34.610 Text: within an organization.
+Timestamp: 00:00:34.610 - 00:00:36.210 Text: They work perfectly well.
+Timestamp: 00:00:36.210 - 00:00:38.070 Text: You can assign them to hosts.
+Timestamp: 00:00:38.070 - 00:00:41.700 Text: They can be routed between different networks.
+Timestamp: 00:00:41.700 - 00:00:46.310 Text: But when you need to go outside of your organization
+Timestamp: 00:00:47.160 - 00:00:49.890 Text: across the publicly addressed internet,
+Timestamp: 00:00:49.890 - 00:00:54.330 Text: you have to have a registered public IP address.
+Timestamp: 00:00:54.330 - 00:00:59.330 Text: Now, the people who designed IP reserved certain networks
+Timestamp: 00:01:00.160 - 00:01:04.460 Text: that you could use them within your enterprise,
+Timestamp: 00:01:04.460 - 00:01:08.290 Text: but they will not route across the internet.
+Timestamp: 00:01:08.290 - 00:01:13.290 Text: Those addresses are 192.168, 172.16, and 10.
+Timestamp: 00:01:15.110 - 00:01:17.930 Text: Now, most of you who have a home network,
+Timestamp: 00:01:17.930 - 00:01:20.960 Text: if you look at what the IP addresses are
+Timestamp: 00:01:20.960 - 00:01:23.650 Text: that are assigned to your various devices,
+Timestamp: 00:01:23.650 - 00:01:26.500 Text: you will find that usually they are assigned
+Timestamp: 00:01:26.500 - 00:01:29.770 Text: to the 192.168 network,
+Timestamp: 00:01:29.770 - 00:01:34.770 Text: the reason being is that it uses a subnet mask of 24 bits,
+Timestamp: 00:01:35.080 - 00:01:39.040 Text: which only leaves eight bits for host addressing.
+Timestamp: 00:01:39.040 - 00:01:44.040 Text: Those eight bits only have 254 possible host addresses.
+Timestamp: 00:01:45.600 - 00:01:47.980 Text: So they're used for smaller organizations
+Timestamp: 00:01:47.980 - 00:01:49.740 Text: and smaller networks.
+Timestamp: 00:01:49.740 - 00:01:54.740 Text: 172.16 now uses 16 bits as identifying the network portion,
+Timestamp: 00:01:57.970 - 00:02:00.330 Text: so you can have many more.
+Timestamp: 00:02:00.330 - 00:02:04.870 Text: And 10, it only uses eight bits for the network portion,
+Timestamp: 00:02:04.870 - 00:02:08.900 Text: so it's used primarily for very large enterprises.
+Timestamp: 00:02:08.900 - 00:02:13.650 Text: Now, if we have a network addressed with private addressing,
+Timestamp: 00:02:13.650 - 00:02:16.903 Text: as we do in our little organization here,
+Timestamp: 00:02:17.820 - 00:02:21.610 Text: we would have difficulty sending this traffic
+Timestamp: 00:02:21.610 - 00:02:24.803 Text: out to a server that is located on the internet.
+Timestamp: 00:02:26.830 - 00:02:31.830 Text: The internet will only route registered public IP addresses.
+Timestamp: 00:02:32.170 - 00:02:36.003 Text: So 192.168 does not fall into that category.
+Timestamp: 00:02:36.870 - 00:02:40.210 Text: So a function was developed
+Timestamp: 00:02:40.210 - 00:02:42.613 Text: called network address translation.
+Timestamp: 00:02:53.360 - 00:02:55.563 Text: In network address translation,
+Timestamp: 00:02:56.470 - 00:03:00.650 Text: a private addressed host can actually send traffic
+Timestamp: 00:03:00.650 - 00:03:02.170 Text: across the internet.
+Timestamp: 00:03:02.170 - 00:03:05.010 Text: And the manner in which it does this
+Timestamp: 00:03:05.010 - 00:03:07.070 Text: is that the router,
+Timestamp: 00:03:07.070 - 00:03:08.570 Text: and you can see here is our router
+Timestamp: 00:03:08.570 - 00:03:09.970 Text: that connects us to the internet
+Timestamp: 00:03:09.970 - 00:03:13.410 Text: and also to our two privately addressed networks.
+Timestamp: 00:03:13.410 - 00:03:17.950 Text: The router performs a function that keeps a table
+Timestamp: 00:03:17.950 - 00:03:22.950 Text: in which 192.168.2.1 is actually represented
+Timestamp: 00:03:26.660 - 00:03:31.313 Text: on the internet with a publicly registered address.
+Timestamp: 00:03:32.250 - 00:03:34.650 Text: And we'll say that it's in the same network here,
+Timestamp: 00:03:34.650 - 00:03:39.650 Text: so it's 200.100.58.50.
+Timestamp: 00:03:42.600 - 00:03:47.600 Text: And then if my host here decides also
+Timestamp: 00:03:47.830 - 00:03:50.830 Text: to communicate with a device out on the internet,
+Timestamp: 00:03:50.830 - 00:03:52.820 Text: it would be added in the table
+Timestamp: 00:03:57.610 - 00:04:00.253 Text: and assigned another registered address.
+Timestamp: 00:04:07.330 - 00:04:10.030 Text: So to host out on the internet,
+Timestamp: 00:04:10.030 - 00:04:13.490 Text: I am represented by this registered address.
+Timestamp: 00:04:13.490 - 00:04:18.490 Text: So when my packet goes out my network, so it leaves me,
+Timestamp: 00:04:20.330 - 00:04:22.210 Text: when it comes up here,
+Timestamp: 00:04:22.210 - 00:04:27.210 Text: the source address is my privately assigned address,
+Timestamp: 00:04:29.227 - 00:04:33.910 Text: 192.168.1.15.
+Timestamp: 00:04:33.910 - 00:04:38.770 Text: And the destination address in my packet
+Timestamp: 00:04:38.770 - 00:04:43.770 Text: would be the 210.100.5.5 address of the destination server.
+Timestamp: 00:04:48.640 - 00:04:51.670 Text: When it comes up here, the router looks
+Timestamp: 00:04:51.670 - 00:04:54.150 Text: at its network address translation table
+Timestamp: 00:04:54.150 - 00:04:57.690 Text: and sees that I will be represented on the internet
+Timestamp: 00:04:57.690 - 00:04:59.400 Text: by this address.
+Timestamp: 00:04:59.400 - 00:05:03.463 Text: So it changes the packet, my little packet here.
+Timestamp: 00:05:05.230 - 00:05:08.070 Text: When it leaves, the packet then looks
+Timestamp: 00:05:08.070 - 00:05:13.070 Text: like the source address of 200.100.58.51,
+Timestamp: 00:05:22.650 - 00:05:26.743 Text: and the destination address of 210.100.5.5.
+Timestamp: 00:05:34.700 - 00:05:38.610 Text: So when the packet actually reaches the server,
+Timestamp: 00:05:38.610 - 00:05:41.010 Text: the server will send its response
+Timestamp: 00:05:41.010 - 00:05:46.010 Text: back to my registered address that was assigned to me here.
+Timestamp: 00:05:46.570 - 00:05:48.780 Text: So it'll address its packet
+Timestamp: 00:05:51.560 - 00:05:55.937 Text: with the source 210.100.5.5,
+Timestamp: 00:05:59.630 - 00:06:04.630 Text: and the destination address of my registered address,
+Timestamp: 00:06:05.240 - 00:06:09.693 Text: 200.100.58.51.
+Timestamp: 00:06:13.150 - 00:06:18.150 Text: This packet will make its way back to my router,
+Timestamp: 00:06:18.320 - 00:06:23.193 Text: and my router will see 200.100.58.51
+Timestamp: 00:06:23.193 - 00:06:26.670 Text: and it will say who has that address assigned to it?
+Timestamp: 00:06:26.670 - 00:06:28.470 Text: And it will look in its table,
+Timestamp: 00:06:28.470 - 00:06:32.460 Text: and it will see that that address is assigned to me.
+Timestamp: 00:06:32.460 - 00:06:35.060 Text: So it will change the packet back
+Timestamp: 00:06:35.060 - 00:06:39.930 Text: to show my local address as being the destination,
+Timestamp: 00:06:39.930 - 00:06:42.930 Text: and then it will forward it back out to me.
+Timestamp: 00:06:42.930 - 00:06:46.240 Text: So I will happily get the packet from the server
+Timestamp: 00:06:46.240 - 00:06:48.223 Text: and be able to display the webpage.

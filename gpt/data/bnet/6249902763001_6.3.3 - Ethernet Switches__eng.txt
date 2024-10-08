@@ -1,0 +1,60 @@
+Module Number: 6249902763001_6
+Section Number: 6249902763001_6.3
+Video Number: 6249902763001_6.3.3
+Video Title: Ethernet Switches__eng
+Video URL: 
+ - In this video, we're going to take a look at how Ethernet switches work. Ethernet switches operate at the layer two, data link layer of the OSI model. That's because they make their forwarding decisions based on the layer two information, the Ethernet header information, of the Ethernet frame. Ethernet switches have MAC address tables. In this example, the MAC address table is already fully populated. We'll learn in a later video, how the MAC address table gets built. But let's see how a switch uses this information. Here we have four hosts, H1 through H4. I have on each host an abbreviated MAC address, like AAAA for host one. That's the MAC address of it's Ethernet NIC. So if we have H1 going to send an Ethernet frame to H4, well, it builds a Ethernet frame with the source MAC address of it's own MAC address. So in the source MAC address, we'll put AAAA, the MAC address of H1, and the destination MAC address will be that of H4, DDDD. Once again, these are just abbreviated MAC addresses. So, this Ethernet frame gets forwarded by H1 and is received on the switch on it's Ethernet port, fast Ethernet zero one. The switch, we'll learn later how it builds this table, but to forward the information, it looks at the destination MAC address of the Ethernet frame. The destination MAC address is DDDD. So it looks in it's MAC address table for that MAC address and here it is, DDDD, which is on port FA, fast Ethernet, zero four. So, the switch will forward this frame only out fast Ethernet zero four towards the destination.
+Timestamp: 00:00:06.392 - 00:00:08.248 Text: - In this video, we're going to take a look
+Timestamp: 00:00:08.248 - 00:00:10.648 Text: at how Ethernet switches work.
+Timestamp: 00:00:10.648 - 00:00:13.656 Text: Ethernet switches
+operate at the layer two,
+Timestamp: 00:00:13.656 - 00:00:17.048 Text: data link layer of the OSI model.
+Timestamp: 00:00:17.048 - 00:00:19.992 Text: That's because they make
+their forwarding decisions
+Timestamp: 00:00:19.992 - 00:00:23.032 Text: based on the layer two information,
+Timestamp: 00:00:23.032 - 00:00:27.199 Text: the Ethernet header information,
+of the Ethernet frame.
+Timestamp: 00:00:29.027 - 00:00:33.197 Text: Ethernet switches have MAC address tables.
+Timestamp: 00:00:33.197 - 00:00:35.203 Text: In this example, the MAC address table
+Timestamp: 00:00:35.203 - 00:00:37.859 Text: is already fully populated.
+Timestamp: 00:00:37.859 - 00:00:39.917 Text: We'll learn in a later video,
+Timestamp: 00:00:39.917 - 00:00:43.213 Text: how the MAC address table gets built.
+Timestamp: 00:00:43.213 - 00:00:46.829 Text: But let's see how a switch
+uses this information.
+Timestamp: 00:00:46.829 - 00:00:50.579 Text: Here we have four hosts,
+H1 through H4.
+Timestamp: 00:00:51.757 - 00:00:56.403 Text: I have on each host an
+abbreviated MAC address,
+Timestamp: 00:00:56.403 - 00:00:59.149 Text: like AAAA for host one.
+Timestamp: 00:00:59.149 - 00:01:02.816 Text: That's the MAC address
+of it's Ethernet NIC.
+Timestamp: 00:01:03.928 - 00:01:08.095 Text: So if we have H1 going to
+send an Ethernet frame to H4,
+Timestamp: 00:01:10.093 - 00:01:12.760 Text: well, it builds a Ethernet frame
+Timestamp: 00:01:13.875 - 00:01:17.699 Text: with the source MAC address
+of it's own MAC address.
+Timestamp: 00:01:17.699 - 00:01:21.449 Text: So in the source MAC
+address, we'll put AAAA,
+Timestamp: 00:01:24.088 - 00:01:25.921 Text: the MAC address of H1,
+Timestamp: 00:01:27.230 - 00:01:31.397 Text: and the destination MAC address
+will be that of H4, DDDD.
+Timestamp: 00:01:34.851 - 00:01:39.181 Text: Once again, these are just
+abbreviated MAC addresses.
+Timestamp: 00:01:39.181 - 00:01:42.848 Text: So, this Ethernet frame
+gets forwarded by H1
+Timestamp: 00:01:43.885 - 00:01:48.056 Text: and is received on the
+switch on it's Ethernet port,
+Timestamp: 00:01:48.056 - 00:01:49.973 Text: fast Ethernet zero one.
+Timestamp: 00:01:51.149 - 00:01:55.049 Text: The switch, we'll learn later
+how it builds this table,
+Timestamp: 00:01:55.049 - 00:01:57.613 Text: but to forward the information,
+Timestamp: 00:01:57.613 - 00:01:59.928 Text: it looks at the destination MAC address
+Timestamp: 00:01:59.928 - 00:02:02.061 Text: of the Ethernet frame.
+Timestamp: 00:02:02.061 - 00:02:05.880 Text: The destination MAC address is DDDD.
+Timestamp: 00:02:05.880 - 00:02:08.397 Text: So it looks in it's MAC address table
+Timestamp: 00:02:08.397 - 00:02:12.685 Text: for that MAC address and here it is, DDDD,
+Timestamp: 00:02:12.685 - 00:02:16.518 Text: which is on port FA,
+fast Ethernet, zero four.
+Timestamp: 00:02:17.752 - 00:02:20.717 Text: So, the switch will forward this frame
+Timestamp: 00:02:20.717 - 00:02:24.077 Text: only out fast Ethernet zero four
+Timestamp: 00:02:24.077 - 00:02:26.077 Text: towards the destination.

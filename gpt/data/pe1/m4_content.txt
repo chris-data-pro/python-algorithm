@@ -1,0 +1,674 @@
+New Component Title
+New Component Title
+New Component Title
+Question 2
+New Component Title
+New Component Title
+New Component Title
+1.1 Why do we need functions?
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+5.4 Fibonacci numbers
+7.4 The exception proves the rule
+Question 4
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Bug vs. debug
+4.
+New Component Title
+New Component Title
+New Component Title
+7.6 The default exception and how to use it
+LAB How many days: writing and using your own functions
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+7.7 Some useful exceptions
+New Component Title
+New Component Title
+New Component Title
+Question
+Which of the following statements are true?   (Select two answers)
+The None value can be assigned to variables
+The None value can be compared with variables
+The None value cannot be used outside functions
+The None value can be used as an argument of arithmetic operators
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+SECTION SUMMARY
+New Component Title
+Question
+What is the output of the following code?
+dictionary = {'one': 'two', 'three': 'one', 'two': 'three'}
+v = dictionary['one']
+ 
+for k in range(len(dictionary)):
+    v = dictionary[v]
+ 
+print(v)
+ 
+two
+three
+one
+('one', 'two', 'three')
+New Component Title
+Section 1 – Functions
+Scroll to begin   
+Question
+The fact that tuples belong to sequence types means that:
+they can be indexed and sliced like lists
+they can be extended using the .append() method
+they can be modified using the del instruction
+they are actually lists
+Question 1
+Question
+What is the output of the following snippet?
+def fun(x, y, z):
+    return x + 2 * y + 3 * z
+ 
+ 
+print(fun(0, z=1, y=3))
+ 
+9
+0
+3
+the snippet is erroneous
+New Component Title
+Question
+Which of the following lines properly starts a function using two parameters, both with zeroed default values?
+def fun(a=0, b=0):
+def fun(a=b=0):
+fun fun(a=0, b):
+fun fun(a, b=0):
+New Component Title
+Question
+What is the output of the following snippet?
+def f(x):
+    if x == 0:
+  &nbsp     return 0
+    return x + f(x - 1)
+ 
+ 
+print(f(3))
+ 
+6
+3
+1
+the code is erroneous
+4.2 Functions and scopes: the global keyword
+Question 3
+New Component Title
+New Component Title
+New Component Title
+Section 2 – How functions communicate with their environment
+Scroll to begin   
+New Component Title
+New Component Title
+5.
+Question 3
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Text
+Section 7 – Exceptions
+SECTION SUMMARY
+Question 1
+New Component Title
+5.3 Sample functions: Factorials
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+my_list =  ['Mary', 'had', 'a', 'little', 'lamb']
+ 
+ 
+def my_list(my_list):
+    del my_list[3]
+    my_list[3] = 'ram'
+ 
+ 
+print(my_list(my_list))
+ 
+no output, the snippet is erroneous
+['Mary', 'had', 'a', 'little', 'lamb']
+['Mary', 'had', 'a', 'lamb']
+['Mary', 'had', 'a', 'ram']
+Previous
+Home
+Back to menu
+Next 
+{{inc index}}
+Close
+New Component Title
+LAB Day of the year: writing and using your own functions
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Section 5 – Creating multi-parameter functions
+Scroll to begin   
+LAB A leap year: writing your own functions
+New Component Title
+New Component Title
+Question 5
+New Component Title
+Question
+What is the output of the following snippet?
+def fun(x):
+    x += 1
+    return x
+ 
+ 
+x = 2
+x = fun(x + 1)
+print(x)
+ 
+4
+5
+3
+the code is erroneous
+New Component Title
+New Component Title
+New Component Title
+3.
+New Component Title
+Question
+Assuming that my_tuple is a correctly created tuple, the fact that tuples are immutable means that the following instruction:
+my_tuple[1] = my_tuple[1] + my_tuple[0]
+ 
+is illegal
+can be executed if and only if the tuple contains at least two elements
+is fully correct
+may be illegal if the tuple contains strings
+Key takeaways: dictionaries
+3.1 Effects and results: the return instruction
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+New Component Title
+7.1 Errors – the developer's daily bread
+New Component Title
+New Component Title
+New Component Title
+Question 3
+3.
+4.
+5.2 Sample functions: Triangles
+Question 7
+4.1 Functions and scopes
+2.2 Positional parameter passing
+New Component Title
+6.2 Tuples
+New Component Title
+New Component Title
+2.3 Keyword argument passing
+2.5 Parametrized functions – more details
+New Component Title
+Question 3
+7.10 Tests, testing, and testers
+Question
+What is the output of the following snippet?
+def any():
+    print(var + 1, end='')
+ 
+ 
+var = 1
+any()
+print(var)
+ 
+21
+12
+11
+22
+Text
+Section 2 – How functions communicate with their environment
+Question
+The following snippet:
+def func(a, b):
+    return a ** a
+ 
+ 
+print(func(2))
+ 
+is erroneous
+will output 4
+will output 2
+will return None
+New Component Title
+Question 8
+New Component Title
+Text
+Section 4 – Scopes in Python
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+def fun(x):
+    global y
+    y = x * x
+    return y
+ 
+ 
+fun(2)
+print(y)
+ 
+4
+2
+None
+the code will cause a runtime error
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+2.1 Parameterized functions
+Question 4
+7.3 The try-except branch
+New Component Title
+Question 2
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+Question
+A function defined in the following way:  (Select two answers)
+def function(x=0):
+    return x
+ 
+may be invoked without any argument
+may be invoked with exactly one argument
+must be invoked with exactly one argument
+must be invoked without any argument
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+7.13 Unit testing – a higher level of coding
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+Question 1
+1.3 Where do the functions come from?
+5.
+New Component Title
+New Component Title
+New Component Title
+How to use a tuple
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 6
+New Component Title
+New Component Title
+6.1 Sequence types and mutability
+Question
+What is the output of the following snippet?
+def fun(inp=2, out=3):
+    return inp * out
+ 
+ 
+print(fun(out=2))
+ 
+4
+6
+2
+the snippet is erroneous
+New Component Title
+New Component Title
+Text
+Section 6 – Tuples and dictionaries
+New Component Title
+Question 2
+7.12 Some useful tips
+4.3 How the function interacts with its arguments
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Previous
+Home
+Back to menu
+Next 
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+Triangles and the Pythagorean theorem
+Evaluating a triangle's area
+New Component Title
+New Component Title
+New Component Title
+LAB Converting fuel consumption
+Question
+A built-in function is a function which:
+comes with Python, and is an integral part of Python
+has been placed within your code by another programmer
+has to be imported before use
+is hidden from programmers
+6.
+1.2 Decomposition
+6.4 Dictionary methods and functions
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 2
+New Component Title
+LAB Prime numbers ‒ how to find them
+New Component Title
+New Component Title
+7.9 When Python closes its eyes
+New Component Title
+Question
+Select the true statements about the try-except block in relation to the following example. (Select two answers.)
+try:
+    # Some code is here...
+except:
+    # Some code is here...
+ 
+If you suspect that a snippet may raise an exception, you should place it in the try block.
+The code that follows the except statement will be executed if the code in the try clause runs into an error.
+If there is a syntax error in code located in the try block, the except branch will not handle it, and a SyntaxError exception will be raised instead.
+The code that follows the try statement will be executed if the code in the except clause runs into an error.
+New Component Title
+5.1 Sample functions: Evaluating the BMI
+Question
+Which one of the following lines properly starts a parameterless function definition?
+def fun():
+def fun:
+function fun():
+fun function():
+Text
+Section 5 – Creating multi-parameter functions
+Question
+The following snippet:
+def func_1(a):
+    return a ** a
+ 
+ 
+def func_2(a):
+    return func_1(a) * func_1(a)
+ 
+ 
+print(func_2(2))
+ 
+will output 16
+will output 4
+will output 2
+is erroneous
+SECTION SUMMARY
+3.2 A few words about None
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+SECTION SUMMARY
+Question 4
+New Component Title
+2.
+Question 1
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Section 4 – Scopes in Python
+Scroll to begin   
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following code?
+tup = (1, 2, 4, 8)
+tup = tup[1:-1]
+tup = tup[0]
+print(tup)
+ 
+2
+(2)
+(2, )
+the snippet is erroneous
+New Component Title
+New Component Title
+New Component Title
+5.5 Recursion
+Section 7 – Exceptions
+Scroll to begin   
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What code would you insert instead of the comment to obtain the expected output?
+dictionary = {}
+my_list = ['a', 'b', 'c', 'd']
+ 
+for i in range(len(my_list) - 1):
+    dictionary[my_list[i]] = (my_list[i], )
+ 
+for i in sorted(dictionary.keys()):
+    k = dictionary[i]
+    # Insert your code here.
+ 
+print(k[0])
+print(k['0'])
+print(k)
+print(k["0"])
+New Component Title
+New Component Title
+New Component Title
+Question 2
+New Component Title
+New Component Title
+New Component Title
+2.4 Mixing positional and keyword arguments
+Question 4
+Question 2
+7.5 How to deal with more than one exception
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+How to use a dictionary
+New Component Title
+SECTION SUMMARY
+7.8 Why you can’t avoid testing your code
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+Section 6 – Tuples and dictionaries
+Scroll to begin   
+New Component Title
+New Component Title
+New Component Title
+1.4 Your first function
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Quiz Feedback
+New Component Title
+New Component Title
+6.
+8.
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Section 3 – Returning a result from a function
+Scroll to begin   
+New Component Title
+New Component Title
+SECTION SUMMARY
+New Component Title
+New Component Title
+1.5 How functions work
+New Component Title
+New Component Title
+3.1 Effects and results: the return instruction
+New Component Title
+Question 2
+New Component Title
+2.
+New Component Title
+Text
+Section 3 – Returning a result from a function
+New Component Title
+New Component Title
+New Component Title
+Question 3
+7.2 When data is not what it should be
+7.
+7.11 print debugging
+Question
+What is the output of the following code?
+try:
+    value = input("Enter a value: ")
+    print(value/value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except TypeError:
+    print("Very very bad input...")
+except:
+    print("Booo!")
+Very very bad input...
+Very bad input...
+Bad input...
+Booo!
+Text
+Section 1 – Functions
+New Component Title
+New Component Title
+Evaluating BMI and converting imperial units to metric units
+New Component Title
+3.3 Effects and results: lists and functions
+New Component Title
+New Component Title
+6.5 Tuples and dictionaries can work together
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+def fun(x):
+    if x % 2 == 0:
+        return 1
+    else:
+        return
+ 
+ 
+print(fun(fun(2)) + 1)
+ 
+the code will cause a runtime error
+1
+2
+None
+6.3 Dictionaries
+New Component Title
+SECTION SUMMARY
+New Component Title
+Module 4 Completion – Module Test
+Scroll to begin   
+Text
+Module 4 Completion – Module Test

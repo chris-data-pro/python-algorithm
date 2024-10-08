@@ -1,0 +1,18 @@
+Module Title: Course Introduction
+Module URL: "http://cisco_bnet_mod0"
+Course Introduction
+Scroll down  and select ‘Course Introduction’ to begin.
+0.0 Course Introduction
+0.0 Course Introduction
+0.0 Course Introduction
+Scroll to begin   
+0.0.1 First Time in this Course
+
+0.0.1 First Time in this Course
+The Networking Basics course teaches the fundamentals of networking by covering the basic concepts and skills needed to set up and manage your small office or home office (SOHO) network. The learner is presented with an engaging and exploratory view of networks, the devices that comprise them, how they work, and basic troubleshooting tools and techniques. The goal of this course is to provide the learner with an engaging, exploratory view of networks, including the internet. Upon completion of the Networking Basics course, students will be able to perform the following tasks: Explain important concepts in network communication.Explain network types, components, and connections.Configure mobile devices for wireless access.Configure an integrated wireless router and wireless client to connect securely to the internet.Explain the importance of standards and protocols in network communications.Describe common network media.Explain how communication occurs on Ethernet networks.Explain the features of an IP address.Explain how IPv4 addresses are used in network communication and segmentation.Explain features of IPv6 addressing.Configure a DHCP server.Explain how routers connect networks together.Explain how ARP enables communication on a network.Create a fully connected LAN.Explain how clients access internet services.Explain the function of common application layer services.Use various tools to test and troubleshoot network connectivity.
+0.0.2 Student Resources
+
+0.0.2 Student Resources
+There are a number of tools and resources that are available to you that will help you in your journey as you develop your networking skills and prepare for job opportunities.Packet TracerPacket Tracer simulates the internal workings of a network and is used in this course. If you are new to Packet Tracer, take this FREE, short, online course now: Getting Started with Cisco Packet Tracer.You can use your smartphone, tablet, or desktop to access your course; however, Packet Tracer activities, as well as some other activities, quizzes, and exams are best experienced using a PC.Lab EnvironmentNo equipment is necessary   Resources Available to YouSkills for All frequently asked questions can be found at https://skillsforall.com/help, or by clicking Help in the top navigation bar. For Packet Tracer downloading help, visit https://skillsforall.com/resources/lab-downloads and scroll down to Learning Resources.You can find additional FAQs by visiting our virtual assistant, Morgan. Click the chat icon in the top right corner to choose from a list of topics or enter your question. Morgan’s help includes information about Packet Tracer, certificates, and badging.
+0.0.3 Download Cisco Packet Tracer
+To obtain and install your copy of Cisco Packet Tracer, please follow the instructions from the link below: https://skillsforall.com/resources/lab-downloads

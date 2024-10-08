@@ -1,0 +1,48 @@
+Module Number: 3
+Section Number: 3.2
+Video Number: 3.2.1
+Video Title: What is Machine Learning
+Video URL: 
+ It's all the rage these days, companies touting machine learning this or machine learning that, vendors promising a cure-all for every IT challenge. The hype is getting pretty thick. So, what exactly is machine learning? Traditionally, computers solve problems through programs or instructions given to them by a human. Machine learning just means the computer can figure out a solution without being specifically programmed. These machines have the ability to continuously learn by looking at data and finding patterns, and they do this much faster than a human could. Let's look at two key terms in machine learning: classifiers and algorithms. Classifiers are the workhorse of machine learning that categorize observations, while algorithms are the techniques that organize and orient classifiers. Often, machine learning requires training with sets of correct question and answer pairs that lets both the classifier and the algorithms do great work. Let's look at an example to see how it works. Classifiers analyze specific data patterns, not actual noses or eyes. And with enough training, they can pick your photo out of millions of options. So, how do we use machine learning in security? Envision an analytics pipeline that uses many hundreds of machine learning classifiers and algorithms all working together, analyzing millions of internal and external data points and events. The pipeline identifies and separates suspected malicious activity from the normal. It's then organized into specific events and then combined with actionable context for security teams. And it does all this at machine speed. Pretty amazing, right?
+Timestamp: 00:00:00.060 - 00:00:01.770 Text: It's all the rage these days,
+Timestamp: 00:00:01.770 - 00:00:03.900 Text: companies touting machine learning this
+Timestamp: 00:00:03.900 - 00:00:05.670 Text: or machine learning that,
+Timestamp: 00:00:05.670 - 00:00:09.180 Text: vendors promising a cure-all for every IT challenge.
+Timestamp: 00:00:09.180 - 00:00:11.280 Text: The hype is getting pretty thick.
+Timestamp: 00:00:11.280 - 00:00:13.710 Text: So, what exactly is machine learning?
+Timestamp: 00:00:13.710 - 00:00:16.980 Text: Traditionally, computers solve problems through programs
+Timestamp: 00:00:16.980 - 00:00:19.710 Text: or instructions given to them by a human.
+Timestamp: 00:00:19.710 - 00:00:21.060 Text: Machine learning just means
+Timestamp: 00:00:21.060 - 00:00:23.160 Text: the computer can figure out a solution
+Timestamp: 00:00:23.160 - 00:00:25.500 Text: without being specifically programmed.
+Timestamp: 00:00:25.500 - 00:00:28.620 Text: These machines have the ability to continuously learn
+Timestamp: 00:00:28.620 - 00:00:31.320 Text: by looking at data and finding patterns,
+Timestamp: 00:00:31.320 - 00:00:34.170 Text: and they do this much faster than a human could.
+Timestamp: 00:00:34.170 - 00:00:36.480 Text: Let's look at two key terms in machine learning:
+Timestamp: 00:00:36.480 - 00:00:39.690 Text: classifiers and algorithms.
+Timestamp: 00:00:39.690 - 00:00:42.000 Text: Classifiers are the workhorse of machine learning
+Timestamp: 00:00:42.000 - 00:00:43.860 Text: that categorize observations,
+Timestamp: 00:00:43.860 - 00:00:45.720 Text: while algorithms are the techniques
+Timestamp: 00:00:45.720 - 00:00:48.960 Text: that organize and orient classifiers.
+Timestamp: 00:00:48.960 - 00:00:51.120 Text: Often, machine learning requires training
+Timestamp: 00:00:51.120 - 00:00:53.940 Text: with sets of correct question and answer pairs
+Timestamp: 00:00:53.940 - 00:00:55.350 Text: that lets both the classifier
+Timestamp: 00:00:55.350 - 00:00:57.213 Text: and the algorithms do great work.
+Timestamp: 00:00:58.590 - 00:01:01.260 Text: Let's look at an example to see how it works.
+Timestamp: 00:01:01.260 - 00:01:03.960 Text: Classifiers analyze specific data patterns,
+Timestamp: 00:01:03.960 - 00:01:06.360 Text: not actual noses or eyes.
+Timestamp: 00:01:06.360 - 00:01:07.320 Text: And with enough training,
+Timestamp: 00:01:07.320 - 00:01:09.920 Text: they can pick your photo out of millions of options.
+Timestamp: 00:01:11.250 - 00:01:13.600 Text: So, how do we use machine learning in security?
+Timestamp: 00:01:14.460 - 00:01:16.410 Text: Envision an analytics pipeline
+Timestamp: 00:01:16.410 - 00:01:19.470 Text: that uses many hundreds of machine learning classifiers
+Timestamp: 00:01:19.470 - 00:01:21.840 Text: and algorithms all working together,
+Timestamp: 00:01:21.840 - 00:01:23.670 Text: analyzing millions of internal
+Timestamp: 00:01:23.670 - 00:01:26.220 Text: and external data points and events.
+Timestamp: 00:01:26.220 - 00:01:28.050 Text: The pipeline identifies and separates
+Timestamp: 00:01:28.050 - 00:01:30.900 Text: suspected malicious activity from the normal.
+Timestamp: 00:01:30.900 - 00:01:33.420 Text: It's then organized into specific events
+Timestamp: 00:01:33.420 - 00:01:35.760 Text: and then combined with actionable context
+Timestamp: 00:01:35.760 - 00:01:36.963 Text: for security teams.
+Timestamp: 00:01:37.800 - 00:01:40.620 Text: And it does all this at machine speed.
+Timestamp: 00:01:40.620 - 00:01:41.913 Text: Pretty amazing, right?

@@ -1,0 +1,132 @@
+Module Number: 6249946498001_7
+Section Number: 6249946498001_7.2
+Video Number: 6249946498001_7.2.4
+Video Title: Messages Within and Between Networks
+Video URL: 
+ - In this next part, we're going to have H1 at 192.168.1.10, that's its IPv4 address, send a packet, and IPv4 packet, to 192.168.2.50, host H3. So, H1, the source of the packet, builds the IPv4 packet. The source IPv4 address, is its own IPv4 address, 192.168.1.10. The destination IPv4 address is the final destination, that of H3 at 192.168.2.50. Now, H1 needs to determine, is the destination IPv4 address, that of H3, on the same network as myself? Now, once again, it knows its IPv4 address, 192.168.1.10, that it's on the 192.168.1.0 network. It looks at the destination IPv4 address, using it's own subnet mask. It determines that the destination address, is on a different network. It is not on the 192.168.1.0 network, it's on the 192.168.2.0 perhaps. All it knows is that it's not on my network. So, H1 says, okay, I cannot send this packet directly to the device. I need to send it to my default gateway, the router. So, H1 knows the IPv4 address of the default gateway of the router. As part of the configuration information every device must have, to reach other networks. So, it knows the IPv4 address of the router is 192.168.1.1. What it needs to know is what is the default gateway, what is this IPv4 addresses MAC address? So it checks its ARP cache for that MAC address. We're going to assume that it already has that information in its ARP cache. The Ethernet NIC associated with this interface, with this routers interface, we're going to abbreviate it at 11-11. And again, if it didn't know this information, it would send out an ARP request, get an ARP reply from the router. Okay, so now this Ethernet frame gets sent from H1 and is received by the router. The router receives this, says yes, that's my destination MAC address, this frame is for me. So, what it does, is it actually removes this Ethernet header information. Now the router is going to do its job at what we call layer 3 forwarding, it's going to do routing. It looks up the destination IPv4 address of the packet, it looks that up in its routing table. So, it says, okay, this destination IPv4 address, 192.168.2.50, oh, that's a member of the 192.168.2.0 network in my routing table. I can reach that network by sending the packet out fast Ethernet 0/2. So, it wants to send this packet out this interface. So, it's going to encapsulate it now, in a new Ethernet frame. So, the new Ethernet frame will actually have the source MAC address of this routers network interface card. It's actually going to have the source MAC address of 22-22. Remember, Ethernet layer 2 is for network interface card to network interface card communications in the same network. Okay, we're almost there. The next thing it has to do is, okay, oh, the destination IPv4 address, that's on my network. I, router R1, can reach that device directly. I need to know the MAC address associated with this IPv4 address. So, guess what? It actually checks its own ARP cache for that information and we're going to assume that it has that information. That it knows that 192.168.2.50, this device right here, has the MAC address CC-CC. Again that's abbreviated but let's go ahead and use that, CC-CC. So, now it can send this Ethernet frame out the fast Ethernet 0/2 port. Switch forwards that on to H3. It says yes, the destination MAC address, that is associated with the MAC address of my NIC card. This Ethernet frame is for me. It receives the packet, it says yes, that IPv4 address is my IPv4 address, receives the packet. And that's how a packet is sent from H1 to H3, across different networks.
+Timestamp: 00:00:06.569 - 00:00:08.618 Text: - In this next part,
+Timestamp: 00:00:08.618 - 00:00:11.868 Text: we're going to have H1 at 192.168.1.10,
+Timestamp: 00:00:13.676 - 00:00:15.935 Text: that's its IPv4 address,
+Timestamp: 00:00:15.935 - 00:00:18.518 Text: send a packet, and IPv4 packet,
+Timestamp: 00:00:19.850 - 00:00:21.933 Text: to 192.168.2.50, host H3.
+Timestamp: 00:00:24.685 - 00:00:27.531 Text: So, H1, the source of the packet,
+Timestamp: 00:00:27.531 - 00:00:29.990 Text: builds the IPv4 packet.
+Timestamp: 00:00:29.990 - 00:00:31.931 Text: The source IPv4 address,
+Timestamp: 00:00:31.931 - 00:00:35.098 Text: is its own IPv4 address, 192.168.1.10.
+Timestamp: 00:00:36.587 - 00:00:41.169 Text: The destination IPv4 address
+is the final destination,
+Timestamp: 00:00:41.169 - 00:00:43.419 Text: that of H3 at 192.168.2.50.
+Timestamp: 00:00:46.993 - 00:00:49.793 Text: Now, H1 needs to determine,
+Timestamp: 00:00:49.793 - 00:00:54.283 Text: is the destination IPv4
+address, that of H3,
+Timestamp: 00:00:54.283 - 00:00:56.783 Text: on the same network as myself?
+Timestamp: 00:00:59.539 - 00:01:03.706 Text: Now, once again, it knows its
+IPv4 address, 192.168.1.10,
+Timestamp: 00:01:04.857 - 00:01:07.940 Text: that it's on the 192.168.1.0 network.
+Timestamp: 00:01:10.115 - 00:01:12.718 Text: It looks at the destination IPv4 address,
+Timestamp: 00:01:12.718 - 00:01:15.577 Text: using it's own subnet mask.
+Timestamp: 00:01:15.577 - 00:01:19.939 Text: It determines that the
+destination address,
+Timestamp: 00:01:19.939 - 00:01:22.852 Text: is on a different network.
+Timestamp: 00:01:22.852 - 00:01:25.935 Text: It is not on the 192.168.1.0 network,
+Timestamp: 00:01:27.075 - 00:01:29.742 Text: it's on the 192.168.2.0 perhaps.
+Timestamp: 00:01:32.032 - 00:01:35.315 Text: All it knows is that
+it's not on my network.
+Timestamp: 00:01:35.315 - 00:01:38.217 Text: So, H1 says, okay, I
+cannot send this packet
+Timestamp: 00:01:38.217 - 00:01:40.592 Text: directly to the device.
+Timestamp: 00:01:40.592 - 00:01:44.759 Text: I need to send it to my
+default gateway, the router.
+Timestamp: 00:01:47.310 - 00:01:50.310 Text: So, H1 knows the IPv4 address of the
+Timestamp: 00:01:51.309 - 00:01:53.529 Text: default gateway of the router.
+Timestamp: 00:01:53.529 - 00:01:56.109 Text: As part of the configuration information
+Timestamp: 00:01:56.109 - 00:02:00.489 Text: every device must have,
+to reach other networks.
+Timestamp: 00:02:00.489 - 00:02:04.656 Text: So, it knows the IPv4 address
+of the router is 192.168.1.1.
+Timestamp: 00:02:07.427 - 00:02:11.598 Text: What it needs to know is
+what is the default gateway,
+Timestamp: 00:02:11.598 - 00:02:14.931 Text: what is this IPv4 addresses MAC address?
+Timestamp: 00:02:16.489 - 00:02:20.089 Text: So it checks its ARP cache
+for that MAC address.
+Timestamp: 00:02:20.089 - 00:02:23.267 Text: We're going to assume that it
+already has that information
+Timestamp: 00:02:23.267 - 00:02:24.684 Text: in its ARP cache.
+Timestamp: 00:02:26.889 - 00:02:30.373 Text: The Ethernet NIC associated
+with this interface,
+Timestamp: 00:02:30.373 - 00:02:32.003 Text: with this routers interface,
+Timestamp: 00:02:32.003 - 00:02:35.170 Text: we're going to abbreviate it at 11-11.
+Timestamp: 00:02:36.185 - 00:02:38.809 Text: And again, if it didn't
+know this information,
+Timestamp: 00:02:38.809 - 00:02:40.180 Text: it would send out an ARP request,
+Timestamp: 00:02:40.180 - 00:02:43.422 Text: get an ARP reply from the router.
+Timestamp: 00:02:43.422 - 00:02:47.589 Text: Okay, so now this Ethernet
+frame gets sent from H1
+Timestamp: 00:02:51.061 - 00:02:52.311 Text: and is received
+Timestamp: 00:02:53.827 - 00:02:54.994 Text: by the router.
+Timestamp: 00:02:55.907 - 00:02:59.545 Text: The router receives this, says
+yes, that's my destination
+Timestamp: 00:02:59.545 - 00:03:02.491 Text: MAC address, this frame is for me.
+Timestamp: 00:03:02.491 - 00:03:05.769 Text: So, what it does, is it
+actually removes this
+Timestamp: 00:03:05.769 - 00:03:08.102 Text: Ethernet header information.
+Timestamp: 00:03:11.406 - 00:03:13.385 Text: Now the router is going to do its job
+Timestamp: 00:03:13.385 - 00:03:16.442 Text: at what we call layer 3 forwarding,
+Timestamp: 00:03:16.442 - 00:03:18.446 Text: it's going to do routing.
+Timestamp: 00:03:18.446 - 00:03:22.569 Text: It looks up the destination
+IPv4 address of the packet,
+Timestamp: 00:03:22.569 - 00:03:25.646 Text: it looks that up in its routing table.
+Timestamp: 00:03:25.646 - 00:03:26.649 Text: So, it says, okay,
+Timestamp: 00:03:26.649 - 00:03:30.316 Text: this destination IPv4
+address, 192.168.2.50,
+Timestamp: 00:03:32.238 - 00:03:36.071 Text: oh, that's a member of
+the 192.168.2.0 network
+Timestamp: 00:03:37.544 - 00:03:39.747 Text: in my routing table.
+Timestamp: 00:03:39.747 - 00:03:43.566 Text: I can reach that network
+by sending the packet out
+Timestamp: 00:03:43.566 - 00:03:45.983 Text: fast Ethernet 0/2.
+Timestamp: 00:03:47.675 - 00:03:50.744 Text: So, it wants to send this packet
+Timestamp: 00:03:50.744 - 00:03:52.327 Text: out this interface.
+Timestamp: 00:03:53.343 - 00:03:55.145 Text: So, it's going to encapsulate it now,
+Timestamp: 00:03:55.145 - 00:03:57.145 Text: in a new Ethernet frame.
+Timestamp: 00:03:58.366 - 00:04:00.489 Text: So, the new Ethernet frame
+will actually have the
+Timestamp: 00:04:00.489 - 00:04:04.656 Text: source MAC address of this
+routers network interface card.
+Timestamp: 00:04:06.745 - 00:04:10.912 Text: It's actually going to have the
+source MAC address of 22-22.
+Timestamp: 00:04:12.921 - 00:04:17.065 Text: Remember, Ethernet layer 2
+is for network interface card
+Timestamp: 00:04:17.065 - 00:04:20.158 Text: to network interface card communications
+Timestamp: 00:04:20.158 - 00:04:21.825 Text: in the same network.
+Timestamp: 00:04:23.205 - 00:04:25.049 Text: Okay, we're almost there.
+Timestamp: 00:04:25.049 - 00:04:26.846 Text: The next thing it has to do is,
+Timestamp: 00:04:26.846 - 00:04:30.889 Text: okay, oh, the destination IPv4 address,
+Timestamp: 00:04:30.889 - 00:04:32.624 Text: that's on my network.
+Timestamp: 00:04:32.624 - 00:04:36.374 Text: I, router R1, can reach
+that device directly.
+Timestamp: 00:04:38.067 - 00:04:41.484 Text: I need to know the MAC address associated
+Timestamp: 00:04:42.555 - 00:04:44.472 Text: with this IPv4 address.
+Timestamp: 00:04:46.569 - 00:04:48.185 Text: So, guess what?
+Timestamp: 00:04:48.185 - 00:04:52.729 Text: It actually checks its own
+ARP cache for that information
+Timestamp: 00:04:52.729 - 00:04:56.364 Text: and we're going to assume
+that it has that information.
+Timestamp: 00:04:56.364 - 00:04:59.031 Text: That it knows that 192.168.2.50,
+Timestamp: 00:05:01.038 - 00:05:02.663 Text: this device right here,
+Timestamp: 00:05:02.663 - 00:05:04.830 Text: has the MAC address CC-CC.
+Timestamp: 00:05:07.289 - 00:05:08.926 Text: Again that's abbreviated
+Timestamp: 00:05:08.926 - 00:05:12.176 Text: but let's go ahead and use that, CC-CC.
+Timestamp: 00:05:14.904 - 00:05:17.583 Text: So, now it can send this Ethernet frame
+Timestamp: 00:05:17.583 - 00:05:21.083 Text: out the fast Ethernet 0/2 port.
+Timestamp: 00:05:22.900 - 00:05:25.400 Text: Switch forwards that on to H3.
+Timestamp: 00:05:26.991 - 00:05:30.105 Text: It says yes, the destination MAC address,
+Timestamp: 00:05:30.105 - 00:05:34.432 Text: that is associated with the
+MAC address of my NIC card.
+Timestamp: 00:05:34.432 - 00:05:36.521 Text: This Ethernet frame is for me.
+Timestamp: 00:05:36.521 - 00:05:38.618 Text: It receives the packet,
+Timestamp: 00:05:38.618 - 00:05:42.785 Text: it says yes, that IPv4
+address is my IPv4 address,
+Timestamp: 00:05:43.782 - 00:05:45.843 Text: receives the packet.
+Timestamp: 00:05:45.843 - 00:05:48.963 Text: And that's how a packet is sent
+Timestamp: 00:05:48.963 - 00:05:52.380 Text: from H1 to H3, across different networks.

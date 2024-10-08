@@ -1,0 +1,2743 @@
+How do I take the final exam? 128
+
+To take the final exam, please follow the steps below after logging in to Skills for All:
+
+
+
+1.  Click the name of your course on the “In Progress” tab of your “My Learning” page
+
+2.  Click “Course Completion Assessment & Survey”
+
+3.  Scroll down and click “Course Final Exam”
+
+
+
+What happens if my browser closes while I am taking an exam? 139
+
+If your browser accidentally closes while you are taking an exam, you should reopen the browser and access the exam again. You will need to start over, as answers are not automatically saved.
+
+
+
+Can I see which answers I got wrong on the final exam? 308
+
+Yes, once you answer all questions and submit the final exam, you will receive a score. In addition, you can scroll up to see your answers marked as correct or incorrect. Correct answers will have a green “check mark” (√). Wrong answers will be marked with a red “x”.
+
+
+
+How do I retake an exam? 321
+
+You can retake the final exam immediately after submitting it by clicking the “Retry” link. You can also return to retake the exam at any time by resuming the course, clicking “Course Completion Assessment & Survey” and choosing “Course Final Exam”.
+
+
+
+Do courses include assessments for learners? 363
+
+Yes, SkillsForAll.com courses include formative and summative assessments for independent learners to evaluate their knowledge.
+
+
+
+What is the difference between a Career Pathway badge and a Course badge? 511
+
+A Career Pathway badge is awarded after an individual completes all courses, pathway exam, activities, and resources such as career videos, webinars, and articles within the pathway. A course badge is awarded after an individual completes a badge eligible course and the completion criteria.
+
+
+
+How do I earn an Introduction to IoT digital badge? 513
+
+Learners will receive an Introduction to IoT badge after meeting the following criteria:
+
+
+Complete the Introduction to IoT and Digital Transformation course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+Note: Individuals will not be eligible for a digital badge if they have already received the badge in Cisco NetAcad under the same email address.
+
+
+
+How do I earn an Introduction to Cybersecurity badge? 514
+
+Learners will receive an Introduction to Cybersecurity badge after meeting the following criteria:
+
+
+Complete the Introduction to Cybersecurity course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+Note: Individuals will not be eligible for a digital badge if they have already received the badge in Cisco NetAcad under the same email address.
+
+
+
+How do I earn an Endpoint Security badge? 515
+
+Learners will receive an Endpoint Security badge after meeting the following criteria:
+
+
+Complete the Endpoint Security course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+How do I earn a Network Defense badge? 516
+
+Learners will receive a Network Defense badge after meeting the following criteria:
+
+
+Complete the Network Defense course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+How do I earn a Cyber Threat Management badge? 517
+
+Learners will receive a Cyber Threat Management badge after meeting the following criteria:
+
+
+Complete the Cyber Threat Management course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+How do I earn a Cybersecurity Essentials badge? 518
+
+Learners will receive a Cybersecurity Essentials badge after meeting the following criteria:
+
+
+Complete the Cybersecurity Essentials course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+Note: Individuals will not be eligible for a digital badge if they have already received the badge in Cisco NetAcad under the same email address.
+
+
+
+How do I earn a Networking Basics badge?  520
+
+Learners will receive a Networking Basics badge after meeting the following criteria:
+
+
+
+Complete the Networking Basics course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+How do I earn a Networking Devices and Initial Configuration badge? 521
+
+Learners will receive a Networking Devices and Initial Configuration badge after meeting the following criteria:
+
+
+
+Complete the Networking Devices and Initial Configuration course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+
+How do I earn a Networking Essentials badge? 519
+
+Learners will receive a Networking Essentials badge after meeting the following criteria:
+
+
+Complete the Networking Essentials course
+
+Complete the End of Course Survey
+
+Complete the Course Final Exam with a minimum score of 70%
+
+Complete your profile page
+
+
+Note: Individuals will not be eligible for a digital badge if they have already received the badge in Cisco NetAcad under the same email address. 
+
+
+
+How do I earn a Python Essentials 1 badge? 522
+
+Learners will receive a Python Essentials 1 badge after meeting the following criteria:
+
+
+
+Complete the Python Essentials 1 course
+
+Complete the End of Course Survey
+
+Complete the Final Test with a minimum score of 70%
+
+Complete your profile page
+
+
+
+How do I share my digital badge? 18
+
+You can share your badge directly from the Credly platform to LinkedIn, Twitter and Facebook; over email; embedded in a website or in your email signature. To share your badge, please follow the steps below:
+
+Sign in to your Credly account at https://www.credly.com/
+
+Go to “Dashboard”
+
+Click the badge you want to share
+
+Click "Share"
+
+Select the options under “Promote” and “Publish” to share your badge
+
+
+
+Note: You will need to accept your badge before you can share it.
+
+
+
+How do I accept my digital badge? 16
+
+Learners can accept a digital badge they have earned on Skills for All by following the steps below:
+
+
+
+Click “My Learning” 
+
+Go to “Achievements” and click “Awarded”
+
+Locate the course and click “Claim badge”
+
+You will be brought to Credly at https://www.credly.com/
+
+Sign in to your existing account or click "Create Account" to sign up with the email address used in your Skills for All account
+
+Click the badge you want to accept and click "Accept Badge"
+
+Select your badge settings and click “Save Settings”
+
+
+
+Note:If you have previously selected “Auto Accept” in your badge settings, you will not need to manually accept your badge(s). Auto Select means all future badges issued by Cisco are accepted and made public. To view or change this setting, please go to “Organizations” under “Settings”.
+
+
+
+Do I have to create an account with Credly to obtain my digital badge? 17
+
+Yes, an account on Credly is required to obtain your digital badge.
+
+
+
+I took classes under two email addresses, can I merge all of my digital badges into one account? 19
+
+Yes, multiple accounts on Credly, with different email addresses, can be merged.
+
+
+
+How do I merge my accounts in Credly? 20
+
+If you have multiple accounts on Credly, with different email addresses, please follow the steps below to merge your accounts:
+
+
+
+Sign in to Credly with the email address you'd like to use as your default account
+
+Click "Settings"
+
+Click "Account"
+
+Under “Merge Accounts", click "Merge an account"
+
+Enter the email address and password of the other account you want to merge into the default account
+
+Click “Next”
+
+An authorization code will be sent to the email address entered in the previous step
+
+Enter the authorization code and click "Confirm"
+
+Click "Merge Accounts"
+
+
+
+You will no longer be able to access the other account once the merge is complete. Your accepted and pending badges from the merged account will be added to the default account. The email address from your merged account will be added as a secondary email to the default account as well.
+
+
+
+How soon after I earn a badge will it take for me to receive an email? 15
+
+Within 48 hours after meeting the eligibility requirements, an email notification with instructions on claiming your badge and setting up your account will be sent to the email address listed in your profile.
+
+
+
+Why is my badge link not appearing for me? 322
+
+In order for the digital badge link to appear, learners must:
+
+
+Complete their Skills for All profile (specifically choosing a “Country or Region”)
+
+Meet the eligibility requirements
+
+
+
+Note: The badge link will not appear if a learner has already received the digital badge in Cisco Networking Academy under the same email address.
+
+
+
+Will learners receive a certificate of completion when the course is finished? 345
+
+No, course completion certificates are not available in the Skills for All platform; however, digital badges are awarded to validate your skills once a course is completed.
+
+
+
+Can I receive a new badge if I earn a badge in Cisco Networking Academy and then retake the same course in Skills for All? 367
+
+Learners who take self-paced courses via Cisco Networking Academy and earn a badge can enroll again in the same courses in Skills for All. If learners meet the minimum requirements in Skills for All, they can qualify for the digital badge again. However, they will not actually receive a duplicate badge from Credly. The email learners receive from Credly will state, “Our Records Indicate you Previously Earned a Digital Badge for this Course from NetAcad.” Therefore, learners will ultimately receive one badge per course from Credly.
+
+
+
+Does my badge expire? 373
+
+No, badges you earn do not expire.
+
+
+
+How can I create a course? 413
+
+Courses in Skills For All can be created via the “My Classes” page. To create a course, please follow the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Click “Create Class” 
+
+Click on the course so it is highlighted, scroll to the bottom and click “Next”
+
+Select the start and end dates and click “Next”
+
+The course name and summary can be edited by clicking the Pencil icon 
+
+Complete the course details and click “Next”
+
+If needed, invite additional instructors and click “Next”
+
+Review the course preview and click “Publish”
+
+Click “Publish” again once the confirmation pop-up appears
+
+Click “Okay”
+
+
+
+How can I edit a course after it's created? 414
+
+Instructor/Staff can edit a course after it is created by following the steps below after logging in to Skills for All:
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes 
+
+Locate your class, click the three dots “…” and click “Edit”
+
+
+
+How can I add or remove additional staff from my course? 415
+
+Instructors/Staff can be added to or removed from a course by following the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes 
+
+Locate your class, click the three dots “…” and click “Edit”
+
+Click “Next” until you get to the “Invite Instructor/Staff” section
+
+Use the drop-down arrow to add instructors then click “Add Instructor”
+
+To remove an instructor, click the trash can icon 
+
+Click “Next”, review the course preview, and click “Publish”
+
+Click “Publish” again once the confirmation pop-up appears
+
+Click “Okay”
+
+
+
+Where can I find the URL for the self-enrollment page to give my students? 416
+
+You can find the URL for the self-enrollment page by following the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes
+
+Locate your class and click the link icon to copy the URL for the self-enrollment page
+
+
+
+How can I pause self-enrollment for my course? 417
+
+To help manage the number of enrollments, Skills For All allows instructor/staff to pause self-enrollment in a course. Please follow the steps below to pause self-enrollment in your course after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes
+
+Locate your class, click the three dots “…” and click “Pause Enrollment”
+
+
+
+Can I re-open self-enrollment for my course? 418
+
+Self-enrollment for your course can be re-opened by following the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes
+
+Locate your class, click the three dots “…” and click “Activate Enrollment”
+
+
+
+Can I manually enroll new students into my course? 419
+
+At this time, Skills For All only allows for student self-enrollment. Instructors should copy the course URL and provide it to their students for self-enrollment.
+
+
+
+How can I remove or un-enroll a student from my course? 420
+
+Instructors can remove or un-enroll a student from their course by following the steps below after logging in to Skills for All:
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes
+
+Locate your class, click the three dots “…” and click “View”
+
+Click the “Learners” tab 
+
+Click the trash can icon next to the student’s account
+
+Click “Remove Learner” when the confirmation pop-up appears
+
+
+
+How do I view my students’ grades? 421
+
+Instructors can view students’ grades in a course by following the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes 
+
+Locate your class, click the three dots “…” and click “View”
+
+Click the “Grades” tab 
+
+
+
+Do I need to graduate my students? 422
+
+No, you do not need to graduate your students. Learners are automatically marked as passing once they’ve completed the final exam and survey in a course.
+
+
+
+How can I export a gradebook? 423
+
+Instructors can export a gradebook in a course by following the steps below after logging in to Skills for All:
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes 
+
+Locate your class, click the three dots “…” and click “View”
+
+Click the “Grades” tab 
+
+Click “Export List” 
+
+
+
+Can I edit the gradebook? 424
+
+No, the gradebook cannot be edited. Exams are graded by the platform.
+
+
+
+How can I view the learners in my course? 425
+
+Learners can be viewed following the steps below after logging in to Skills for All:
+
+
+
+Click on the institution icon and select your academy
+
+Click “My Classes”
+
+Locate the course name and click the green drop down arrow to open a list of your classes 
+
+Locate your class, click the three dots “…” and click “View”
+
+Click the “Learners” tab 
+
+
+
+Why is my student seeing "Enrollment is disabled or inactive" on the self-enrollment page? 426
+
+Enrollment in the Skills for All platform can be paused, which will prevent students from enrolling. Please see the “How can I re-open self-enrollment for my course?” FAQ for steps on how to re-open enrollment.
+
+
+
+Can I customize assignments in my course in Skills for All? 427
+
+Assignments cannot be edited and new assignments cannot be added to Skills for All courses in the instructor-guided online learner experience.
+
+
+
+What is Skills for All? 314
+
+Skills for All is a reimagined learning experience that supports how Networking Academy engages independent learners. It delivers a learner-centric experience designed for independent learning that is self-paced, online, and mobile. This experience is delivered on a new platform, SkillsForAll.com, that enhances how learners engage with course content and supports a personalized learning path that aligns to careers. 
+
+
+
+What does the term independent learner mean? 356
+
+Independent learning is a method or learning process where learners have ownership and control of their learning. Independent learners learn by their own actions and direct, regulate, and assess their own learning. Cisco Networking Academy supports independent learners with self-paced courses offered online directly to learners from Cisco over Networking Academy websites.
+
+
+
+What does “direct to learner” from Cisco Networking Academy mean? 357
+
+The term “direct to learner” refers to online self-paced courses that are delivered to learners over the Cisco Networking Academy websites. 
+
+
+
+To which technologies do Skills for All courses align? 360
+
+Skills for All aligns with the Networking Academy strategy overall. Networking Academy continues to focus on cybersecurity, networking, programming, infrastructure automation, and digital skills along with supplementary courses, and serves to round-out the learning pathway and learner development.  Skills for All currently features a cybersecurity learning pathway, with more courses and topics to be added in the future.
+
+
+
+Is there a fee to access the courses on SkillsForAll.com? 317
+
+There is no charge for any of the courses, achievements, digital badges, or resources offered from Cisco on SkillsForAll.com.
+
+
+
+Is NetAcad.com retiring as the learning platform for Networking Academy? 432
+
+Our learning platforms are evolving to bring enhanced experiences to Networking Academy learners, educators, and partners. Over time, the SkillsForAll.com and NetAcad.com platforms will converge into one seamless experience on a single platform that supports all direct-to-learner and instructor-led courses and resources, etc. The existing NetAcad.com platform will continue to be available until the platforms converge. We are maintaining the current NetAcad.com platform to minimize disruption for our community while we build the new platform. Instructor experience will continue to be our priority and will evolve to expand educator options, taking the experience to the next level. Cisco Networking Academy will continue to operate as an innovative education program that supports learners and educators with direct-to-student and instructor-led courses and resources. Our Networking Academy community will continue to receive early access to new functionality and help us shape the future.
+
+
+
+What is the difference between a course on SkillsForAll.com and a course with the same name on NetAcad.com? 361
+
+Courses released on SkillsForAll.com are updated with streamlined content, gamification, and mobile friendly functionality. Because course content is streamlined, the time to complete the course is significantly shorter than courses delivered on NetAcad.com.
+
+
+
+Are there prerequisites for courses on Skills for All? 310
+
+It depends on the course. Each course listed on SkillsForAll.com details if prerequisites are needed.
+
+
+
+Are SkillsForAll.com accessibility features the same as for courses in NetAcad.com? 492
+
+All courses on SkillsForAll.com utilize W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A & AA.
+
+
+
+How do learners access their course? 400
+
+Once registered on SkillsForAll.com, learners can access courses from their My Learning page. This page allows learners to customize their experience, access digital badges earned, and track learning progression.
+
+
+
+Is there a limit to the number of courses a learner can take, individually or simultaneously? 362
+
+No. there is no limit to the number of courses or pathways that a learner can take. 
+
+
+
+Is there a time limit that a course must be completed? 401
+
+There is no time limit for an independent learner to complete a course from the Skills for All Catalog. Learners can complete courses at their convenience, although there is guidance for how long each course might take to complete. Not having a course completion time limit is one of the benefits of independent learning online. 
+
+
+
+Why are estimated times to complete new courses on SkillsForAll.com shorter than previous courses on NetAcad.com? 402
+
+The new versions of the Introduction to Cybersecurity, Cybersecurity Essentials, and Networking Essentials courses on SkillsForAll.com are streamlined to deliver the same learning outcomes in a reduced amount of time. The new courses are more interactive, featuring videos, animations, and graphics to convey technical concepts so learners spend less time reading text. Also, assessments and quizzes are integrated directly into the course modules for better engagement, easier navigation, and quicker progress through the course. 
+
+
+
+Do learners need specific equipment? 364
+
+Learners just need a device to access the course via the internet and engage with courses and pathways online – that’s all! Skills for All is designed to be mobile friendly, improving access for learners around the world. Learners still need a computer for some lab activities in specific courses to access tools like Cisco Packet Tracer and virtual machines. 
+
+
+
+Are there recommended browsers for Skills for All? 311
+
+In general, Skills for All supports the 2 most recent versions of these browsers:
+
+
+
+Mozilla Firefox
+
+Google Chrome
+
+
+
+Please enable 3rd party cookies in your browser.
+
+
+
+Will learners become part of a community of other learners that they can interact with? 365
+
+Yes, learners become part of the Cisco Networking Academy community. They are encouraged to engage over our existing Networking Academy social channels and will receive updates and information on opportunities.
+
+
+
+What type of credentials can learners earn with Skills for All? 366 
+
+Skills for All offers a variety of credentials. Learners can earn achievements and digital badges. Achievements are micro-credentials that prove completion of a course module. Digital badges validate completion of an entire course or pathway. See Table 2 for details. 
+
+
+
+Table 2 – Learning Credentials offered through SkillsForAll.com
+
+
+
+
+
+Details
+
+Achievement
+
+Micro-credential 
+
+Earned when the learner successfully completes a module in the course
+
+Hosted within the SkillsForAll.com platform
+
+Not portable to other platforms
+
+
+
+Course Badge
+
+Digital badge
+
+Earned when the learner successfully completes the course
+
+Hosted on Credly.com
+
+Portable (learners can display the badge on LinkedIn, resume, etc.)
+
+
+
+Pathway Badge
+
+Digital badge
+
+Earned when the learner successfully completes the pathway exam
+
+Hosted on Credly.com
+
+Portable (learners can display the badge on LinkedIn, resume, etc.)
+
+
+
+What are achievementsinSkills for All?335
+
+Achievements aremicro-credentials that areawarded once a course module is completed in Skills for All. Learners show skill proficiency by completing the knowledge checks throughout each module. Once a qualifying knowledge-check score is achieved and the module is completed, the achievement is awarded. The goal for awarding an achievement is to motivate progress through to course completion and earn a digital badge.Achievements are only visible on the SkillForAll.com website. 
+
+
+
+Do learners have to pay for the digital badge? 398
+
+No. There is no charge for any of the courses, achievements, or digital badges offered from Cisco Networking Academy on Skills for All.
+
+
+
+Are digital badges earned for courses on SkillsForAll.com different than digital badges earned for courses with the same name on NetAcad.com? 403
+
+No. The digital badges are the same. The courses offered on SkillsForAll.com are updated versions of the courses offered on NetAcad.com. The learning outcomes are the same and lead to the same learning credential.
+
+
+
+Can Networking Academy learners that earned a digital badge from a NetAcad.com course earn a second badge for taking the same course on SkillsForAll.com? 404
+
+No. Learners can only earn each Networking Academy digital badge once. If a learner earned a digital badge for a course on NetAcad.com, they will not be issued a duplicate badge from SkillForAll.com.
+
+
+
+Will a learner’s pathway certification be captured in My Learning dashboard? 494
+
+No, the pathway certification will not be displayed in the My Learning dashboard at this time.
+
+
+
+How does Skills for All improve learner career opportunities? 368
+
+Skills for All is designed around career pathways for entry-level jobs. The pathway is designed for engagement and progression to keep independent learners motivated and propelling forward. Learners can continue in-depth learning with Cisco Academies (online or in-person) and job connections with Talent Bridge Matching Engine. 
+
+
+
+What is a career pathway in Skills for All? 337
+
+A career pathway is a recommended learning journey for a given focus area. Each pathway is designed to be inclusive and prepare learners for entry-level jobs. For example, the Cybersecurity pathway consists of several courses, Cisco Packet Tracer activities, and resources such as career videos, webinars, and articles that round-out knowledge. While recommended, learners do not have to follow a pathway. 
+
+
+
+If a learner completed a Cybersecurity course on NetAcad.com, will it count towards their Cybersecurity pathway completion on SkillsForAll.com? 369
+
+No, NetAcad.com course completion does not count towards Cybersecurity pathway completion on SkillsForAll.com. However, the learner can go directly to the final assessment in the course on SkillsForAll.com to complete the course or pathway, if desired. 
+
+
+
+Is Skills for All synchronized with Talent Bridge? 370
+
+Yes. If learners use the same email address for their SkillsForAll.com and NetAcad.com login credentials, then their Talent Bridge profile populates with courses taken in both NetAcad.com and SkillsForAll.com.
+
+
+
+Did the Cybersecurity pathway change? 405
+
+Yes. To prepare learners for jobs in a shorter amount of time, we streamlined the Cybersecuritypathwayoptimizing the learningjourney with tailored course content. The Cybersecurity pathway now saves 20 hours and features two new courses for the required networking competencies: 1) Networking Basics and 2) Networking Devices and Initial Configuration.
+
+
+
+The two new networking courses replace the 70-hour Networking Essentials within the Cybersecurity pathway. Don’t worry, the Networking Essentials course is still available from the Skills for All learning catalog. Learners currently taking Networking Essentials should continue to finish the course and then continue their learning journey on the Cybersecurity pathway.
+
+
+
+The Cybersecuritypathwayaligns to these entry-level cybersecurity roles: Cybersecurity Technician, Junior Cybersecurity Analyst, and Tier 1 Help Desk Support. Additionally, learners can earn a digital Cybersecurity pathway badge for successfully completing the pathway and exam.
+
+
+
+What job roles can a learner qualify for by completing the Cybersecurity pathway? 406
+
+The Cybersecurity pathway aligns to the following entry-level cybersecurity jobs: 
+
+Cybersecurity Technician
+
+Junior Cybersecurity Analyst
+
+Tier 1 Help Desk Support
+
+
+
+Is there a digital badge for the Cybersecurity pathway? 407
+
+Yes. Learners earn a pathway digital badge for successfully completing the Cybersecurity pathway exam.
+
+
+
+Does it matter what order the three Cybersecurity courses are taken? 408
+
+The suggested course order is to complete Endpoint Security, then Network Defense, and then Cyber Threat Management to progressively build your cybersecurity knowledge, but following this course order is not required.
+
+
+
+What is the difference between the Networking Essentials course and the two networking courses Networking Basics and Networking Devices and Initial Configuration on Skills for All?504
+
+Networking Essentials is a full semester, 70-hour course. The twonetworking courses, Networking Basics and Networking Devices and Initial Configuration, provide similar knowledge but in smaller 25-hour increments. These smaller networking courses offer academies and instructors additional flexibility for use in their curriculum.
+
+
+
+When should instructors use Networking Essentials and when should they use the twonetworking courses offered on Skills for All?505
+
+Networking Essentials is a full semester 70-hour course. In some cases, instructors may need a shorter course introducingstudents tonetworking. In this scenario, offering the 25-hourNetworking Basics may be preferred. Iffurther networking knowledge is needed, instructors can incrementally add the Networking Devices and Initial Configuration to the curriculum.
+
+
+
+If a learner earned a Networking Essentials digital badge, can they also earn badges for Networking Basics or Networking Devices and Initial Configuration?506
+
+Yes, each networking course, Networking Basics and Networking Devices and Initial Configuration, provides adigital badge.
+
+
+
+Are the two networking courses recommended as prerequisites for CCNA: Introduction to Networks?512
+
+No, there are no prerequisites fortaking the Cisco Networking Academy CCNA: Introduction to Networks course. 
+
+
+
+Will Networking Essentials be EOLed?507
+
+No, it will not End-Of-Life (EOL) at this time. Cisco Networking Academy announces EOL plans for a course with at least six months advanced notice. The EOL for Networking Essentials has not been announced.Find the latest information on the End-of-Life Summary page.
+
+
+
+Will there be a new entry-level certification aligned to the two networking courses?508
+
+There are no certifications aligned to the individual courses Networking Basics or Networking Devices and Initial Configuration. However, the two courses are offered within the Cybersecurity pathway which is aligned to Certification: Cybersecurity IT Specialist - Cybersecurity
+
+
+
+Are there any equipment requirements for the two networking courses on SkillsForAll.com? 509
+
+No equipment is needed for the two networkingcourses, Networking Basics and Networking Devices and Initial Configuration. However, if an academy has equipment, then it can supplement the experience.
+
+
+
+Will thetwo networking courses be available in other languages?510
+
+Yes, additional languages will be available in the future for both Networking Basics and Networking Devices and Initial Configuration. Languages and release dates are announced when dates are confirmed. Bookmark Skills for All – Communications Update for the latest course language information.
+
+
+
+What skills does the Cybersecurity pathway exam validate? 409
+
+The Cybersecurity pathway exam assesses the learner’s understanding of key security paradigms, terminology, and mindset. Learners who successfully complete the exam will: 
+
+
+
+Be aware of the importance of security and the threats to a business when security mitigations are not followed
+
+Be willing to teach others about security concerns
+
+Have investigative and implementation skills necessary to succeed in the field and have an aptitude and desire to learn more
+
+Be familiar with the toolset at a fundamental level and can help in threat mitigation and incident response
+
+
+
+Are certification exam vouchers available? 497
+
+No. Certification exam vouchers are not available.
+
+
+
+Does the Cybersecurity career pathway align to a certification? 410
+
+Yes. The Cybersecurity pathway is aligned to the IT (Information Technology) Specialist Cybersecurity certification offered through Certiport, a Pearson VUE business. The IT Specialist program through Certiport is a way to validate entry-level IT skills sought-after by employers. It is appropriate for candidates considering or just beginning a path towards an IT career.This certification validates understanding of key security paradigms, terminology, and mindset. Visit the Certiport website for more information about the IT Specialist certification program.To take the certification exam (INF-105 Cybersecurity), register through Pearson VUE. 
+
+
+
+Does the cybersecurity pathway align with any international Job Frameworks? 465
+
+Yes. The Skills for All Cybersecurity pathway is designed to align with key Cyber Job Frameworks and educational standards including the NICE and Singapore Skills Framework. Educators and employers can use crosswalk documents to plan and present strategies, understand skill mapping, support interdisciplinary teaching, and apply for grants. Crosswalk documents are available upon request from your respective Cisco Networking Academy contact.
+
+
+
+What is the difference between the Introduction to IoT course on NetAcad.com and the new Introduction to IoT and Digital Transformation version of the course? 498
+
+The new Introduction to IoT and Digital Transformation is the latest update to the Introduction to IoT course. We enhanced the course into the reimagined learner experience in Skills for All so that it’s easy to view on mobile, plus the course is streamlined to 6 hours. Also, the practice labs are based on Cisco Packet Tracer, so no there is no need for virtual machines or the PL-App – making it simpler and easier to start practicing skills.
+
+
+
+If learners have already earned the Introduction to IoT digital badge, will they receive a new badge for completing the Introduction to IoT and Digital Transformation course?499
+
+No. It’s the same Introduction to IoT digital badge and learners can only earn it once. 
+
+
+
+Can learners complete the entire Introduction to IoT and Digital Transformation course on a mobile device? 500
+
+Course content can be accessed on a mobile device. Learners will need to use a computer for the Cisco Packet Tracer labs.
+
+
+
+What is the difference between the Python course on NetAcad.com and this course? 501
+
+The PCAP: Programming Essentials in Python course on NetAcad.com is a full 75-hour course that includes two parts: Part 1 is 35 hours and prepares your studentsfor the PCEP – Certified Entry-Level Python Programmer certification. Under development and planned to release shortly, Part 2 is 40 hours and prepares your studentsfor the PCAP – Certified Associate in Python Programming certification. This course continues to be available on NetAcad.com for instructor-led and self-paced delivery until Python Essentials 2 is released.
+
+
+
+Python Essentials 1 brings course materialfrom Part 1 intoSkills for All, the reimagined learner experience. The courseis available as self-paced directly to independent learners OR instructorscanoffer instructor-guided classes to their students. This course continues to be available on NetAcad.com forself-paced delivery until Python Essentials 2 is released. Instructor-led delivery will continue to be available after Python Essentials 2 is released. See the image below for a comparison.
+
+
+
+
+
+
+
+
+
+What is Cisco Packet Tracer? 347
+
+Cisco Packet Tracer is a comprehensive, networking technology teaching and learning program that offers a unique combination of realistic simulation and visualization experiences, assessment and activity authoring capabilities, and opportunities for multiuser collaboration and competition. Innovative features of Packet Tracer will help students and teachers collaborate, solve problems, and learn concepts in an engaging and dynamic social environment. Some of the benefits of Packet Tracer are as follows:
+
+Provides a realistic simulation and visualization learning environment that supplements classroom equipment, including the ability to see internal processes in real-time that are normally hidden on real devices
+
+Enables multi-user, real-time collaboration and competition for dynamic learning
+
+Enables authoring and localization of structured learning activities such as labs, demonstrations, quizzes, exams, and games
+
+Empowers students to explore concepts, conduct experiments, and test their understanding of network building
+
+Allows students and teachers to design, build, configure, and troubleshoot complex networks using virtual equipment
+
+Supports a variety of teaching and learning opportunities such as lectures, group, and individual labs, homework, games, and competitions
+
+Supports feature expansion through external applications using an API to enhance the functionality of Cisco Packet Tracer in areas such as curriculum and assessment delivery, games, accessibility, and interfacing with real equipment. 
+
+
+
+How can I obtain Cisco Packet Tracer? 166
+
+To obtain Cisco Packet Tracer, sign up for the freeGetting Started with Cisco Packet Tracercourse to learn how to download, install, and get started!
+
+
+
+What if I do not have a NetAcad.com account or Skillsforall.com account? 348
+
+The latest version of Cisco Packet Tracer requires user authentication. Sign up for free at SkillsForAll.com to create an account.
+
+
+Q6. What’s new in Cisco Packet Tracer 8.1? 378
+
+Cisco Packet Tracer 8.1 features the new Packet Tracer Tutored Activities (PTTA), a new type of activity that provides hints to the learner along the way if they want them. Packet Tracer Tutored Activities (PTTA) are designed to provide a more personalized and equitable learning experience. In addition, Cisco Packet Tracer 8.1 includes some bug fixing and improvements on accessibility, usability, and security.
+
+
+
+Cisco Packet Tracer 8.1 is built upon Packet Tracer 8.0. Version 8.0 was a major release, featuring two exciting new updates: 
+
+
+
+The Enhanced Physical Modebrings you into the virtual labfora realisticexperience ofcabling devices on the rack.Reinforce critical skills such as device placement (Rack&Stack), switching on device power, device port-to-port cabling (including cable choiceand management), troubleshooting, and more.
+
+A Network Controller, similar to existing real-world SDN Controllers like Cisco DNA Center and APIC-EM. You can practice a centralized network management approach using the Network Controller model. The Network Controller, managed using its Web GUI or using its APIs, gives you a centralized dashboard to view the network’s state, quickly identify & troubleshoot issues, and push configuration changes to all managed devices at once.  Plus, you can access the Network Controller from real-world applications running on your computer, like a browser, Python, or Postman, to execute your own infrastructure automation scripts.  
+
+
+
+HowarePacket Tracer Tutored Activities differentfrom Packet Tracer Activities?379
+
+The Packet Tracer Activities (.pka files) contain identical instructions for alllearners. Cisco Packet Tracer Tutored Activities (.pksz files) provide each learner with dynamic hints for just the right level of support, right when you need it.   
+
+
+
+Which version of Cisco Packet Tracer is required to open a Packet Tracer Tutored Activity (PTTA)?380
+
+To open the new Packet Tracer Tutored Activities (.pksz files) you need Cisco Packet Tracer 8.1 or higher.
+
+
+
+How does the "Keep me logged in" option work in Packet Tracer 8.0.1 or higher? 382
+
+The “Keep me logged in” feature was designed to give you access (for 3 months) to Cisco Packet Tracer 8.0.1 or higher without needing to re-enter your credentials each time.  Using the “Keep me logged in” feature is only recommended for private computers. If you are using a public or shared computer, you should NOT use the “Keep me logged in” option or you should ensure that you Logout before closing Cisco Packet Tracer to prevent other users of the computer gaining access using your credentials.
+
+
+
+Can I use activities created in a prior Packet Tracer version with Packet Tracer 8.1? 383
+
+Yes. Packet Tracer 8.1.0 supports activities authored in previous versions of Packet Tracer. There is a small possibility you may encounter some warning messages. If so, you may disregard the message. It is simply a warning that scripts in this file need to be updated for Packet Tracer 8.1.0 compatibility.
+
+
+
+Can I use a new activity created in Packet Tracer 8.1 with a prior version of Packet Tracer? 384
+
+Packet Tracer Activities (.pka files) authored or saved with Packet Tracer 8.1 can only be used with version 8.1 of the software or higher. Prior Packet Tracer versions cannot load Packet Tracer 8.1 data files; they will display an incompatibility message.
+
+
+
+What if students download and use Packet Tracer 8.1 but their instructor is using a prior version? 386
+
+Please note that if a student using Packet Tracer 8.1 creates a new activity, or saves an activity originally created in a prior version of Packet Tracer, it will not open correctly in an older version of Packet Tracer. If the student submits the activity to an instructor who is using an older version of Packet Tracer, it will display an error message. The instructor will need to upgrade to Packet Tracer 8.1 to open the file, or the student will need to redo their work in the older version of Packet Tracer. To prevent this from occurring, please ensure that students use the same version of Packet Tracer for homework assignments that are being used by the instructor and in the classroom lab. We strongly recommend all students and instructors to upgrade to the latest version of Cisco Packet Tracer.
+
+Installing Packet Tracer Software
+
+
+
+Can students and instructors install Cisco Packet Tracer on their home computers or personal laptops? 385
+
+Yes. Cisco Packet Tracer can be freely distributed to any Networking Academy instructor, student, or alumni. This enables students to use Cisco Packet Tracer on any computer outside of class for homework, practice, and exploratory learning.
+
+
+
+On what platforms can I install and run Cisco Packet Tracer 8.1? 387
+
+Cisco Packet Tracer 8.1 is compatible with the following platforms: Microsoft Windows 8.1, 10, 11 (64bit), Ubuntu 20.04 LTS (64bit) and macOS 10.14 or newer (64 bit).
+
+
+Q16. What are the system requirements for Cisco Packet Tracer 8.1? 349
+
+To successfully install and run Cisco Packet Tracer 8.1, the following system requirements must be met:
+
+
+
+Cisco Packet Tracer 8.1 (64 bit):
+
+Computer with one of the following operating systems: Microsoft Windows 8.1, 10, 11 (64bit), Ubuntu 20.04 LTS (64bit) or macOS 10.14 or newer. 
+
+amd64(x86-64) CPU
+
+4GB of free RAM
+
+1.4 GB of free disk space
+
+
+
+Cisco Packet Tracer 8.1 (32 bit):
+
+Computer with one of the following operating systems: Microsoft Windows 8.1, 10, 11 (32bit)
+
+x86 compatible CPU
+
+2GB of free RAM
+
+1.4 GB of free disk space
+
+
+
+How do I install Cisco Packet Tracer 8.1 on Ubuntu Linux? 350
+
+Run the command "sudo apt-get install <absolute path to the .deb file>" and follow the instructions shown on your screen. 
+(Note that using "sudo dpkg -i <absolute path to the .deb file>" will not install the dependencies needed).
+
+
+
+What protocols can be modeled using Packet Tracer 8.1? 389
+
+A. 
+
+Layer
+
+Cisco Packet Tracer Supported Protocols
+
+
+
+Application
+
+FTP , SMTP, POP3, HTTP, TFTP, Telnet, SSH, DNS, DHCP, NTP, SNMP, AAA, ISR
+
+VOIP, MQTT, SCCP config and calls ISR command support, Call Manager Express,
+
+
+
+Transport
+
+TCP and UDP, TCP Nagle Algorithm & IP Fragmentation, RTP
+
+
+
+Network
+
+BGP, IPv4, ICMP, ARP, IPv6, ICMPv6, IPSec, RIPv1/v2/ng, Multi-Area OSPF,
+
+OSPFv3, EIGRP, EIGRPv6, Static Routing, Route Redistribution, Multilayer Switching, L3 QoS, NAT, CBAC, Zone-based policy firewall, and Intrusion Protection System on the ISR, GRE VPN, IPSec VPN, HSRP, CEF, SPAN/RSPAN, L2NAT, PTP, REP, LLDP
+
+
+
+Network Access/Interface
+
+Ethernet (802.3), 802.11, HDLC, Frame Relay, PPP, PPPoE, STP, RSTP, VTP, DTP, CDP, 802.1q, PAgP, L2 QoS, SLARP, Simple WEP, WPA, EAP, VLANs,
+
+CSMA/CD, EtherChannel, DSL, 3/4 G network support
+
+
+
+Does Packet Tracer support all the features found in Cisco devices? 351
+
+No. The program supports a subset of the features from Cisco devices. Packet Tracer uses simplified models of networking protocols and Cisco IOS; you should always compare your results to those obtained from real equipment. Practice on Packet Tracer is not a replacement of practice on real equipment.
+
+
+
+What can I create using the Activity Wizard? 390
+
+The Activity Wizard allows users to set up scenarios using text, basic network topologies, and predefined packets. Users can create customized network scenarios and add instructional text. The Activity Wizard also includes grading and feedback capabilities that can be used to create an unlimited number of guided and exploratory learning experiences that provide immediate feedback to users. These activities can also be saved and shared with others in the NetAcad community.
+
+
+
+Why can’t I set up a wireless connection to another copy of Packet Tracer using the multiuser functionality? 391
+
+Wireless connectivity uses a distance parameter set within each instance of Packet Tracer to establish connectivity. In a multiuser connection, the distance parameter cannot be specified, so a wireless connection is not possible.
+
+ 
+
+How can I report bugs in the Cisco Packet Tracer application? 353
+
+Please report bugs and errors pertaining to Cisco Packet Tracer software operation issues by clicking on the Help menu in Cisco Packet Tracer and then select “Report an Issue”. You will be taken to the development team’s bug tracking software. Please fill out the forms completely to give us the best chance to verify and fix the issue. 
+
+
+Where can I discuss using Cisco Packet Tracer in the classroom, ask other instructors for ideas and feedback, or share Cisco Packet Tracer activities that I have developed? 460
+
+To collaborate with other instructors, join the Cisco Packet Tracer community discussion. To access the communities, log in to Cisco NetAcad.com and click Help at the top of the page, then select Community Forums. This will open the Networking Academy community page where you can join the Cisco Packet Tracer community.
+
+
+
+Can I install multiple Cisco Packet Tracer versions simultaneously? 392
+
+You may have multiple Cisco Packet Tracer versions installed simultaneously for Windows and macOS, but PTSAs will launch, by default, using the latest installed version of Cisco Packet Tracer.
+
+
+
+Cisco Packet Tracer is running slowly on my device. What can I do to improve performance? 352
+
+The minimum system requirements allow for the basic use of Cisco Packet Tracer in creating small to medium-size networks. It is recommended that you use a faster machine with more memory to create large networks. You can turn off theSoundandAnimationoptions to increase performance. Some screen reader software may cause a slowdown in performance, which is due to the extra processing required to query Cisco Packet Tracer for screen reader information.
+
+
+
+Some text in the Cisco Packet Tracer application is cut off or not correctly displayed. Can I adjust the font settings? 355
+
+The font sizes in the Packet Tracer application can be configured from the Preferences → Fonts tab. You may set the entire application scale to fit your needs, and optionally adjust text sizes of various dialogs.
+
+
+Why do I see two Cisco Packet Tracer processes in my Task Manager (or equivalent tool)?393
+
+Since version 8.1.0, Cisco Packet Tracer will start two processes for the application: the main process, plus an accessory process (lower memory usage) to aid the main process where applicable.
+
+
+
+Where is the "Reset Activity" functionality gone to in Cisco Packet Tracer 8.1 or higher? 395
+
+Since Cisco Packet Tracer 8.1 the “Reset Activity” is in the File Menu.
+
+
+
+Can instructors create or edit the new Packet Tracer Tutored Activity (PTTA)? 396
+
+No. Currently, only Cisco can create or edit PTTA activities.
+
+
+
+When I log into Packet Tracer with my Netacad.com account, I receive an error "Sorry, we can't find a NetAcad account associated with this Cisco account."  How can I resolve? 397
+
+There can be three possible causes why this error can occur:
+
+
+
+This may happen if you have registered on NetAcad.com but have not enrolled into a course. Please enroll into any of the available courses and you should be able to log in.
+
+There may be a mismatch between your email addresses between NetAcad.com and Cisco login. Please contact the support desk to resolve this issue.
+
+You may need to use the Skills for All option to log in and, if needed, change your password.
+
+
+
+Which Cisco Packet Tracer course should I take first if I am new to Packet Tracer?455
+
+The“Getting Started with Cisco Packet Tracer”course(2 hours) is a quick on-ramp coursefor those who are new to Packet Tracer. It is designed to familiarize learners with the Cisco Packet Tracer simulation and visualization environment, and it details recent features and the latest user interface. Complete this course before startinganotherCisco Networking Academy or Skills for All courses that include Packet Tracer activities.
+
+
+
+Which course is recommended if I want to start practicing networking skills with Cisco Packet Tracer?456
+
+The“ExploringNetworkingwith Cisco Packet Tracer”course(3hours) isrecommended for developing networking skills by using Cisco Packet Tracer.Valuable tips are offered for practicing networking skills while using Cisco Packet Tracer.Learners understand connecting and configuring devices in a small office network, learn how packets travel across a network using simulation mode, and explore how a network controller is used to manage and configure a network.The courseis designed for learners who havepreviously completedthe“Getting Started with Cisco Packet Tracer”course.
+
+
+
+Which course is recommended if I want to start practicing IoT (Internet of Things) skills with Cisco Packet Tracer? 457
+
+The“ExploringIoTwith Cisco Packet Tracer”course(3 hours) is recommended for developing IoT skills. Learnersbecome familiarwith IoT devices,learn to connect and monitor them in a smart home network, change environmental controlsthatmay affect the IoT devices, and createtheir own IoT device.The courseis designed for learners whopreviously completedthe“Getting Started with Cisco Packet Tracer”course.
+
+
+
+I’m an advanced Cisco Packet Tracer user. What learning resources are available to me? 461
+
+To learn more aboutthe manyCisco Packet Tracer features, then accesstheHelpfiles(from the Packet Tracer menu)which includescomprehensive documentation on Packet Tracer features. Findthe Tutorialsand learn about its additional features.Plus, jointheinstructorCiscoPacket Tracer Communityto interact with other Packet Tracer experts.
+
+
+
+Howcan IearntheIntroductionto Packet Tracer digitalbadge? 458
+
+To earn the "Introduction to Packet Tracer" digital badge, you must pass the Introduction to Packet Tracer Exam available on SkillsForAll.com. This assessment covers the core concepts and skills presented in the following three courses:“Getting Started with Cisco Packet Tracer”, “Exploring Networking with Cisco Packet Tracer”, and “Exploring IoT with Cisco Packet Tracer”.
+
+
+
+If you are already enrolled in the "Introduction to Packet Tracer" course on NetAcad.com, you will be able to obtain the digital badge by passing the final assessment of the course.
+
+
+
+What will be translated on SkillsForAll.com? 495
+
+We are working to translate all Skills for All courses, focusing first on the below courses and languages:
+
+
+
+Introduction to Cybersecurity into Spanish, Portuguese, Arabic, French, and Ukrainian
+
+Getting Started with Cisco Packet Tracer into Spanish, Portuguese, Arabic, French, and Ukrainian
+
+Network Defense into Spanish, Portuguese, Arabic, and Ukrainian
+
+Cyber Threat Management into Spanish, Portuguese, Arabic, and Ukrainian
+
+Endpoint Security into Spanish, Portuguese, Arabic, and Ukrainian
+
+
+
+They will release as they become available on a rolling schedule, starting with Spanish and Portuguese. Actual release dates are shared when confirmed. Refer to the following FAQ for additional information: "Which courses and languages are offered directly to independent learners?".
+
+In addition to translating courses, we are also working to translate the Skills for All platform. This effort will take a little longer than the course translations - this means that when the above translated courses release, the platform will be in English, temporarily.
+
+
+
+Will the course landing page where learners enroll be translated too? 486
+
+Yes. The course landing page will be translated. 
+
+
+
+If a learner signs up for an English course and then changes the language within the course to Spanish, how will reporting be represented? 487
+
+The default language the learner initially chooses during enrollment is captured for reporting purposes.
+
+
+
+Will translated digital badges be available for the translated courses? 488
+
+No. Digital badges are available for all Skills for All courses in English only. 
+
+
+
+How is support handled for the course translations? 489 
+
+English support is provided. The Support Virtual Assistant answers are provided in English. Later this year, Spanish and French will be added. If a learner has a different language set in their profile, they will default to English.
+
+
+
+Will learners enrolled in Introduction to Cybersecurity in March or April be able to change their language or is it only after the May 10 release? 490
+
+Language selection is enabled for select courses (Introduction to Cybersecurity and Getting Started with Cisco Packet Tracer) with the May 10 release. Learners enrolled prior to May 10 will see only English and no language selection toggle.  Currently, if a learner is already enrolled in the English course prior to May 10 and wishes to take the course in Spanish or Portuguese, that learner will need to set up a new Skills for All user account and enroll into that course language. The need to re-enroll is a temporary work-around and will be addressed shortly.
+
+
+
+Can instructors change the default language selection when creating an instructor-guided class?  491
+
+No, the instructor cannot change the default language once the class is created. However, the student may change to another language that is offered. 
+
+
+
+What is Instructor-guided Learner Experience on Skills for All? 428
+
+The Instructor-guided learner experience offers educators the ability to leverage the power of the innovative learning experience on SkillsForAll.com. Functionality includes simplified learner onboarding mobile-first capability, engaging gamification, and new career paths. It is optional for early adopter instructors interested in leveraging the new functionality and providing input for how the functionality evolves.
+
+
+
+What functionality does the Instructor-guided Online Learner Experience offer? 430
+
+The Instructor-guided Learner Experience offers instructors the ability to create online self-paced courses and monitor their students’ progress within the course using the Grades Tab. The instructor functionality is available for all courses currently on Skills for All (see Table 1). Please note that not every self-paced course in the Cisco Networking Academy portfolio is currently available in the new learning experience on Skills for All. The Instructor-guided Learner Experience does not offer course customizations, class management, student messaging, or live support at this time. Instructors that choose not to use Skills for All may continue to use NetAcad.com.
+
+
+
+Why is this a new and separate experience from what academy instructors are familiar with on NetAcad.com? 431
+
+As an innovative education program, we are reimagining the learner, instructor, and partner experiences. SkillsForAll.com was introduced as the first stage of this journey that reimagined our direct-to-student learning experience. We are maintaining the current NetAcad.com platform to minimize disruption for our community while we build the new platform. Having instructor resources on both sites is temporary. Eventually SkillsForAll.com and NetAcad.com will converge into one seamless experience on a single platform that supports all direct-to-learner and instructor-led courses and resources. The instructor experience will continue to be our priority and will evolve to expand instructor offerings and take the experience to the next level.
+
+
+
+What does instructor-guided mean and how is this different from instructor-led? 433
+
+Instructor-guided describes the functionality releasing on SkillsForAll.com, allowing academy instructors to offer the new and engaging self-paced courses online. Instructor-led describes the learning delivery option for NetAcad.com courses where the instructor actively delivers the class online or in-person.
+
+
+
+Is student grading different in Skills for All than how it is in NetAcad.com? 502
+
+Yes, grading is managed differently on Skills for All. Formative and summative assessments are predefined and embedded within the course making assessments a seamless experience for the learner. With the initial release of the Instructor-guided Learner Experience, only summative assessments appear in the gradebook for instructors, so they can track progression. It is not currently possible for the instructor to create a personalized assessment or edit grades in the gradebook. At this time, instructors can only monitor current course exams. Is important to note, learners can take the exams multiple times, until they obtain a passing score of 80% which triggers the module achievement or course digital badge.
+
+
+
+Will my academy instructor account be the same on both SkillForAll.com and NetAcad.com? 436
+
+Yes. Academy instructors can use their Networking Academy Single Sign On (SSO) credentials on both platforms, allowing for easy onboarding. 
+
+
+
+Can I add a colleague as a secondary instructor for a class on SkillsForAll.com? 437
+
+If your colleague is an active academy instructor for your institution on NetAcad.com and has onboarded onto SkillsForAll.com by logging in with their NetAcad Single Sign On (SSO) credentials, then you can add them as a secondary instructor for the class on SkillsForAll.com.
+
+
+
+How can an academy user with role “contact” see what courses their instructors are creating? Will they have a management dashboard to check what the instructors are doing? 503
+
+Currently, the academy contact can be added to the course as a secondary instructor for visibility of instructor courses. Future functionality is planned for adding an academy dashboard which will provide the academy contact visibility to a consolidated report on Skills for All. It is important to note that the ASC dashboard on NetAcad.com currently displays both NetAcad.com self-paced courses and Skills for All instructor-guided courses. It is also possible to filter for platform specific data.
+
+
+
+Can academies see which of their students are enrolled in courses on SkillsForAll.com? 450
+
+Yes, instructors can see students enrolled in courses they created on Skills for All by using the Learner Tab. Instructors can also monitor student progression by using the Grades Tab.
+
+
+
+Will students enrolled in Instructor-guided classes count as the academy’s beneficiaries? 466
+
+Yes, students enrolled in Instructor-guided classes are included in beneficiary totals for your academy.
+
+
+
+Will my students see their Skills for All courses on their NetAcad.com My Learning page? 438
+
+No. Learners will see their progress on each platform, respectively. Direct your students to log in to NetAcad.com to see their NetAcad.com courses. To continue progress on any Skills for All course, your students need to log into SkillsForAll.com, use the blue NetAcad login button and their NetAcad.com credentials to log if they are already Networking Academy users.
+
+
+
+Which courses are available for instructors to create on SkillsForAll.com? 439
+
+Instructors can open any course currently offered on SkillsForAll.com. See the following FAQ which details courses and languages available:Which courses and languages are offered directly to independent learners?
+
+
+
+What is the course duration that instructors can set for a Skills for All course? 430
+
+While the Skills for All course end-date field is mandatory, the instructor can choose any course duration that best meets learner needs. As a best practice, it may be helpful to establish an end date one year past the course start date.
+
+
+
+Is there a limit to the number of students that can enroll into a course created by an instructor? 441
+
+There is no limit to the number of enrollments for courses that instructors create on Skills for All.
+
+
+
+Do I need to create a new Cisco Academy account to participate in the Instructor-guided Learner Experience on SkillsForAll.com? 442
+
+Instructors with an active academy do not need to create a new account on skillsforall.com. To log in to skillsforall.com,click on the NetAcad blue login buttonand enter your NetAcad username and password.
+
+
+
+How does my academy sign up for the Instructor-guided Learner Experience? 451
+
+Networking Academy user database and academy information is synchronized with Skills for All There is no other sign-up process needed after onboarding. To log in to skillsforall.com,click on the NetAcad blue login buttonand enter your NetAcad username and password.
+
+
+
+If I am not yet associated with a Cisco Academy, how do I get access to the instructor-guided Learner Experience on SkillsForAll.com? 443
+
+The Instructor-guided Learner Experience is available to institutions already associated with Networking Academy and qualified as a Cisco Academy. All other education institutions must first apply to the Networking Academy Program. For more information on becoming a Networking Academy visit: https://www.netacad.com/educators. 
+
+
+
+Where should instructors and learners go for support? 446
+
+Instructors should continue to use existing support channels, including their ASC, NetAcad.com, the Support Virtual Assistant for instructors, and the Support Desk. Learners using SkillsForAll.com should use the virtual assistant for students.
+
+
+
+Where can I keep current about SkillsForAll.com? 467
+
+Bookmark Skills For All – Communication Updates (login required), for the latest information. Updates are also shared in Newsletters and News and Events articles periodically, but the webpage will be your comprehensive source. 
+
+
+
+Is there an age requirement for learners? 448
+
+Yes. Age regulations apply for all Networking Academy users according to country specific regulations. This is consistent for all Networking Academy sites, including SkillsForAll.com. For more information see Networking Academy Privacy Data Sheet dated October 2021 available in multiple languages (login required).
+
+
+
+Is the Networking Academy membership agreement, terms & conditions, and data privacy the same for SkillsForAll.com? 449
+
+Yes. Membership agreements, terms and conditions, and our commitment to data privacy provided in the Cisco Networking Academy program also apply to Skills for All.
+
+ 
+
+Can I change the email address in my profile? 102
+
+No, learners are not able to edit the email address in their Skills for All account profile.
+
+
+
+How can I change information in my profile? 104
+
+In your profile, you can edit your First Name, Last Name, Year of Birth, Gender, Country or Region, and Career Goal. You can also upload or change a profile photo, as well as opt-in or opt-out of receiving marketing communications. To edit information in your profile, please follow the steps below after logging in to Skills for All:
+
+
+
+Click the “person” icon
+
+Click “Edit Profile”
+
+Make any desired changes
+
+Click “Save”
+
+
+
+I have multiple accounts; can I merge them? 105
+
+No. We are unable to merge multiple accounts. Please choose the account with your preferred email address and use that account to enroll in all of your courses at Skills for All.
+
+
+
+How do I change my language settings for my NetAcad interface? 223
+
+At this time, the Skills for All site is only available in English. However, there are plans to translate the site into other languages in the future.
+
+
+
+How do I add an image to my profile? 323
+
+You can add an image to your profile by following the steps below after logging in to Skills for All:
+
+
+Click the “person” icon
+
+Click “Edit Profile”
+
+Click “Select File” under “Upload your profile image here”
+
+Select desired image, frame with crop box provided and click “Select”
+
+
+
+How do I opt-in or opt-out for marketing communications? 324
+
+You can opt-in or opt-out for marketing communications by following the steps below after logging in to Skills for All:
+
+
+Click the “person” icon
+
+Click “Edit Profile”
+
+Select or deselect the box under “Opt-In for Marketing Communications”
+
+Click “Save”
+
+Click “Okay”
+
+
+
+Why does my profile now want additional information? 325
+
+After learners initially create a Skills for All account and enroll in a course, it is essential that they edit their profile page (specifically providing a location in the “Country or Region” drop down menu) in order to obtain the achievements and the digital badges as they are earned.
+
+
+
+Is the End of Course Survey required to pass a course? 309
+
+The End of Course Survey is not required to pass a course. However, we appreciate and value your feedback. Your responses to the survey help us improve the content, assessments, and course delivery for future learners.
+
+
+
+What are the requirements to pass a course? 297
+
+In order to pass a course, learners must obtain at least 70% on the course final exam. However, there are unlimited attempts available, and learners can return and retake the exam at any time.
+
+
+
+What is the recommended duration of courses in Skills for All? 298
+
+The recommended duration for a self-paced course can be found in the Catalog and is listed below the course box next to the clock icon.
+
+
+
+What is the minimum final exam score that learners must receive in order to complete the course and obtain a digital badge? 299
+
+In order to complete the course and obtain a digital badge, learners must obtain at least 70% on the course final exam. However, there are unlimited final exam attempts available; and learners can return and retake the exam at any time.
+
+
+
+Why am I receiving a 500 internal server error? 312
+
+Normally, the HTTP Status 500 - Internal Server Error message is browser related. The following options may resolve the issue:
+
+
+
+Use the most current version of our recommended browsers: Mozilla Firefox or Google Chrome
+
+Clear your browser's history and cache, close the browser, and restart it before accessing the page again
+
+Enable 3rd party cookies in your browser
+
+
+
+Can I access Skills for All on my mobile device? 313
+
+Yes, Skills for All is accessible on a mobile device. An "app" is not available, but Skills for All will work through a browser on a mobile device. You will need to enable 3rd party cookies in your browser.
+
+
+
+
+
+
+
+How can I report an issue I experienced? 346
+
+We encourage learners to use the frequently asked questions on the “Help” page or by using the Virtual Assistant to find answers.  If these options do not help, learners can report an issue they experienced on Skills for All by filling out this form.
+
+
+
+Why am I receiving a 403 Forbidden error? 372
+
+You are most likely receiving a 403 Forbidden error message because you have not enabled cookies, especially 3rd party cookies, in your browser.
+
+
+
+How can I enroll in a course? 315
+
+New users can enroll in a self-paced course in Skills for All by following the steps below:
+
+
+
+Go to https://www.skillsforall.com/
+
+Click the “Catalog” tab
+
+Click the course you wish to enroll in
+
+Click “Get Started”
+
+
+
+Next, you will be taken to a page where you can choose which option you would like to use to continue the enrollment process. For more information, please see our FAQ entitled “How do I log in to Skills for All?”
+
+
+
+If you have an existing Skills for All account, you can log in and then follow steps 2-4 above.
+
+
+
+What does Skills for All offer? 318
+Skills for All offers videos, career path outlines and information, helpful resources and several self-paced courses. 
+
+
+
+Where can I find information regarding the Talent Bridge Matching Engine? 327
+
+You can find information regarding the Talent Bridge Matching Engine on the Home page and from the Catalog on Skills for All.
+
+On your Home page, scroll down to the section titled, “Do not just search for top jobs. Find them” and click “Learn about jobs”.
+
+
+
+Click “Catalog” and click the box next to “Resources”. Next, click anywhere on the “The bridge between talent and employment” resource.
+
+
+
+How can I view the curriculum in full screen mode? 331
+
+You can view the curriculum in full screen mode by following the steps below after logging in to Skills for All:
+
+
+
+Launch the course from “My Learning”
+
+Click “View in Fullscreen” to view the curriculum in full screen mode
+
+
+
+Note: You can also click the “Click here to view” link to launch the curriculum in a new window. 
+
+
+
+What is the Talent Bridge Matching Engine? 326
+
+The Skills for All Talent Bridge program is the link between talent and opportunities. Cisco’s goal is to provide resources to Skills for All learners, both current and former, to help them become more employable. The program helps to connect learners with employers around the world who value the education received via Skills for All.
+
+
+
+The Talent Bridge Matching Engine helps learners connect directly with Cisco and their ecosystem of partners who are looking to hire qualified learners to join their tech workforce. These connections are based on learners’ experiences, education, and certifications. Learners can complete their profile and match to employment opportunities with Cisco as well as Cisco partners and distributors seeking Skills for All learners and alumni.
+
+
+
+Note: Use your skillsforall.com login to access the tool. You must be 18 years of age or older to register and participate in the Talent Bridge Matching Engine.
+
+
+
+How can I find help when signing up for the Talent Bridge Matching Engine? 330 
+
+You can find help when signing up for the Talent Bridge Matching Engine by accessing the “Student Candidate Matching Engine Guide”. To view the guide, please follow the steps below after logging in to Skills for All:
+
+
+Click “Catalog”
+
+Click the box next to “Resources” under “Category”
+
+Click anywhere on the “The bridge between talent and employment” resource
+
+Click “Register” under “Match yourself to job opportunities”
+
+Log in to Talent Bridge Matching Engine
+
+Click “Support”, then click “Training”
+
+
+
+What resources are available with the Talent Bridge Matching Engine? 328
+
+Once you access the Talent Bridge Matching Engine you will find several resources available including certification advice, career webinars, access to ideas and advice on how to get valuable hands-on experience, a way to connect with your peers, and more.
+
+
+
+
+
+How do I sign up for the Talent Bridge Matching Engine? 329
+
+Learners who are 18 years of age and older can sign up for the Talent Bridge Matching Engine by following the steps below after logging in to Skills for All:
+
+
+Click “Catalog”
+
+Click the box next to “Resources” under “Category”
+
+Click anywhere on the “The bridge between talent and employment” resource
+
+Click “Register” under “Match yourself to job opportunities”
+
+Click “Sign up” next to “Don’t have an account?”
+
+Enter your First Name, Last Name, the same email address and password you used to register for Skills for All and click “Create Account”
+
+Verify information listed is correct and click “Next” (changes to your name and email address can be made under “My Profile”)
+
+Answer the questions under “Technical Skills” and “Business Skills”, then click “Next”
+
+Enter your “Profile Information”, then click “Next” (you must select the city in the drop down menu that is nearest to your city)
+
+Input required information on the “Education” tab, then click “Next”
+
+Click the plus sign (+) to add your certifications, then select certification in the drop down menu, enter your CSCO Certification number, click “Add”, then “Close”, then “Next”
+
+Input required information on the “Opportunities” tab and click “Next”
+
+Click “Select” to upload your resume and other education related documents on the “Documents” tab and click “Next”
+
+View and accept “Terms & Conditions”, then click “Submit”
+
+
+
+Can I print or download the curriculum from Skills for All? 332
+
+No, you cannot print or download the Skills for All curriculum or designated tools, as they are considered “copyrighted” materials. Any unauthorized use of the Skills for All tools and curricula is prohibited and is considered a violation of federal copyright law. Unauthorized use of the curriculum includes, but is not limited to, downloading, printing, and/or copying.
+
+
+
+What types of intellectual property controls are there on course materials? 333
+
+The Skills for All curriculum is copyrighted by Cisco Systems. Access to the curriculum should only be provided to learners enrolled in Skills for All courses.
+
+
+
+Learners may not copy, directly or indirectly, Cisco published materials (including web pages), or any parts of the text, graphics, logos, or trademarks from Cisco published materials, or engage in distribution of Cisco copyrighted material. Further, learners are not allowed to develop courseware that is substantially similar to the online curriculum, nor are they allowed to state or imply that the curriculum is anything but Cisco property.
+
+
+
+For more information on the general terms and conditions of Skills for All, please follow these steps:
+
+Go to https://www.skillsforall.com/
+
+Scroll to the bottom of the page
+
+Click “Terms and Conditions”
+
+
+
+Where can I locate information on Cisco's privacy statement? 334
+
+You can locate information on Cisco’s privacy statement by following the steps below:
+
+
+
+Go to https://www.skillsforall.com/
+
+Scroll to the bottom of the page
+
+Click “Privacy Statement”
+
+
+
+Where can I view my achievements that I have been awarded? 336
+
+You can view achievements you have been awarded on your “My Learning” page under “Achievements” and the “Awarded” tab. Achievements are posted on the day the module is completed.
+
+
+
+Note: In order for your achievements to show in the “Awarded” section, you must first complete your profile. Specifically, you need to select a location in the “Country or Region” drop down list.
+
+
+
+What are defender points? 340
+
+Defender points are earned in a course when the right decisions are made on the knowledge checks throughout the modules. Defender points are tracked on the shield icon in the top right corner of the course. Defender points can be earned in the Introduction to Cybersecurity course and the Networking Essentials course.
+
+
+
+How do I earn more defender points? 341
+
+Defender points are earned when the right cyber decisions are made in the knowledge checks throughout the modules. Once you pass the knowledge check with a required minimum score, you earn more defender points. You can check your Defender Points progress by clicking the shield icon on the top right corner of the screen.
+
+
+
+Where can I set or edit my goals in Skills for All? 338
+
+You can set or edit your goals by following the steps below after logging in to Skills for All:
+
+
+
+From “My Learning”, scroll down to “Set Your Goals”
+
+Click “Edit Goals”
+
+Select the date by which you want to complete your Career Path under “Complete Career Path By”
+
+Choose a quote, using the drop-down menu next to “Select Quote”, that motivates you to achieve your goal
+
+Click “Save Goals”
+
+
+
+Where can I view my completed courses? 339
+
+You can view your completed courses by following the steps below after logging in to Skills for All:
+
+
+
+Click “My Learning”
+
+Click “Completed” under “Learning”
+
+
+
+Do I need to earn all of the defender points in order to show a course is completed? 342
+
+You do not need to earn all of the defender points in order for a course to show as completed.
+
+
+
+Where can I see my defender points? 343
+
+You can see your defender points by following the steps below after logging in to Skills for all:
+
+
+
+Launch the course from “My Learning”
+
+Click one of the modules
+
+Click the shield icon on the top right corner of the screen
+
+View your progress
+
+
+Does SkillsForAll.com compete with NetAcad.com or is it complementary? 358
+
+SkillsForAll.com is designed to be complementary with NetAcad.com. It is a website within the Networking Academy program, offering a learner-centric experience. Eventually our independent learner self-paced courses will be migrated to SkillsForAll.com.
+
+ 
+
+Can I offer Skills for All courses at my institution? 374
+
+Skills for All was created specifically for independent learners. Institutions that would like to offer Skills for All courses can go to https://www.netacad.com/ to apply to become a Cisco Networking Academy. The main courses in Skills for All are available to teach there. We are working to expand SkillsForAll.com functionality in the future.
+
+
+
+Which platform should I use to create an account? 525
+
+Our learning platforms are evolving to bring enhanced experiences. Over time, the SkillsForAll.com and NetAcad.com platforms will converge into one seamless experience on a single platform.
+
+
+
+Individuals should choose to create an account on one of the platforms below based on the course they wish to take:
+
+
+
+SkillsForAll.com:
+
+
+
+Learner wants to enroll in a self-paced course (see FAQ: How can I enroll in a course?)
+
+Learner is invited to a course by an instructor on Skills for All
+
+
+
+NetAcad.com:
+
+
+
+Learner is enrolled in an instructor-led course through a Cisco Academy (see FAQ: How can I locate academies in my area to find more information about their curriculum and course offerings?)
+
+Learner wants to enroll in a self-paced course (see FAQ: How can I enroll in a self-paced course?)
+
+
+
+Note:
+
+Most self-paced courses have been updated and moved to Skills for All.
+
+Most instructor-led courses continue to be taught on NetAcad.
+
+
+
+
+
+
+
+
+
+
+
+How do I log in to my account? 173
+
+To log in, please follow the steps below based on the platform where you created your account:
+
+
+
+SkillsForAll.com:
+
+
+
+Go to https://skillsforall.com/
+
+Click the “person” icon
+
+Choose which option you would like to use
+
+Input your registered email address and password
+
+Google account
+
+Cisco NetAcad account
+
+Sign up for a new account
+
+Input required information
+
+
+
+Note: When accessing the site for the first time, you will need to read and accept the terms and conditions.
+
+
+
+NetAcad.com:
+
+
+
+Go to https://www.netacad.com
+
+Click “Log In” and click “Login”
+
+Enter your email address and click “Next”
+
+Enter your password and click “Log in”
+
+
+
+Why was I prompted to log in before accessing my course when I am already logged in? 217
+
+This is generally a browser-related error and can be caused from not having 3rd party cookies enabled or accessing the course from a bookmarked page or saved link. Please try the following to resolve this issue:
+
+
+
+Access the course from your “My Learning” page on SkillsForAll.com or your “I’m Learning” page on NetAcad.com each time you log in
+
+Clear your browser cache and history, close, and relaunch
+
+Make sure all cookies, including 3rd party, are enabled in your browser settings
+
+Try another web browser to see if you experience the same issue - we recommend using the latest version of Google Chrome or Mozilla Firefox
+
+
+
+How do I reset my password? 120
+
+Individuals have the ability to reset their password on SkillsForAll.com and NetAcad.com. Please follow the appropriate steps below to reset your password:
+
+
+
+SkillsForAll.com Account: 
+
+
+
+Go to https://skillsforall.com/
+
+Click the “person” icon
+
+Click “Forgot Password?”
+
+Enter the email address associated with your account
+
+Click “Submit”
+
+You will receive the following message:
+
+Click the link located in the email to reset your password
+
+
+
+Note: The link to reset your password expires after 12 hours. You will need to repeat the above steps if you access it after that time. If using Google to authenticate, follow their Forgot Password process.
+
+
+
+NetAcad.com Account:
+
+
+
+Go to www.NetAcad.com
+
+In the top right corner, click “Log In”
+
+Select “Forgot Password” in the drop-down menu 
+
+Enter your email address and click “Reset Via Email”
+
+Locate your password reset request email and click “Reset Password”
+
+Enter new password information in required fields and click “Reset Password”
+
+
+Note: The link to reset your password expires after 1 hour.  You will need to repeat the above steps if you access it after that time.
+
+
+
+I tried using the Forgot Password process, but I am not getting an email. 182
+
+If you do not see an email containing a reset password link in your inbox, please check your spam folder. 
+
+
+
+SkillsForAll.com account:
+
+
+
+Verify you are able to accept emails from noreply@skillsforall.com. 
+
+
+
+NetAcad.com account:
+
+
+
+Verify you are able to accept emails from noreply@cisco.com and no-reply@mail-id.cisco.com
+
+If you are still unable to receive an email, please contact your instructor
+
+
+
+
+
+I’m unable to log in, what can I try? 180
+
+If you cannot log in, please try the following before moving to the specific platform information below:
+
+
+
+Clear your browser cache and history, close, and relaunch
+
+Try the latest version of the recommended browsers (Google Chrome or Mozilla Firefox)
+
+Check to see if you received a compliance hold email. The hold may get cleared in a couple of hours. 
+
+If you have forgotten your password, please see the FAQ entitled “How do I reset my password?”
+
+
+
+SkillsForAll Login:
+
+
+
+Clear any old bookmarks you may have and use https://www.skillsforall.com to log in
+
+If you are a NetAcad.com student, please be sure to click the blue “Cisco NetAcad” button on the login page
+
+If you used your Google account, please be sure to click the Google button on the login page
+
+If you used the “Sign Up” link on the bottom of the login page and created an account, please try to reset your password
+
+
+
+NetAcad.com Login:
+
+
+
+Clear any old bookmarks you may have and use https://www.netacad.com to log in
+
+Use email instead of screen-name/username
+
+If login issues persist:
+
+Contact your instructor if you are unable to access your email account to complete email verification 
+
+If you have not logged in to NetAcad.com in the last four years, please contact an instructor to enroll you in a new course
+
+For additional login assistance, please view the FAQ titled “How do I log in to my account?”
+
+
+
+Why am I getting an "Invalid username or password" error?  468
+
+There are a few possible reasons why you are getting the “Invalid username or password” error message:
+
+
+
+You input your username or password incorrectly 
+
+You don't have an account on SkillsForAll.com
+
+You are trying to log in to the SkillsForAll.com account section with your NetAcad.com or Google credentials
+
+
+
+Why am I getting the error message “we can’t find a NetAcad account…”? 469
+
+You are receiving the error message “Sorry, we can’t find a NetAcad account associated with this Cisco account” because you only have a Cisco.com account and have not created a NetAcad.com account. Cisco.com credentials do not automatically provide you with access to Cisco NetAcad.  Individuals will need to be added to an Academy to have an account created or they can sign up for a self-paced course on NetAcad.com.
+
+
+
+What is the criteria for a password? 470
+
+See the password criteria below:
+
+
+
+NetAcad.com password rules include:
+
+
+
+Lowercase letter (e.g. abc)
+
+Uppercase letter (e.g. ABC)
+
+Number (e.g. 123)
+
+A minimum of eight (8) characters
+
+Previous password may not be used
+
+
+
+SkillsForAll.com password rules include:
+
+
+
+At least 8 characters
+
+A lowercase letter
+
+A uppercase letter
+
+A number
+
+At least one special character
+
+Password shouldn’t match your Email ID and should be case-sensitive
+
+Your password cannot be any of your last 3 passwords
+
+
+
+Can I see a list of the supported mobile devices? 371
+
+You can find a list of supported mobile devices for the Skills for All site below.
+
+
+
+
+
+OS Type supported
+
+Versions
+
+Android
+
+6,7,8,9,10,11
+
+IOS
+
+10,11,13,14
+
+
+
+Device Type
+
+Browser Supported
+
+Google Pixel 2, 2 XL, 3, 3 XL, 3a, 3a XL, 4, 4 XL (unlocked)
+
+Chrome
+
+Samsung A51
+
+Chrome
+
+Samsung Galaxy A5, A40, A70, S9 (unlocked), S9+ (unlocked), S10, S10+, S10e
+
+Chrome
+
+Samsung Galaxy Tab S4, S6 (WiFi)
+
+Chrome
+
+Samsung Galaxy Note 8 (Unlocked), Note 9
+
+Chrome
+
+Apple iPhone 8, 11, 11 Pro, XS Max
+
+Safari, Firefox, Chrome
+
+Apple iPad Air 2
+
+Safari
+
+Apple iPhone 5s, 6, 7, 8 Plus, 11 Pro, 11 Pro Max, SE (2020), XR
+
+Safari
+
+Motorola one power
+
+Firefox, App
+
+Xiaomi Redmi Note 7 Pro
+
+Firefox, App
+
+
+
+Where can I go to find additional frequently asked questions (FAQs)? 526
+
+Learners can find additional FAQs by visiting our virtual assistant, Morgan. Click the chat icon in the top right corner to choose from a list of topics or enter your question.
+
+
+
+Who can enroll in Self-paced courses? 316
+
+“Beginner” online self-paced courses in Skills for All do not have prerequisites. Anyone can enroll in these courses.
+
+
+
+Which courses and languages are offered directly to independent learners? 359
+
+See the table below for courses and languages offered directly to learners on NetAcad.com or SkillsForAll.com. Introductory courses are listed in the table. Advanced courses delivered in-person are not available to learners on SkillsForAll.com and not included in the table.
+
+Table 1 – Course and Language Offerings
+
+
+Course Title
+
+NetAcad.com
+
+SkillsforAll.com
+
+Cybersecurity
+
+
+
+
+
+Introduction to Cybersecurity
+
+Version 2.x
+English, Arabic, Chinese-Simplified, Dutch, French, Georgian, German, Greek, Hebrew, Indonesian, Italian, Japanese, Kazakh, Polish, Portuguese, Romanian, Russian, Spanish, Turkish, Ukrainian
+
+
+Version 3.0
+English, Portuguese, Spanish
+
+Cybersecurity Essentials
+
+Version 1.x
+English, Chinese-Simplified, French, German Japanese, Portuguese, Russian, Spanish, Ukrainian
+
+Version 2.0
+English
+
+End Point Security
+
+
+
+Version 1.0
+English
+
+Network Defense
+
+
+
+Version 1.0
+English
+
+Cyber Treat Management
+
+
+
+Version 1.0
+English
+
+Networking
+
+
+
+
+
+Networking Essentials
+
+Version 2.0
+English
+
+Version 2.0.1
+English
+
+Networking Basics
+
+
+
+Version 1.0
+English
+
+Networking Devices and Initial Configuration
+
+
+
+Version 1.0
+English
+
+Internet of Things
+
+
+
+
+
+Introduction to IoT
+
+Version 2.0
+English, Arabic, Chinese-Simplified, Dutch, French, Hebrew, Italian, Japanese, Kazakh, Korean, Portuguese, Russian, Spanish, Ukrainian
+
+
+
+Introduction to IoT and Digital Transformation
+
+
+
+Version 2.1
+English
+
+OS & IT
+
+
+
+
+
+Get Connected
+
+Version 1.0
+English, Chinese-Simplified, Chinese-Traditional, French, Hindi, Italian, Portuguese, Spanish
+
+
+
+NDG (Network Development Group) Linux Unhatched
+
+Version 1.0b
+English, French, German, Italian, Portuguese, Spanish
+
+
+
+NDG Linux Essentials
+
+Version 2.0
+English, Spanish
+
+
+
+NDG Linux I & II
+
+Version 2.0
+English
+
+
+
+Programming
+
+
+
+
+
+PCAP: Programming Essentials in Python
+
+Version 1.0-2.0
+English, Polish, Spanish
+
+
+
+Python Essentials 1
+
+
+
+Version 1.0
+English
+
+CPA: Programming Essentials in C++
+
+Version 1.0
+English
+
+
+
+Business
+
+
+
+
+
+Entrepreneurship
+
+Version 1.0
+English, Arabic, Chinese-Simplified, Chinese-Traditional, French, Hebrew, Italian, Portuguese, Spanish
+
+
+
+Cisco Packet Tracer
+
+
+
+
+
+Introduction to Packet Tracer
+
+Version 1.13
+English
+
+
+
+Getting Started with Cisco Packet Tracer
+
+
+
+Version 1.0
+English, Portuguese, Spanish
+
+Exploring Networking with Cisco Packet Tracer
+
+
+
+Version 1.0
+English
+
+Exploring IoT with Cisco Packet Tracer
+
+
+
+Version 1.0
+English
+
+
+
+
+
+
+
+
+Why are the estimated times to complete the new versions of the courses on SkillsForAll.com shorter than the previous versions on NetAcad.com? 239
+
+The new versions of theIntroduction to Cybersecurity,Cybersecurity Essentials, andNetworking Essentialscourses on SkillsForAll.com are streamlined to deliver the same learning outcomes in a reduced amount of time. The new courses are more interactive, featuring videos, animations, and graphics to convey technical concepts so learners spend less time reading text. Also, assessments and quizzes are integrated directly into the course modules for better engagement, easier navigation, and quicker progress through the course.
+
+
+
+What is the instructor-guided online learner experience on SkillsForAll.com? 428
+
+The Instructor-guided learner experience offers educators the ability to leverage the power of the innovative learning experience on SkillsForAll.com. Functionality includes simplified learner onboarding mobile-first capability, engaging gamification, and new career paths. It is optional for early adopter instructors interested in leveraging the new functionality and providing input for how the functionality evolves.
+
+
+
+When is the instructor-guided online learner experience available to Partners and Instructors? 429
+
+Starting 27 January 2022 all Partner and Instructors can access the Instructor-guided Learner Experience on Skills for All. To access the new functionality and create online classes for your students, simply log in to SkillsForAll.com using your NetAcad.com credentials, click on the blue NetAcad login button, and access the My Classes tab for your institution.
+
+
+
+Will the learner experience and courses on SkillsForAll.com be translated into additional languages? 434
+
+Yes. The courses and experience on SkillsForAll.com are currently available in English with translations coming soon. Language availability will be shared as soon as the dates are confirmed.
+
+
+
+Is the self-enroll page the only way to register students in an instructor-guided course? 435
+
+Yes. Once the instructor creates the course, instructors will direct their students to the self-enroll page to register, which is currently the only way to register. Instructors cannot use a CSV file at this time. Additional enrollment options will be available in future releases.
+
+
+
+What information and resources are available for Partners? 447
+
+During the beta, refer to theDec 22 Partner News and Events articlewhich includes that latest beta information and links to key resources. Once instructor-guided functionality releases to instructors, refer toSkills For All Communications Updates(login required) for updates.
+
+
+
+I am an active instructor but could not find My Classes tab on Skills for All?  452
+
+Starting December 23 and during the beta, we are adding all active academies and instructors to Skills for All. Partner academies will be ready December 23. If you don’t see the My classes tab or are not able to see all your academies listed in the pull-down menu in SkillsforAll.com, you don’t need to take any action. Come back to the site later in January as we complete the process for adding all users and academies to the new site.
+
+
+
+Why is Cisco Packet Tracer unable to open port 8001 to initiate the login process with SkillForAll.com? 453
+
+Cisco Packet Tracer requires that port 8001 must be available on your device during the login process to succeed. Ifanother application (or service) is already listening on port 8001 on your device, then Packet Tracer will be unable to open this port and an error message will appear.
+
+
+You will need toshut down any application or service listening on this port on your device in order to login to Packet Tracer.
+
+
+To determinewhich application is using port 8001 and close the application, please follow these steps:
+
+
+On Windows:
+
+Step1:Open the Command Prompt (cmd)
+
+Step 2:Enter the following commandto determine thePID_valueof the application/service that is using port 8001 on your device:netstat -aon | findstr :8001
+
+See theexample below. The last column of the output will show thePID_valueof the application/servicethat is using port 8001 on your device:
+
+
+
+Step 3:Enter the following command, using thePID_valuefound in Step 2,to display the name of the application that is using port 8001:tasklist| findstrPID_value
+
+
+
+Step 4:If youwant to shut down the application that is using port 8001, enter the command:
+
+taskkill/PIDPID_value
+
+
+
+Step5:Re-startCisco Packet Tracer. You should now be able to initiate the login process withSkillForAll.com.
+
+
+
+OnMacOS and Linux Ubuntu:
+
+
+Step1:Open a Terminal Window
+
+Step2:Enter the command:lsof-nP -iTCP -sTCP:LISTEN | grep 8001
+
+On the second column of theoutput, you can find thePID_valueof the application/servicethat is using port 8001 on your device.
+
+Step3:Enter the command to display the name of the applicationthat is using port 8001, using thePID_valuefound in Step 2:
+ps-Ao user,pid,command | grep -v grep | grepPID_value
+
+Step 4:Ifyou want to shut down the application that is using port 8001, use “Activity Monitor” on MacOS or “System Monitor” on Ubuntu to close the application.
+
+Step5:Re-startCisco Packet Tracer. You should now be able to initiate the login process withSkillForAll.com.
+
+
+
+In Packet Tracer Physical Mode, how can I move a misplaced cable back to the pegboard of a Wiring Closet? 454
+
+You must place the mouse cursor over a connector of the cable, press and hold down the left mouse button, then move the mouse to an available pegboard cable slot while still holding down the left mouse button. When the pegboard cable slot becomeshighlighted, you can release the left mouse button and the cable will move back to the pegboard.
+
+
+
+How can I report bugs in the Cisco Packet Tracer activities? 459
+
+Please report bugs and errors pertaining toCiscoPacket Tracer Activities to the Global Support Desk. To access the Support Desk, log in at netacad.com and click the "?" at the top of the page, then selectNetAcadSupport.
+
+
+
+Should a learner who has already taken Introduction to Packet Tracer on NetAcad.com take the three new Packet Tracer courses available on SkillsForAll.com? 462
+
+Yes, learners should take the opportunity to enroll in the new Cisco Packet Tracer Courses to explore the latest Packet Tracer interface, see the most recent features (such as the Network Controller and the Enhanced Physical Mode), and explore the new Packet Tracer Tutored Activities (PTTA).
+
+
+
+What accessibility features does SkillsForAll.com utilize? 464
+
+All courses on SkillsForAll.com utilize W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A & AA.
+
+
+
+Who is sponsoring the Python Essentials course? 471
+
+OpenEDG Python Institute has developed the coursePython Essentials 1to enhance, develop and support professional careers in Python programming and related network technologies. The Python Institute is offering this course to all institutions participating in the Cisco Networking Academy® program for Instructor Facilitated and Self-Paced Training. The course is offered free of charge. To learn more about the Python Institute, please visitwww.pythoninstitute.org.
+
+
+
+What are the main features of the Python Essentials curriculum? 472
+
+ThePython Essentials 1course covers all the basics of programming in Python, as well as general computer programming concepts and techniques.
+
+Students have access to hands-on practice materials, quizzes, and assessments to learn how to utilize the skills and knowledge gained on the course and interact with real-life programming tasks and situations.
+
+Students who complete the course will be able to accomplish coding tasks related to the basics of programming in the Python language.
+
+
+
+Why should I learn Python? 473
+
+It is omnipresent, people use numerous Python-powered devices on a daily basis, whether they realize it or not.
+
+There have been millions (well, actually billions) of lines of code written in Python, which means almost unlimited opportunities for code reuse and learning from well-crafted examples. What’s more, there is a large and very active Python community, always happy to help.
+
+There are also a couple of factors that make Python great for learning:
+
+It is easy to learn – the time needed to learn Python is shorter than for many other languages; this means that it’s possible to start the actual programming faster;
+
+It is easy to use for writing new software – it’s often possible to write code faster when using Python;
+
+It is easy to obtain, install and deploy – Python is free, open and multiplatform; not all languages can boast that.
+
+If you’re not familiar with any other languages, Python is great to begin with, because it will give you a solid foundation and allow you to learn other programming languages (e.g., C++, Java, or C) much easier and much faster. Learning Python is fun and trendy!
+
+Doing the course will teach you how to design, write, debug, and run programs encoded in Python, the programming language used by start-ups and tech giants alike.
+
+
+
+What is Python actually used for? 474
+
+Generally, Python is a great choice for:
+
+
+
+Testing (e.g., unittest, pytest, Autotest, Doctest, or Nose; test automation)
+
+Security (e.g., requests, Scapy, Nmap, Yara, or Beautiful Soap; malware analysis, host discovery, sending/decoding packets, scanning ports, scanning network, accessing servers,
+
+Web and Internet development (e.g., Django and Pyramid frameworks, Flask and Bottle micro-frameworks)
+
+Scientific and numeric computing (e.g., SciPy – a collection of packages for the purposes of mathematics, science, and engineering; Ipython – an interactive shell that features editing and recording of work sessions)
+
+Machine Learning and AI projects (e.g., Keras, TensorFlow, Pytorch)
+
+Desktop GUIs (e.g., wxWidgets, Kivy, Qt)
+
+Software Development (build control, management, and testing – Scons, Buildbot, Apache Gump, Roundup, Trac)
+
+Business applications (ERP and e-commerce systems – Odoo, Tryton) [Source:https://www.python.org/about/aps]
+
+and…Education!(Yes, it’s a brilliant language for teaching programming! That’s why we’re offering this course to you!)
+
+
+
+The largest organizations that use Python include Cisco, Google, CERN, NASA, Yahoo, Facebook, Instagram, Amazon, Spotify, or Wikipedia!
+
+
+
+How long will it take to complete the Python Essentials course? 475
+
+The entire course is designed to be completed in about 30 hours when taken self-paced, but academies and instructors are encouraged to use the courseware and teaching resources based on the actual needs of the academic institution and students (e.g., offer each part as an independent mini-course taught over a semester).
+
+
+
+Is there a digital badge for the Python Essentials course? 476
+
+Yes, Python Essentials 1 offersa digital badge for successfully completing the course.
+
+
+
+What jobs align with the Python Essentials course? 477
+
+The course will prepare the student for jobs/careers connected with widely understood software development, which includes not only creating the code itself as a junior developer, but also computer system design and software testing.
+
+It could be a stepping-stone to learning any other programming language, and to explore technologies using Python as a foundation (e.g., Django). Moreover, Python is the preferred programming language for developers pursuing a career in Security, Networking, and the Internet-of-Things (IoT).
+
+This course is distinguished by its affordability, friendliness, and openness to the student. It starts from the absolute basics, guiding the student step by step to complex problems, making her/him a responsible software creator able to take on different challenges in many positions in the IT industry.
+
+A knowledge of programming is one of the crucial skills for network administrators. It helps them to better understand the functionality as well as the potential of network devices. Network engineers and network administrators with knowledge of programming in at least one powerful language are highly sought-after in the job market today for the unique combination of their skills and ability to successfully deal with non-standard network issues.
+
+
+
+Does the Python Essentials course align with any industry-recognized certification? 478
+
+Yes, this course aligns with thePCEP – Certified Entry-Level Python Programmercertification from the Python Institute.
+
+PCEP - Certified Entry-Level Python Programmercertification is an interim step to the PCAP - Certified Associate in Python Programming certification, and the starting point to launch a career in software development, Python programming, and related technologies. The PCEP exam is available online via the OpenEDG Testing Service (see PCEPTesting Policies).
+
+Becoming PCEP certified will help you stand out from other candidates and get your foot in the door, while becoming PCAP certified ensures that you are fully acquainted with all the primary means provided by Python 3 to enable you to start your own studies, and to open a path to the developer's career. The PCAP exam is available through the network of Pearson VUE Testing Centers and OnVUE Online Proctoring from Pearson VUE (see PCAPTesting Policies).
+
+
+
+What is the value of the Python Institute certification? 479
+
+With the growing need for Python programmers, it is important to gain recognition for your programming expertise and be able to prove your skills. An employer does not only look at your portfolio, but also searches for different ways to validate your knowledge.
+
+A certificate is frequently the first screening tool used by a recruiter to help select those candidates who will have a chance to show off their skills during an interview. Failing to get through the very first selection process makes it impossible for even a great programmer to be noticed, and this is a strong argument for getting certified and paying particular attention to your self-development.
+
+Python Institute certification can be a powerful weapon in the race for better employment, first-rate expertise and greater competitiveness.
+
+The certification can open doors to a better job and a better salary. It is a great motivator for self-improvement and self-development. It is one of the key requirements set by an increasing number of IT managers and, frequently, a standard criterion for candidates among recruiters.
+
+Python Institute certification is proof to the employer that you possess the expertise necessary to fulfil certain duties. At the same time, it is a sign for them that you are willing to expand your knowledge. And because certified individuals directly contribute to an increase in a company’s efficiency, productivity and profit-making capacity, Python Institute certification is an asset for every organization.
+
+To read more about the value of Python Institute certification, please visit theWhy Get Certifiedpage at http://pythoninstitute.org/why-get-certified.
+
+
+
+Is there any discount for the Python Institute certification exams? 480
+
+Currently there is no discount for the certification exam, but we are working closely with the Python Institute and the discount will be offered soon. Please keep checking the course web page for updates.
+
+
+
+Is instructor training or any certification required to teach the Python Essentials course? 481
+
+No special instructor training or qualification is required to teach this course. However, we recommend that instructors earn aPCEP – Certified Entry-Level Python Programmercertification prior to teaching the Python Essentials 1, so that they become familiar with the exam structure and know how to prepare their students for it.
+
+
+
+Where can I download Python? 482
+
+Python 3 can be downloaded fromhttps://www.python.org/downloads.The installation contains a software application called IDLE (Integrated Development and Learning Environment), which will enable you to execute simple Python commands and see the effects of executing your programs.
+
+Full information about how to get Python, how to install it, and how to use it is available in Module 1 of thePCAP: Programming Essentials in Pythoncourse.
+
+
+
+What are the computer requirements to access the Python Essentials course online? 483
+
+Recommended equipment and technical requirements to use Edube Interactive:
+
+
+
+a desktop computer or a laptop (recommended: a desktop computer with a mouse/pointing device and keyboard)
+
+minimum RAM: 1 GB or more;
+
+minimum processor: 1.0 GHz or more;
+
+the most recent version of Mozilla Firefox, Microsoft Edge, Google Chrome, Safari, Opera (preferred: Google Chrome)
+
+JavaScript enabled in your browser (mandatory requirement)
+
+a fast and stable Internet connection (recommended Internet download speed: 1.0 Mbps or higher; recommended Internet upload speed: 0.5 Mbps or higher)
+
+a color monitor, minimum screen resolution: 640 by 480 pixels (recommended: 1024 by 768 pixels)
+
+Windows 7/8/10 OS, MacOS X 10.0x or newer, Linux OS;
+
+whitelist the domains “*.edube.org” and “*.openedg.org”
+
+full access through ports 80 (http), 443 (https), and http redirects permitted.
+
+
+
+Does the Python Essentials course include labs, quizzes, or assessments? 484
+
+Yes, all of them. The course includes labs that help the student practice skills addressed in class or prepare for the next class. Instructors can choose from among 20+ labs to decide which particular skills they want their students to develop.
+
+At the end of each module, the student is presented with a quiz (10 questions) that helps them organize their knowledge and check if they are ready for a module test (20 or 30 questions), which is the final stage of verifying and testing their skills. All the module tests are ungraded, which means the student does not need to pass them to complete the course. There are also two summary tests (30 questions each) that cover Python Essentials 1 (PE1, Modules 1–4), and Python Essentials 2 (PE2, Modules 1–4) respectively. The summary tests must be submitted in order for the entire course to be completed.
+
+For the final test (50 questions), covering both course parts (PE1 and PE2) and all the eight modules, students must answer at least 35 questions correctly to be able to receive a 50% discount code for thePCAP – Certified Associate in Python Programmingcertification exam voucher. All questions are scored, and results are available in the course gradebook on NetAcad.
+
+
+
+How does the Python Essentials course differ from other online courses? 485
+
+ThePython Essentials 1course is an introductory self- contained course by which students with no prior background in coding can learn the fundamentals of Python and the general concepts of computer programming
+
+The course contains quizzes, module tests, interactive assessments, and lab exercises that facilitate the understanding of programming concepts and the conversion of knowledge into practical skills. It has been designed and reviewed by experienced faculty and industry professionals, with the goal of meeting current market trends, and equipping the student with the fundamental knowledge for careers in software development, software engineering, and application development.
+
+
+
+How do I log in to Cisco Packet Tracer? 523
+
+Cisco Packet Tracer requires an individual to have a NetAcad or Skills for All account in order to access it. Once downloaded, open Cisco Packet Tracer and follow the steps below to log in based on the platform where you created your account:
+
+SkillsForAll.com:
+
+1. Click the green “Cisco Skills For All” link
+ * DO NOT click the link in the “Learn more about Skills for All” sentence
+2. A new browser tab will open where you will enter your login information for Skills for All
+3. You will receive a confirmation message: “You have successfully logged in to Cisco Packet Tracer. You may close this tab.”
+4. Close the tab and go to Packet Tracer
+
+NetAcad.com:
+
+1. Click the blue “Cisco Networking Academy” link
+ * DO NOT click the link in the “Learn more about Networking Academy” sentence
+2. A new window will open; enter the email address associated with your NetAcad account and click “Next”
+3. Enter your password and click “Log in”
+
+Note:
+
+We recommend you use the most current version of Cisco Packet Tracer.
+
+If you need login assistance, please see the following FAQ: “How do I log in to my account?”
+
+
+
+How can I download Cisco Packet Tracer? 524
+
+Cisco Packet Tracer requires an individual to have a NetAcad or Skills for All account in order to log in and download it. To download Cisco Packet Tracer, please follow the steps below based on the platform where you created your account:
+
+SkillsForAll.com:
+
+1. Log in at www.skillsforall.com
+ * If you are currently enrolled in a Packet Tracer course, go to step 5
+ * If you need to enroll in a Packet Tracer course, continue to step 2
+2. Click “Catalog”
+3. Click one of the following courses: “Getting Started with Cisco Packet Tracer” or “Exploring Networking with Cisco Packet Tracer”
+4. Click “Get Started”
+5. Click “My Learning” and click the course
+6. Click the first module on the left navigation menu 
+
+7. Start reviewing the course and when you arrive at Section 1.0.2 click the link to download Packet Tracer under “Resources Available to You”
+8. Follow the steps under the "Learning Resources" section next to Cisco Packet Tracer and select the version that matches your operating system
+
+NetAcad.com:
+
+1. Log in at www.netacad.com
+2. Click “Resources”
+3. Click “Download Packet Tracer”
+4. Under the “Download” section, select the version that matches your operating system
+
+Note:
+
+We recommend you download the most current version of Cisco Packet Tracer.
+
+If you need assistance logging in to Packet Tracer, please see the following FAQ: “How do I log in to Cisco Packet Tracer?”
+
+If you need assistance enrolling in a Skills for All course, please see the following FAQ: “How can I enroll in a course?”

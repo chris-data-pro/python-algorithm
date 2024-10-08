@@ -1,0 +1,82 @@
+Module Number: 6249875805001_6
+Section Number: 6249875805001_6.1
+Video Number: 6249875805001_6.1.1
+Video Title: The Fields of the Ethernet Frame__eng
+Video URL: 
+ - In this video, we're going to introduce the fields of an Ethernet frame. Remember Ethernet is for network interface card, to network interface card, on the same network. And to mention, see these numbers underneath here, these are the number of bytes for each one of these fields. If you want to then translate this into bits, just multiply each one of these numbers by eight, and it will give you the number of bits. So the first field is the preamble. This is used to just get the NIC card, the receiving NIC, in sync with the bits that are coming down the cable. The start frame delimiter, this indicates to the receiving network interface card that, following this start frame delimiter, will be the actual information associated with the Ethernet frame. Next we have the destination MAC address. The destination mac address is the MAC address of the destination on that network. So that's the MAC address of the NIC card where this Ethernet frame is going to on this network. The source MAC address, this is the MAC address of the device that originated this Ethernet frame, the MAC address of the network interface card, the Ethernet NIC, that originated this Ethernet frame. Next we have the length, or type field. So this field here can be one of two things: It might be the length, and that would be the length of the data, what we sometimes call payload, how many bytes are in the data portion of this Ethernet frame; or it might be a type field that says what kind of data is this, is this an IPv4 packet, is this an IPv6 packet. Next is the actual encapsulated data. So this might be an IPv4 packet, could be an IPv6 packet, and then, along with the IPv4 packet, let's say, could be other protocols as well. So this is all the data, this could be the IPv4 packet, with the TCP header, or along with the HTTP header, or whatever information has been encapsulated. And actually Ethernet doesn't care what kinda data is it, it's just delivering this data from network interface card to network interface card. Last we have what's known as the FCS, frame check sequence. This is used by the receiving device to do some error checking, to make sure there were no errors along the way in transmission.
+Timestamp: 00:00:06.438 - 00:00:08.431 Text: - In this video, we're going to introduce
+Timestamp: 00:00:08.431 - 00:00:10.707 Text: the fields of an Ethernet frame.
+Timestamp: 00:00:10.707 - 00:00:14.626 Text: Remember Ethernet is for
+network interface card,
+Timestamp: 00:00:14.626 - 00:00:19.028 Text: to network interface
+card, on the same network.
+Timestamp: 00:00:19.028 - 00:00:22.287 Text: And to mention, see these
+numbers underneath here,
+Timestamp: 00:00:22.287 - 00:00:26.856 Text: these are the number of bytes
+for each one of these fields.
+Timestamp: 00:00:26.856 - 00:00:30.721 Text: If you want to then
+translate this into bits,
+Timestamp: 00:00:30.721 - 00:00:33.611 Text: just multiply each one of
+these numbers by eight,
+Timestamp: 00:00:33.611 - 00:00:37.564 Text: and it will give you the number of bits.
+Timestamp: 00:00:37.564 - 00:00:40.340 Text: So the first field is the preamble.
+Timestamp: 00:00:40.340 - 00:00:43.961 Text: This is used to just get the NIC card,
+Timestamp: 00:00:43.961 - 00:00:47.708 Text: the receiving NIC, in sync with the bits
+Timestamp: 00:00:47.708 - 00:00:50.291 Text: that are coming down the cable.
+Timestamp: 00:00:51.867 - 00:00:54.957 Text: The start frame delimiter, this indicates
+Timestamp: 00:00:54.957 - 00:00:58.377 Text: to the receiving network interface card
+Timestamp: 00:00:58.377 - 00:01:01.960 Text: that, following this
+start frame delimiter,
+Timestamp: 00:01:03.997 - 00:01:06.847 Text: will be the actual information associated
+Timestamp: 00:01:06.847 - 00:01:08.847 Text: with the Ethernet frame.
+Timestamp: 00:01:10.626 - 00:01:13.926 Text: Next we have the destination MAC address.
+Timestamp: 00:01:13.926 - 00:01:17.017 Text: The destination mac
+address is the MAC address
+Timestamp: 00:01:17.017 - 00:01:19.934 Text: of the destination on that network.
+Timestamp: 00:01:20.891 - 00:01:24.308 Text: So that's the MAC address of the NIC card
+Timestamp: 00:01:25.614 - 00:01:29.781 Text: where this Ethernet frame
+is going to on this network.
+Timestamp: 00:01:31.478 - 00:01:34.700 Text: The source MAC address,
+this is the MAC address
+Timestamp: 00:01:34.700 - 00:01:39.018 Text: of the device that originated
+this Ethernet frame,
+Timestamp: 00:01:39.018 - 00:01:42.768 Text: the MAC address of the
+network interface card,
+Timestamp: 00:01:42.768 - 00:01:46.935 Text: the Ethernet NIC, that
+originated this Ethernet frame.
+Timestamp: 00:01:48.448 - 00:01:51.995 Text: Next we have the length, or type field.
+Timestamp: 00:01:51.995 - 00:01:55.138 Text: So this field here can
+be one of two things:
+Timestamp: 00:01:55.138 - 00:01:58.423 Text: It might be the length, and
+that would be the length
+Timestamp: 00:01:58.423 - 00:02:01.129 Text: of the data, what we
+sometimes call payload,
+Timestamp: 00:02:01.129 - 00:02:04.962 Text: how many bytes are in the data portion
+Timestamp: 00:02:04.962 - 00:02:08.595 Text: of this Ethernet frame; or
+it might be a type field
+Timestamp: 00:02:08.595 - 00:02:11.449 Text: that says what kind of data is this,
+Timestamp: 00:02:11.449 - 00:02:15.366 Text: is this an IPv4 packet,
+is this an IPv6 packet.
+Timestamp: 00:02:18.536 - 00:02:21.619 Text: Next is the actual encapsulated data.
+Timestamp: 00:02:22.893 - 00:02:25.701 Text: So this might be an IPv4 packet,
+Timestamp: 00:02:25.701 - 00:02:29.451 Text: could be an IPv6 packet,
+and then, along with
+Timestamp: 00:02:30.601 - 00:02:33.579 Text: the IPv4 packet, let's say, could be
+Timestamp: 00:02:33.579 - 00:02:35.286 Text: other protocols as well.
+Timestamp: 00:02:35.286 - 00:02:39.926 Text: So this is all the data, this
+could be the IPv4 packet,
+Timestamp: 00:02:39.926 - 00:02:44.093 Text: with the TCP header, or
+along with the HTTP header,
+Timestamp: 00:02:45.744 - 00:02:50.168 Text: or whatever information
+has been encapsulated.
+Timestamp: 00:02:50.168 - 00:02:52.028 Text: And actually Ethernet doesn't care
+Timestamp: 00:02:52.028 - 00:02:53.457 Text: what kinda data is it,
+Timestamp: 00:02:53.457 - 00:02:56.553 Text: it's just delivering this data
+Timestamp: 00:02:56.553 - 00:03:00.636 Text: from network interface card
+to network interface card.
+Timestamp: 00:03:00.636 - 00:03:04.803 Text: Last we have what's known as
+the FCS, frame check sequence.
+Timestamp: 00:03:05.683 - 00:03:07.430 Text: This is used by the receiving device
+Timestamp: 00:03:07.430 - 00:03:09.556 Text: to do some error checking, to make sure
+Timestamp: 00:03:09.556 - 00:03:13.723 Text: there were no errors along
+the way in transmission.

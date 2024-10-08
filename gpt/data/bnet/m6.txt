@@ -1,0 +1,89 @@
+Module Title: Module 6: Network Media
+Module URL: "http://cisco_bnet_mod6"
+Module 6: Network Media
+Describe common network media.Scroll down  and select ‘Introduction’ to begin.
+6.0 Introduction
+6.0 Introduction 
+6.0 Introduction 
+Scroll to begin   
+6.0.1 Webster -  Why Should I Take this Module
+Kishori knows that the 15 to 20 devices in a patient’s room wirelessly connect to the network. She also uses a wireless tablet. While working at the nurses' station, she noticed that the wireless network on her desktop computer was disabled. However, she still has access to patient records. How is the desktop connected?How does communication transmit across a network? The answer is network media. Media provides a channel over which the message travels from source to destination. In modern networks, there are primarily three types of media used. Do you know what they are? Take this module to learn about media types.
+
+
+6.0.2 What Will I Learn in this Module?
+Module Title: Network MediaModule Objective: Describe common network media.
+
+
+6.1 Network Media Types
+6.1 Network Media Types
+6.1 Network Media Types
+Scroll to begin   
+6.1.1 Video - Network Media Types
+Press the Play button to watch the video.
+6.1.2 Three Media Types
+Data is transmitted across a network on media. The media provides the channel over which the message travels from source to destination.Modern networks primarily use three types of media to interconnect devices, as shown in the figure:Metal wires within cables - Data is encoded into electrical impulses.Glass or plastic fibers within cables (fiber-optic cable) - Data is encoded into pulses of light.Wireless transmission - Data is encoded via modulation of specific frequencies of electromagnetic waves.
+
+The four main criteria for choosing network media are these: What is the maximum distance that the media can successfully carry a signal?What is the environment in which the media will be installed?What is the amount of data and at what speed must it be transmitted?What is the cost of the media and installation?
+6.1.3 Common Network Cables  
+The three most common network cables are twisted-pair, coaxial cable, and fiber-optic cable.Click below for more information about each cable type.
+Question 1
+Question 1
+Which of the following is NOT a criterion for choosing a network media?
+Question 2
+Question 2
+What is the most common type of wired media used by TV companies to connect and carry signals to a set-top box within a home?
+Question 3
+Question 3
+Which type of wired media is used to carry digital information at very high speeds over long distances?
+Question 4
+Question 4
+Which is the most common type of wired media to connect end devices to an Ethernet LAN?
+
+
+6.2 Network Media Summary
+6.2 Network Media Summary
+Network Media Summary
+Scroll to begin   
+6.2.1 What Did I Learn in this Module?
+Network Media TypesCommunication transmits across a network on media. The media provides the channel over which the message travels from source to destination.  Modern networks primarily use three types of media to interconnect devices are:  Metal wires within cables - Data is encoded into electrical impulses.  Glass or plastic fibers within cables (fiber-optic cable) - Data is encoded into pulses of light.  Wireless transmission - Data is encoded via modulation of specific frequencies of electromagnetic waves.  The four main criteria for choosing media are the following:  What is the maximum distance that the media can successfully carry a signal?  What is the environment in which the media will be installed?  What is the amount if data and at what speed must is be transmitted?  What is the cost of the media installation?  The three most common network cables are twisted-pair, coaxial cable, and fiber-optic cable. Ethernet technology generally uses twisted-pair cables to interconnect devices. Coaxial cable is the kind of copper cable used by cable TV companies. It is also used for connecting the various components which make up satellite communication systems. Fiber-optic cable can be either glass or plastic with a diameter about the same as a human hair and it can carry digital information at very high speeds over long distances. Because light is used instead of electricity, electrical interference does not affect the signal.
+6.2.2 Webster - Reflection Questions 
+I had no idea that a network needed to have different cables for different uses, did you? I thought all the cables were the same and that they all carried the same type of signal. And electrical interference? Now I get why my smartphone connection sometimes drops if I stand too close to my microwave! Do you know about all the cables that are used in your school or office network? 
+
+
+Question
+Question
+A network technician is extending the network from the main office building over several hundred meters to a new security station. The security station needs a high speed connection to support video surveillance of the main building. What type of cable is best suited to connect the security station to the rest of the main office network?
+Question
+Question
+What are two common media used in networks? (Choose two.)
+Question
+Question
+Which type of network cable is commonly used to connect office computers to the local network?
+Question
+Question
+Which three factors should be considered when choosing the appropriate network media? (Choose three.)
+Question
+Question
+ Refer to the graphic. What type of cabling is shown?
+Question
+Question
+What makes fiber preferable to copper cabling for interconnecting buildings? (Choose three.)
+Question
+Question
+Which type of network media carries data encoded into electrical impulses?
+Question
+Question
+Which two types of network media carries data encoded into electrical impulses? (Choose two.)
+Question
+Question
+Which type of network media carries data encoded into impulses of light?
+Question
+Question
+A network administrator in a small office is upgrading the local network within the building. New network cables are needed to connect office computers and networking devices. Which network media should the administrator use?
+Question
+Question
+What is the purpose of using twisted pairs of wires in an Ethernet cable?
+Quiz feedback
+
+
+

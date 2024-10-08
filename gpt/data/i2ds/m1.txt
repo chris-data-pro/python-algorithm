@@ -1,0 +1,224 @@
+Module Title: Module 1: Experience Analytics
+Module URL: "http://cisco_i2ds_mod1"
+Module 1: Experience Analytics
+Examine the basic features and functions of data analytics. Scroll down  and select ‘Introduction’ to begin.
+1.0 Introduction
+1.0 Introduction
+1.0 Introduction
+Scroll to begin   
+1.0.1 Video - Course Overview
+Click Play to view the video.
+quickNav
+
+1.1 What is Data?
+1.1 What is Data?
+1.1 What is Data?
+Scroll to begin   
+quick_nav
+
+1.1.1 Video - What is data and where does it come from?
+Click Play to view the video.
+1.1.3 Video - Data Usage in Daily Life
+Click Play to view the video.
+1.2 Data is All Around Us
+1.2 Data is All Around Us
+1.2 Data is All Around Us
+Scroll to begin   
+1.2.1 Discrete vs Continuous Data
+Click Play to view the video.
+quick_nav
+
+1.3 Business Understanding
+1.3 Business Understanding
+1.3 Business Understanding
+Scroll to begin   
+1.3.1 Video - Data Analytics for Business Insights
+Our connected world is complex. As you learned, this complexity generates an ever-increasing amount of data, which is now available at our fingertips.Press Play to learn more about how businesses gain insights from data to drive change.
+quick_nav
+
+1.3.3 Video - Humanitarian Insights from Data Analytics
+Businesses are not the only beneficiaries of the explosion in data and analytics. Press Play to learn more about how humanitarian organizations use data to drive resource decisions. 
+Figure for DrivenData
+
+1.4 Experience Analytics
+1.4 Experience Analytics Summary
+1.4 Experience Analytics
+Scroll to begin   
+1.4.2 Reflection
+The world population continues to climb. The need to feed that growing population makes the agricultural sector more dependent on data than ever before. Agricultural farmers utilize data to determine the right weather, soil yield, supply and demand for the type of crops. These analytics impact what to plant, when to plant, when to harvest, and when to sell. For livestock farmers, data analytics drives breeding rates, land management, purchasing of hay and grain, and determining the sales market. The farmer's role may have stayed relatively the same as the decades before us, but the approach has drastically changed due to data analytics. The increased need for a sustainable and consistent food supply raises new questions. Questions for reflection include:  What percentage of land should be dedicated to farming versus communities?  What other data should be gathered to ensure a good food source for generations while not negatively impacting the environment?  Data analytics will continue to play a significant role in improving farming methods for future generations. 
+New Component Title
+
+Question
+Question
+What is an example of structured data?
+Structured data is data that is easily entered, classified, queried, and analyzed by a computer. Example include data entered into spreadsheets and into databases.
+Question
+Question
+What are two examples of unstructured data? (Choose two.)
+Unstructured data is raw data, data that is not organized in a predefined way. Examples of unstructured data would be contents of photos, audio, video, web pages, blogs, books, journals, and white papers.
+Question
+Question
+Which statement is an accurate description of discrete variables?
+Variables are either categorical or numeric. Numerical variables are qualitative and are either continuous or discrete. Discrete variables are those from a finite set of values such as the number of users on the network.
+Question
+Question
+A sales department is analyzing the sales trend for one of their best products. They collected quarterly sales number over the past five years and want to plot the data in a graphical format for quick analysis and interpretation. Which one is NOT a good way to visualize?
+Line charts are a type of comparison chart. Use a line chart when there is a continuous set of data&#44; the number of data points is high&#44; and the purpose being to show a trend in the data over time.
+Question
+Question
+An online e-commerce shopping site collects sales data to help improve their operation and profits. Which data type would be used to record the number of products purchased by a customer?
+Integer is a data type that consists of whole numeric numbers (i.e.&#44; numbers without decimal point). It is commonly used to sort items and rankings.
+Quiz feedback
+
+quick_nav
+
+Data Types
+Data Types
+
+1.2.5 Variety of Data
+Data is all around us, and it is coming at ever-increasing rates and in many different formats. For example, when mobile phones first became popular, they had only a few megabytes of data storage and were limited to the variety of data they could store. These early mobile phones, used primarily for phone calls, could keep text messages, a couple of MP3 music files, and a few low-resolution photos. Modern-day mobile phones can come with up to a terabyte (1000 gigabytes) of storage. They can store a growing variety of data types, including high-definition video files, photographs, audio files, documents, apps, books, calendars, and emails, to name a few.
+1.3.5 Social Example: DrivenData
+Competitions run by DrivenData encourage data professionals to find solutions to real-world problems. One such competition challenges entrants to predict the level of earthquake damage by aspects of building location and construction. This information can assist planners to determine, in advance, which buildings may withstand an earthquake, and which may need preventive measures. All of the prize-winning solutions are then made available as open source for anyone to learn from or build on.
+Figure for Climate Change
+
+1.3.6 Environmental Example - Climate Change
+One of the most visible uses of data analytics is the ongoing observations and predictions related to climate change and its impacts on society.  These are made possible by collecting and analyzing data from many sources, including satellites, ocean temperature sensors, air quality sensors, crop yields, and weather data.  Observations uncovered by data professionals around the world are changing how we see our interactions with our environment, spurring actions to counteract the harmful effects that could result from a warming climate.  Without this intensive analytic effort, we would be unable to envision the changes and coordinate the efforts to mitigate the potential damage. Several interactive public dashboards show the impacts of our changing climate, including the IMF Climate Change Dashboard and the NOAA Global Climate Dashboard. Visit these dashboards to see the work done by the data professionals at these organizations to help the public visualize changes over time. 
+1. Visualizing Data Pivoting-test
+
+1. Explore Pivoting-test
+
+1. Ice Cream -test
+
+New Component Title
+
+1.0.2 What Will I Learn in this Module?
+In this module, you will learn about the various forms of data. You will also experience the process of transforming data into valuable visualizations.   Module Title: Experience AnalyticsModule Objective: Examine the basic features and functions of data analytics. 
+1.1.5 The Importance of Visualization
+The data analysts at Data Crunchers work hard to create stories and reports from their clients’ data. Analysts rely heavily on visualization techniques to make the information relevant and actionable. Visualizations are a way to display data in a manner that is easily understood. The most common ways to represent data visually are charts and graphs.  There are many types of charts used to present information graphically. It is crucial to ensure that the type of visualization used best illustrates the pattern, problem, or trend that needs highlighting; not all types of visualizations are appropriate for all kinds of data.  Factors to consider when choosing a visualization: The number of variables, which are the characteristics measured, that need are shown The number of data points, or units of information, in each variable  Whether the data illustrates changes over time (hourly, daily, weekly)The need to make a comparison or correlation between different data points Often, analysts try a few different types of charts to choose the one that provides the most effective view of the information. 
+Note
+Note: To learn more about other types of charts, search the internet for Tableau Software’s guidelines for choosing the correct chart.
+New Component Title
+
+1.2.3 Data Types
+All pieces of data have a feature called data type that tells applications how to treat it. Operations performed are defined by the data type. Identifying data types is helpful in analytics because we may need to group the data, sort the data, or run calculations on the data. Data must be grouped by their given type to perform required operations. For example, consider the following Data Crunchers Employee Information table. 
+Employee Information Table Explained
+Each column (or field) in the Employee Information table has data that is all the same type. The next table  describes the various data types. Read the descriptions for each data type. Compare them to the data displayed in the Employee Information table and think about which type each field is (For example, Job Title contains string data). 
+Employee Information
+Employee Information
+
+New Component Title
+
+1.3.4 Social Examples
+The United Nations Office for the Coordination of Humanitarian Affairs (OCHA) provides information management services to the humanitarian community by gathering and sharing data. By sharing the data and analysis, OCHA enables the coordination of resources, decision-making and funding. The Humanitarian Data Exchange (HDX), is a source that provides workers from the United Nations, (UN), non-governmental organizations (NGOs), government and universities with the tools to improve data sharing during times of crisis.      The availability of data enables organizations to better assist crisis-affected areas.  Predictive analytics can focus humanitarian efforts on preventive, rather than reactive, actions. There are organizations, such as DrivenData (https://www.drivendata.org/), which help humanitarian and social impact groups to find data-driven answers to difficult questions.
+Source for Figure
+Source: https://climatedata.imf.org/pages/climatechange-data
+1.4.1 What Did I Learn in This Module?
+In this module, you learned about the various forms of data, how data visualizations are created, and ways to compare data and evaluate value gained through analytics. 
+1.2.8 Selecting Relevant Data
+Selecting relevant data starts with defining the question that you want to answer. For example, suppose you are researching the factors that contribute to the overall wellness of the workforce. You can start by looking at the available data and determining which fields or measurements are relevant to your question. In the Employee Information table, repeated below, Employment Date has no impact on employee wellness and therefore is irrelevant to the analysis. In contrast, overwork could impact employee wellness, and therefore, Average Weekly Hours could be relevant to the research.  
+Employee Information
+Employee Information
+
+1.1.6 Ways to Visualize Data
+The correct type of data visualization can intuitively present complex data. Select each type of data visualization to see its typical use cases and best practices.  
+Scenario 1
+In each of the following scenarios, select whether you should use volunteered, observed, or inferred data.
+Correct! Marketers can learn the most about consumers’ behaviors and habits through direct observation. Only by observing a person’s actions over a period of time can the most accurate predictions be made. 
+Scenario 2
+
+Correct! Volunteered data is information that is explicitly given by consumers in a direct interaction with business. It enables marketers to identify the needs, wants and desires of a customer. It is the type of data that most marketers can only assume about their audience unless they explicitly collect it. 
+Scenario 3
+
+Correct! Inferred data is collected about the user without their express input, usually systematically generated based on search histories, purchases, and social media activity. Inferred data is based on well-informed assumptions 
+Scenario 1
+Data Crunchers has a number of clients who need to make sense of their data and to use it to identify trends, make decisions, and predict future conditions.  Review these client scenarios and choose the manner in which these clients are using data analytics. For each of the following scenarios, choose the reason that best describes how data is being used.
+Correct! Using data to make informed decisions enables a business to better anticipate customer shopping behavior so which products to have stocked in inventory. 
+Scenario 2
+
+Correct! Using data to identify improvements to processes and products allows a business to produce better products and provide better services. 
+Scenario 3
+
+Correct! Using data to enable greater visibility into customer behaviors allows a business to ensure the right products are available for their customers in the shortest time possible. 
+Scenario 4
+
+Correct! Using data to track and predict events allows for the tracking and forecasting of events and their impact. 
+First Visualization
+
+Correct! The line chart with values on the vertical axis and time on the horizontal axis is the best choice to showcase the trends in sales. 
+Second Visualization
+
+Correct! A column chart that starts with zero values is the best choice for showing the comparisons. 
+Scenario
+One of our clients at Data Crunchers is a bicycle retailer who will be making a presentation to their investors at a company meeting. The presentation will include several visualizations summarizing their sales data. You are to create the charts they will use in the presentation. Select the correct chart and best practices for each of the following scenarios.
+Third Visualization
+
+Correct! Pie charts are the best choice when you want to illustrate percentage of a whole.  Pie charts should always add up to 100%. 
+Scenario
+Our client, Racing Wheels, a bicycle retailer, has been approached by a new manufacturer to offer a lightweight, customizable touring bike. To determine how many to order and which models, the bicycle shop owner wants us to analyze the past sales data to find information on how touring bikes sell in their stores.The following three figures show graphs created for our bicycle store client.
+Question 1
+Select the type of information that can be determined by examining the visualization shown in the column chart on the right.
+Correct! On this bar chart, longer bars indicate larger numbers. Bar charts allow for an easy comparison of sales between the different years.
+Figure for Question 1
+
+Figure for Question 2
+
+Question 2
+Select the type of information that can be determined by examining the visualization shown in the bar chart on the right.
+Correct! The column chart illustrates how many of each model were sold, making it easy to see which model is the most popular.
+Figure for Question 3
+
+Question 3
+Select the type of information that can be determined by examining the visualization shown in the pie chart on the right.
+Correct! The pie chart represents total sales. Each segment of the pie represents a percentage of total sales. The largest pie segment visually represents the model with the most sales.
+New Component Title
+
+Scenario
+Our bicycle store client is collecting data for analysis. For each example, choose if it is discrete data or continuous data.
+Correct!The number of employees in each department is discrete data because it has a limited number of possible values.The temperature inside the store is continuous data because temperature can be in an infinite range of values.The distance traveled by a moving bicycle is continuous data because weight can be in an infinite range of values.The number of customers who bought bicycles is discrete data because it has a limited number of possible values.The speed of a rider in a bike race is continuous data because wind speed can be in an infinite range of values.The amount of diesel fuel purchased each week for a delivery truck is discrete data because it has a limited number of possible values.
+Employee Information
+Employee Information
+Refer to the Employee Information table below. You are tasked with defining the correct data types that can be stored in each of the columns.
+Select the Data Type
+For each column name in the Employee Information table, select the correct data type. Each data type can be used more than once.
+Correct!Name = String because the Name field is text. Employee ID = String because while the Employee ID is a number, it is a random number used for identification. It would make no sense to ask, “What is the average employee ID?”. Since it cannot be used in calculations, it is treated as text .  Employment Date = Date because the field is treated as Date values. Job Title = String because Job Title is treated as text. Base City = String because Base City is treated as text. Average Weekly Hours = Floating point because Average Weekly Hours is using numbers with decimal places Contract = Boolean because Contract is treated as a True or False value. Yearly Vacation Days = Integer because Yearly Vacation Days is using whole numbers without decimal points Gym Membership = Boolean because Gym Membership is treated as a True or False value. 
+New Component Title
+
+1.2.6 Structured vs Unstructured Data
+In order to process, store, and analyze all of these different types of data, it is important to think about whether they are structured data or unstructured data.Select each type for more information.
+Select Structured or Unstructured
+For each example of data, choose if it represents structured data or unstructured data.
+Correct!Structured data is comprised of defined data types and is highly organized with easily searchable patterns. Relational databases, spreadsheets, sales transactions, and credit card numbers are all examples of structured data. Unstructured data is not structured through a predefined data model or schema. It is usually qualitative data and best managed in non-relational (NoSQL) databases. Email messages, social media posts, and surveillance videos are all examples of unstructured data. 
+New Component Title
+
+Employee Information
+Employee Information
+Refer to the Employee Information table below. One of Data Crunchers' clients is a large national firm with multiple branch office locations. You are gathering data to help prepare a report regarding general workforce wellness. The report will be presented at the yearly meeting with branch managers and needs to have the wellness data broken down by branch office.Note: Base City has been changed to Branch Office.
+Select the Relevant Data
+Select whether the data in a column in the Employee Information table is relevant or not relevant to the workforce wellness report. 
+Correct! Because the study needs to show wellness data by branch office, the two fields to include are branch office and gym membership. The other fields are not relevant because they do not provide insights into wellness nor do they help identify the branch office location. 
+Question 1
+A car dealership hired a data analyst to analyze trends to increase new car sales. The result of the analysis recommended that the dealership purchase newspaper and television advertising during specific time periods to target new buyers. Which two analysis trends would support this strategy? (Choose two.)
+That’s right.Trend analysis is one way to gain insights into key performance indicators (KPI) over time. The Analyst can analyze the types of cars or services that their previous new customers purchased and during what time of the year they made their purchases. This analysis identifies trends in these purchases, such as many new customers are buying certain types of cars at specific times of the year. The results of the analysis would provide a strategy for the dealership to purchase advertising during those time periods to target new buyers. Afterwards, the management can analyze sales data to determine the effectiveness of the advertising.
+Scenario
+A data scientist wants to use the data in the graph on the right to predict changes in sea level over time and how those changes might affect people living in coastal cities around the world. Which of the following information could help establish how the area of arctic sea ice is related to the impact of coastal flooding?Graph Source: National Oceanic and Atmospheric Association
+Scenario Question
+Choose two pieces of information.
+Correct! The data scientist will use the data regarding future population growth and governmental mitigation plans to establish the impacts of the flooding.
+Scenario
+Data Crunchers’ client, Pickard Climate Research, wants to obtain a grant to study the impact of sea level rise on coastal cities and the people who live in them. They are especially concerned about cities with a very high population density, making it difficult to relocate in an emergency. Population density is determined by dividing the population by the area.  Use the graph in the figure to determine where the client should focus their efforts. 
+Figure for Scenario
+
+Question 1
+What information is readily available using the visualization shown in the figure? 
+Correct! Pickard Climate Research can focus their resources on the top two cities. 
+New Component Title
+
+Figure for Social Examples
+
+New Component Title
+
+Question 2
+This bar chart makes it difficult to rank cities with similar densities and calculate values. Make sure that the visualization includes all the information needed to provide the requested information. Which action would make this graph more beneficial to our climate science client?
+Correct! Sorting the cities by their density will make the ranking much easier to determine! Pickard Climate Research will appreciate your work! 
+1.0.3 Video - Welcome to Data Crunchers
+Click Play to view the video.

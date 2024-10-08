@@ -1,0 +1,29 @@
+Module Number: 4
+Section Number: 4.2
+Video Number: 4.2.1
+Video Title: The Importance of a Project Portfolio
+Video URL: 
+ One of the most common ways to showcase your analytic skills is to create and share a project portfolio. Portfolios are collections of examples of your work. The work that you showcase in a portfolio can be projects that you have done during your education, projects that you undertake using topics and data that you're interested in researching, or ones that are related to your current employment. The purpose of the portfolio is to expand upon the information that you provide in your resume, CV, or cover letter. The portfolio gives future employers insights into your interests and abilities. In addition to demonstrating your skills, employers are often interested in other information about you. Adding a blog to your portfolio gives you an opportunity to share how you became interested in pursuing a career as a data professional, topics, and projects that you want to pursue, and any competitions that you enter or win. (lively music)
+Timestamp: 00:00:00.690 - 00:00:01.950 Text: One of the most common ways
+Timestamp: 00:00:01.950 - 00:00:03.630 Text: to showcase your analytic skills
+Timestamp: 00:00:03.630 - 00:00:06.330 Text: is to create and share a project portfolio.
+Timestamp: 00:00:06.330 - 00:00:09.540 Text: Portfolios are collections of examples of your work.
+Timestamp: 00:00:09.540 - 00:00:11.610 Text: The work that you showcase in a portfolio
+Timestamp: 00:00:11.610 - 00:00:14.640 Text: can be projects that you have done during your education,
+Timestamp: 00:00:14.640 - 00:00:16.346 Text: projects that you undertake using topics
+Timestamp: 00:00:16.346 - 00:00:19.140 Text: and data that you're interested in researching,
+Timestamp: 00:00:19.140 - 00:00:22.170 Text: or ones that are related to your current employment.
+Timestamp: 00:00:22.170 - 00:00:24.210 Text: The purpose of the portfolio is to expand
+Timestamp: 00:00:24.210 - 00:00:26.640 Text: upon the information that you provide in your resume,
+Timestamp: 00:00:26.640 - 00:00:28.800 Text: CV, or cover letter.
+Timestamp: 00:00:28.800 - 00:00:30.840 Text: The portfolio gives future employers
+Timestamp: 00:00:30.840 - 00:00:33.540 Text: insights into your interests and abilities.
+Timestamp: 00:00:33.540 - 00:00:35.730 Text: In addition to demonstrating your skills,
+Timestamp: 00:00:35.730 - 00:00:37.320 Text: employers are often interested
+Timestamp: 00:00:37.320 - 00:00:39.690 Text: in other information about you.
+Timestamp: 00:00:39.690 - 00:00:42.570 Text: Adding a blog to your portfolio gives you an opportunity
+Timestamp: 00:00:42.570 - 00:00:43.800 Text: to share how you became
+Timestamp: 00:00:43.800 - 00:00:47.130 Text: interested in pursuing a career as a data professional,
+Timestamp: 00:00:47.130 - 00:00:50.160 Text: topics, and projects that you want to pursue,
+Timestamp: 00:00:50.160 - 00:00:53.215 Text: and any competitions that you enter or win.
+Timestamp: 00:00:53.215 - 00:00:55.798 Text: (lively music)

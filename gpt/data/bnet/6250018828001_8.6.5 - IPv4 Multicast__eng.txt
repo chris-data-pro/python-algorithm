@@ -1,0 +1,30 @@
+Module Number: 6250018828001_8
+Section Number: 6250018828001_8.6
+Video Number: 6250018828001_8.6.5
+Video Title: IPv4 Multicast__eng
+Video URL: 
+ - Multicast transmission is used to send a packet from a single device to a selected group of devices. IPv4 multicast addresses have a range from 224.0.0.0 to 239.255.255.255. So in this animation here, we're going to have a multicast transmission going from 172.16.4.1 to two selected hosts that are a member of the multicast group. But, the only two devices that this packet is for, is for 172.16.4.3 and 172.16.4.4. So we can see here that the packet leaves 172.16.4.1 and is received by multiple devices on the network. However, only 4.3 and 4.4 are the only two devices that are a member of the multicast group. So they're the only two devices that will actually process this packet.
+Timestamp: 00:00:06.395 - 00:00:09.836 Text: - Multicast transmission
+is used to send a packet
+Timestamp: 00:00:09.836 - 00:00:14.721 Text: from a single device to a
+selected group of devices.
+Timestamp: 00:00:14.721 - 00:00:18.888 Text: IPv4 multicast addresses
+have a range from 224.0.0.0
+Timestamp: 00:00:23.112 - 00:00:27.279 Text: to 239.255.255.255.
+Timestamp: 00:00:29.123 - 00:00:31.294 Text: So in this animation here,
+Timestamp: 00:00:31.294 - 00:00:34.304 Text: we're going to have a
+multicast transmission going
+Timestamp: 00:00:34.304 - 00:00:37.387 Text: from 172.16.4.1 to two selected hosts
+Timestamp: 00:00:39.757 - 00:00:42.251 Text: that are a member of the multicast group.
+Timestamp: 00:00:42.251 - 00:00:46.358 Text: But, the only two devices
+that this packet is for,
+Timestamp: 00:00:46.358 - 00:00:49.108 Text: is for 172.16.4.3 and 172.16.4.4.
+Timestamp: 00:00:53.194 - 00:00:57.361 Text: So we can see here that the
+packet leaves 172.16.4.1
+Timestamp: 00:00:58.751 - 00:01:02.395 Text: and is received by multiple
+devices on the network.
+Timestamp: 00:01:02.395 - 00:01:06.562 Text: However, only 4.3 and 4.4
+are the only two devices
+Timestamp: 00:01:07.677 - 00:01:10.799 Text: that are a member of the multicast group.
+Timestamp: 00:01:10.799 - 00:01:12.524 Text: So they're the only two devices
+Timestamp: 00:01:12.524 - 00:01:15.774 Text: that will actually process this packet.

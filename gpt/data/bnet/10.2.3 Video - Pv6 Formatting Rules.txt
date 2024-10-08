@@ -1,0 +1,90 @@
+Module Number: 10
+Section Number: 10.2
+Video Number: 10.2.3 Video
+Video Title: Pv6 Formatting Rules
+Video URL: 
+ IPv6 addresses are 128 bits in length and written as a string of hexadecimal values. IPv6 addresses are not case sensitive and can be written in either lower case or upper case. Every four bits is represented by a single hexadecimal digit for a total of 32 hexadecimal values. For example, the hexadecimal digit two is the equivalent in binary to the four bits 0010. Every four hexadecimal digits is 16 bits separated by a colon. Each hexadecimal digit is four bits, which makes it easy to represent the 128 bit IPv6 address. Each set of four hexadecimal segments is sometimes referred to as a hextet. When written with all 32 hexadecimal digits, this is known as the preferred format, which doesn't mean it is always the preferred way to display the address. There are two rules which can be used to reduce the number of hexadecimal digits used to represent an IPv6 address. The first rule to help reduce the notation of IPv6 addresses is to omit any leading zeros in any hextet. We are using spaces on each side of the colon to make it easier to read. In our first example, notice that only leading zeros have been omitted. Here is our next example. Once again you can see that only leading zeros have been omitted, not trailing zeros. And the same holds true for our last example. You will notice that in all three examples only leading zeros were omitted, not trailing zeros. Otherwise you can see that we wouldn't know which zeros were omitted, leading zeros, trailing zeros or both. Using this first rule we know that it is only leading zeros that are omitted. The second rule can be used to further reduce the representation of an IPv6 address. Any single contiguous string of one or more 16 bit segments consistent of all zeros can be represented with a double colon. In our first example, we begin by using the first rule to omit leading zeros. Then the second rule is applied, which shows two contiguous all zero hextets. Applying both of these rules gives us the following compressed address. We are using spaces to better demonstrate the differences. Here's what the address would actually look like. Here is our next example. Again, we begin by omitting the leading zeros. Then the second rule is applied, which shows three contiguous all zero hextets. Applying both of these rules gives us the following compressed address. And once again here's what the address would actually look like. And now for our last example we begin by omitting leading zeros. Then the second rule is applied, which shows four contiguous all zero hextets. Applying both of these rules gives us the following compressed address. And once again here's what the address would actually look like. Notice the double colon occurs at the end of our address. The all zeros at the end of an IPv6 address is associated with an IPv6 network address. The double colon can be used only within an address. Otherwise there would be more than one possible resulting address. If an address has more than one contiguous string of all zero hextets, the best practice is to use the double colon on the longest string and apply the omitting leading zeros to the shorter string. If the strings are equal the first string should use the double colon. But typically it comes down to personal preference.
+Timestamp: 00:00:00.560 - 00:00:04.220 Text: IPv6 addresses are 128 bits in length
+Timestamp: 00:00:04.220 - 00:00:07.500 Text: and written as a string of hexadecimal values.
+Timestamp: 00:00:07.500 - 00:00:10.820 Text: IPv6 addresses are not case sensitive
+Timestamp: 00:00:10.820 - 00:00:14.670 Text: and can be written in either lower case or upper case.
+Timestamp: 00:00:14.670 - 00:00:16.680 Text: Every four bits is represented
+Timestamp: 00:00:16.680 - 00:00:18.770 Text: by a single hexadecimal digit
+Timestamp: 00:00:18.770 - 00:00:22.210 Text: for a total of 32 hexadecimal values.
+Timestamp: 00:00:22.210 - 00:00:25.480 Text: For example, the hexadecimal digit two
+Timestamp: 00:00:25.480 - 00:00:30.480 Text: is the equivalent in binary to the four bits 0010.
+Timestamp: 00:00:30.920 - 00:00:32.950 Text: Every four hexadecimal digits
+Timestamp: 00:00:32.950 - 00:00:36.250 Text: is 16 bits separated by a colon.
+Timestamp: 00:00:36.250 - 00:00:39.290 Text: Each hexadecimal digit is four bits,
+Timestamp: 00:00:39.290 - 00:00:44.290 Text: which makes it easy to represent the 128 bit IPv6 address.
+Timestamp: 00:00:44.820 - 00:00:48.070 Text: Each set of four hexadecimal segments
+Timestamp: 00:00:48.070 - 00:00:51.290 Text: is sometimes referred to as a hextet.
+Timestamp: 00:00:51.290 - 00:00:54.760 Text: When written with all 32 hexadecimal digits,
+Timestamp: 00:00:54.760 - 00:00:57.520 Text: this is known as the preferred format,
+Timestamp: 00:00:57.520 - 00:00:59.070 Text: which doesn't mean it is always
+Timestamp: 00:00:59.070 - 00:01:01.990 Text: the preferred way to display the address.
+Timestamp: 00:01:01.990 - 00:01:03.070 Text: There are two rules
+Timestamp: 00:01:03.070 - 00:01:06.600 Text: which can be used to reduce the number of hexadecimal digits
+Timestamp: 00:01:06.600 - 00:01:09.670 Text: used to represent an IPv6 address.
+Timestamp: 00:01:09.670 - 00:01:10.503 Text: The first rule
+Timestamp: 00:01:10.503 - 00:01:14.640 Text: to help reduce the notation of IPv6 addresses
+Timestamp: 00:01:14.640 - 00:01:19.010 Text: is to omit any leading zeros in any hextet.
+Timestamp: 00:01:19.010 - 00:01:21.720 Text: We are using spaces on each side of the colon
+Timestamp: 00:01:21.720 - 00:01:23.590 Text: to make it easier to read.
+Timestamp: 00:01:23.590 - 00:01:25.060 Text: In our first example,
+Timestamp: 00:01:25.060 - 00:01:28.900 Text: notice that only leading zeros have been omitted.
+Timestamp: 00:01:28.900 - 00:01:30.443 Text: Here is our next example.
+Timestamp: 00:01:32.580 - 00:01:35.380 Text: Once again you can see that only leading zeros
+Timestamp: 00:01:35.380 - 00:01:39.020 Text: have been omitted, not trailing zeros.
+Timestamp: 00:01:39.020 - 00:01:41.853 Text: And the same holds true for our last example.
+Timestamp: 00:01:42.730 - 00:01:45.260 Text: You will notice that in all three examples
+Timestamp: 00:01:45.260 - 00:01:50.170 Text: only leading zeros were omitted, not trailing zeros.
+Timestamp: 00:01:50.170 - 00:01:51.430 Text: Otherwise you can see
+Timestamp: 00:01:51.430 - 00:01:54.790 Text: that we wouldn't know which zeros were omitted,
+Timestamp: 00:01:54.790 - 00:01:57.883 Text: leading zeros, trailing zeros or both.
+Timestamp: 00:01:58.850 - 00:02:00.520 Text: Using this first rule
+Timestamp: 00:02:00.520 - 00:02:04.310 Text: we know that it is only leading zeros that are omitted.
+Timestamp: 00:02:04.310 - 00:02:05.650 Text: The second rule can be used
+Timestamp: 00:02:05.650 - 00:02:10.030 Text: to further reduce the representation of an IPv6 address.
+Timestamp: 00:02:10.030 - 00:02:12.340 Text: Any single contiguous string
+Timestamp: 00:02:12.340 - 00:02:15.380 Text: of one or more 16 bit segments
+Timestamp: 00:02:15.380 - 00:02:18.060 Text: consistent of all zeros can be represented
+Timestamp: 00:02:18.060 - 00:02:19.960 Text: with a double colon.
+Timestamp: 00:02:19.960 - 00:02:23.300 Text: In our first example, we begin by using the first rule
+Timestamp: 00:02:23.300 - 00:02:25.310 Text: to omit leading zeros.
+Timestamp: 00:02:25.310 - 00:02:27.170 Text: Then the second rule is applied,
+Timestamp: 00:02:27.170 - 00:02:30.253 Text: which shows two contiguous all zero hextets.
+Timestamp: 00:02:31.330 - 00:02:33.320 Text: Applying both of these rules
+Timestamp: 00:02:33.320 - 00:02:36.010 Text: gives us the following compressed address.
+Timestamp: 00:02:36.010 - 00:02:39.510 Text: We are using spaces to better demonstrate the differences.
+Timestamp: 00:02:39.510 - 00:02:42.223 Text: Here's what the address would actually look like.
+Timestamp: 00:02:43.130 - 00:02:45.700 Text: Here is our next example.
+Timestamp: 00:02:45.700 - 00:02:49.210 Text: Again, we begin by omitting the leading zeros.
+Timestamp: 00:02:49.210 - 00:02:51.430 Text: Then the second rule is applied,
+Timestamp: 00:02:51.430 - 00:02:55.550 Text: which shows three contiguous all zero hextets.
+Timestamp: 00:02:55.550 - 00:02:57.180 Text: Applying both of these rules
+Timestamp: 00:02:57.180 - 00:03:00.530 Text: gives us the following compressed address.
+Timestamp: 00:03:00.530 - 00:03:02.730 Text: And once again here's what the address
+Timestamp: 00:03:02.730 - 00:03:04.390 Text: would actually look like.
+Timestamp: 00:03:04.390 - 00:03:07.060 Text: And now for our last example
+Timestamp: 00:03:07.060 - 00:03:10.240 Text: we begin by omitting leading zeros.
+Timestamp: 00:03:10.240 - 00:03:12.050 Text: Then the second rule is applied,
+Timestamp: 00:03:12.050 - 00:03:15.173 Text: which shows four contiguous all zero hextets.
+Timestamp: 00:03:16.030 - 00:03:17.720 Text: Applying both of these rules
+Timestamp: 00:03:17.720 - 00:03:20.193 Text: gives us the following compressed address.
+Timestamp: 00:03:21.120 - 00:03:22.190 Text: And once again
+Timestamp: 00:03:22.190 - 00:03:25.253 Text: here's what the address would actually look like.
+Timestamp: 00:03:26.600 - 00:03:30.670 Text: Notice the double colon occurs at the end of our address.
+Timestamp: 00:03:30.670 - 00:03:34.500 Text: The all zeros at the end of an IPv6 address
+Timestamp: 00:03:34.500 - 00:03:38.730 Text: is associated with an IPv6 network address.
+Timestamp: 00:03:38.730 - 00:03:43.070 Text: The double colon can be used only within an address.
+Timestamp: 00:03:43.070 - 00:03:44.570 Text: Otherwise there would be more
+Timestamp: 00:03:44.570 - 00:03:47.290 Text: than one possible resulting address.
+Timestamp: 00:03:47.290 - 00:03:50.640 Text: If an address has more than one contiguous string
+Timestamp: 00:03:50.640 - 00:03:52.580 Text: of all zero hextets,
+Timestamp: 00:03:52.580 - 00:03:55.210 Text: the best practice is to use the double colon
+Timestamp: 00:03:55.210 - 00:03:57.500 Text: on the longest string
+Timestamp: 00:03:57.500 - 00:04:01.720 Text: and apply the omitting leading zeros to the shorter string.
+Timestamp: 00:04:01.720 - 00:04:03.160 Text: If the strings are equal
+Timestamp: 00:04:03.160 - 00:04:05.900 Text: the first string should use the double colon.
+Timestamp: 00:04:05.900 - 00:04:08.923 Text: But typically it comes down to personal preference.

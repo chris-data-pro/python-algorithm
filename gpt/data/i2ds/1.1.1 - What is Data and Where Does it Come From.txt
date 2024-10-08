@@ -1,0 +1,30 @@
+Module Number: 1
+Section Number: 1.1
+Video Number: 1.1.1
+Video Title: What is Data and Where Does it Come From
+Video URL: 
+ Through your daily activities, you generate a great amount of data that can be volunteered, observed, or inferred. You volunteer data by filling out forms, posting photos and videos on social media, or consenting to website policies. Organizations also collect data about you through observations such as your location, stores you frequent, and websites you visit. Your personal style, likes and dislikes, and behavioral habits can even be inferred from your actions. By itself all this data can be rather meaningless; however, that changes immediately once you apply data analytics to your data. The process of taking data from its raw state and using it to inform useful actions is the realm of data analytics. Through the power of analytics, organizations can use your volunteered, observe, or inferred data to provide you with a personalized experience. (light music)
+Timestamp: 00:00:00.300 - 00:00:01.650 Text: Through your daily activities,
+Timestamp: 00:00:01.650 - 00:00:03.240 Text: you generate a great amount of data
+Timestamp: 00:00:03.240 - 00:00:06.480 Text: that can be volunteered, observed, or inferred.
+Timestamp: 00:00:06.480 - 00:00:08.760 Text: You volunteer data by filling out forms,
+Timestamp: 00:00:08.760 - 00:00:11.430 Text: posting photos and videos on social media,
+Timestamp: 00:00:11.430 - 00:00:14.250 Text: or consenting to website policies.
+Timestamp: 00:00:14.250 - 00:00:16.110 Text: Organizations also collect data
+Timestamp: 00:00:16.110 - 00:00:18.000 Text: about you through observations
+Timestamp: 00:00:18.000 - 00:00:20.760 Text: such as your location, stores you frequent,
+Timestamp: 00:00:20.760 - 00:00:22.590 Text: and websites you visit.
+Timestamp: 00:00:22.590 - 00:00:25.080 Text: Your personal style, likes and dislikes,
+Timestamp: 00:00:25.080 - 00:00:27.540 Text: and behavioral habits can even be inferred
+Timestamp: 00:00:27.540 - 00:00:29.460 Text: from your actions.
+Timestamp: 00:00:29.460 - 00:00:33.120 Text: By itself all this data can be rather meaningless;
+Timestamp: 00:00:33.120 - 00:00:35.430 Text: however, that changes immediately
+Timestamp: 00:00:35.430 - 00:00:38.520 Text: once you apply data analytics to your data.
+Timestamp: 00:00:38.520 - 00:00:41.250 Text: The process of taking data from its raw state
+Timestamp: 00:00:41.250 - 00:00:43.860 Text: and using it to inform useful actions
+Timestamp: 00:00:43.860 - 00:00:46.470 Text: is the realm of data analytics.
+Timestamp: 00:00:46.470 - 00:00:48.120 Text: Through the power of analytics,
+Timestamp: 00:00:48.120 - 00:00:51.324 Text: organizations can use your volunteered, observe,
+Timestamp: 00:00:51.324 - 00:00:53.820 Text: or inferred data to provide you
+Timestamp: 00:00:53.820 - 00:00:56.096 Text: with a personalized experience.
+Timestamp: 00:00:56.096 - 00:00:58.625 Text: (light music)

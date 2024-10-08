@@ -1,0 +1,126 @@
+Module Number: 6250024077001_11
+Section Number: 6250024077001_11.1
+Video Number: 6250024077001_11.1.5
+Video Title: Web Server and Client IP Interactions__eng
+Video URL: 
+ - In this lesson, we're going to discuss how a web client and a web server use IP protocols to interact. We'll start with the web client side. The web client wants to retrieve a web page from the web server. Okay, the web server is located, obviously, in a different location, and it has been set up in the standard manner of web servers, that it is listening for web requests on port 80, TCP, it's at this IP address, and it's at this domain name, or URL, in this case. So we're going to go back to our client, and the client is going to put the URL, www.learnip.com on the URL line. As we all know, and we have learned so far, the URL must be translated back to an IP address, before the transmission can be sent, because the internet, or any network for that matter, doesn't process the domain names, it processes the IP addresses when it's forwarding and transmitting packets. So, when it uses the URL www.learnip, the first thing that has to happen, is that a DNS lookup has to occur. A DNS lookup is sending a request to the DNS server, in order to get back the IP address that has been associated with www.learnip.com So in this case, it's going to get returned to it, the IP address 172.16.10.50 Now, the IP address is what the packet is going to be addressed to, that's going to contain in its data portion, the request for the particular web page, the one in the folder, www. So it's done the DNS lookup, then, once that's completed, the message is going to go to be sent over to the web server. So the second thing it has to happen, is there has to be a TCP connection created between the web server and the web client. The TCP connection is going to use the IP address of the web client, and the TCP port number assigned to the web client. So in this case, I'm going to give our web client an IP address of 192.168.10.15 and we're going to assign a random port above 1024, so it will be 5507. So the TCP connection will be between the source, 192.16.10.15 port 5507, and the destination, 172.16.10.50 port 80. In communications, this is called a socket. Basically, it is the identifier of all the components that belong in this one conversation, the conversation between the web client and the web server. When the web server receives this packet that comes across, what it's going to do with it, is it's going to place it in the buffer assigned to port 80, so that the web service will see that it has a request from this device, and it will then formulate the reply with the opposite information, where the source of the reply is the 172.16.10.50 port 80, and the destination is the 192.168.10, I mean, 192.168.10.15, and I just noticed, I forgot the eights on this side. There we go. Okay, so we have the 192.168.10.15, and the 192.168.10.15, port 5507. All of the packets that are included in this conversation, all of the web requests and all of the web responses, are going to have this same information, so that this conversation will be able to be identified, even as it's traveling through the internet, so various things like routers and firewalls, and other devices, will all be able to read that these packets are part of the same conversation.
+Timestamp: 00:00:06.549 - 00:00:08.478 Text: - In this lesson, we're going to discuss
+Timestamp: 00:00:08.478 - 00:00:11.640 Text: how a web client and a web server
+Timestamp: 00:00:11.640 - 00:00:16.273 Text: use IP protocols to interact.
+Timestamp: 00:00:16.273 - 00:00:19.953 Text: We'll start with the web client side.
+Timestamp: 00:00:19.953 - 00:00:23.473 Text: The web client wants
+to retrieve a web page
+Timestamp: 00:00:23.473 - 00:00:25.244 Text: from the web server.
+Timestamp: 00:00:25.244 - 00:00:27.564 Text: Okay, the web server
+is located, obviously,
+Timestamp: 00:00:27.564 - 00:00:29.284 Text: in a different location,
+Timestamp: 00:00:29.284 - 00:00:32.691 Text: and it has been set up
+in the standard manner
+Timestamp: 00:00:32.691 - 00:00:35.621 Text: of web servers, that it is listening
+Timestamp: 00:00:35.621 - 00:00:39.766 Text: for web requests on port 80, TCP,
+Timestamp: 00:00:39.766 - 00:00:43.766 Text: it's at this IP address, and
+it's at this domain name,
+Timestamp: 00:00:43.766 - 00:00:46.785 Text: or URL, in this case.
+Timestamp: 00:00:46.785 - 00:00:48.956 Text: So we're going to go back to our client,
+Timestamp: 00:00:48.956 - 00:00:53.039 Text: and the client is going to put the URL,
+Timestamp: 00:00:53.900 - 00:00:57.732 Text: www.learnip.com
+Timestamp: 00:00:57.732 - 00:01:03.399 Text: on the URL line.
+Timestamp: 00:01:03.399 - 00:01:07.047 Text: As we all know, and we
+Timestamp: 00:01:07.047 - 00:01:09.788 Text: have learned so far,
+Timestamp: 00:01:09.788 - 00:01:12.647 Text: the URL
+Timestamp: 00:01:12.647 - 00:01:17.320 Text: must be translated back to an IP address,
+Timestamp: 00:01:17.320 - 00:01:20.664 Text: before the transmission can be sent,
+Timestamp: 00:01:20.664 - 00:01:24.283 Text: because the internet, or
+any network for that matter,
+Timestamp: 00:01:24.283 - 00:01:27.093 Text: doesn't process the domain names,
+Timestamp: 00:01:27.093 - 00:01:29.469 Text: it processes the IP addresses
+Timestamp: 00:01:29.469 - 00:01:32.840 Text: when it's forwarding and
+transmitting packets.
+Timestamp: 00:01:32.840 - 00:01:36.474 Text: So, when it uses the URL
+Timestamp: 00:01:36.474 - 00:01:38.933 Text: www.learnip,
+Timestamp: 00:01:38.933 - 00:01:42.044 Text: the first thing that has to happen,
+Timestamp: 00:01:42.044 - 00:01:44.877 Text: is that a DNS lookup has to occur.
+Timestamp: 00:01:49.245 - 00:01:53.204 Text: A DNS lookup is sending a
+request to the DNS server,
+Timestamp: 00:01:53.204 - 00:01:56.134 Text: in order to get back the IP address
+Timestamp: 00:01:56.134 - 00:01:58.336 Text: that has been associated with
+Timestamp: 00:01:58.336 - 00:02:01.707 Text: www.learnip.com
+Timestamp: 00:02:01.707 - 00:02:05.649 Text: So in this case, it's going
+to get returned to it,
+Timestamp: 00:02:05.649 - 00:02:07.078 Text: the IP address
+Timestamp: 00:02:07.078 - 00:02:11.245 Text: 172.16.10.50
+Timestamp: 00:02:12.395 - 00:02:15.888 Text: Now, the IP address
+Timestamp: 00:02:15.888 - 00:02:18.861 Text: is what the packet is
+going to be addressed to,
+Timestamp: 00:02:18.861 - 00:02:21.410 Text: that's going to contain in its data portion,
+Timestamp: 00:02:21.410 - 00:02:24.527 Text: the request for the particular web page,
+Timestamp: 00:02:24.527 - 00:02:27.250 Text: the one in the folder, www.
+Timestamp: 00:02:27.250 - 00:02:29.768 Text: So it's done the DNS lookup,
+Timestamp: 00:02:29.768 - 00:02:32.559 Text: then, once that's completed,
+Timestamp: 00:02:32.559 - 00:02:34.913 Text: the message is going to go to be
+Timestamp: 00:02:34.913 - 00:02:37.273 Text: sent over to the web server.
+Timestamp: 00:02:37.273 - 00:02:39.722 Text: So the second thing it has to happen,
+Timestamp: 00:02:39.722 - 00:02:42.564 Text: is there has to be a TCP connection
+Timestamp: 00:02:42.564 - 00:02:46.731 Text: created between the web
+server and the web client.
+Timestamp: 00:02:53.164 - 00:02:56.242 Text: The TCP connection is going to use
+Timestamp: 00:02:56.242 - 00:02:58.884 Text: the IP address of the web client,
+Timestamp: 00:02:58.884 - 00:03:01.708 Text: and the TCP port number
+Timestamp: 00:03:01.708 - 00:03:03.764 Text: assigned to the web client.
+Timestamp: 00:03:03.764 - 00:03:06.486 Text: So in this case, I'm going to give our
+Timestamp: 00:03:06.486 - 00:03:08.686 Text: web client an IP address of
+Timestamp: 00:03:08.686 - 00:03:12.853 Text: 192.168.10.15
+Timestamp: 00:03:14.204 - 00:03:17.947 Text: and we're going to assign a random port
+Timestamp: 00:03:17.947 - 00:03:21.697 Text: above 1024, so it will be
+Timestamp: 00:03:22.677 - 00:03:25.091 Text: 5507.
+Timestamp: 00:03:25.091 - 00:03:28.801 Text: So the TCP connection will be between
+Timestamp: 00:03:28.801 - 00:03:30.211 Text: the source,
+Timestamp: 00:03:30.211 - 00:03:34.378 Text: 192.16.10.15
+Timestamp: 00:03:35.313 - 00:03:38.487 Text: port 5507,
+Timestamp: 00:03:38.487 - 00:03:41.154 Text: and the destination,
+Timestamp: 00:03:45.911 - 00:03:50.078 Text: 172.16.10.50
+Timestamp: 00:03:51.773 - 00:03:53.523 Text: port 80.
+Timestamp: 00:03:55.813 - 00:03:59.871 Text: In communications, this
+is called a socket.
+Timestamp: 00:03:59.871 - 00:04:02.320 Text: Basically, it is the identifier
+Timestamp: 00:04:02.320 - 00:04:06.487 Text: of all the components that
+belong in this one conversation,
+Timestamp: 00:04:07.503 - 00:04:11.670 Text: the conversation between the
+web client and the web server.
+Timestamp: 00:04:12.703 - 00:04:15.453 Text: When the web server receives this
+Timestamp: 00:04:16.833 - 00:04:19.431 Text: packet that comes across,
+Timestamp: 00:04:19.431 - 00:04:20.951 Text: what it's going to do with it,
+Timestamp: 00:04:20.951 - 00:04:22.940 Text: is it's going to place it
+Timestamp: 00:04:22.940 - 00:04:27.039 Text: in the buffer assigned to port 80,
+Timestamp: 00:04:27.039 - 00:04:28.956 Text: so that the web service
+Timestamp: 00:04:29.870 - 00:04:32.785 Text: will see that it has a request
+Timestamp: 00:04:32.785 - 00:04:36.356 Text: from this device, and it will then
+Timestamp: 00:04:36.356 - 00:04:37.939 Text: formulate the reply
+Timestamp: 00:04:39.569 - 00:04:41.689 Text: with the opposite information,
+Timestamp: 00:04:41.689 - 00:04:45.534 Text: where the source of the reply
+Timestamp: 00:04:45.534 - 00:04:49.701 Text: is the 172.16.10.50
+Timestamp: 00:04:51.676 - 00:04:52.509 Text: port 80,
+Timestamp: 00:04:53.588 - 00:04:55.171 Text: and the destination
+Timestamp: 00:04:57.153 - 00:05:01.320 Text: is the 192.168.10,
+Timestamp: 00:05:02.575 - 00:05:03.895 Text: I mean,
+Timestamp: 00:05:03.895 - 00:05:07.521 Text: 192.168.10.15, and I just noticed,
+Timestamp: 00:05:07.521 - 00:05:10.963 Text: I forgot the eights on this side.
+Timestamp: 00:05:10.963 - 00:05:12.083 Text: There we go.
+Timestamp: 00:05:12.083 - 00:05:16.107 Text: Okay, so we have the 192.168.10.15,
+Timestamp: 00:05:16.107 - 00:05:18.930 Text: and the 192.168.10.15,
+Timestamp: 00:05:18.930 - 00:05:21.347 Text: port 5507.
+Timestamp: 00:05:24.191 - 00:05:28.056 Text: All of the packets that are
+included in this conversation,
+Timestamp: 00:05:28.056 - 00:05:31.366 Text: all of the web requests and
+all of the web responses,
+Timestamp: 00:05:31.366 - 00:05:34.699 Text: are going to have this same information,
+Timestamp: 00:05:35.792 - 00:05:37.675 Text: so that this conversation
+Timestamp: 00:05:37.675 - 00:05:39.894 Text: will be able to be identified,
+Timestamp: 00:05:39.894 - 00:05:42.886 Text: even as it's traveling
+through the internet,
+Timestamp: 00:05:42.886 - 00:05:45.424 Text: so various things like
+routers and firewalls,
+Timestamp: 00:05:45.424 - 00:05:48.752 Text: and other devices, will
+all be able to read
+Timestamp: 00:05:48.752 - 00:05:52.919 Text: that these packets are part
+of the same conversation.

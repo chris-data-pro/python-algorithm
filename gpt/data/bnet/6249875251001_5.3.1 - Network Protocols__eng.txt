@@ -1,0 +1,74 @@
+Module Number: 6249875251001_5
+Section Number: 6249875251001_5.3
+Video Number: 6249875251001_5.3.1
+Video Title: Network Protocols__eng
+Video URL: 
+ - Computer networks use protocols. Protocols are the rules that govern communications. Very similar to the protocols used in human communications. In human communications we have protocols like language. If I'm speaking to somebody, we want to use a common language so we can understand each other. We may have other types of protocols that we use. Do we talk formally or informally? How we greet each other. There's a protocol for that. Even how we dress or conduct ourselves. All of this are protocols that help govern human communications. In computer networks, we use protocols also to help govern communications between two devices. For example, here's some common protocols. A computer message is actually made up of several protocols. In this message here we have the Ethernet protocol. The Ethernet protocol governs network interface card to network interface card in the same network. We have internet protocol. Internet protocol governs communication from the original source all the way to the final destination. Make sure the message gets there, and gets there all along the way, these devices called routers know where the packet is going. IP is for that. There's TCP, Transmission Control Protocol. This protocol makes sure that the information gets there reliably. And if it arrives out of order, if there's a sequence of packets all associated with the same message, it makes sure that they get re-ordered properly. And then there's HTTP, Hypertext Transfer Protocol. This protocol governs the exchange or transfer of HTML, Hypertext Markup Language. So when we are requesting a webpage, or downloading a webpage, the message contains all of these protocols. So in computer networks, we use many different protocols. Learning about network protocols will give us a better understanding of how networks operate, how to implement and configure networks, and also how to troubleshoot networks.
+Timestamp: 00:00:06.485 - 00:00:08.971 Text: - Computer networks use protocols.
+Timestamp: 00:00:08.971 - 00:00:12.949 Text: Protocols are the rules
+that govern communications.
+Timestamp: 00:00:12.949 - 00:00:14.923 Text: Very similar to the protocols used
+Timestamp: 00:00:14.923 - 00:00:17.120 Text: in human communications.
+Timestamp: 00:00:17.120 - 00:00:19.179 Text: In human communications we have protocols
+Timestamp: 00:00:19.179 - 00:00:20.917 Text: like language.
+Timestamp: 00:00:20.917 - 00:00:22.805 Text: If I'm speaking to
+somebody, we want to use
+Timestamp: 00:00:22.805 - 00:00:26.165 Text: a common language so we
+can understand each other.
+Timestamp: 00:00:26.165 - 00:00:28.864 Text: We may have other types
+of protocols that we use.
+Timestamp: 00:00:28.864 - 00:00:32.373 Text: Do we talk formally or informally?
+Timestamp: 00:00:32.373 - 00:00:34.443 Text: How we greet each other.
+Timestamp: 00:00:34.443 - 00:00:36.651 Text: There's a protocol for that.
+Timestamp: 00:00:36.651 - 00:00:39.733 Text: Even how we dress or conduct ourselves.
+Timestamp: 00:00:39.733 - 00:00:43.171 Text: All of this are protocols that help govern
+Timestamp: 00:00:43.171 - 00:00:45.451 Text: human communications.
+Timestamp: 00:00:45.451 - 00:00:48.117 Text: In computer networks,
+we use protocols also
+Timestamp: 00:00:48.117 - 00:00:52.885 Text: to help govern communications
+between two devices.
+Timestamp: 00:00:52.885 - 00:00:56.619 Text: For example, here's some common protocols.
+Timestamp: 00:00:56.619 - 00:00:58.443 Text: A computer message is actually made up
+Timestamp: 00:00:58.443 - 00:01:00.193 Text: of several protocols.
+Timestamp: 00:01:01.205 - 00:01:04.917 Text: In this message here we
+have the Ethernet protocol.
+Timestamp: 00:01:04.917 - 00:01:08.715 Text: The Ethernet protocol governs
+network interface card
+Timestamp: 00:01:08.715 - 00:01:12.864 Text: to network interface
+card in the same network.
+Timestamp: 00:01:12.864 - 00:01:15.072 Text: We have internet protocol.
+Timestamp: 00:01:15.072 - 00:01:17.643 Text: Internet protocol governs communication
+Timestamp: 00:01:17.643 - 00:01:20.107 Text: from the original source all the way
+Timestamp: 00:01:20.107 - 00:01:22.421 Text: to the final destination.
+Timestamp: 00:01:22.421 - 00:01:24.437 Text: Make sure the message gets there,
+Timestamp: 00:01:24.437 - 00:01:26.272 Text: and gets there all along the way,
+Timestamp: 00:01:26.272 - 00:01:29.568 Text: these devices called routers know where
+Timestamp: 00:01:29.568 - 00:01:31.627 Text: the packet is going.
+Timestamp: 00:01:31.627 - 00:01:32.877 Text: IP is for that.
+Timestamp: 00:01:33.963 - 00:01:37.760 Text: There's TCP, Transmission
+Control Protocol.
+Timestamp: 00:01:37.760 - 00:01:40.171 Text: This protocol makes sure
+that the information
+Timestamp: 00:01:40.171 - 00:01:42.005 Text: gets there reliably.
+Timestamp: 00:01:42.005 - 00:01:44.096 Text: And if it arrives out of order,
+Timestamp: 00:01:44.096 - 00:01:47.136 Text: if there's a sequence of packets
+Timestamp: 00:01:47.136 - 00:01:49.205 Text: all associated with the same message,
+Timestamp: 00:01:49.205 - 00:01:53.408 Text: it makes sure that they
+get re-ordered properly.
+Timestamp: 00:01:53.408 - 00:01:57.568 Text: And then there's HTTP,
+Hypertext Transfer Protocol.
+Timestamp: 00:01:57.568 - 00:01:59.947 Text: This protocol governs the exchange
+Timestamp: 00:01:59.947 - 00:02:03.864 Text: or transfer of HTML,
+Hypertext Markup Language.
+Timestamp: 00:02:05.856 - 00:02:08.853 Text: So when we are requesting a webpage,
+Timestamp: 00:02:08.853 - 00:02:12.686 Text: or downloading a webpage,
+the message contains
+Timestamp: 00:02:14.933 - 00:02:17.131 Text: all of these protocols.
+Timestamp: 00:02:17.131 - 00:02:20.992 Text: So in computer networks, we
+use many different protocols.
+Timestamp: 00:02:20.992 - 00:02:23.221 Text: Learning about network
+protocols will give us
+Timestamp: 00:02:23.221 - 00:02:26.656 Text: a better understanding
+of how networks operate,
+Timestamp: 00:02:26.656 - 00:02:29.120 Text: how to implement and configure networks,
+Timestamp: 00:02:29.120 - 00:02:32.287 Text: and also how to troubleshoot networks.

@@ -1,0 +1,30 @@
+Module Number: 3
+Section Number: 3.1
+Video Number: 3.1.5
+Video Title: AI in action
+Video URL: 
+ There are many exciting, time-saving uses for artificial intelligence technologies. Copy.AI is an AI-powered platform that helps you create blog entries, add copy, course pages, and more. You can even use it to write your next blog entry in just minutes. To use the Text Creation tool, enter the purpose, a few key words or phrases, and the text style that is appropriate for your purpose. As you can see, there are many different styles available. The Text Creation tool has access to a library of pre-written, natural language content and tools that you can customize. Once I click Create Copy, the tool presents several options for what kind of content it thinks would work best based on your information. You can choose which one appeals most to you based on the tone, length, and style, then customize it further if it doesn't meet all of your needs. The script for this video was prepared using the Text Creation tool. (gentle music)
+Timestamp: 00:00:00.840 - 00:00:03.030 Text: There are many exciting, time-saving uses
+Timestamp: 00:00:03.030 - 00:00:06.060 Text: for artificial intelligence technologies.
+Timestamp: 00:00:06.060 - 00:00:08.820 Text: Copy.AI is an AI-powered platform
+Timestamp: 00:00:08.820 - 00:00:10.680 Text: that helps you create blog entries,
+Timestamp: 00:00:10.680 - 00:00:13.620 Text: add copy, course pages, and more.
+Timestamp: 00:00:13.620 - 00:00:14.940 Text: You can even use it to write
+Timestamp: 00:00:14.940 - 00:00:17.970 Text: your next blog entry in just minutes.
+Timestamp: 00:00:17.970 - 00:00:19.920 Text: To use the Text Creation tool,
+Timestamp: 00:00:19.920 - 00:00:22.830 Text: enter the purpose, a few key words or phrases,
+Timestamp: 00:00:22.830 - 00:00:26.100 Text: and the text style that is appropriate for your purpose.
+Timestamp: 00:00:26.100 - 00:00:29.670 Text: As you can see, there are many different styles available.
+Timestamp: 00:00:29.670 - 00:00:32.340 Text: The Text Creation tool has access to a library
+Timestamp: 00:00:32.340 - 00:00:34.920 Text: of pre-written, natural language content
+Timestamp: 00:00:34.920 - 00:00:37.470 Text: and tools that you can customize.
+Timestamp: 00:00:37.470 - 00:00:39.780 Text: Once I click Create Copy, the tool presents
+Timestamp: 00:00:39.780 - 00:00:42.060 Text: several options for what kind of content
+Timestamp: 00:00:42.060 - 00:00:45.390 Text: it thinks would work best based on your information.
+Timestamp: 00:00:45.390 - 00:00:47.520 Text: You can choose which one appeals most to you
+Timestamp: 00:00:47.520 - 00:00:50.280 Text: based on the tone, length, and style,
+Timestamp: 00:00:50.280 - 00:00:51.630 Text: then customize it further
+Timestamp: 00:00:51.630 - 00:00:54.000 Text: if it doesn't meet all of your needs.
+Timestamp: 00:00:54.000 - 00:00:55.320 Text: The script for this video
+Timestamp: 00:00:55.320 - 00:00:58.668 Text: was prepared using the Text Creation tool.
+Timestamp: 00:00:58.668 - 00:01:00.901 Text: (gentle music)

@@ -1,0 +1,34 @@
+Module Number: 6249954341001_8
+Section Number: 6249954341001_8.6
+Video Number: 6249954341001_8.6.1
+Video Title: IPv4 Unicast__eng
+Video URL: 
+ - In this video, we're going to take a look at unicast IP transmission. So here we have POST 172.16.4.1. It's going to send a unicast packet, that's a packet where the destination IP address is destined for a single device. And it's going to send it to the destination IP address of the printer at 172.16.4.253. So the source IP address is 172.16.4.1 and the destination IP address of the packet is 172.16.4.253. So we can see here that the packet goes from a single device to a single device, in this case the printer. And, by the way, a source IP address can only be a unicast. What we mean by that is a packet can only originate from a single device. In this case, the destination address is also a unicast meaning it's destined only for a single device.
+Timestamp: 00:00:06.502 - 00:00:07.335 Text: - In this video,
+Timestamp: 00:00:07.335 - 00:00:11.703 Text: we're going to take a look at
+unicast IP transmission.
+Timestamp: 00:00:11.703 - 00:00:14.370 Text: So here we have POST 172.16.4.1.
+Timestamp: 00:00:16.273 - 00:00:19.523 Text: It's going to send a unicast packet,
+Timestamp: 00:00:19.523 - 00:00:21.999 Text: that's a packet where the
+destination IP address
+Timestamp: 00:00:21.999 - 00:00:25.339 Text: is destined for a single device.
+Timestamp: 00:00:25.339 - 00:00:28.289 Text: And it's going to send it to
+the destination IP address
+Timestamp: 00:00:28.289 - 00:00:30.872 Text: of the printer at 172.16.4.253.
+Timestamp: 00:00:34.426 - 00:00:37.593 Text: So the source IP address is 172.16.4.1
+Timestamp: 00:00:40.489 - 00:00:43.000 Text: and the destination IP
+address of the packet
+Timestamp: 00:00:43.000 - 00:00:44.333 Text: is 172.16.4.253.
+Timestamp: 00:00:47.737 - 00:00:50.489 Text: So we can see here that the packet
+Timestamp: 00:00:50.489 - 00:00:54.239 Text: goes from a single device
+to a single device,
+Timestamp: 00:00:55.188 - 00:00:56.713 Text: in this case the printer.
+Timestamp: 00:00:56.713 - 00:01:00.880 Text: And, by the way, a source IP
+address can only be a unicast.
+Timestamp: 00:01:02.902 - 00:01:07.276 Text: What we mean by that is a
+packet can only originate
+Timestamp: 00:01:07.276 - 00:01:09.026 Text: from a single device.
+Timestamp: 00:01:10.176 - 00:01:14.343 Text: In this case, the destination
+address is also a unicast
+Timestamp: 00:01:15.803 - 00:01:19.720 Text: meaning it's destined
+only for a single device.

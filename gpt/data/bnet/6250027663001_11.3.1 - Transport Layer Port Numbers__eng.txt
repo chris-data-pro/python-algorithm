@@ -1,0 +1,125 @@
+Module Number: 6250027663001_11
+Section Number: 6250027663001_11.3
+Video Number: 6250027663001_11.3.1
+Video Title: Transport Layer Port Numbers__eng
+Video URL: 
+ - In this lesson, we're going to talk about how transport layer port numbers are used to identify conversations, and applications that are the destination and source of transmissions. Alright, so, let's talk about setting up a server. When we set up a server, to provide services over the network, we load applications on that server. For example, a web server application, an FTP application, or a mail transport application. When we set up these services, a port is assigned to them, a transport layer port, to the service itself. Now, there are some standard services. Port numbers that are below 1024 are often called well known ports. And the reason they're called well known is because they are the most commonly used. For example, a web server listens for communications addressed to port 80. The FTP server, to port 21. The mail server, to port 25. These, and many other well known ports, are automatically identified by the clients. Whenever we open a web browser, and we type in a URL, we don't have to tell it what port, because the client, in this case the web browser, already knows that web servers are listening on port 80, to be able to respond to web page requests. So, when our web server is listening, what this means is, it has a buffer set up, that will accept requests that are addressed to its IP address, and also the TCP port 80. If the FTP server is expected to respond, the communications will be addressed to port 21. This enables us to have many different services running at the same time on the web server. So it can be doing many different things. Now, on the host side. Host ports for TCP and UDP, are dynamically assigned from the range above 1024. And those ports are randomly assigned. So basically, your PC picks one out of the range, and it uses it as a source port. So say your web browser is open, and you're requesting a web page. The web browser will pick a port, a TCP port. When the traffic goes to the transport layer, the TCP port will be destination port 80, and source from one of the randomly assigned ports. So when the communications leaves the host, and heads for the web server, the web server will see the destination port as 80. So it will automatically put this request into the queue for the web server to process. When the web server formulates its response, it will respond back with the destination port 5305, and the source port of 80. So when it comes back to the host, the host will know that this is the request that was sent out from the web browser. Because the port 5305 was assigned to the web browser request. TCP and UDP ports at the transport layer are what enables our devices to have open many different applications at the same time, and have all of those applications communicating simultaneously. Because, for example, if I also had an FTP client running, I could send FTP requests with a different port number. So that would be destination 21, and source port 5307. So then, the communications would come back here, and it would go through the same process. Would see that the destination port was 21. It would go in the queue for the FTP server. And when the response came back, it would be addressed to the destination port 5307. So that the host would know that that was the request from the FTP client.
+Timestamp: 00:00:06.392 - 00:00:07.992 Text: - In this lesson, we're
+going to talk about
+Timestamp: 00:00:07.992 - 00:00:12.024 Text: how transport layer port numbers are used
+Timestamp: 00:00:12.024 - 00:00:16.355 Text: to identify conversations,
+and applications that
+Timestamp: 00:00:16.355 - 00:00:21.069 Text: are the destination and
+source of transmissions.
+Timestamp: 00:00:21.069 - 00:00:25.709 Text: Alright, so, let's talk
+about setting up a server.
+Timestamp: 00:00:25.709 - 00:00:28.365 Text: When we set up a server,
+to provide services
+Timestamp: 00:00:28.365 - 00:00:32.532 Text: over the network, we load
+applications on that server.
+Timestamp: 00:00:33.539 - 00:00:38.061 Text: For example, a web server
+application, an FTP application,
+Timestamp: 00:00:38.061 - 00:00:41.037 Text: or a mail transport application.
+Timestamp: 00:00:41.037 - 00:00:43.537 Text: When we set up these services,
+Timestamp: 00:00:45.516 - 00:00:49.688 Text: a port is assigned to them,
+a transport layer port,
+Timestamp: 00:00:49.688 - 00:00:51.224 Text: to the service itself.
+Timestamp: 00:00:51.224 - 00:00:54.391 Text: Now, there are some standard services.
+Timestamp: 00:00:56.182 - 00:00:58.849 Text: Port numbers that are below 1024
+Timestamp: 00:01:00.312 - 00:01:03.145 Text: are often called well known ports.
+Timestamp: 00:01:04.099 - 00:01:05.686 Text: And the reason they're called well known
+Timestamp: 00:01:05.686 - 00:01:08.621 Text: is because they are
+the most commonly used.
+Timestamp: 00:01:08.621 - 00:01:12.788 Text: For example, a web server
+listens for communications
+Timestamp: 00:01:15.960 - 00:01:18.456 Text: addressed to port 80.
+Timestamp: 00:01:18.456 - 00:01:20.706 Text: The FTP server, to port 21.
+Timestamp: 00:01:23.928 - 00:01:26.261 Text: The mail server, to port 25.
+Timestamp: 00:01:28.109 - 00:01:30.851 Text: These, and many other well known ports,
+Timestamp: 00:01:30.851 - 00:01:34.680 Text: are automatically
+identified by the clients.
+Timestamp: 00:01:34.680 - 00:01:39.501 Text: Whenever we open a web
+browser, and we type in a URL,
+Timestamp: 00:01:39.501 - 00:01:44.002 Text: we don't have to tell it what
+port, because the client,
+Timestamp: 00:01:44.002 - 00:01:47.469 Text: in this case the web
+browser, already knows
+Timestamp: 00:01:47.469 - 00:01:50.969 Text: that web servers are listening on port 80,
+Timestamp: 00:01:52.056 - 00:01:55.639 Text: to be able to respond
+to web page requests.
+Timestamp: 00:01:57.560 - 00:02:00.643 Text: So, when our web server is listening,
+Timestamp: 00:02:02.083 - 00:02:06.456 Text: what this means is, it
+has a buffer set up,
+Timestamp: 00:02:06.456 - 00:02:09.389 Text: that will accept requests
+that are addressed
+Timestamp: 00:02:09.389 - 00:02:13.056 Text: to its IP address, and
+also the TCP port 80.
+Timestamp: 00:02:15.363 - 00:02:18.754 Text: If the FTP server is expected to respond,
+Timestamp: 00:02:18.754 - 00:02:22.531 Text: the communications will
+be addressed to port 21.
+Timestamp: 00:02:22.531 - 00:02:26.176 Text: This enables us to have
+many different services
+Timestamp: 00:02:26.176 - 00:02:29.325 Text: running at the same
+time on the web server.
+Timestamp: 00:02:29.325 - 00:02:32.803 Text: So it can be doing many different things.
+Timestamp: 00:02:32.803 - 00:02:34.636 Text: Now, on the host side.
+Timestamp: 00:02:35.480 - 00:02:39.647 Text: Host ports for TCP and UDP,
+are dynamically assigned
+Timestamp: 00:02:41.304 - 00:02:43.471 Text: from the range above 1024.
+Timestamp: 00:02:44.876 - 00:02:48.184 Text: And those ports are randomly assigned.
+Timestamp: 00:02:48.184 - 00:02:52.152 Text: So basically, your PC
+picks one out of the range,
+Timestamp: 00:02:52.152 - 00:02:55.533 Text: and it uses it as a source port.
+Timestamp: 00:02:55.533 - 00:02:58.200 Text: So say your web browser is open,
+Timestamp: 00:02:59.191 - 00:03:02.061 Text: and you're requesting a web page.
+Timestamp: 00:03:02.061 - 00:03:05.811 Text: The web browser will
+pick a port, a TCP port.
+Timestamp: 00:03:09.240 - 00:03:12.365 Text: When the traffic goes
+to the transport layer,
+Timestamp: 00:03:12.365 - 00:03:15.782 Text: the TCP port will be destination port 80,
+Timestamp: 00:03:19.320 - 00:03:23.487 Text: and source from one of the
+randomly assigned ports.
+Timestamp: 00:03:28.472 - 00:03:32.055 Text: So when the communications
+leaves the host,
+Timestamp: 00:03:33.475 - 00:03:35.917 Text: and heads for the web server,
+Timestamp: 00:03:35.917 - 00:03:40.589 Text: the web server will see
+the destination port as 80.
+Timestamp: 00:03:40.589 - 00:03:45.464 Text: So it will automatically put
+this request into the queue
+Timestamp: 00:03:45.464 - 00:03:47.660 Text: for the web server to process.
+Timestamp: 00:03:47.660 - 00:03:51.327 Text: When the web server
+formulates its response,
+Timestamp: 00:03:52.429 - 00:03:56.596 Text: it will respond back with
+the destination port 5305,
+Timestamp: 00:04:02.179 - 00:04:04.346 Text: and the source port of 80.
+Timestamp: 00:04:07.331 - 00:04:10.211 Text: So when it comes back to the host,
+Timestamp: 00:04:10.211 - 00:04:12.759 Text: the host will know that
+this is the request
+Timestamp: 00:04:12.759 - 00:04:15.350 Text: that was sent out from the web browser.
+Timestamp: 00:04:15.350 - 00:04:18.183 Text: Because the port 5305 was assigned
+Timestamp: 00:04:19.384 - 00:04:21.634 Text: to the web browser request.
+Timestamp: 00:04:23.469 - 00:04:26.424 Text: TCP and UDP ports at the transport layer
+Timestamp: 00:04:26.424 - 00:04:29.389 Text: are what enables our devices to have open
+Timestamp: 00:04:29.389 - 00:04:32.664 Text: many different applications
+at the same time,
+Timestamp: 00:04:32.664 - 00:04:34.520 Text: and have all of those applications
+Timestamp: 00:04:34.520 - 00:04:37.123 Text: communicating simultaneously.
+Timestamp: 00:04:37.123 - 00:04:41.290 Text: Because, for example, if I
+also had an FTP client running,
+Timestamp: 00:04:45.016 - 00:04:49.667 Text: I could send FTP requests
+with a different port number.
+Timestamp: 00:04:49.667 - 00:04:52.334 Text: So that would be destination 21,
+Timestamp: 00:04:54.445 - 00:04:56.195 Text: and source port 5307.
+Timestamp: 00:05:01.730 - 00:05:04.963 Text: So then, the communications
+would come back here,
+Timestamp: 00:05:04.963 - 00:05:07.203 Text: and it would go through the same process.
+Timestamp: 00:05:07.203 - 00:05:10.008 Text: Would see that the
+destination port was 21.
+Timestamp: 00:05:10.008 - 00:05:12.898 Text: It would go in the queue
+for the FTP server.
+Timestamp: 00:05:12.898 - 00:05:14.947 Text: And when the response came back,
+Timestamp: 00:05:14.947 - 00:05:19.895 Text: it would be addressed to
+the destination port 5307.
+Timestamp: 00:05:19.895 - 00:05:23.010 Text: So that the host would know
+that that was the request
+Timestamp: 00:05:23.010 - 00:05:24.677 Text: from the FTP client.

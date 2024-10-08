@@ -1,0 +1,189 @@
+Module Number: 6250025753001_11
+Section Number: 6250025753001_11.2
+Video Number: 6250025753001_11.2.2
+Video Title: TCP and UDP Operation__eng
+Video URL: 
+ - In this lesson we're going to talk about the two Transport Layer Protocols, TCP and UDP. And I'm going to start out with UDP. UDP is a protocol that's used primarily in streaming or real-time communications. And the reason that UDP works best in those types of environments is that UDP is not shackled by a bunch of overhead. I'm going to explain that in a little bit more detail. At the transport layer, what happens is that communications, that is data, which is large string of bits, and so on, just imagine how many bits there are in a webpage, or an email, or a streamed movie. And each one of these data segments gets moved down to the transport layer. At the transport layer it's broken into segments. And each of these segments gets some port information in the header. So it's from, say, a random port, 5105, as the source and let's say the destination is a DNS server, so that would be port 53. Each one of these segments is labeled with the source port and the desination port so that they become part of the same conversation. Now, when these actually get transmitted across a network say like the internet they may not all go in exactly the same manner. Some of them may get dropped along the way or they may get put out of order. But in real time, for example, listening to my voice in real time, if we were having a IP phone conversation if a packet got dropped we probably wouldn't notice it unless it was a long stream of packets. So basically, for real time, we just allow those packets to take their path from the source to the destination say the destination is the DNS server and for the response to return. We aren't all that concerned about a few packets losing their way or getting placed out of order when they are received because real time it's not going to matter because we're not going to go back and pick up those other things and the delay to wait would be more disruptive to the communications than losing those few packets. But there are definitely applications where even losing one packet would be catastrophic. For example, in a bank transfer, if we were sending millions of dollars across the internet and we lost a few packets and those happened to be the ones that contained the account numbers it would be quite upsetting to the people who lost their information. So, let's talk now about the other protocol TCP. When networkers talk about UDP and TCP they talk about them in terms of reliability. By reliability, what they mean is if packets are lost in a UDP stream they're not retransmitted and there's not any worrying going on about whether or not they get there. But in TCP reliability is built in, not in whether or not any packets get dropped, but in the fact that there's a mechanism that ensures one, that the fewest number of packets get dropped and secondly, that if any do get dropped they'll be automatically retransmitted. That the end user application doesn't have to worry about that. So in TCP communications we have a source and a destination just like we did in UDP communications. But each TCP segment has a sequence number in addition to the source and destination port numbers. So for example, if we were looking for a webpage and we were sending the webpage request we would have a source again, our random port number and the destination port number would be 80 which is the TCP port assigned to a webserver. So we would then have a sequence number assigned to each one of these segments. This is so that when it gets across the internet to the server that the server will be able to receive those packets and to be able to account for each one. So, for example, if this it one, two, and three, and the server has gotten all of them it would send back an acknowledgement that wanted me to start with sequence four so then I would send the next set of packets along the way. Constant communications goes on between the two devices and this is the overhead I was talking about a little earlier. Constant communications goes on between the two end devices the source and destination to determine how many packets get sent before an acknowledgement comes back. In a very reliable connection eventually this may be hundreds of thousands of packets. In a very unreliable communications, say for example across the satellite link going all the way across the world, where there's a possibility for many packets to get dropped the window of packets that goes before an acknowledgement comes in will get smaller and smaller. This guarantees that the fewest number of packets actually get dropped because they're being acknowledged much more frequently in an unreliable connection than they would be in a very reliable connection. So the difference between TCP and UDP is that TCP has an acknowledgement of receipt of the packets. And these sequence number also allow the destination host to put the packets back in the order in which they were sent so it has time to get them in the exact order. Whereas with UDP there's no acknowledgements and no sequence numbers. Each protocol though does have it's place in communications across the internet and it's often the criticality of every packet being received that makes the difference whether or not the transmission is sent UDP or TCP.
+Timestamp: 00:00:06.486 - 00:00:07.951 Text: - In this lesson we're going to talk about
+Timestamp: 00:00:07.951 - 00:00:11.784 Text: the two Transport Layer
+Protocols, TCP and UDP.
+Timestamp: 00:00:13.075 - 00:00:15.843 Text: And I'm going to start out with UDP.
+Timestamp: 00:00:15.843 - 00:00:20.110 Text: UDP is a protocol that's
+used primarily in streaming
+Timestamp: 00:00:20.110 - 00:00:22.443 Text: or real-time communications.
+Timestamp: 00:00:23.359 - 00:00:26.192 Text: And the reason that UDP works best
+Timestamp: 00:00:27.144 - 00:00:29.175 Text: in those types of environments
+Timestamp: 00:00:29.175 - 00:00:33.342 Text: is that UDP is not shackled
+by a bunch of overhead.
+Timestamp: 00:00:35.069 - 00:00:39.174 Text: I'm going to explain that in
+a little bit more detail.
+Timestamp: 00:00:39.174 - 00:00:41.749 Text: At the transport layer,
+Timestamp: 00:00:41.749 - 00:00:46.654 Text: what happens is that
+communications, that is data,
+Timestamp: 00:00:46.654 - 00:00:49.154 Text: which is large string of bits,
+Timestamp: 00:00:52.992 - 00:00:55.753 Text: and so on, just imagine
+how many bits there are
+Timestamp: 00:00:55.753 - 00:00:59.670 Text: in a webpage, or an email,
+or a streamed movie.
+Timestamp: 00:01:00.828 - 00:01:02.578 Text: And each one of these
+Timestamp: 00:01:04.007 - 00:01:05.090 Text: data segments
+Timestamp: 00:01:06.525 - 00:01:09.899 Text: gets moved down to the transport layer.
+Timestamp: 00:01:09.899 - 00:01:13.982 Text: At the transport layer
+it's broken into segments.
+Timestamp: 00:01:16.522 - 00:01:19.013 Text: And each of these segments gets
+Timestamp: 00:01:19.013 - 00:01:21.380 Text: some port information in the header.
+Timestamp: 00:01:21.380 - 00:01:24.047 Text: So it's from, say, a random port,
+Timestamp: 00:01:25.487 - 00:01:29.320 Text: 5105, as the source
+Timestamp: 00:01:31.186 - 00:01:33.269 Text: and let's say
+Timestamp: 00:01:33.705 - 00:01:35.756 Text: the destination
+Timestamp: 00:01:35.756 - 00:01:39.256 Text: is a DNS server, so that would be port 53.
+Timestamp: 00:01:41.406 - 00:01:44.817 Text: Each one of these segments is labeled with
+Timestamp: 00:01:44.817 - 00:01:47.990 Text: the source port and the desination port
+Timestamp: 00:01:47.990 - 00:01:51.981 Text: so that they become part
+of the same conversation.
+Timestamp: 00:01:51.981 - 00:01:56.148 Text: Now, when these actually get
+transmitted across a network
+Timestamp: 00:01:57.345 - 00:01:59.341 Text: say like the internet
+Timestamp: 00:01:59.341 - 00:02:03.409 Text: they may not all go in
+exactly the same manner.
+Timestamp: 00:02:03.409 - 00:02:05.931 Text: Some of them may get dropped along the way
+Timestamp: 00:02:05.931 - 00:02:08.212 Text: or they may get put out of order.
+Timestamp: 00:02:08.212 - 00:02:12.484 Text: But in real time, for
+example, listening to my voice
+Timestamp: 00:02:12.484 - 00:02:13.903 Text: in real time,
+Timestamp: 00:02:13.903 - 00:02:17.227 Text: if we were having a IP phone conversation
+Timestamp: 00:02:17.227 - 00:02:19.875 Text: if a packet got dropped
+Timestamp: 00:02:19.875 - 00:02:22.192 Text: we probably wouldn't notice it unless
+Timestamp: 00:02:22.192 - 00:02:24.718 Text: it was a long stream of packets.
+Timestamp: 00:02:24.718 - 00:02:28.984 Text: So basically, for real time,
+we just allow those packets
+Timestamp: 00:02:28.984 - 00:02:33.739 Text: to take their path from the
+source to the destination
+Timestamp: 00:02:33.739 - 00:02:37.533 Text: say the destination is the DNS server
+Timestamp: 00:02:37.533 - 00:02:40.116 Text: and for the response to return.
+Timestamp: 00:02:43.022 - 00:02:46.473 Text: We aren't all that concerned
+about a few packets
+Timestamp: 00:02:46.473 - 00:02:50.059 Text: losing their way or
+getting placed out of order
+Timestamp: 00:02:50.059 - 00:02:52.211 Text: when they are received
+Timestamp: 00:02:52.211 - 00:02:55.508 Text: because real time it's not going to matter
+Timestamp: 00:02:55.508 - 00:02:57.507 Text: because we're not going to
+go back and pick up
+Timestamp: 00:02:57.507 - 00:03:00.519 Text: those other things and the delay to wait
+Timestamp: 00:03:00.519 - 00:03:04.352 Text: would be more disruptive
+to the communications
+Timestamp: 00:03:05.236 - 00:03:08.251 Text: than losing those few packets.
+Timestamp: 00:03:08.251 - 00:03:11.012 Text: But there are definitely applications
+Timestamp: 00:03:11.012 - 00:03:14.095 Text: where even losing one packet would be
+Timestamp: 00:03:15.778 - 00:03:17.556 Text: catastrophic.
+Timestamp: 00:03:17.556 - 00:03:20.480 Text: For example, in a bank transfer,
+Timestamp: 00:03:20.480 - 00:03:25.244 Text: if we were sending millions
+of dollars across the internet
+Timestamp: 00:03:25.244 - 00:03:27.725 Text: and we lost a few packets
+and those happened to be
+Timestamp: 00:03:27.725 - 00:03:30.278 Text: the ones that contained
+the account numbers
+Timestamp: 00:03:30.278 - 00:03:32.528 Text: it would be quite upsetting
+Timestamp: 00:03:33.611 - 00:03:37.359 Text: to the people who lost their information.
+Timestamp: 00:03:37.359 - 00:03:41.359 Text: So, let's talk now about
+the other protocol TCP.
+Timestamp: 00:03:43.704 - 00:03:46.711 Text: When networkers talk about UDP and TCP
+Timestamp: 00:03:46.711 - 00:03:50.539 Text: they talk about them in
+terms of reliability.
+Timestamp: 00:03:50.539 - 00:03:53.180 Text: By reliability, what they mean is
+Timestamp: 00:03:53.180 - 00:03:56.031 Text: if packets are lost in a UDP stream
+Timestamp: 00:03:56.031 - 00:03:57.654 Text: they're not retransmitted
+Timestamp: 00:03:57.654 - 00:04:00.455 Text: and there's not any worrying going on
+Timestamp: 00:04:00.455 - 00:04:02.937 Text: about whether or not they get there.
+Timestamp: 00:04:02.937 - 00:04:03.770 Text: But in TCP
+Timestamp: 00:04:05.943 - 00:04:07.943 Text: reliability is built in,
+Timestamp: 00:04:09.234 - 00:04:12.484 Text: not in whether or not
+any packets get dropped,
+Timestamp: 00:04:12.484 - 00:04:16.219 Text: but in the fact that there's
+a mechanism that ensures
+Timestamp: 00:04:16.219 - 00:04:19.178 Text: one, that the fewest number
+of packets get dropped
+Timestamp: 00:04:19.178 - 00:04:22.230 Text: and secondly, that if any do get dropped
+Timestamp: 00:04:22.230 - 00:04:25.646 Text: they'll be automatically retransmitted.
+Timestamp: 00:04:25.646 - 00:04:27.559 Text: That the end user application
+Timestamp: 00:04:27.559 - 00:04:30.082 Text: doesn't have to worry about that.
+Timestamp: 00:04:30.082 - 00:04:30.915 Text: So in TCP
+Timestamp: 00:04:32.376 - 00:04:33.511 Text: communications
+Timestamp: 00:04:33.511 - 00:04:35.910 Text: we have a source and a destination
+Timestamp: 00:04:35.910 - 00:04:39.160 Text: just like we did in UDP communications.
+Timestamp: 00:04:40.062 - 00:04:43.562 Text: But each TCP segment has a sequence number
+Timestamp: 00:04:46.332 - 00:04:47.332 Text: in addition
+Timestamp: 00:04:50.607 - 00:04:54.190 Text: to the source and
+destination port numbers.
+Timestamp: 00:05:01.752 - 00:05:05.376 Text: So for example, if we
+were looking for a webpage
+Timestamp: 00:05:05.376 - 00:05:08.551 Text: and we were sending the webpage request
+Timestamp: 00:05:08.551 - 00:05:12.718 Text: we would have a source
+again, our random port number
+Timestamp: 00:05:14.609 - 00:05:17.006 Text: and the destination
+port number would be 80
+Timestamp: 00:05:17.006 - 00:05:20.751 Text: which is the TCP port
+assigned to a webserver.
+Timestamp: 00:05:20.751 - 00:05:23.143 Text: So we would then have a sequence number
+Timestamp: 00:05:23.143 - 00:05:26.393 Text: assigned to each one of these segments.
+Timestamp: 00:05:28.232 - 00:05:32.051 Text: This is so that when it
+gets across the internet
+Timestamp: 00:05:32.051 - 00:05:33.134 Text: to the server
+Timestamp: 00:05:35.348 - 00:05:39.746 Text: that the server will be able
+to receive those packets
+Timestamp: 00:05:39.746 - 00:05:43.046 Text: and to be able to account for each one.
+Timestamp: 00:05:43.046 - 00:05:47.471 Text: So, for example, if this
+it one, two, and three,
+Timestamp: 00:05:47.471 - 00:05:50.318 Text: and the server has gotten all of them
+Timestamp: 00:05:50.318 - 00:05:54.579 Text: it would send back an acknowledgement that
+Timestamp: 00:05:54.579 - 00:05:57.709 Text: wanted me to start with sequence four
+Timestamp: 00:05:57.709 - 00:06:00.709 Text: so then I would send the next set of
+Timestamp: 00:06:01.986 - 00:06:03.819 Text: packets along the way.
+Timestamp: 00:06:05.038 - 00:06:08.824 Text: Constant communications goes
+on between the two devices
+Timestamp: 00:06:08.824 - 00:06:10.893 Text: and this is the overhead
+I was talking about
+Timestamp: 00:06:10.893 - 00:06:12.404 Text: a little earlier.
+Timestamp: 00:06:12.404 - 00:06:16.571 Text: Constant communications goes
+on between the two end devices
+Timestamp: 00:06:17.450 - 00:06:19.617 Text: the source and destination
+Timestamp: 00:06:20.543 - 00:06:24.375 Text: to determine how many packets get sent
+Timestamp: 00:06:24.375 - 00:06:27.498 Text: before an acknowledgement comes back.
+Timestamp: 00:06:27.498 - 00:06:30.431 Text: In a very reliable connection
+Timestamp: 00:06:30.431 - 00:06:34.739 Text: eventually this may be hundreds
+of thousands of packets.
+Timestamp: 00:06:34.739 - 00:06:36.406 Text: In a very unreliable
+Timestamp: 00:06:38.341 - 00:06:39.598 Text: communications,
+Timestamp: 00:06:39.598 - 00:06:43.105 Text: say for example across the satellite link
+Timestamp: 00:06:43.105 - 00:06:45.496 Text: going all the way across the world,
+Timestamp: 00:06:45.496 - 00:06:49.663 Text: where there's a possibility
+for many packets to get dropped
+Timestamp: 00:06:50.507 - 00:06:53.552 Text: the window of packets that goes before
+Timestamp: 00:06:53.552 - 00:06:57.592 Text: an acknowledgement comes in
+will get smaller and smaller.
+Timestamp: 00:06:57.592 - 00:07:00.593 Text: This guarantees that the
+fewest number of packets
+Timestamp: 00:07:00.593 - 00:07:04.903 Text: actually get dropped because
+they're being acknowledged
+Timestamp: 00:07:04.903 - 00:07:08.644 Text: much more frequently in
+an unreliable connection
+Timestamp: 00:07:08.644 - 00:07:12.434 Text: than they would be in a
+very reliable connection.
+Timestamp: 00:07:12.434 - 00:07:15.486 Text: So the difference between TCP and UDP
+Timestamp: 00:07:15.486 - 00:07:18.319 Text: is that TCP has an acknowledgement
+Timestamp: 00:07:26.012 - 00:07:28.179 Text: of receipt of the packets.
+Timestamp: 00:07:36.261 - 00:07:41.258 Text: And these sequence number also
+allow the destination host
+Timestamp: 00:07:41.258 - 00:07:45.608 Text: to put the packets back in the
+order in which they were sent
+Timestamp: 00:07:45.608 - 00:07:49.154 Text: so it has time to get
+them in the exact order.
+Timestamp: 00:07:49.154 - 00:07:50.487 Text: Whereas with UDP
+Timestamp: 00:07:51.726 - 00:07:53.976 Text: there's no acknowledgements
+Timestamp: 00:08:00.495 - 00:08:02.495 Text: and no sequence numbers.
+Timestamp: 00:08:11.846 - 00:08:14.782 Text: Each protocol though does have it's place
+Timestamp: 00:08:14.782 - 00:08:17.055 Text: in communications across the internet
+Timestamp: 00:08:17.055 - 00:08:18.555 Text: and it's often the
+Timestamp: 00:08:19.508 - 00:08:23.221 Text: criticality of every packet being received
+Timestamp: 00:08:23.221 - 00:08:26.554 Text: that makes the difference whether or not
+Timestamp: 00:08:27.967 - 00:08:30.967 Text: the transmission is sent UDP or TCP.

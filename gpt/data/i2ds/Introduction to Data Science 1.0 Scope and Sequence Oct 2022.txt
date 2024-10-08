@@ -1,0 +1,203 @@
+Introduction to Data Science
+
+Scope and Sequence
+
+
+
+Version 1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contents
+
+	Target Audience	3
+
+	Prerequisites	3
+
+	Certification Alignment	3
+
+	Course Description	3
+
+	Course Objectives	3
+
+	Equipment Requirements	4
+
+	Course Outline	4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Target Audience
+
+The Introduction to Data Science course is for everyone interested in learning more about how data analytics, data science and data engineering are providing value to organizations all over the world.
+
+
+
+Prerequisites
+
+There are no prerequisites for this course.
+
+
+
+Certification Alignment
+
+There are no target certifications for this course. 
+
+
+
+Course Description
+
+The course provides learners with an interactive and exploratory view of data analytics and highlights how data acceleration impacts organizations, governments, and individuals. Learners explore fundamental data concepts and understand the value of data literacy, visualizations, and exploratory data projects. Design features within the course help learners better comprehend these concepts:
+
+
+
+Rich multimedia content, including interactive lab activities, videos, games, and quizzes, addresses a variety of learning styles to help stimulate learning and increase knowledge retention.
+
+Leaning Labs provide interactive tabular and visual representations of data to assist with comprehension and make learning about data enjoyable
+
+Innovative assessments provide immediate feedback to support the evaluation of knowledge and acquired skills.
+
+Technical concepts are explained using language that works well for learners at all levels.
+
+Embedded interactive activities break up reading large content sections and reinforce understanding.
+
+Learners are encouraged and directed to begin creating an online presence
+
+
+
+		
+
+Course Objectives
+
+
+
+Introduction to Data Science provides learners with an engaging, exploratory view of the data transformation taking place in organizations all over the world. The online course materials assist learners in communicating their knowledge and desire to specialize in data analytics professions. Upon completion of the course, learners can perform the following tasks:
+
+
+
+Examine the promises and challenges of data analytics
+
+Explain big data characteristics and the effects data growth
+
+Examine the role of data in AI and Machine Learning
+
+Develop the pathway to obtain a career in Data Analytics.
+
+
+
+
+
+Equipment Requirements
+
+Software
+
+The entire course may be completed on a mobile phone.
+
+
+
+Course Outline
+
+This course provides a comprehensive introduction to how data analytics brings value to organizations, businesses, governments, and industries. Learners understand how data is being utilized, collected, and visualized for humanitarian, social and environmental issues as well as artificial intelligence. The course helps learners understand the roles and responsibilities of a data analyst and how data scientists and engineers play a role in analytics.
+
+
+
+
+
+Table 1: Module Title and Objective
+
+
+
+Module Title / Topic Title 
+
+Objective 
+
+Module 1: Experience Analytics                                             Examine the basics of data analytics      
+
+												1.1: What is data? 
+
+   Identify applications of data in daily life 
+
+												 1.2 Data is all around us
+
+Compare and contrast the different types of data 
+
+ 1.3 Business Understanding 
+
+Evaluate the value gained through analytics 
+
+Module 2: Data Collection and Storage                                 Describe big data and its management
+
+												 2.1Understanding Big Data 
+
+Describe big data and its potential benefits 
+
+												 2.2Understanding Big Data Management
+
+Describe data flow through pipelines 
+
+Module 3: Artificial Intelligence and Machine Learning   Analyze the concepts of AI and ML 
+
+ 3.1AI Fact and Fiction 
+
+Explain the concept of AI 
+
+ 3.2Big Data and Machine Learning 
+
+Explain how big data enables machine learning 
+
+Module 4: Embarking on your Career in Data Analytics      Explain the duties of the different job roles in data science 
+
+												 4.1Preparing for a Career in Data Analytics
+
+Differentiate between types of data analytics roles 
+
+												 4.2Taking the next steps 
+
+Explain the next steps necessary to create a portfolio showcasing data analytics skills 
+
+
+
+
+
+© 2022 Cisco and/or its affiliates. All rights reserved.	Page 1 of 3  
+
+© 2022 Cisco and/or its affiliates. All rights reserved.	Page 1 of 3  
+
+
+
+© 2022 Cisco and/or its affiliates. All rights reserved.	Page 2 of 3
+
+© 2022 Cisco and/or its affiliates. All rights reserved.	Page 2 of 3

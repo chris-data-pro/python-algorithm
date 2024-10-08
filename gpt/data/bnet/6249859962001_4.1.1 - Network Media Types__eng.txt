@@ -1,0 +1,118 @@
+Module Number: 6249859962001_4
+Section Number: 6249859962001_4.1
+Video Number: 6249859962001_4.1.1
+Video Title: Network Media Types__eng
+Video URL: 
+ - In this video we're going to talk about network media. Network media provides the connectivity and the path for the communications to travel over in a network. Typically in today's network most of the connections are made either wirelessly which goes through the air and obviously doesn't have a physical media or with copper connectivity. The most common type of connectivity in an Ethernet network is using unshielded twisted pair or UTP for short. Twisted pair cabling is made up of a series of wires, in the case of most Ethernet cables, eight wires, that are arranged in pairs and each pair is color-coded so that you can have the same pattern on either end of the cable. The connectors themselves provide the copper connectivity between the devices, for example a network interface card or a port on a switch or a router, and the cabling. It's very important that the connectors are seeded well and actually are installed according to specific standards. This type of a connector is called an RJ45 connector and it works for almost all of the Ethernet cables that are used in today's network. In addition to this type of cabling, we also have coaxial copper cabling. Now coaxial cable should be familiar to most of you because it's typically how cable TV is connected. In this particular cable we have a BNC type connector. We can also use screw-on F type connectors to connect coaxial cable. Coaxial cable differs significantly from twisted pair cable in that coaxial cable has a single solid copper core that traverses the entire length of the cable and it's across that copper core that the communications occurs. If I were to remove the connector from this coaxial cable, the solid copper core is surrounded by a plastic material that helps to insulate and shield it. It also will have a mesh of metal that provides some shielding against electromagnetic interference. In addition to copper cabling in today's network, you often have for long distances, fiber optic cable. The one I'm holding in my hand is a short distance fiber optic cable that would normally be used to connect networking equipment within a building. The fiber optic cable is made of either glass or plastic and it has a solid core that is surrounded by a second layer of glass or plastic to provide the reflective surface to carry the patterns of light. Now, because there is no copper in here and because the fiber optic cable carries only light waves, you don't have to worry about fiber optic cable being affected by electromagnetic interference. That's a big advantage over any type of copper cable. Another advantage of using fiber optics is that the fiber optics can carry the light signals for a much longer distance than most copper cabling so if I have a long distance to go, say miles, I will probably choose a fiber optic connection. Because there are different types of fiber optic cables and different types of devices that drive and create the light signals, fiber optics can do a lot of different things, has a lot more flexibility than copper cable in that I can have a lot of variation in the types of speed that each fiber optic cable would support.
+Timestamp: 00:00:06.339 - 00:00:11.130 Text: - In this video we're going
+to talk about network media.
+Timestamp: 00:00:11.130 - 00:00:14.102 Text: Network media provides the connectivity
+Timestamp: 00:00:14.102 - 00:00:16.238 Text: and the path for the communications
+Timestamp: 00:00:16.238 - 00:00:19.228 Text: to travel over in a network.
+Timestamp: 00:00:19.228 - 00:00:22.787 Text: Typically in today's network
+most of the connections
+Timestamp: 00:00:22.787 - 00:00:26.005 Text: are made either wirelessly
+which goes through the air
+Timestamp: 00:00:26.005 - 00:00:29.062 Text: and obviously doesn't
+have a physical media
+Timestamp: 00:00:29.062 - 00:00:31.719 Text: or with copper connectivity.
+Timestamp: 00:00:31.719 - 00:00:35.902 Text: The most common type of
+connectivity in an Ethernet network
+Timestamp: 00:00:35.902 - 00:00:40.069 Text: is using unshielded twisted
+pair or UTP for short.
+Timestamp: 00:00:42.162 - 00:00:46.572 Text: Twisted pair cabling is made
+up of a series of wires,
+Timestamp: 00:00:46.572 - 00:00:50.076 Text: in the case of most Ethernet
+cables, eight wires,
+Timestamp: 00:00:50.076 - 00:00:54.466 Text: that are arranged in pairs
+and each pair is color-coded
+Timestamp: 00:00:54.466 - 00:00:56.989 Text: so that you can have the same pattern
+Timestamp: 00:00:56.989 - 00:01:00.008 Text: on either end of the cable.
+Timestamp: 00:01:00.008 - 00:01:03.629 Text: The connectors themselves
+provide the copper connectivity
+Timestamp: 00:01:03.629 - 00:01:05.336 Text: between the devices,
+Timestamp: 00:01:05.336 - 00:01:07.903 Text: for example a network interface card
+Timestamp: 00:01:07.903 - 00:01:12.070 Text: or a port on a switch or
+a router, and the cabling.
+Timestamp: 00:01:13.366 - 00:01:16.294 Text: It's very important that the
+connectors are seeded well
+Timestamp: 00:01:16.294 - 00:01:20.858 Text: and actually are installed
+according to specific standards.
+Timestamp: 00:01:20.858 - 00:01:25.677 Text: This type of a connector
+is called an RJ45 connector
+Timestamp: 00:01:25.677 - 00:01:29.972 Text: and it works for almost
+all of the Ethernet cables
+Timestamp: 00:01:29.972 - 00:01:33.419 Text: that are used in today's network.
+Timestamp: 00:01:33.419 - 00:01:36.474 Text: In addition to this type of cabling,
+Timestamp: 00:01:36.474 - 00:01:39.474 Text: we also have coaxial copper cabling.
+Timestamp: 00:01:40.978 - 00:01:43.480 Text: Now coaxial cable should
+be familiar to most of you
+Timestamp: 00:01:43.480 - 00:01:47.563 Text: because it's typically
+how cable TV is connected.
+Timestamp: 00:01:48.623 - 00:01:52.790 Text: In this particular cable we
+have a BNC type connector.
+Timestamp: 00:01:53.799 - 00:01:57.314 Text: We can also use screw-on F type connectors
+Timestamp: 00:01:57.314 - 00:01:59.651 Text: to connect coaxial cable.
+Timestamp: 00:01:59.651 - 00:02:02.645 Text: Coaxial cable differs significantly
+Timestamp: 00:02:02.645 - 00:02:06.181 Text: from twisted pair cable
+in that coaxial cable
+Timestamp: 00:02:06.181 - 00:02:09.756 Text: has a single solid copper
+core that traverses
+Timestamp: 00:02:09.756 - 00:02:11.691 Text: the entire length of the cable
+Timestamp: 00:02:11.691 - 00:02:13.851 Text: and it's across that copper core
+Timestamp: 00:02:13.851 - 00:02:16.434 Text: that the communications occurs.
+Timestamp: 00:02:18.167 - 00:02:22.064 Text: If I were to remove the connector
+from this coaxial cable,
+Timestamp: 00:02:22.064 - 00:02:26.231 Text: the solid copper core is
+surrounded by a plastic material
+Timestamp: 00:02:27.327 - 00:02:29.737 Text: that helps to insulate and shield it.
+Timestamp: 00:02:29.737 - 00:02:33.654 Text: It also will have a mesh
+of metal that provides
+Timestamp: 00:02:34.555 - 00:02:37.856 Text: some shielding against
+electromagnetic interference.
+Timestamp: 00:02:37.856 - 00:02:41.687 Text: In addition to copper
+cabling in today's network,
+Timestamp: 00:02:41.687 - 00:02:46.269 Text: you often have for long
+distances, fiber optic cable.
+Timestamp: 00:02:46.269 - 00:02:50.436 Text: The one I'm holding in my
+hand is a short distance
+Timestamp: 00:02:51.675 - 00:02:54.802 Text: fiber optic cable that
+would normally be used
+Timestamp: 00:02:54.802 - 00:02:57.881 Text: to connect networking
+equipment within a building.
+Timestamp: 00:02:57.881 - 00:03:01.955 Text: The fiber optic cable is made
+of either glass or plastic
+Timestamp: 00:03:01.955 - 00:03:06.122 Text: and it has a solid core that
+is surrounded by a second layer
+Timestamp: 00:03:08.051 - 00:03:11.074 Text: of glass or plastic to
+provide the reflective surface
+Timestamp: 00:03:11.074 - 00:03:13.657 Text: to carry the patterns of light.
+Timestamp: 00:03:14.915 - 00:03:18.424 Text: Now, because there is no copper in here
+Timestamp: 00:03:18.424 - 00:03:22.591 Text: and because the fiber optic
+cable carries only light waves,
+Timestamp: 00:03:25.329 - 00:03:27.627 Text: you don't have to worry
+about fiber optic cable
+Timestamp: 00:03:27.627 - 00:03:31.091 Text: being affected by
+electromagnetic interference.
+Timestamp: 00:03:31.091 - 00:03:35.301 Text: That's a big advantage over
+any type of copper cable.
+Timestamp: 00:03:35.301 - 00:03:37.594 Text: Another advantage of using fiber optics
+Timestamp: 00:03:37.594 - 00:03:41.195 Text: is that the fiber optics
+can carry the light signals
+Timestamp: 00:03:41.195 - 00:03:46.100 Text: for a much longer distance
+than most copper cabling
+Timestamp: 00:03:46.100 - 00:03:50.553 Text: so if I have a long
+distance to go, say miles,
+Timestamp: 00:03:50.553 - 00:03:54.420 Text: I will probably choose a
+fiber optic connection.
+Timestamp: 00:03:54.420 - 00:03:58.355 Text: Because there are different
+types of fiber optic cables
+Timestamp: 00:03:58.355 - 00:04:00.855 Text: and different types of devices
+Timestamp: 00:04:01.907 - 00:04:05.585 Text: that drive and create the light signals,
+Timestamp: 00:04:05.585 - 00:04:09.033 Text: fiber optics can do a
+lot of different things,
+Timestamp: 00:04:09.033 - 00:04:11.662 Text: has a lot more flexibility
+than copper cable
+Timestamp: 00:04:11.662 - 00:04:15.829 Text: in that I can have a lot of
+variation in the types of speed
+Timestamp: 00:04:16.970 - 00:04:20.470 Text: that each fiber optic cable would support.

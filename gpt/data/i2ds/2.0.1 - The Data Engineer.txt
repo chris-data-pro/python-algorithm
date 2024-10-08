@@ -1,0 +1,27 @@
+Module Number: 2
+Section Number: 2.0
+Video Number: 2.0.1
+Video Title: The Data Engineer
+Video URL: 
+ Here at Data Crunchers, data engineers ensure accessibility and availability of data for data scientists and data analysts. Data engineers integrate data from different sources and even perform some data cleaning. More data is being generated and stored than ever before. It's estimated that 2.5 quintillion bytes of data are generated each day. All this generated data must be securely stored and then processed for analysis. In this module, we will discuss the types of data being collected and where it's being stored. In some environments, there's likely to be some overlap between the roles of data analysts, data scientists, and even data engineers. There is no denying that this is a very exciting time to be a data engineer. (bright music)
+Timestamp: 00:00:00.000 - 00:00:01.410 Text: Here at Data Crunchers,
+Timestamp: 00:00:01.410 - 00:00:03.720 Text: data engineers ensure accessibility
+Timestamp: 00:00:03.720 - 00:00:06.270 Text: and availability of data for data scientists
+Timestamp: 00:00:06.270 - 00:00:08.250 Text: and data analysts.
+Timestamp: 00:00:08.250 - 00:00:11.400 Text: Data engineers integrate data from different sources
+Timestamp: 00:00:11.400 - 00:00:14.280 Text: and even perform some data cleaning.
+Timestamp: 00:00:14.280 - 00:00:15.930 Text: More data is being generated
+Timestamp: 00:00:15.930 - 00:00:18.060 Text: and stored than ever before.
+Timestamp: 00:00:18.060 - 00:00:21.810 Text: It's estimated that 2.5 quintillion bytes of data
+Timestamp: 00:00:21.810 - 00:00:23.523 Text: are generated each day.
+Timestamp: 00:00:24.570 - 00:00:27.240 Text: All this generated data must be securely stored
+Timestamp: 00:00:27.240 - 00:00:29.310 Text: and then processed for analysis.
+Timestamp: 00:00:29.310 - 00:00:30.570 Text: In this module,
+Timestamp: 00:00:30.570 - 00:00:33.540 Text: we will discuss the types of data being collected
+Timestamp: 00:00:33.540 - 00:00:35.310 Text: and where it's being stored.
+Timestamp: 00:00:35.310 - 00:00:38.490 Text: In some environments, there's likely to be some overlap
+Timestamp: 00:00:38.490 - 00:00:41.880 Text: between the roles of data analysts, data scientists,
+Timestamp: 00:00:41.880 - 00:00:43.890 Text: and even data engineers.
+Timestamp: 00:00:43.890 - 00:00:47.100 Text: There is no denying that this is a very exciting time
+Timestamp: 00:00:47.100 - 00:00:48.691 Text: to be a data engineer.
+Timestamp: 00:00:48.691 - 00:00:51.274 Text: (bright music)

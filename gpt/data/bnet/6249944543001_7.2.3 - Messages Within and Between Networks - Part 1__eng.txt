@@ -1,0 +1,70 @@
+Module Number: 6249944543001_7
+Section Number: 6249944543001_7.2
+Video Number: 6249944543001_7.2.3
+Video Title: Messages Within and Between Networks
+Video URL: 
+ - In this video, we're going to take a look at how messages travel within a network and also between networks. So in this first part, we have host H1 at 192.168.1.10 going to send a packet to the IPv4 address of H2, 192.168.1.20. H1, the source of the packet, builds the IPv4 packet with its own address as the source, 192, 168, 1.10, and the destination IPv4 address of 192.168.1.20. Now, the first thing H1 needs to determine is are we on the same network? And it notices that its own network address is 192.168.1.10 that's the network it belongs to. And it actually uses its Subnet Mask to do that. Then it looks at the destination IPv4 address, using its own Subnet Mask, H1 determines that H2, at 192.168.1.20 they're on the same network, they both begin with 192.168.1 so we're on the same network. What that means to H1 is that it can send this packet directly to H2. It does not have to send it through its default gateway, the router. It can send it directly. So, H1 is going to build the Ethernet frame with its own MAC address of its Ethernet NIC, AA, AA as the Ethernet source MAC address. The destination MAC address says, "Okay, I can sent it "directly to H2 because we're on the same network." So it says, "I just need to know the MAC address "associated with the destination, 192.168.1.20" In that case, H1 checks its ARP table. And we're going to assume that it has that information in its ARP table. It knows that 192.168.1.20 has the MAC address BB, BB. If it doesn't know that, remember it sends an ARP request, gets an ARP reply, adds it to the table. Okay, so now, H1 can go ahead and send this Ethernet frame towards the switch, and it gets sent directly to H2.
+Timestamp: 00:00:06.600 - 00:00:08.358 Text: - In this video, we're going to take a look
+Timestamp: 00:00:08.358 - 00:00:12.229 Text: at how messages travel within a network
+Timestamp: 00:00:12.229 - 00:00:14.600 Text: and also between networks.
+Timestamp: 00:00:14.600 - 00:00:18.160 Text: So in this first part, we have host H1
+Timestamp: 00:00:18.160 - 00:00:21.316 Text: at 192.168.1.10
+Timestamp: 00:00:22.888 - 00:00:26.699 Text: going to send a packet to
+the IPv4 address of H2,
+Timestamp: 00:00:26.699 - 00:00:29.452 Text: 192.168.1.20.
+Timestamp: 00:00:30.549 - 00:00:32.966 Text: H1, the source of the packet,
+Timestamp: 00:00:33.028 - 00:00:36.248 Text: builds the IPv4 packet
+Timestamp: 00:00:36.248 - 00:00:41.415 Text: with its own address as
+the source, 192, 168, 1.10,
+Timestamp: 00:00:42.066 - 00:00:45.387 Text: and the destination IPv4 address
+Timestamp: 00:00:45.387 - 00:00:48.780 Text: of 192.168.1.20.
+Timestamp: 00:00:48.780 - 00:00:51.679 Text: Now, the first thing H1 needs to determine
+Timestamp: 00:00:51.887 - 00:00:55.137 Text: is are we on the same network?
+Timestamp: 00:00:56.630 - 00:00:59.990 Text: And it notices that
+its own network address
+Timestamp: 00:00:59.990 - 00:01:02.489 Text: is 192.168.1.10
+Timestamp: 00:01:03.476 - 00:01:06.095 Text: that's the network it belongs to.
+Timestamp: 00:01:06.095 - 00:01:10.225 Text: And it actually uses its
+Subnet Mask to do that.
+Timestamp: 00:01:10.225 - 00:01:13.573 Text: Then it looks at the
+destination IPv4 address,
+Timestamp: 00:01:13.573 - 00:01:17.323 Text: using its own Subnet
+Mask, H1 determines that
+Timestamp: 00:01:18.353 - 00:01:22.348 Text: H2, at 192.168.1.20
+Timestamp: 00:01:22.348 - 00:01:24.231 Text: they're on the same network,
+Timestamp: 00:01:24.231 - 00:01:27.168 Text: they both begin with 192.168.1
+Timestamp: 00:01:27.168 - 00:01:29.835 Text: so we're on the same network.
+Timestamp: 00:01:31.189 - 00:01:34.258 Text: What that means to H1 is that it can send
+Timestamp: 00:01:34.258 - 00:01:37.085 Text: this packet directly to H2.
+Timestamp: 00:01:37.085 - 00:01:39.208 Text: It does not have to send it through
+Timestamp: 00:01:39.208 - 00:01:41.465 Text: its default gateway, the router.
+Timestamp: 00:01:41.465 - 00:01:43.465 Text: It can send it directly.
+Timestamp: 00:01:44.476 - 00:01:47.544 Text: So, H1 is going to
+build the Ethernet frame
+Timestamp: 00:01:47.544 - 00:01:51.646 Text: with its own MAC address
+of its Ethernet NIC,
+Timestamp: 00:01:51.646 - 00:01:53.194 Text: AA, AA
+Timestamp: 00:01:53.194 - 00:01:56.111 Text: as the Ethernet source MAC address.
+Timestamp: 00:01:57.365 - 00:02:00.825 Text: The destination MAC address
+says, "Okay, I can sent it
+Timestamp: 00:02:00.825 - 00:02:05.186 Text: "directly to H2 because
+we're on the same network."
+Timestamp: 00:02:05.186 - 00:02:08.186 Text: So it says, "I just need
+to know the MAC address
+Timestamp: 00:02:08.186 - 00:02:13.108 Text: "associated with the
+destination, 192.168.1.20"
+Timestamp: 00:02:14.557 - 00:02:18.178 Text: In that case, H1 checks its ARP table.
+Timestamp: 00:02:18.178 - 00:02:21.626 Text: And we're going to assume that
+it has that information
+Timestamp: 00:02:21.626 - 00:02:23.106 Text: in its ARP table.
+Timestamp: 00:02:23.106 - 00:02:26.663 Text: It knows that 192.168.1.20
+Timestamp: 00:02:26.663 - 00:02:28.415 Text: has the MAC address
+Timestamp: 00:02:28.415 - 00:02:30.925 Text: BB, BB.
+Timestamp: 00:02:30.925 - 00:02:32.895 Text: If it doesn't know that,
+remember it sends an
+Timestamp: 00:02:32.895 - 00:02:35.478 Text: ARP request, gets an ARP reply,
+Timestamp: 00:02:36.485 - 00:02:38.775 Text: adds it to the table.
+Timestamp: 00:02:38.775 - 00:02:41.671 Text: Okay, so now, H1 can go ahead
+Timestamp: 00:02:41.671 - 00:02:44.004 Text: and send this Ethernet frame
+Timestamp: 00:02:44.971 - 00:02:48.601 Text: towards the switch, and it gets sent
+Timestamp: 00:02:48.601 - 00:02:51.872 Text: directly to H2.

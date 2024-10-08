@@ -1,0 +1,139 @@
+Module Title: Module 1: Communication in a Connected World
+Module URL: "http://cisco_bnet_mod1"
+Module 1: Communication in a Connected World
+Explain important concepts in network communication.Scroll down  and select ‘Introduction’ to begin.
+1.0 Introduction
+1.0 Introduction
+1.0 Introduction
+Scroll to begin   
+1.0.1 Webster - Why Should I Take this Module?
+ Welcome to Communications in a Connected World! Hi, I'm Webster! I'll be accompanying you as you move through this course. Let me introduce you to my friend Kishori! Kishori has been a nurse in a hospital in Karnataka, India for about 20 years. When Kishori went to nursing school, she had no idea how much networking technology she would be using everyday. At home, she only has a laptop, a smartphone, and a tablet. At work she uses a laptop, a desktop, a printer, and network-connected hospital equipment. Sometimes these devices do not always communicate. When equipment does not work properly in a hospital, lives can be at risk! Kishori would like to better understand how it all works. Would you?
+1.0.1 Webster - Why Should I Take this Module?
+
+1.0.2 What Will I Learn in this Module?
+Module Title: Communications in a Connected WorldModule Objective: Explain important concepts in network communication.
+
+
+1.1 Network Types
+1.1 Network Types
+1.1 Network Types
+Scroll to begin   
+1.1.1 Video - Welcome to the World of Networking
+Press the Play button to watch the video.
+1.1.2 Everything is Online
+“Hey Shad, are you online?” “Of course, I am!” How many of us still think about whether or not we are “online”? We expect our devices, cell phones, tablets, laptops and desktop computers to always be connected to the global internet. We use this network to interact with our friends, shop, share pictures and experiences, and learn. The internet has become such a part of everyday life that we almost take it for granted.Normally, when people use the term internet, they are not referring to the physical connections in the real world. Rather, they tend to think of it as a formless collection of connections. It is the “place” people go to find or share information.
+1.1.3 Who Owns “The Internet”?
+The internet is not owned by any individual or group. The internet is a worldwide collection of interconnected networks (internetwork or internet for short), cooperating with each other to exchange information using common standards. Through telephone wires, fiber-optic cables, wireless transmissions, and satellite links, internet users can exchange information in a variety of forms, as shown in the figure.Everything that you access online is located somewhere on the global internet. Social media sites, multiplayer games, messaging centers that provide email, online courses — all of these internet destinations are connected to local networks that send and receive information through the internet.Think about all of the interactions that you have during the day which require you to be online.
+1.1.4 Local Networks
+Local networks come in all sizes. They can range from simple networks consisting of two computers, to networks connecting hundreds of thousands of devices. Networks installed in small offices, or homes and home offices, are referred to as small office/home office (SOHO) networks. SOHO networks let you share resources such as printers, documents, pictures, and music, between a few local users.In business, large networks can be used to advertise and sell products, order supplies, and communicate with customers. Communication over a network is usually more efficient and less expensive than traditional forms of communication, such as regular mail or long distance phone calls. Networks allow for rapid communication such as email and instant messaging, and provide consolidation and access to information stored on network servers.Business and SOHO networks usually provide a shared connection to the internet. The internet is considered a "network of networks" because it is literally made up of thousands of local networks that are connected to each other.Click each button for more information.
+1.1.5 Mobile Devices
+The internet connects more computing devices than just desktop and laptop computers. There are devices all around that you may interact with on a daily basis that are also connected to the internet. These include mobile devices, home devices, and a variety of other connected devices.Click below to learn more about mobile devices.
+1.1.6 Connected Home Devices
+Many of the things in your home can also be connected to the internet so that they can be monitored and configured remotely.Click below to learn more about connected household devices.
+1.1.7 Other Connected Devices
+There are also many connected devices found in the world outside your home that provide convenience and useful, or even vital, information.Click below to learn more about these commonly found connected devices.
+Blank
+
+Question 1
+Question 1
+What type of network allows computers in a home office or a remote office to connect to a corporate network?
+Question 2
+Question 2
+What can be placed in or on a package so that it can be tracked?
+
+
+1.2 Data Transmission
+1.2 Data Transmission
+1.2 Data Transmission
+Scroll to begin   
+1.2.1 Video - Types of Personal Data
+Press the Play button to watch the video.
+1.2.2 The Bit
+Did you know that computers and networks only work with binary digits, zeros and ones? It can be difficult to imagine that all of our data is stored and transmitted as a series of bits. Each bit can only have one of two possible values, 0 or 1. The term bit is an abbreviation of “binary digit” and represents the smallest piece of data. Humans interpret words and pictures, computers interpret only patterns of bits. A bit is stored and transmitted as one of two possible discrete states. This can include two directions of magnetization, two distinct voltage or current levels, two distinct levels of light intensity, or any other physical system of two discrete states. For example, a light switch can be either On or Off; in binary representation, these states would correspond to 1 and 0 respectively. Every input device (mouse, keyboard, voice-activated receiver) will translate human interaction into binary code for the CPU to process and store. Every output device (printer, speakers, monitors, etc.) will take binary data and translate it back into human recognizable form. Within the computer itself, all data is processed and stored as binary. Computers use binary codes to represent and interpret letters, numbers and special characters with bits. A commonly used code is the American Standard Code for Information Interchange (ASCII). With ASCII, each character is represented by eight bits. For example: Capital letter:  A = 01000001Number: 9 = 00111001Special character: # = 00100011 Each group of eight bits, such as the representations of letters and numbers, is known as a byte. Codes can be used to represent almost any type of information digitally including computer data, graphics, photos, voice, video, and music. In the figure, enter up to five characters in the Characters field, then click the Show Me button to see the ASCII bit translation. Click Reset to enter a different group of characters.
+1.2.2 The Bit
+
+1.2.3 Common Methods of Data Transmission
+After the data is transformed into a series of bits, it must be converted into signals that can be sent across the network media to its destination. Media refers to the physical medium on which the signals are transmitted. Examples of media are copper wire, fiber-optic cable, and electromagnetic waves through the air. A signal consists of electrical or optical patterns that are transmitted from one connected device to another. These patterns represent the digital bits (i.e. the data) and travel across the media from source to destination as either a series of pulses of electricity, pulses of light, or radio waves. Signals may be converted many times before ultimately reaching the destination, as corresponding media changes between source and destination. There are three common methods of signal transmission used in networks: Electrical signals - Transmission is achieved by representing data as electrical pulses on copper wire.Optical signals - Transmission is achieved by converting the electrical signals into light pulses.Wireless signals -  Transmission is achieved by using infrared, microwave, or radio waves through the air. Click Play in the figure to see an animation of the three types of signal transmissions.In most homes and small businesses, network signals are transmitted across copper wires (cables) or Wi-Fi enabled wireless connections. Larger networks employ fiber-optic cables in order to reliably carry signals for longer distances.
+Blank
+
+Question 1
+Question 1
+A basic unit of information that represents one of two discrete states is known as a:
+Question 2
+Question 2
+When using your credit card to make purchases at several places, the credit card company can use this information to learn about your location and your preferences. This type of personal data is known as:
+Question 3
+Question 3
+Which of the following methods of signal transmission uses frequencies or pulses of light?
+
+
+1.3 Bandwidth and Throughput
+1.3 Bandwidth and Throughput
+1.3 Bandwidth and Throughput
+Scroll to begin   
+1.3.1 Bandwidth
+Streaming a movie or playing a multiplayer game requires reliable, fast connections. To support these “high bandwidth” applications, networks have to be capable of transmitting and receiving bits at a very high rate. Different physical media support the transfer of bits at different speeds. The rate of data transfer is usually discussed in terms of bandwidth and throughput. Bandwidth is the capacity of a medium to carry data. Digital bandwidth measures the amount of data that can flow from one place to another in a given amount of time. Bandwidth is typically measured in the number of bits that (theoretically) can be sent across the media in a second. Common bandwidth measurements are as follows: Thousands of bits per second (Kbps)Millions of bits per second (Mbps)Billions of bits per second (Gbps) Physical media properties, current technologies, and the laws of physics all play a role in determining available bandwidth. The table shows the commonly used units of measure for bandwidth. 
+1.3.2 Throughput
+Like bandwidth, throughput is the measure of the transfer of bits across the media over a given period of time. However, due to a number of factors, throughput does not usually match the specified bandwidth. Many factors influence throughput including: The amount of data being sent and received over the connectionThe types of data being transmittedThe latency created by the number of network devices encountered between source and destination Latency refers to the amount of time, including delays, for data to travel from one given point to another. Throughput measurements do not take into account the validity or usefulness of the bits being transmitted and received. Many messages received through the network are not destined for specific user applications. An example would be network control messages that regulate traffic and correct errors. In an internetwork or network with multiple segments, throughput cannot be faster than the slowest link of the path from sending device to the receiving device. Even if all or most of the segments have high bandwidth, it will only take one segment in the path with lower bandwidth to create a slowdown of the throughput of the entire network. There are many online speed tests that can reveal the throughput of an internet connection.
+1.3.3 Video - Throughput
+Press the Play button to watch the video.
+Blank
+
+Question 1
+Question 1
+The capacity of the medium to carry data is known as:
+Question 2
+Question 2
+Which of the following measurements includes any latency encountered during data transmissions?
+Question 3
+Question 3
+Which of the following measurements includes any latency encountered during data transmissions?
+
+
+1.4 Communications in a Connected World Summary
+1.4 Communications in a Connected World Summary
+1.4 Communications in a Connected World Summary
+Scroll to begin   
+1.4.1 What Did I Learn in this Module?
+
+1.4.2 Webster - Reflection Questions
+Maybe you don’t work in a hospital, but if you are here now it’s because, like Kishori, you use computers and want to know more about networks. Did you know that the internet is a massive network of networks that are connected, either directly or indirectly, to each other? It’s kind of like this web that I live in. One part can be broken but my web doesn’t fall apart; I can fix it, and even make it stronger. Would you like to be able to do that for your network?
+1.4.2 Webster - Reflection Questions
+
+Question
+Question
+What is the internet?
+Question
+Question
+What is an example of a binary value from everyday life?
+Question
+Question
+Which category of network components includes wires and cables used in a wired network?
+Question
+Question
+What type of device is able to create physical movement?
+Question
+Question
+What are three options for signal transmission on a network? (Choose three.)
+Question
+Question
+Who owns the internet?
+Question
+Question
+Which type of connected device is placed on objects to track and monitor them?
+Question
+Question
+A byte consists of how many bits?
+Question
+Question
+Which two numbers are possible values of a bit? (Choose two.)
+Question
+Question
+What measurement is used to indicate thousands of bits per second?
+Question
+Question
+What type of network must a home user access in order to do online shopping?
+Quiz feedback
+
+
+

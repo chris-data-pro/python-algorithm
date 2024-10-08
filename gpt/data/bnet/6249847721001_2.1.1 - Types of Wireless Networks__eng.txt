@@ -1,0 +1,63 @@
+Module Number: 6249847721001_2
+Section Number: 6249847721001_2.1
+Video Number: 6249847721001_2.1.1
+Video Title: Types of Wireless Networks__eng
+Video URL: 
+ - Our cell phones communicate on many different networks. When we're communicating over the voice channel, and we're talking say to someone on another cell phone, our communications are going through the cellular provider network. When we use a bluetooth device like a speaker or a headset or even a smart watch, that device is communicating through a completely different network. It is a much shorter range wireless network than the cellular network, and it works with different rules and different protocols. Wi-Fi is something you are probably the most familiar because Wi-Fi is supported on many different types of devices, including smartphones. When we are working on a Wi-Fi network we are usually using that network to communicate over the global internet. And lastly we have near field communications. Near field communications allow us to send information over an extremely short distance. This is how you might use your cellphone to pay for something, you know, in a grocery store or a fast food restaurant. Basically all of these communications, protocols, rules and frequencies are contained within the same device. As far as I'm concerned it's pretty amazing. Now there is one other thing that your cellphone does, and that is, it is capable of receiving GPS signals. What's happening is your cellphone is actually receiving signals from satellites that are stationed all around the Earth. And they send signals down to the various devices that have GPS capability. And when they do, your cellphone is able to figure out where it is, usually within a few meters. All of these things may actually be happening simultaneously.
+Timestamp: 00:00:06.240 - 00:00:09.632 Text: - Our cell phones communicate
+on many different networks.
+Timestamp: 00:00:09.632 - 00:00:13.381 Text: When we're communicating
+over the voice channel,
+Timestamp: 00:00:13.381 - 00:00:17.232 Text: and we're talking say to
+someone on another cell phone,
+Timestamp: 00:00:17.232 - 00:00:20.112 Text: our communications are going through the
+Timestamp: 00:00:20.112 - 00:00:22.300 Text: cellular provider network.
+Timestamp: 00:00:22.300 - 00:00:24.851 Text: When we use a bluetooth device
+Timestamp: 00:00:24.851 - 00:00:29.474 Text: like a speaker or a headset
+or even a smart watch,
+Timestamp: 00:00:29.474 - 00:00:31.725 Text: that device is communicating through a
+Timestamp: 00:00:31.725 - 00:00:34.350 Text: completely different network.
+Timestamp: 00:00:34.350 - 00:00:38.360 Text: It is a much shorter
+range wireless network
+Timestamp: 00:00:38.360 - 00:00:41.339 Text: than the cellular network, and it works
+Timestamp: 00:00:41.339 - 00:00:44.371 Text: with different rules
+and different protocols.
+Timestamp: 00:00:44.371 - 00:00:47.280 Text: Wi-Fi is something you are
+probably the most familiar
+Timestamp: 00:00:47.280 - 00:00:49.310 Text: because Wi-Fi is supported on
+Timestamp: 00:00:49.310 - 00:00:52.978 Text: many different types of
+devices, including smartphones.
+Timestamp: 00:00:52.978 - 00:00:56.125 Text: When we are working on a Wi-Fi network
+Timestamp: 00:00:56.125 - 00:00:59.531 Text: we are usually using that network to
+Timestamp: 00:00:59.531 - 00:01:02.581 Text: communicate over the global internet.
+Timestamp: 00:01:02.581 - 00:01:06.061 Text: And lastly we have near
+field communications.
+Timestamp: 00:01:06.061 - 00:01:08.992 Text: Near field communications allow us to
+Timestamp: 00:01:08.992 - 00:01:13.592 Text: send information over an
+extremely short distance.
+Timestamp: 00:01:13.592 - 00:01:16.197 Text: This is how you might use your cellphone
+Timestamp: 00:01:16.197 - 00:01:19.245 Text: to pay for something, you
+know, in a grocery store
+Timestamp: 00:01:19.245 - 00:01:21.412 Text: or a fast food restaurant.
+Timestamp: 00:01:23.019 - 00:01:27.480 Text: Basically all of these
+communications, protocols, rules
+Timestamp: 00:01:27.480 - 00:01:32.400 Text: and frequencies are contained
+within the same device.
+Timestamp: 00:01:32.400 - 00:01:35.109 Text: As far as I'm concerned
+it's pretty amazing.
+Timestamp: 00:01:35.109 - 00:01:38.579 Text: Now there is one other thing
+that your cellphone does,
+Timestamp: 00:01:38.579 - 00:01:42.739 Text: and that is, it is capable
+of receiving GPS signals.
+Timestamp: 00:01:42.739 - 00:01:45.229 Text: What's happening is your
+cellphone is actually
+Timestamp: 00:01:45.229 - 00:01:47.979 Text: receiving signals from satellites that are
+Timestamp: 00:01:47.979 - 00:01:50.562 Text: stationed all around the Earth.
+Timestamp: 00:01:51.397 - 00:01:55.411 Text: And they send signals down
+to the various devices
+Timestamp: 00:01:55.411 - 00:01:57.949 Text: that have GPS capability.
+Timestamp: 00:01:57.949 - 00:02:01.378 Text: And when they do, your
+cellphone is able to figure out
+Timestamp: 00:02:01.378 - 00:02:05.421 Text: where it is, usually within a few meters.
+Timestamp: 00:02:05.421 - 00:02:07.172 Text: All of these things may actually
+Timestamp: 00:02:07.172 - 00:02:09.505 Text: be happening simultaneously.

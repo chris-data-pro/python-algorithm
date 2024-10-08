@@ -1,0 +1,41 @@
+Module Number: 6250034200001_12
+Section Number: 6250034200001_12.5
+Video Number: 6250034200001_12.5.1
+Video Title: Remote Access with Telnet or SSH__eng
+Video URL: 
+ - In this video we're going to demonstrate how to access a server remotely using either Telnet or SSH. So here I've brought up some software known as Tera Term, which allows me to use Telnet or SSH. Telnet and SSH allows me to remotely access a server, another device, as if I was actually sitting at that device. I'm going to use SSH, which is a more secure version of Telnet. So in the Host name I have oslab.cis.cabrillo.edu. This can either be a host name or an IP address. This is the name of a server that I have at school, Cabrillo College, where I happen to teach. So at this point I have SSH selected. I'm just going to click on OK. It asks me for a username and password. So I put in my username, rick, and I'm going to put in the password. Click on OK. So as you can see, I have remotely connected to the server Opus, which is one of the servers we have at my school, Cabrillo College. So it is as if I am sitting at that computer itself, typing in the commands. But instead I'm miles away, remotely accessing it.
+Timestamp: 00:00:12.459 - 00:00:14.459 Text: - In this video we're going to demonstrate
+Timestamp: 00:00:14.459 - 00:00:17.468 Text: how to access a server remotely
+Timestamp: 00:00:17.468 - 00:00:19.718 Text: using either Telnet or SSH.
+Timestamp: 00:00:20.589 - 00:00:22.771 Text: So here I've brought up some software
+Timestamp: 00:00:22.771 - 00:00:24.120 Text: known as Tera Term,
+Timestamp: 00:00:24.120 - 00:00:27.203 Text: which allows me to use Telnet or SSH.
+Timestamp: 00:00:28.553 - 00:00:32.800 Text: Telnet and SSH allows me to
+remotely access a server,
+Timestamp: 00:00:32.800 - 00:00:36.967 Text: another device, as if I was
+actually sitting at that device.
+Timestamp: 00:00:38.099 - 00:00:39.448 Text: I'm going to use SSH,
+Timestamp: 00:00:39.448 - 00:00:42.865 Text: which is a more secure version of Telnet.
+Timestamp: 00:00:44.599 - 00:00:48.766 Text: So in the Host name I have
+oslab.cis.cabrillo.edu.
+Timestamp: 00:00:50.571 - 00:00:54.379 Text: This can either be a host
+name or an IP address.
+Timestamp: 00:00:54.379 - 00:00:57.534 Text: This is the name of a server
+that I have at school,
+Timestamp: 00:00:57.534 - 00:01:01.201 Text: Cabrillo College, where I happen to teach.
+Timestamp: 00:01:01.201 - 00:01:04.680 Text: So at this point I have SSH selected.
+Timestamp: 00:01:04.680 - 00:01:07.891 Text: I'm just going to click on OK.
+Timestamp: 00:01:07.891 - 00:01:11.400 Text: It asks me for a username and password.
+Timestamp: 00:01:11.400 - 00:01:13.819 Text: So I put in my username, rick,
+Timestamp: 00:01:13.819 - 00:01:17.143 Text: and I'm going to put in the password.
+Timestamp: 00:01:17.143 - 00:01:18.143 Text: Click on OK.
+Timestamp: 00:01:19.931 - 00:01:21.931 Text: So as you can see, I
+have remotely connected
+Timestamp: 00:01:21.931 - 00:01:25.171 Text: to the server Opus, which
+is one of the servers
+Timestamp: 00:01:25.171 - 00:01:28.440 Text: we have at my school, Cabrillo College.
+Timestamp: 00:01:28.440 - 00:01:32.240 Text: So it is as if I am sitting
+at that computer itself,
+Timestamp: 00:01:32.240 - 00:01:34.369 Text: typing in the commands.
+Timestamp: 00:01:34.369 - 00:01:38.536 Text: But instead I'm miles away,
+remotely accessing it.

@@ -1,0 +1,111 @@
+Module Title: Module 3: Artificial Intelligence and Machine Learning
+Module URL: "http://cisco_i2ds_mod3"
+Module 3: Artificial Intelligence and Machine Learning
+Analyze the concepts of AI and ML.Scroll down  and select ‘Introduction’ to begin.
+3.0 Introduction
+3.0 Introduction
+3.0 Introduction
+Scroll to begin   
+3.0.1 Video - What is ML and AI?
+
+3.1 AI Fact and Fiction
+Scroll to begin   
+3.1  AI Fact and Fiction
+3.1 AI Fact and Fiction
+quick nav
+
+3.1.1 Video - 'Data Crunchers' Use of Artificial Intelligence in Agriculture
+Press the Play button to watch the video.
+3.1.2 AI All Around Us
+There are many applications of artificial intelligence (AI) that we see and use every day.Select each application to learn how AI is changing your day-to-day activities.
+Free Response
+As you have seen, AI is growing in popularity. From agriculture to healthcare, AI is becoming a standard part of our daily lives. Use the space below to reflect on some areas of your everyday life that AI touches. 
+3.1.4 Video - AI in Action
+Press the Play button to watch the video.
+New Component Title
+
+3.2 Big Data and Machine Learning
+3.2 Big Data and Machine Learning
+3.2 Big Data and Machine Learning
+Scroll to begin   
+3.2.1 Video - What is Machine Learning?
+3.2.1 Video - What is Machine Learning?
+Press the Play button to watch the video.
+3.2.5 The Machine Learning Process
+Developing a machine learning solution is seldom a linear process. Several trial-and-error steps are necessary to fine-tune the solution. The details of each step performed by the Data Crunchers data scientists as they work on the new weed identification and eradication model are as follows:Step 1. Data preparation - Perform data cleaning procedures such as transformation into a structured format and removing missing data and noisy/corrupted observations.   Step 2a. Learning data - Create a learning data set used to train the model. Step 2b. Testing data - Create a test dataset used to evaluate the model performance. Only perform this step in the case of supervised learning.   Step 3. Learning Process Loop - Selection. An algorithm is chosen based on the problem. Depending on the selected algorithm, additional pre-processing steps might be necessary.Step 4. Learning Process Loop - Evaluation. This selected algorithm's performance is evaluated on the learning data. If the algorithm and the model reach an acceptable performance on learning data, the solution validates the test data. Otherwise, repeat the learning process with a proposed new model and algorithm.Step 5. Model evaluation - Test the solution on the test data. The performances on learning data are not necessarily transferrable to test data. The more complex and fine-tuned the model is, the higher the chances are that the model will become prone to overfitting, which means it cannot perform accurately against unseen data. Overfitting can result in going back to the model learning process.   Step 6. Model implementation - After the model achieves satisfactory performance on test data, implement the model. Implementing the model means performing the necessary tasks to scale the machine learning solution to big data.  
+New Component Title
+
+Pattern Recognition Examples
+Pattern recognition algorithms can be applied to different types of digital data, including images, texts, or videos, and can be used to automate and solve complicated analytical problems fully. The applications and use cases for pattern recognition are virtually unlimited. Some examples include:  Mobile Security - Identifying fingerprints or facial recognition to gain access to a smartphone.  Engineering - Speech recognition by digital assistant systems such as Alexa, Google Assistant, and Siri.  Geology - Detecting specific types of rocks and minerals and interpreting temporal patterns in seismic array recordings.  Biomedical - Using biometric patterns to identify tumor and cancer cells in the body.
+3.3 AI and ML Summary
+Scroll to begin   
+3.3 AI and ML Summary
+3.3 AI and ML Summary
+Question
+Question
+When several items are grouped, which type of machine learning algorithm can determine which items in the group predict the presence of other items?
+Two types of unsupervised machine learning algorithms are association and clustering. Association algorithms determine which items in the group predict the presence of other items when given a number of items that are grouped together. Clustering algorithms determine which items occur most often in clusters when given many items.
+Question
+Question
+Which machine learning algorithm uses data sets verified by experts as its learning basis?
+Supervised machine learning algorithms can learn from a dataset that has already been processed by people. Two types of algorithms used with supervised machine learning are regression algorithms and classification algorithms.
+Quiz feedback
+
+New Component Title
+
+Question
+Question
+Which method describes how a machine learns using the reinforcement machine learning model?
+Reinforcement learning model teaches the machine through trial and error using feedback from its actions and experiences. This is also known as learning from mistakes. It involves assigning positive values to desired outcomes and negative values to undesired effects.
+Question
+Question
+Which step in the machine learning process transforms data into a structured format by removing missing data and corrupted observations?
+A typical machine learning process would involve several steps including:Step 1. Data preparation – Perform data cleaning procedures such as transformation into a structured format and removing missing data and noisy/corrupted observations.Step 2. Learning data - Create a learning data set that will be used to train the model.Step 3. Testing data - Create a test set that will be used to evaluate the model performance. Note that this step is only performed in the case of supervised learning.Step 4. Learning Process loop. An algorithm is chosen based on the problem required, and its performance is evaluated on the learning data.Step 5. Model evaluation - Test the solution on the test data. The performances on learning data are not necessarily transferable on test data. The more complex and fine-tuned the model is, the higher the chances are that the model will become prone to over-fitting, which means it cannot perform accurately against unseen data. Over-fitting can result in going back to the model learning process.Step 6. Model implementation - Once the model achieves satisfactory performance on test data, the model can be implemented. This means performing the necessary tasks to scale the machine learning solution to Big Data.
+Question
+Question
+In training a pattern recognition system which data set measures the accuracy achieved by the model?
+Pattern recognition uses the concept of learning to classify data based on statistical information gained from patterns and their representations. When training the pattern recognition system, the data set is divided into two groups: one to train the model and the other to test the model. The training data set is used to build the model while the testing data set is used to measure the model's accuracy.
+New Component Title
+
+3.1.5 Lab - Explore CopyAI
+This lab provides opportunities for learners to explore tools for creative marketing material generation using AI language model provided by the website CopyAI.Part 1: Explore the CopyAI Website and its ToolsPart 2: Explore Access Options and Pricing InformationPart 3: Sign up and Create a Marketing Product
+3.3.1 What Did I Learn in This Module?
+In this module, you learned the basics of artificial intelligence (AI) and machine learning, how big data is utilized by machine learning, and the impacts of AI on the world around us. 
+3.3.2 Reflection
+Imagine a future where personal identification is no longer needed. Document owners can be identified strictly by handwriting, and individuals can be identified by their unique voices. The technology to accomplish this already exists. With machine learning, we already have image and speech recognition, statistical arbitrage, and predictive analytics, not to mention extraction of unstructured data to prevent, identify, and diagnose health disorders. It seems that it will become increasingly hard to hide your identity and daily activities in the near future. Perhaps the medical field will make gains in identifying and treating childhood illnesses. Whereas most machine learning is being used to improve our daily lives and future, there are concerns. It stands to ask, can machine learning and artificial intelligence make mistakes? What systems are in place to catch those mistakes before any damage has occurred?  
+3.0.2 What Will I Learn in This Module?
+In this module, you will be introduced to artificial intelligence and machine learning and how these revolutionary technologies are being utilized across the world today. Module Title: Artificial Intelligence and Machine LearningModule Objective:  Analyze the concepts of AI and ML.
+3.2.3 Types of Machine Learning Analysis
+Machine learning encompasses different algorithms or models with broad applicability, while others are suited for specific applications. Machine learning is divided into three primary learning model approaches supervised, unsupervised, and reinforcement. Each model differs in training; each has its strengths and faces different tasks or problems. When choosing a machine learning model to deploy, an organization needs to understand the available data and the problem to be solved.Select the examples below to learn more about each type of machine learning model.
+New Component Title
+
+New Component Title
+
+3.2.7 Training Machines to Recognize Patterns
+3.2.7 Training Machines to Recognize Patterns
+Earlier, you learned that machine learning is a subset of artificial intelligence. Artificial Intelligence is the concept that a system can learn from data, identify patterns, and make decisions with little or no human intervention. Machine learning has many valuable applications in the field of data analytics. One critical application is pattern recognition.Pattern recognition utilizes machine learning algorithms to identify patterns in digital data. These patterns are then applied to different datasets with the goal of recognizing the same or similar patterns in the new data. The data can be contained in many different formats, such as text, photographs, or videos. For example, if referencing classes of birds, a description of a bird would be a pattern. The types could be sparrows, robins, or finch, among others. Using computer vision, image processing technologies, and pattern recognition, we can extract specific patterns from images of birds in this example and compare them to pictures of birds stored in a database.Pattern recognition uses the concept of learning to classify data based on statistical information gained from patterns and their representations. Learning enables the pattern recognition systems to be "trained" and adaptable to provide more accurate results. When training the pattern recognition system, a portion of the dataset prepares the system, and the remaining amount tests the system's accuracy. As shown in the figure below, the data set divides into two groups: train the model and test the model. The training data set is used to build the model and consists of about 80% of the data. It contains the set of images used to train the system. The testing data set consists of about 20% of the data and measures the model's accuracy. For example, if the system that identifies categories of birds can correctly identify seven out of ten birds, then the system's accuracy is 70%.
+New Component Title
+
+New Component Title
+
+Free Response
+Machine learning has become increasingly popular among businesses and organizations across all industries to improve efficiency and productivity. Use the internet to research machine learning use cases. Identify five use cases that span different industries or applications and use the space below to discuss your findings. 
+Scenario 1
+Select the correct machine learning model for each scenario.Scenario 1
+Correct! A key feature of reinforcement machine learning is that it learns from mistakes. The system learns by trial and error to come up with solutions. In this example the system is creating an adaptive control system by learning, through trial and error, from its own experiences.
+Scenario 2
+Scenario 2
+Correct! Supervised learning requires a supervisor, commonly a human, to provide the datasets to train the algorithm to classify data accurately. In this example a supervised learning algorithm to classify facial features by using a supervisor provided dataset. 
+Scenario 3
+Scenario 3
+Correct! Unsupervised learning uses machine learning algorithms to identify patterns in the data that have not been previously labeled. The algorithms themselves identify correlations or trends in the data without input from the data scientists. In this example the algorithm is looking for patterns in the movie viewing behavior of customers so they can be grouped with other customers with similar view behavior.
+Scenario
+The data scientists working with our client, AgroTech Robotics, reviewed the process used to create the machine learning model. They want you to document the process, including all the steps necessary to complete the project. Are you up to the task?
+Figure of the Machine Learning Process
+
+Identify Machine Learning Process Steps
+The first step, Data Preparation, and last the last step, Model Implementation, are given.Select the appropriate descriptions for the Steps 2 through 5.
+Correct! Looks like you paid close attention to your teammates as they described the process from preparing the data to implementation of new model. The machine learning process steps in order are: Step 1 - Prepare the date with data cleaning procedures Step 2 - Create a learning data set used to train the model and testing a dataset to evaluate the model Step 3 - Algorithm Is chosen based on problem to be solved Step 4 - Algorithm is evaluated on the learning data Step 5 - Solution is tested against the test data Step 6 - Model is implemented. 
+3.2.8 Practice Item - Training Machines to Recognize Data
+Apply what you now know about machine learning by selecting the correct response in the following sentences. 
+Correct! Pattern recognition requires the system to “learn” to give accurate results. Learning is the most critical phase to determine how well the system performs on the data provided to the system. For the learning process, the entire dataset divides into two sets. The first set is the training set used in building and training the model. The second set, the testing set,  is used in testing the model and verifying that it produces the correct output. Generally, the training set consists of 80% of the data, and the testing set consists of the other 20%.

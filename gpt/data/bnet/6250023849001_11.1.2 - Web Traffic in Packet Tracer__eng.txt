@@ -1,0 +1,80 @@
+Module Number: 6250023849001_11
+Section Number: 6250023849001_11.1
+Video Number: 6250023849001_11.1.2
+Video Title: Web Traffic in Packet Tracer__eng
+Video URL: 
+ - In this video, we're going to use Packet Tracer to illustrate how a webpage is obtained from a web server. So in this case, we have a PC that is connected through a simulated internet cloud to a web server. And that web server is at www.learnip.com. It also is at the IP address of 172.33.100.50. So, we are going to go out to our PC here and we are going to request a webpage. Now, in order to request a webpage, we have to use a client that is appropriate for a web server. So, we're going to start out by choosing the web client and the appropriate client for viewing a webpage is the web browser. So, we're going to open up the web browser and we're going to start the capture utility and then we're going to capture the traffic from the PC0 to the web server. So, we're going to put the URL for the learnip.com on the browser and we are going to request the packet. And you can see that the HTTP packets are being generated and are traveling across the simulated internet over to the web server. The web server is then going to respond and deliver the webpage back to the PC. At this point we are going to stop the capture and take a look at some of these packets. If we examine the packet information by clicking on the box next to the packet we want to investigate, we can see here that it is an HTTP packet which is generating a web request. It is using TCP as its transporting protocol and it is going to the IP address, the destination IP address, of the web server. You can see in this packet that the source IP address is the IP address of PC0. You can also that when it is communicated, it's initially formatted as an Ethernet frame and it goes across the Ethernet connection between PC0 and its first hub to get to the internet. When the web server responds, the server takes in that request that it received from PC0 and then it sends back the response. And as you can see, the response is destined for PC0, as the destination. This process will continue as all information that is related to the webpage gets transmitted.
+Timestamp: 00:00:12.787 - 00:00:15.887 Text: - In this video, we're
+going to use Packet Tracer
+Timestamp: 00:00:15.887 - 00:00:20.054 Text: to illustrate how a webpage
+is obtained from a web server.
+Timestamp: 00:00:21.719 - 00:00:26.151 Text: So in this case, we have a
+PC that is connected through
+Timestamp: 00:00:26.151 - 00:00:30.106 Text: a simulated internet
+cloud to a web server.
+Timestamp: 00:00:30.106 - 00:00:33.606 Text: And that web server is at www.learnip.com.
+Timestamp: 00:00:37.515 - 00:00:41.348 Text: It also is at the IP
+address of 172.33.100.50.
+Timestamp: 00:00:45.411 - 00:00:49.578 Text: So, we are going to go out to
+our PC here and we are going
+Timestamp: 00:00:51.573 - 00:00:53.763 Text: to request a webpage.
+Timestamp: 00:00:53.763 - 00:00:58.761 Text: Now, in order to request a
+webpage, we have to use a client
+Timestamp: 00:00:58.761 - 00:01:02.104 Text: that is appropriate for a web server.
+Timestamp: 00:01:02.104 - 00:01:05.430 Text: So, we're going to start out
+by choosing the web client
+Timestamp: 00:01:05.430 - 00:01:09.486 Text: and the appropriate client
+for viewing a webpage
+Timestamp: 00:01:09.486 - 00:01:11.187 Text: is the web browser.
+Timestamp: 00:01:11.187 - 00:01:13.556 Text: So, we're going to open up
+the web browser and we're
+Timestamp: 00:01:13.556 - 00:01:17.723 Text: going to start the capture
+utility and then we're going
+Timestamp: 00:01:19.239 - 00:01:23.406 Text: to capture the traffic from
+the PC0 to the web server.
+Timestamp: 00:01:24.272 - 00:01:28.189 Text: So, we're going to put the
+URL for the learnip.com
+Timestamp: 00:01:30.581 - 00:01:34.748 Text: on the browser and we are
+going to request the packet.
+Timestamp: 00:01:36.305 - 00:01:41.155 Text: And you can see that the HTTP
+packets are being generated
+Timestamp: 00:01:41.155 - 00:01:44.641 Text: and are traveling across
+the simulated internet
+Timestamp: 00:01:44.641 - 00:01:46.558 Text: over to the web server.
+Timestamp: 00:01:47.919 - 00:01:51.169 Text: The web server is then going to respond
+Timestamp: 00:01:53.162 - 00:01:56.412 Text: and deliver the webpage back to the PC.
+Timestamp: 00:01:58.599 - 00:02:00.761 Text: At this point we are
+going to stop the capture
+Timestamp: 00:02:00.761 - 00:02:02.969 Text: and take a look at some of these packets.
+Timestamp: 00:02:02.969 - 00:02:05.181 Text: If we examine the packet
+information by clicking
+Timestamp: 00:02:05.181 - 00:02:09.471 Text: on the box next to the packet
+we want to investigate,
+Timestamp: 00:02:09.471 - 00:02:13.296 Text: we can see here that it is an HTTP packet
+Timestamp: 00:02:13.296 - 00:02:16.129 Text: which is generating a web request.
+Timestamp: 00:02:17.991 - 00:02:22.125 Text: It is using TCP as its
+transporting protocol
+Timestamp: 00:02:22.125 - 00:02:25.614 Text: and it is going to the IP address,
+Timestamp: 00:02:25.614 - 00:02:29.113 Text: the destination IP
+address, of the web server.
+Timestamp: 00:02:29.113 - 00:02:32.128 Text: You can see in this packet
+that the source IP address
+Timestamp: 00:02:32.128 - 00:02:34.211 Text: is the IP address of PC0.
+Timestamp: 00:02:36.097 - 00:02:38.544 Text: You can also that when it is communicated,
+Timestamp: 00:02:38.544 - 00:02:42.294 Text: it's initially formatted
+as an Ethernet frame
+Timestamp: 00:02:43.291 - 00:02:47.458 Text: and it goes across the
+Ethernet connection between PC0
+Timestamp: 00:02:48.742 - 00:02:52.159 Text: and its first hub to get to the internet.
+Timestamp: 00:02:54.570 - 00:02:56.987 Text: When the web server responds,
+Timestamp: 00:02:58.825 - 00:03:02.189 Text: the server takes in that
+request that it received
+Timestamp: 00:03:02.189 - 00:03:05.939 Text: from PC0 and then it
+sends back the response.
+Timestamp: 00:03:08.400 - 00:03:12.577 Text: And as you can see, the
+response is destined for PC0,
+Timestamp: 00:03:12.577 - 00:03:14.554 Text: as the destination.
+Timestamp: 00:03:14.554 - 00:03:18.156 Text: This process will continue
+as all information
+Timestamp: 00:03:18.156 - 00:03:22.156 Text: that is related to the
+webpage gets transmitted.

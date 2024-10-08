@@ -1,0 +1,90 @@
+Module Number: 6250018648001_9
+Section Number: 6250018648001_9.2
+Video Number: 6250018648001_9.2.1
+Video Title: DHCPv4 Operation__eng
+Video URL: 
+ - Hi, in this lesson we're going to talk about how DHCP works. Earlier, you learned that IP address assignments can be given out in two ways, statically, meaning that someone actually sits down and configures the IP address, or dynamically, where the device gets its address from a DHCP server. DHCP means the protocol that is being used to obtain that IP address. DHCP stands for dynamic host configuration protocol. So how does that protocol work? The protocol describes a set of messages that go between the host wanting an IP address and the DHCP server that gives out the IP address. So basically what we have is, we have a host system that sends out a packet called a DHCP discover. And what this packet is doing is actually looking for a DHCP server. The packet is a broadcast packet, and it contains the MAC address of the device requesting the IP address and it is destined for any device on the network that's configured to be a DHCP server. What kind of devices can be DHCP servers? Typically, in a home network, the home router, the wireless router or the wired router, is configured to give out DHCP. In larger environments, often this is a server that would be doing other functions, like Microsoft domain controlling, or it might be a LINUX server that also doubles as a web server. So basically, the DHCP server can be a number of different types of devices. So when the DHCP discover goes out, since it is a broadcast, any DHCP server attached to the network will hear that. The DHCP server then responds with a DHCP offer. The DHCP offer packet contains an IP address that the host, the individual device, could use, if it accepts it. When the host receives the DHCP offer packet from the DHCP server containing the IP address, and here's the IP address that was sent, and the subnet mask, as well as the default gateway address. Once the host receives that, it sends back a DHCP request packet that it will accept the offer. And it will request the IP address that the server had sent it, 192.168.1.15. The device will then take this information and enter it into its IP address settings. And at that time, once the server receives the DHCP request, the server will send back a DHCP acknowledgement that will indicate to the host that the server is placing this IP address into its table associated with the MAC address that was sent from the host.
+Timestamp: 00:00:06.480 - 00:00:08.453 Text: - Hi, in this lesson we're going to talk
+Timestamp: 00:00:08.453 - 00:00:10.203 Text: about how DHCP works.
+Timestamp: 00:00:12.384 - 00:00:15.723 Text: Earlier, you learned that
+IP address assignments can
+Timestamp: 00:00:15.723 - 00:00:19.043 Text: be given out in two
+ways, statically, meaning
+Timestamp: 00:00:19.043 - 00:00:21.355 Text: that someone actually
+sits down and configures
+Timestamp: 00:00:21.355 - 00:00:25.395 Text: the IP address, or
+dynamically, where the device
+Timestamp: 00:00:25.395 - 00:00:28.395 Text: gets its address from a DHCP server.
+Timestamp: 00:00:29.744 - 00:00:32.327 Text: DHCP means the protocol that is
+Timestamp: 00:00:34.523 - 00:00:37.606 Text: being used to obtain that IP address.
+Timestamp: 00:00:38.475 - 00:00:42.642 Text: DHCP stands for dynamic
+host configuration protocol.
+Timestamp: 00:00:44.472 - 00:00:46.923 Text: So how does that protocol work?
+Timestamp: 00:00:46.923 - 00:00:49.504 Text: The protocol describes a set of messages
+Timestamp: 00:00:49.504 - 00:00:52.893 Text: that go between the host
+wanting an IP address
+Timestamp: 00:00:52.893 - 00:00:57.275 Text: and the DHCP server that
+gives out the IP address.
+Timestamp: 00:00:57.275 - 00:01:02.034 Text: So basically what we have
+is, we have a host system
+Timestamp: 00:01:02.034 - 00:01:05.951 Text: that sends out a packet
+called a DHCP discover.
+Timestamp: 00:01:09.803 - 00:01:13.702 Text: And what this packet is
+doing is actually looking
+Timestamp: 00:01:13.702 - 00:01:15.202 Text: for a DHCP server.
+Timestamp: 00:01:16.782 - 00:01:19.343 Text: The packet is a broadcast packet,
+Timestamp: 00:01:19.343 - 00:01:23.030 Text: and it contains the MAC
+address of the device
+Timestamp: 00:01:23.030 - 00:01:26.697 Text: requesting the IP address
+and it is destined
+Timestamp: 00:01:28.253 - 00:01:31.223 Text: for any device on the
+network that's configured
+Timestamp: 00:01:31.223 - 00:01:32.890 Text: to be a DHCP server.
+Timestamp: 00:01:34.373 - 00:01:37.682 Text: What kind of devices can be DHCP servers?
+Timestamp: 00:01:37.682 - 00:01:41.213 Text: Typically, in a home
+network, the home router,
+Timestamp: 00:01:41.213 - 00:01:43.732 Text: the wireless router or the wired router,
+Timestamp: 00:01:43.732 - 00:01:46.315 Text: is configured to give out DHCP.
+Timestamp: 00:01:47.293 - 00:01:51.126 Text: In larger environments,
+often this is a server
+Timestamp: 00:01:52.382 - 00:01:54.424 Text: that would be doing other functions,
+Timestamp: 00:01:54.424 - 00:01:57.602 Text: like Microsoft domain
+controlling, or it might
+Timestamp: 00:01:57.602 - 00:02:02.493 Text: be a LINUX server that also
+doubles as a web server.
+Timestamp: 00:02:02.493 - 00:02:06.064 Text: So basically, the DHCP
+server can be a number
+Timestamp: 00:02:06.064 - 00:02:08.234 Text: of different types of devices.
+Timestamp: 00:02:08.234 - 00:02:11.384 Text: So when the DHCP discover goes out,
+Timestamp: 00:02:11.384 - 00:02:15.133 Text: since it is a broadcast,
+any DHCP server attached
+Timestamp: 00:02:15.133 - 00:02:17.633 Text: to the network will hear that.
+Timestamp: 00:02:18.835 - 00:02:21.252 Text: The DHCP server then responds
+Timestamp: 00:02:24.893 - 00:02:26.393 Text: with a DHCP offer.
+Timestamp: 00:02:34.053 - 00:02:37.720 Text: The DHCP offer packet
+contains an IP address
+Timestamp: 00:02:38.704 - 00:02:42.613 Text: that the host, the individual device,
+Timestamp: 00:02:42.613 - 00:02:45.594 Text: could use, if it accepts it.
+Timestamp: 00:02:45.594 - 00:02:49.205 Text: When the host receives
+the DHCP offer packet
+Timestamp: 00:02:49.205 - 00:02:53.122 Text: from the DHCP server
+containing the IP address,
+Timestamp: 00:02:56.435 - 00:02:59.768 Text: and here's the IP address that was sent,
+Timestamp: 00:03:00.675 - 00:03:02.342 Text: and the subnet mask,
+Timestamp: 00:03:08.093 - 00:03:11.343 Text: as well as the default gateway address.
+Timestamp: 00:03:18.064 - 00:03:21.564 Text: Once the host receives that, it sends back
+Timestamp: 00:03:22.555 - 00:03:26.722 Text: a DHCP request packet that
+it will accept the offer.
+Timestamp: 00:03:29.725 - 00:03:32.493 Text: And it will request the IP address
+Timestamp: 00:03:32.493 - 00:03:35.993 Text: that the server had sent it, 192.168.1.15.
+Timestamp: 00:03:39.355 - 00:03:42.855 Text: The device will then take this information
+Timestamp: 00:03:43.901 - 00:03:47.401 Text: and enter it into its IP address settings.
+Timestamp: 00:03:48.861 - 00:03:51.712 Text: And at that time, once the server receives
+Timestamp: 00:03:51.712 - 00:03:55.081 Text: the DHCP request, the
+server will send back
+Timestamp: 00:03:55.081 - 00:03:59.803 Text: a DHCP acknowledgement that
+will indicate to the host
+Timestamp: 00:03:59.803 - 00:04:03.303 Text: that the server is placing this IP address
+Timestamp: 00:04:04.910 - 00:04:07.981 Text: into its table associated
+with the MAC address
+Timestamp: 00:04:07.981 - 00:04:10.314 Text: that was sent from the host.

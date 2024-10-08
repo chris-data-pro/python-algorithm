@@ -1,0 +1,55 @@
+Module Number: 2
+Section Number: 2.2
+Video Number: 2.2.1
+Video Title: How We Store Data and its Challenges
+Video URL: 
+ The rise of big data means that more data is being generated and stored than ever before. The explosion of big data is responsible for 80% to 90% of all generated data, according to the U.S. Chamber of Commerce. All this generated data must be stored and then processed for analysis. This requires infrastructure specifically designed to securely store, manage and retrieve virtually limitless volumes of data, which could be a challenge for traditional on premises legacy data warehousing solutions. A data warehousing solution, stores data and files or folders in an organized manner that is readily available for reporting and data analysis. Traditional data warehousing solutions are best suited for structured data. They are not optimized to handle the large volumes of complex high velocity, unstructured big data and are challenged by the three v's of big data, volume, variety, and velocity. Big data requires distributed scalable non relational storage systems that can process large quantities of complex data in real time. Cloud service providers such as Amazon, Microsoft and Google each have popular cloud data warehousing products that can meet requirements and provide business solutions to warehouse and analyze their data. Cloud Data Warehousing provides distributed scalable non relational storage systems that can process large quantities of complex data, in real time. With cloud-based data warehousing, companies are not constrained by physical data centers and can dynamically scale storage resources to meet changing business budgets and requirements. In addition, the cloud offers the advantages of flexibility, collaboration and availability from anywhere. Moving from a traditional warehousing solution to a cloud based solution, allows companies to dynamically scale up or down data warehouse capacity, without upfront capital investments or time consuming infrastructure deployment. (upbeat music)
+Timestamp: 00:00:00.000 - 00:00:01.230 Text: The rise of big data
+Timestamp: 00:00:01.230 - 00:00:03.120 Text: means that more data is being generated
+Timestamp: 00:00:03.120 - 00:00:05.190 Text: and stored than ever before.
+Timestamp: 00:00:05.190 - 00:00:07.320 Text: The explosion of big data is responsible
+Timestamp: 00:00:07.320 - 00:00:10.050 Text: for 80% to 90% of all generated data,
+Timestamp: 00:00:10.050 - 00:00:12.363 Text: according to the U.S. Chamber of Commerce.
+Timestamp: 00:00:13.589 - 00:00:15.000 Text: All this generated data must be stored
+Timestamp: 00:00:15.000 - 00:00:17.880 Text: and then processed for analysis.
+Timestamp: 00:00:17.880 - 00:00:20.370 Text: This requires infrastructure specifically
+Timestamp: 00:00:20.370 - 00:00:22.780 Text: designed to securely store, manage
+Timestamp: 00:00:23.766 - 00:00:26.400 Text: and retrieve virtually limitless volumes of data,
+Timestamp: 00:00:26.400 - 00:00:28.590 Text: which could be a challenge for traditional
+Timestamp: 00:00:28.590 - 00:00:32.043 Text: on premises legacy data warehousing solutions.
+Timestamp: 00:00:33.150 - 00:00:34.830 Text: A data warehousing solution,
+Timestamp: 00:00:34.830 - 00:00:38.040 Text: stores data and files or folders in an organized manner
+Timestamp: 00:00:38.040 - 00:00:42.060 Text: that is readily available for reporting and data analysis.
+Timestamp: 00:00:42.060 - 00:00:44.460 Text: Traditional data warehousing solutions
+Timestamp: 00:00:44.460 - 00:00:46.890 Text: are best suited for structured data.
+Timestamp: 00:00:46.890 - 00:00:49.560 Text: They are not optimized to handle the large volumes
+Timestamp: 00:00:49.560 - 00:00:52.830 Text: of complex high velocity, unstructured big data
+Timestamp: 00:00:52.830 - 00:00:55.830 Text: and are challenged by the three v's of big data,
+Timestamp: 00:00:55.830 - 00:00:58.530 Text: volume, variety, and velocity.
+Timestamp: 00:00:58.530 - 00:01:00.570 Text: Big data requires distributed
+Timestamp: 00:01:00.570 - 00:01:03.420 Text: scalable non relational storage systems
+Timestamp: 00:01:03.420 - 00:01:06.240 Text: that can process large quantities of complex data
+Timestamp: 00:01:06.240 - 00:01:08.040 Text: in real time.
+Timestamp: 00:01:08.040 - 00:01:11.220 Text: Cloud service providers such as Amazon, Microsoft
+Timestamp: 00:01:11.220 - 00:01:13.830 Text: and Google each have popular cloud data
+Timestamp: 00:01:13.830 - 00:01:16.650 Text: warehousing products that can meet requirements
+Timestamp: 00:01:16.650 - 00:01:19.290 Text: and provide business solutions to warehouse
+Timestamp: 00:01:19.290 - 00:01:20.790 Text: and analyze their data.
+Timestamp: 00:01:20.790 - 00:01:23.430 Text: Cloud Data Warehousing provides distributed
+Timestamp: 00:01:23.430 - 00:01:25.950 Text: scalable non relational storage systems
+Timestamp: 00:01:25.950 - 00:01:29.040 Text: that can process large quantities of complex data,
+Timestamp: 00:01:29.040 - 00:01:30.750 Text: in real time.
+Timestamp: 00:01:30.750 - 00:01:33.090 Text: With cloud-based data warehousing,
+Timestamp: 00:01:33.090 - 00:01:34.530 Text: companies are not constrained
+Timestamp: 00:01:34.530 - 00:01:36.360 Text: by physical data centers
+Timestamp: 00:01:36.360 - 00:01:39.390 Text: and can dynamically scale storage resources
+Timestamp: 00:01:39.390 - 00:01:42.720 Text: to meet changing business budgets and requirements.
+Timestamp: 00:01:42.720 - 00:01:46.050 Text: In addition, the cloud offers the advantages of flexibility,
+Timestamp: 00:01:46.050 - 00:01:49.380 Text: collaboration and availability from anywhere.
+Timestamp: 00:01:49.380 - 00:01:52.020 Text: Moving from a traditional warehousing solution
+Timestamp: 00:01:52.020 - 00:01:53.703 Text: to a cloud based solution,
+Timestamp: 00:01:54.664 - 00:01:56.310 Text: allows companies to dynamically scale up
+Timestamp: 00:01:56.310 - 00:01:58.680 Text: or down data warehouse capacity,
+Timestamp: 00:01:58.680 - 00:02:00.570 Text: without upfront capital investments
+Timestamp: 00:02:00.570 - 00:02:03.423 Text: or time consuming infrastructure deployment.
+Timestamp: 00:02:04.914 - 00:02:06.358 Text: (upbeat music)

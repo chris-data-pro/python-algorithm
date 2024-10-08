@@ -1,0 +1,30 @@
+Module Number: 6250018237001_8
+Section Number: 6250018237001_8.6
+Video Number: 6250018237001_8.6.3
+Video Title: IPv4 Broadcast__eng
+Video URL: 
+ - In this video, we're going to take a look at broadcast transmissions. So we have a packet with the source IPv4 address 172.16.4.1 and a destination IPv4 address of 255.255.255.255. That's a special address, meaning it's destined for all devices all on the network. It's known as a broadcast. If we take a look here, the packet leaves the source 172.16.4.1 and notice that our Ethernet switch flooded out the packet out all ports, except the incoming port. And it was received by every device on the network. Now when this router receives the broadcast, it'll not forward the broadcast packet to other networks. But a broadcast means every device on the network will receive the IPv4 packet.
+Timestamp: 00:00:06.512 - 00:00:08.288 Text: - In this video, we're going to take a look
+Timestamp: 00:00:08.288 - 00:00:11.288 Text: at broadcast transmissions.
+Timestamp: 00:00:11.288 - 00:00:15.455 Text: So we have a packet with the
+source IPv4 address 172.16.4.1
+Timestamp: 00:00:19.460 - 00:00:23.627 Text: and a destination IPv4
+address of 255.255.255.255.
+Timestamp: 00:00:28.912 - 00:00:30.188 Text: That's a special address,
+Timestamp: 00:00:30.188 - 00:00:34.355 Text: meaning it's destined for all
+devices all on the network.
+Timestamp: 00:00:35.923 - 00:00:38.722 Text: It's known as a broadcast.
+Timestamp: 00:00:38.722 - 00:00:41.037 Text: If we take a look here,
+Timestamp: 00:00:41.037 - 00:00:44.287 Text: the packet leaves the source 172.16.4.1
+Timestamp: 00:00:45.902 - 00:00:50.069 Text: and notice that our Ethernet
+switch flooded out the packet
+Timestamp: 00:00:50.909 - 00:00:55.012 Text: out all ports, except the incoming port.
+Timestamp: 00:00:55.012 - 00:00:59.724 Text: And it was received by
+every device on the network.
+Timestamp: 00:00:59.724 - 00:01:02.262 Text: Now when this router
+receives the broadcast,
+Timestamp: 00:01:02.262 - 00:01:07.236 Text: it'll not forward the broadcast
+packet to other networks.
+Timestamp: 00:01:07.236 - 00:01:11.338 Text: But a broadcast means
+every device on the network
+Timestamp: 00:01:11.338 - 00:01:13.755 Text: will receive the IPv4 packet.

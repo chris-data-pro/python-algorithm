@@ -1,0 +1,32 @@
+Module Number: 9
+Section Number: 9.3
+Video Number: 9.3.1 Video
+Video Title: Network Segmentation
+Video URL: 
+ In an ethernet LAN, devices use ethernet broadcast to contact all devices on the same local area network. For example, a device will send an ARP request on the local network to discover the associated MAC address. This is an ethernet broadcast searching for a known IPv4 address. Switches propagate broadcast out all interfaces except the interface on which it was received. Routers do not propagate broadcast. When a router receives a broadcast, it does not forward it out other interfaces. This is known as a layer to broadcast domain. Another example of an ethernet broadcast is a host sending a DHCP discover message to locate a DHCP server. The DHCP server provides an IPv4 address and other information to the client. Once again, switches propagate these broadcast out all interfaces except the interface on which it was received. The router will not propagate this ethernet broadcast out other interfaces. As you can see, this is a separate layer to broadcast domain. A router segments or separates layer to broadcast domains.
+Timestamp: 00:00:00.640 - 00:00:02.240 Text: In an ethernet LAN,
+Timestamp: 00:00:02.240 - 00:00:04.260 Text: devices use ethernet broadcast
+Timestamp: 00:00:04.260 - 00:00:08.680 Text: to contact all devices on the same local area network.
+Timestamp: 00:00:08.680 - 00:00:11.630 Text: For example, a device will send an ARP request
+Timestamp: 00:00:11.630 - 00:00:15.830 Text: on the local network to discover the associated MAC address.
+Timestamp: 00:00:15.830 - 00:00:17.570 Text: This is an ethernet broadcast
+Timestamp: 00:00:17.570 - 00:00:20.820 Text: searching for a known IPv4 address.
+Timestamp: 00:00:20.820 - 00:00:23.900 Text: Switches propagate broadcast out all interfaces
+Timestamp: 00:00:23.900 - 00:00:26.830 Text: except the interface on which it was received.
+Timestamp: 00:00:26.830 - 00:00:29.400 Text: Routers do not propagate broadcast.
+Timestamp: 00:00:29.400 - 00:00:31.240 Text: When a router receives a broadcast,
+Timestamp: 00:00:31.240 - 00:00:34.000 Text: it does not forward it out other interfaces.
+Timestamp: 00:00:34.000 - 00:00:36.950 Text: This is known as a layer to broadcast domain.
+Timestamp: 00:00:36.950 - 00:00:39.500 Text: Another example of an ethernet broadcast
+Timestamp: 00:00:39.500 - 00:00:42.950 Text: is a host sending a DHCP discover message
+Timestamp: 00:00:42.950 - 00:00:45.880 Text: to locate a DHCP server.
+Timestamp: 00:00:45.880 - 00:00:49.600 Text: The DHCP server provides an IPv4 address
+Timestamp: 00:00:49.600 - 00:00:52.000 Text: and other information to the client.
+Timestamp: 00:00:52.000 - 00:00:54.770 Text: Once again, switches propagate these broadcast
+Timestamp: 00:00:54.770 - 00:00:57.370 Text: out all interfaces except the interface
+Timestamp: 00:00:57.370 - 00:00:59.430 Text: on which it was received.
+Timestamp: 00:00:59.430 - 00:01:02.670 Text: The router will not propagate this ethernet broadcast out
+Timestamp: 00:01:02.670 - 00:01:04.310 Text: other interfaces.
+Timestamp: 00:01:04.310 - 00:01:05.230 Text: As you can see,
+Timestamp: 00:01:05.230 - 00:01:08.350 Text: this is a separate layer to broadcast domain.
+Timestamp: 00:01:08.350 - 00:01:12.583 Text: A router segments or separates layer to broadcast domains.

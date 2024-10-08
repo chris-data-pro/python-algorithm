@@ -1,0 +1,111 @@
+Module Number: 6249848734001_5
+Section Number: 6249848734001_5.2
+Video Number: 6249848734001_5.2.1
+Video Title: Devices in a Bubble__eng
+Video URL: 
+ - [Narrator] This is how we see the network. Using topology diagrams, we can see the devices in the network, including end devices, such as desktops and servers, and intermediary devices such as switches and routers. These diagrams may also contain detailed information about a device, such as the MAC address of the ethernet and wireless NICs, IP or internet protocol address information, default gateway addresses, and addresses for the DNS server. By the way, don't worry about what these terms and addresses mean right now. All of this will be explained throughout this course. This is how we see the network, but how do devices see the network? You can think of it as every device being in its own bubble. The only thing a device knows is its own addressing information. In other words, this is how a device sees the network. It doesn't. So, how does a device know its IP address and what network it belongs to? How does a device know if the destination device that it needs to send information to is on the same network or another network? If the destination is on another network, and the information has to travel through intermediary devices, how does the source device know where to send it next? How does the source device know if the information it sent was received or if it needs to resend anything that might not have reached the destination? The answer to all of these questions is protocols, the rules that govern how devices communicate. Most network communications are broken up into smaller data units which we can refer to as packets. When packets are sent on a network, many protocols are involved to help them reach their final destination, each accomplishing a different task. There are protocols such as ethernet and wireless protocols that physically connect the device to the network. The protocols DHCP and ICMPv6 provide IP addressing information, including IP addressing that tells the device what network it belongs to, the address of the default gateway that tells the device where to send packets that are destined for another network, and the address of the DNS server for when a device knows the domain name of the destination, but needs the destination's IP address. For instance, when a user requests a web page from a web server, such as www.example.com, the device asks the DNS server for the IP address of the domain name www.example.com. IP is used to deliver the packet from the source of the information to its final destination, in this case the web server, similar to sending a letter. The web server will then respond back with the requested web page. TCP is a protocol used to guarantee reliability, in other words, to make sure all the information that was sent was received, such as the information that makes up the requested web page. If any of the IP packets don't make it to the destination, TCP resends them. So, although we see the network like this, remember, it's a combination of many different protocols that allow devices to really see their place in the network and how to communicate with other devices.
+Timestamp: 00:00:04.160 - 00:00:06.690 Text: - [Narrator] This is
+how we see the network.
+Timestamp: 00:00:06.690 - 00:00:08.520 Text: Using topology diagrams,
+Timestamp: 00:00:08.520 - 00:00:10.680 Text: we can see the devices in the network,
+Timestamp: 00:00:10.680 - 00:00:15.680 Text: including end devices, such
+as desktops and servers,
+Timestamp: 00:00:15.720 - 00:00:20.650 Text: and intermediary devices
+such as switches and routers.
+Timestamp: 00:00:20.650 - 00:00:22.980 Text: These diagrams may also contain
+Timestamp: 00:00:22.980 - 00:00:25.130 Text: detailed information about a device,
+Timestamp: 00:00:25.130 - 00:00:29.830 Text: such as the MAC address of the
+ethernet and wireless NICs,
+Timestamp: 00:00:29.830 - 00:00:33.540 Text: IP or internet protocol
+address information,
+Timestamp: 00:00:33.540 - 00:00:35.920 Text: default gateway addresses,
+Timestamp: 00:00:35.920 - 00:00:38.480 Text: and addresses for the DNS server.
+Timestamp: 00:00:38.480 - 00:00:40.870 Text: By the way, don't worry
+about what these terms
+Timestamp: 00:00:40.870 - 00:00:42.850 Text: and addresses mean right now.
+Timestamp: 00:00:42.850 - 00:00:46.160 Text: All of this will be explained
+throughout this course.
+Timestamp: 00:00:46.160 - 00:00:48.400 Text: This is how we see the network,
+Timestamp: 00:00:48.400 - 00:00:51.010 Text: but how do devices see the network?
+Timestamp: 00:00:51.010 - 00:00:53.400 Text: You can think of it as every device
+Timestamp: 00:00:53.400 - 00:00:55.780 Text: being in its own bubble.
+Timestamp: 00:00:55.780 - 00:00:58.150 Text: The only thing a device knows
+Timestamp: 00:00:58.150 - 00:01:01.230 Text: is its own addressing information.
+Timestamp: 00:01:01.230 - 00:01:05.680 Text: In other words, this is how
+a device sees the network.
+Timestamp: 00:01:05.680 - 00:01:07.580 Text: It doesn't.
+Timestamp: 00:01:07.580 - 00:01:11.250 Text: So, how does a device know its IP address
+Timestamp: 00:01:11.250 - 00:01:13.093 Text: and what network it belongs to?
+Timestamp: 00:01:14.000 - 00:01:16.850 Text: How does a device know
+if the destination device
+Timestamp: 00:01:16.850 - 00:01:18.950 Text: that it needs to send information to
+Timestamp: 00:01:18.950 - 00:01:22.400 Text: is on the same network or another network?
+Timestamp: 00:01:22.400 - 00:01:24.760 Text: If the destination is on another network,
+Timestamp: 00:01:24.760 - 00:01:26.300 Text: and the information has to travel
+Timestamp: 00:01:26.300 - 00:01:28.150 Text: through intermediary devices,
+Timestamp: 00:01:28.150 - 00:01:32.040 Text: how does the source device
+know where to send it next?
+Timestamp: 00:01:32.040 - 00:01:33.560 Text: How does the source device know
+Timestamp: 00:01:33.560 - 00:01:36.360 Text: if the information it sent was received
+Timestamp: 00:01:36.360 - 00:01:38.760 Text: or if it needs to resend anything
+Timestamp: 00:01:38.760 - 00:01:41.840 Text: that might not have
+reached the destination?
+Timestamp: 00:01:41.840 - 00:01:45.380 Text: The answer to all of these
+questions is protocols,
+Timestamp: 00:01:45.380 - 00:01:48.470 Text: the rules that govern
+how devices communicate.
+Timestamp: 00:01:48.470 - 00:01:50.640 Text: Most network communications are broken up
+Timestamp: 00:01:50.640 - 00:01:52.320 Text: into smaller data units
+Timestamp: 00:01:52.320 - 00:01:54.680 Text: which we can refer to as packets.
+Timestamp: 00:01:54.680 - 00:01:56.630 Text: When packets are sent on a network,
+Timestamp: 00:01:56.630 - 00:01:58.440 Text: many protocols are involved
+Timestamp: 00:01:58.440 - 00:02:00.900 Text: to help them reach
+their final destination,
+Timestamp: 00:02:00.900 - 00:02:03.580 Text: each accomplishing a different task.
+Timestamp: 00:02:03.580 - 00:02:06.960 Text: There are protocols such as
+ethernet and wireless protocols
+Timestamp: 00:02:06.960 - 00:02:10.220 Text: that physically connect
+the device to the network.
+Timestamp: 00:02:10.220 - 00:02:13.890 Text: The protocols DHCP and ICMPv6
+Timestamp: 00:02:13.890 - 00:02:15.990 Text: provide IP addressing information,
+Timestamp: 00:02:15.990 - 00:02:18.330 Text: including IP addressing that tells
+Timestamp: 00:02:18.330 - 00:02:21.220 Text: the device what network it belongs to,
+Timestamp: 00:02:21.220 - 00:02:23.270 Text: the address of the default gateway
+Timestamp: 00:02:23.270 - 00:02:25.350 Text: that tells the device
+where to send packets
+Timestamp: 00:02:25.350 - 00:02:28.060 Text: that are destined for another network,
+Timestamp: 00:02:28.060 - 00:02:30.140 Text: and the address of the DNS server
+Timestamp: 00:02:30.140 - 00:02:32.160 Text: for when a device knows the domain name
+Timestamp: 00:02:32.160 - 00:02:33.490 Text: of the destination,
+Timestamp: 00:02:33.490 - 00:02:36.520 Text: but needs the destination's IP address.
+Timestamp: 00:02:36.520 - 00:02:39.730 Text: For instance, when a
+user requests a web page
+Timestamp: 00:02:39.730 - 00:02:44.590 Text: from a web server, such
+as www.example.com,
+Timestamp: 00:02:44.590 - 00:02:46.650 Text: the device asks the DNS server
+Timestamp: 00:02:46.650 - 00:02:51.650 Text: for the IP address of the
+domain name www.example.com.
+Timestamp: 00:02:52.260 - 00:02:54.520 Text: IP is used to deliver the packet
+Timestamp: 00:02:54.520 - 00:02:56.580 Text: from the source of the information
+Timestamp: 00:02:56.580 - 00:03:00.400 Text: to its final destination,
+in this case the web server,
+Timestamp: 00:03:00.400 - 00:03:02.330 Text: similar to sending a letter.
+Timestamp: 00:03:02.330 - 00:03:04.590 Text: The web server will then respond back
+Timestamp: 00:03:04.590 - 00:03:06.760 Text: with the requested web page.
+Timestamp: 00:03:06.760 - 00:03:10.120 Text: TCP is a protocol used
+to guarantee reliability,
+Timestamp: 00:03:10.120 - 00:03:12.940 Text: in other words, to make
+sure all the information
+Timestamp: 00:03:12.940 - 00:03:14.800 Text: that was sent was received,
+Timestamp: 00:03:14.800 - 00:03:15.910 Text: such as the information
+Timestamp: 00:03:15.910 - 00:03:18.440 Text: that makes up the requested web page.
+Timestamp: 00:03:18.440 - 00:03:20.420 Text: If any of the IP packets don't make it
+Timestamp: 00:03:20.420 - 00:03:23.433 Text: to the destination, TCP resends them.
+Timestamp: 00:03:24.770 - 00:03:28.838 Text: So, although we see the
+network like this, remember,
+Timestamp: 00:03:28.838 - 00:03:32.290 Text: it's a combination of
+many different protocols
+Timestamp: 00:03:32.290 - 00:03:34.840 Text: that allow devices to
+really see their place
+Timestamp: 00:03:34.840 - 00:03:37.130 Text: in the network and how to communicate
+Timestamp: 00:03:37.130 - 00:03:38.723 Text: with other devices.

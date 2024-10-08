@@ -1,0 +1,53 @@
+Module Number: 6249848439001_2
+Section Number: 6249848439001_2.1
+Video Number: 6249848439001_2.1.4
+Video Title: Cell Phone Interactions with Different Networks__eng
+Video URL: 
+ - So let's think for a minute about some of the things we do on our cell phones. The first thing, obviously, is we talk. Because that's their primary function. So we talk to people on land lines and on other cell phones. And we talk to businesses. So basically we use one of the radios within the cell phone, and cell phones contain multiple radios, transmitters, and receivers, to do the talking. Then we also do data. And this is the kind of data that we use our data plan for. This is when we're looking up something on our cell phone when we're not near a regular Wi-Fi network. So we have the data plan network, which uses the cell phone infrastructure in order to be able to access the internet. We also have Wi-Fi. We use hotspots, and usually we also have a home wireless network. Most of us also use our cell phones as a way to get places. We use location services. Location services include our GPS, maps, places near me, and now many of us are also using our cell phones to pay for things. So we have pay services. We can take our cell phone next to the cash register or the receiver and automatically have our financial information transferred. So this is like cash registers, and payment pads. So we're going to talk a little bit now about the different kinds of networks that are used to access all of these various services.
+Timestamp: 00:00:06.468 - 00:00:08.785 Text: - So let's think for a minute
+about some of the things we do
+Timestamp: 00:00:08.785 - 00:00:10.368 Text: on our cell phones.
+Timestamp: 00:00:11.556 - 00:00:14.318 Text: The first thing, obviously, is we talk.
+Timestamp: 00:00:14.318 - 00:00:17.855 Text: Because that's their primary function.
+Timestamp: 00:00:17.855 - 00:00:20.688 Text: So we talk to people on land lines
+Timestamp: 00:00:22.433 - 00:00:24.516 Text: and on other cell phones.
+Timestamp: 00:00:27.206 - 00:00:29.373 Text: And we talk to businesses.
+Timestamp: 00:00:33.318 - 00:00:37.485 Text: So basically we use one of the
+radios within the cell phone,
+Timestamp: 00:00:38.932 - 00:00:41.252 Text: and cell phones contain multiple radios,
+Timestamp: 00:00:41.252 - 00:00:44.440 Text: transmitters, and receivers,
+to do the talking.
+Timestamp: 00:00:44.440 - 00:00:46.190 Text: Then we also do data.
+Timestamp: 00:00:47.548 - 00:00:51.715 Text: And this is the kind of data
+that we use our data plan for.
+Timestamp: 00:00:54.036 - 00:00:56.006 Text: This is when we're looking up
+something on our cell phone
+Timestamp: 00:00:56.006 - 00:00:59.589 Text: when we're not near a
+regular Wi-Fi network.
+Timestamp: 00:01:01.618 - 00:01:05.099 Text: So we have the data plan network,
+Timestamp: 00:01:05.099 - 00:01:08.025 Text: which uses the cell phone infrastructure
+Timestamp: 00:01:08.025 - 00:01:10.905 Text: in order to be able to
+access the internet.
+Timestamp: 00:01:10.905 - 00:01:12.405 Text: We also have Wi-Fi.
+Timestamp: 00:01:16.238 - 00:01:20.385 Text: We use hotspots, and usually we also have
+Timestamp: 00:01:20.385 - 00:01:22.385 Text: a home wireless network.
+Timestamp: 00:01:28.985 - 00:01:33.152 Text: Most of us also use our cell
+phones as a way to get places.
+Timestamp: 00:01:34.738 - 00:01:36.821 Text: We use location services.
+Timestamp: 00:01:44.379 - 00:01:48.546 Text: Location services include our
+GPS, maps, places near me,
+Timestamp: 00:01:59.012 - 00:02:01.562 Text: and now many of us are
+also using our cell phones
+Timestamp: 00:02:01.562 - 00:02:03.062 Text: to pay for things.
+Timestamp: 00:02:05.624 - 00:02:07.624 Text: So we have pay services.
+Timestamp: 00:02:14.744 - 00:02:17.671 Text: We can take our cell phone
+next to the cash register
+Timestamp: 00:02:17.671 - 00:02:20.041 Text: or the receiver and automatically
+Timestamp: 00:02:20.041 - 00:02:24.403 Text: have our financial
+information transferred.
+Timestamp: 00:02:24.403 - 00:02:28.486 Text: So this is like cash
+registers, and payment pads.
+Timestamp: 00:02:39.725 - 00:02:41.406 Text: So we're going to talk a little bit now
+Timestamp: 00:02:41.406 - 00:02:43.713 Text: about the different kinds of networks
+Timestamp: 00:02:43.713 - 00:02:47.880 Text: that are used to access all
+of these various services.

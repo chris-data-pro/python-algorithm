@@ -1,0 +1,40 @@
+Module Number: 6249845490001_1
+Section Number: 6249845490001_1.5
+Video Number: 6249845490001_1.5.1
+Video Title: Network Infrastructure Symbols__eng
+Video URL: 
+ - In this video, we're going to take a look at some of the symbols you're going to see throughout the course to represent various types of networking equipment. In this first screen, we see some of the examples of intermediate devices. Some of these you may recognize from your own network, such as a router, a wireless router, a switch, and a wireless access point. Here are some examples of end devices, such as a laptop, printer, smartphone, an IP phone, and this is examples of the symbols that we'll be using for network media, such as LAN media, Local Area Network, most commonly an Ethernet LAN. WAN media, Wide Area Network media, that's commonly used for internet service provider communications, wireless media, and the Cloud, which is used to represent another network or the internet. So you'll see these symbols used throughout this course and other courses.
+Timestamp: 00:00:06.178 - 00:00:07.223 Text: - In this video,
+Timestamp: 00:00:07.223 - 00:00:09.005 Text: we're going to take a look
+at some of the symbols
+Timestamp: 00:00:09.005 - 00:00:10.652 Text: you're going to see throughout the course
+Timestamp: 00:00:10.652 - 00:00:15.291 Text: to represent various types
+of networking equipment.
+Timestamp: 00:00:15.291 - 00:00:16.360 Text: In this first screen,
+Timestamp: 00:00:16.360 - 00:00:20.519 Text: we see some of the examples
+of intermediate devices.
+Timestamp: 00:00:20.519 - 00:00:23.213 Text: Some of these you may recognize
+from your own network,
+Timestamp: 00:00:23.213 - 00:00:24.630 Text: such as a router,
+Timestamp: 00:00:25.815 - 00:00:27.315 Text: a wireless router,
+Timestamp: 00:00:28.639 - 00:00:29.472 Text: a switch,
+Timestamp: 00:00:30.932 - 00:00:33.265 Text: and a wireless access point.
+Timestamp: 00:00:35.582 - 00:00:38.764 Text: Here are some examples of end devices,
+Timestamp: 00:00:38.764 - 00:00:40.852 Text: such as a laptop,
+Timestamp: 00:00:40.852 - 00:00:41.685 Text: printer,
+Timestamp: 00:00:42.744 - 00:00:43.661 Text: smartphone,
+Timestamp: 00:00:44.635 - 00:00:45.635 Text: an IP phone,
+Timestamp: 00:00:49.446 - 00:00:51.612 Text: and this is examples of the symbols
+Timestamp: 00:00:51.612 - 00:00:54.204 Text: that we'll be using for network media,
+Timestamp: 00:00:54.204 - 00:00:57.839 Text: such as LAN media, Local Area Network,
+Timestamp: 00:00:57.839 - 00:01:01.093 Text: most commonly an Ethernet LAN.
+Timestamp: 00:01:01.093 - 00:01:04.801 Text: WAN media, Wide Area Network media,
+Timestamp: 00:01:04.801 - 00:01:06.042 Text: that's commonly used
+Timestamp: 00:01:06.042 - 00:01:09.792 Text: for internet service
+provider communications,
+Timestamp: 00:01:10.693 - 00:01:11.943 Text: wireless media,
+Timestamp: 00:01:13.024 - 00:01:13.989 Text: and the Cloud,
+Timestamp: 00:01:13.989 - 00:01:18.789 Text: which is used to represent
+another network or the internet.
+Timestamp: 00:01:18.789 - 00:01:20.258 Text: So you'll see these symbols used
+Timestamp: 00:01:20.258 - 00:01:23.758 Text: throughout this course and other courses.

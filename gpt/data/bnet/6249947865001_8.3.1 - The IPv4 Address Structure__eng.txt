@@ -1,0 +1,84 @@
+Module Number: 6249947865001_8
+Section Number: 6249947865001_8.3
+Video Number: 6249947865001_8.3.1
+Video Title: The IPv4 Address Structure__eng
+Video URL: 
+ - In this lesson we're going to talk about how IP addressing works in a multi-network environment. Originally, when we talked about IP addressing, all of the devices that we were communicating with were on the same local network. So how does IP know when a device is on a different network? So basically, let's look at our divided network here. We have the Network Management Department, the Accounting Department and the Sales Department. Each of those departments have an IP addressing structure that is unique to their local area network. Now, how do we know what part of the IP address differentiates between the networks. Basically, every IP address has a structure to it and that structure includes a network component, and let's just take a network address that's up here. It has a network component and it has a host component. All of the devices in the Sales Department local network will have to have the same first three octets of their IP address, because this network is represented by the 192.168.3. The individual host numbers, which are the last octet, will have to be unique. In other words, your computer here has the address of 192.168.3.10. No other device on that same network can have that same IP address, because every host part has to be unique. So, in a local network, the network portion has to be the same and the host portion has to be unique. Now, if we move over to the next network over here, we can see that the network portion is different. We had the 192.168.3 network over here. We have the 192.168.2 network over here. If I come over to Network Management, where I'm located, you'll see that I'm on the 192.168.1 network. It's very important to remember that if your IP address is such that your network portion does not match what your local area network is assigned, you will not be able to communicate. So, if I accidentally grabbed a computer from over here and moved it over here and I did not change the IP address, it would not be able to communicate over the IP network. So, basically, in order to have an IP network, the network portion of the address must be the same for all of the computers on the local area network.
+Timestamp: 00:00:06.235 - 00:00:08.435 Text: - In this lesson we're
+going to talk about how
+Timestamp: 00:00:08.435 - 00:00:12.602 Text: IP addressing works in a
+multi-network environment.
+Timestamp: 00:00:14.715 - 00:00:17.072 Text: Originally, when we talked
+about IP addressing,
+Timestamp: 00:00:17.072 - 00:00:20.490 Text: all of the devices that
+we were communicating with
+Timestamp: 00:00:20.490 - 00:00:23.073 Text: were on the same local network.
+Timestamp: 00:00:23.912 - 00:00:25.495 Text: So how does IP know
+Timestamp: 00:00:27.166 - 00:00:30.225 Text: when a device is on a different network?
+Timestamp: 00:00:30.225 - 00:00:34.642 Text: So basically, let's look at
+our divided network here.
+Timestamp: 00:00:34.642 - 00:00:36.953 Text: We have the Network Management Department,
+Timestamp: 00:00:36.953 - 00:00:38.283 Text: the Accounting Department
+Timestamp: 00:00:38.283 - 00:00:40.311 Text: and the Sales Department.
+Timestamp: 00:00:40.311 - 00:00:44.478 Text: Each of those departments have
+an IP addressing structure
+Timestamp: 00:00:45.758 - 00:00:49.341 Text: that is unique to their
+local area network.
+Timestamp: 00:00:50.477 - 00:00:52.060 Text: Now, how do we know
+Timestamp: 00:00:53.381 - 00:00:55.977 Text: what part of the IP address
+Timestamp: 00:00:55.977 - 00:00:59.765 Text: differentiates between the networks.
+Timestamp: 00:00:59.765 - 00:01:03.848 Text: Basically, every IP address
+has a structure to it
+Timestamp: 00:01:04.886 - 00:01:08.667 Text: and that structure includes
+a network component,
+Timestamp: 00:01:08.667 - 00:01:11.537 Text: and let's just take a network
+address that's up here.
+Timestamp: 00:01:11.537 - 00:01:13.704 Text: It has a network component
+Timestamp: 00:01:14.849 - 00:01:17.182 Text: and it has a host component.
+Timestamp: 00:01:23.814 - 00:01:28.338 Text: All of the devices in the
+Sales Department local network
+Timestamp: 00:01:28.338 - 00:01:32.699 Text: will have to have the
+same first three octets
+Timestamp: 00:01:32.699 - 00:01:35.038 Text: of their IP address,
+Timestamp: 00:01:35.038 - 00:01:38.601 Text: because this network is represented
+Timestamp: 00:01:38.601 - 00:01:40.018 Text: by the 192.168.3.
+Timestamp: 00:01:43.181 - 00:01:45.886 Text: The individual host numbers,
+Timestamp: 00:01:45.886 - 00:01:47.788 Text: which are the last octet,
+Timestamp: 00:01:47.788 - 00:01:50.285 Text: will have to be unique.
+Timestamp: 00:01:50.285 - 00:01:52.104 Text: In other words,
+Timestamp: 00:01:52.104 - 00:01:53.902 Text: your computer here
+Timestamp: 00:01:53.902 - 00:01:56.569 Text: has the address of 192.168.3.10.
+Timestamp: 00:01:58.816 - 00:02:01.344 Text: No other device on that same network
+Timestamp: 00:02:01.344 - 00:02:03.844 Text: can have that same IP address,
+Timestamp: 00:02:05.406 - 00:02:09.484 Text: because every host part has to be unique.
+Timestamp: 00:02:09.484 - 00:02:11.526 Text: So, in a local network,
+Timestamp: 00:02:11.526 - 00:02:14.489 Text: the network portion has to be the same
+Timestamp: 00:02:14.489 - 00:02:17.767 Text: and the host portion has to be unique.
+Timestamp: 00:02:17.767 - 00:02:21.063 Text: Now, if we move over to
+the next network over here,
+Timestamp: 00:02:21.063 - 00:02:25.146 Text: we can see that the network
+portion is different.
+Timestamp: 00:02:29.154 - 00:02:33.200 Text: We had the 192.168.3 network over here.
+Timestamp: 00:02:33.200 - 00:02:36.533 Text: We have the 192.168.2 network over here.
+Timestamp: 00:02:38.026 - 00:02:41.595 Text: If I come over to Network
+Management, where I'm located,
+Timestamp: 00:02:41.595 - 00:02:45.345 Text: you'll see that I'm on
+the 192.168.1 network.
+Timestamp: 00:02:48.353 - 00:02:50.371 Text: It's very important to remember
+Timestamp: 00:02:50.371 - 00:02:52.288 Text: that if your IP address
+Timestamp: 00:02:53.501 - 00:02:55.829 Text: is such that your network portion
+Timestamp: 00:02:55.829 - 00:03:00.439 Text: does not match what your local
+area network is assigned,
+Timestamp: 00:03:00.439 - 00:03:02.659 Text: you will not be able to communicate.
+Timestamp: 00:03:02.659 - 00:03:07.562 Text: So, if I accidentally grabbed
+a computer from over here
+Timestamp: 00:03:07.562 - 00:03:10.194 Text: and moved it over here
+Timestamp: 00:03:10.194 - 00:03:13.199 Text: and I did not change the IP address,
+Timestamp: 00:03:13.199 - 00:03:17.209 Text: it would not be able to
+communicate over the IP network.
+Timestamp: 00:03:17.209 - 00:03:18.376 Text: So, basically,
+Timestamp: 00:03:19.775 - 00:03:22.553 Text: in order to have an IP network,
+Timestamp: 00:03:22.553 - 00:03:26.873 Text: the network portion of the
+address must be the same
+Timestamp: 00:03:26.873 - 00:03:28.529 Text: for all of the computers
+Timestamp: 00:03:28.529 - 00:03:30.696 Text: on the local area network.

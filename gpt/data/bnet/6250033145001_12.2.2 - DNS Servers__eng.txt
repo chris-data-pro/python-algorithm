@@ -1,0 +1,41 @@
+Module Number: 6250033145001_12
+Section Number: 6250033145001_12.2
+Video Number: 6250033145001_12.2.2
+Video Title: DNS Servers__eng
+Video URL: 
+ - In this video, we're going to introduce the DNS server. DNS stands for Domain Name System server. DNS server is used to associate a domain name, or a host name, with an IP address. Let's take a look. Here we have a user that's going to go to the website www.cisco.com. However, the network, the internet, doesn't understand domain names like cisco.com. It only understands IP addresses. So the system needs to associate an IP address with this domain name, so in this case it's going to ask a DNS server. So the system's going to contact the DNS server and ask it for the IP address associated with www.cisco.com. The query, the question, for this domain name goes to the DNS server. The DNS server looks up www.cisco.com, finds the IP address, and then returns this IP address to the host. The host can now use this IP address to contact the web server www.cisco.com, and in this case, download the proper information to display the webpage.
+Timestamp: 00:00:06.628 - 00:00:07.562 Text: - In this video,
+Timestamp: 00:00:07.562 - 00:00:09.994 Text: we're going to introduce the DNS server.
+Timestamp: 00:00:09.994 - 00:00:13.657 Text: DNS stands for Domain Name System server.
+Timestamp: 00:00:13.657 - 00:00:17.401 Text: DNS server is used to
+associate a domain name,
+Timestamp: 00:00:17.401 - 00:00:20.707 Text: or a host name, with an IP address.
+Timestamp: 00:00:20.707 - 00:00:22.245 Text: Let's take a look.
+Timestamp: 00:00:22.245 - 00:00:24.969 Text: Here we have a user that's
+going to go to the website
+Timestamp: 00:00:24.969 - 00:00:26.136 Text: www.cisco.com.
+Timestamp: 00:00:28.322 - 00:00:30.067 Text: However, the network, the internet,
+Timestamp: 00:00:30.067 - 00:00:33.490 Text: doesn't understand domain
+names like cisco.com.
+Timestamp: 00:00:33.490 - 00:00:36.240 Text: It only understands IP addresses.
+Timestamp: 00:00:37.174 - 00:00:41.007 Text: So the system needs to
+associate an IP address
+Timestamp: 00:00:41.845 - 00:00:43.839 Text: with this domain name,
+Timestamp: 00:00:43.839 - 00:00:48.199 Text: so in this case it's
+going to ask a DNS server.
+Timestamp: 00:00:48.199 - 00:00:51.558 Text: So the system's going to
+contact the DNS server
+Timestamp: 00:00:51.558 - 00:00:54.198 Text: and ask it for the IP address associated
+Timestamp: 00:00:54.198 - 00:00:55.781 Text: with www.cisco.com.
+Timestamp: 00:00:58.759 - 00:01:01.455 Text: The query, the question,
+Timestamp: 00:01:01.455 - 00:01:05.172 Text: for this domain name
+goes to the DNS server.
+Timestamp: 00:01:05.172 - 00:01:08.339 Text: The DNS server looks up www.cisco.com,
+Timestamp: 00:01:09.890 - 00:01:12.011 Text: finds the IP address,
+Timestamp: 00:01:12.011 - 00:01:15.761 Text: and then returns this
+IP address to the host.
+Timestamp: 00:01:18.374 - 00:01:20.671 Text: The host can now use this IP address
+Timestamp: 00:01:20.671 - 00:01:24.004 Text: to contact the web server www.cisco.com,
+Timestamp: 00:01:25.334 - 00:01:29.236 Text: and in this case, download
+the proper information
+Timestamp: 00:01:29.236 - 00:01:31.236 Text: to display the webpage.

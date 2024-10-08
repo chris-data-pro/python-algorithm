@@ -1,0 +1,44 @@
+Module Number: 1
+Section Number: 1.2
+Video Number: 1.2.1
+Video Title: Discrete vs Continuous Data
+Video URL: 
+ Data analysis begins with understanding the types of data you're working with. Data can first be defined as quantitative or qualitative. Qualitative data is descriptive. It is typically represented as text, is non-numerical in nature, and is collected through surveys, questionnaires, interviews, or observations. An example of qualitative data is the reviews that are collected about various products on a shopping site. Quantitative data is numerical in nature. You are trying to quantify information. (upbeat music) Quantitative data can further be broken down into discrete and continuous data. Discrete data can only take on certain values, typically whole numbers. Examples of discrete data include account of transactions processed in a day or the number of people who visit a website each week. Continuous data is measured and can be represented in an infinite number of ways. An example of continuous data could be the average distance traveled by a moving car, which is constantly being updated as the car moves forward. Understanding quantitative versus qualitative data is an initial step, but strong familiarity with all types of data is necessary if you're going to be a versatile analyst. (upbeat music)
+Timestamp: 00:00:00.120 - 00:00:01.650 Text: Data analysis begins with
+Timestamp: 00:00:01.650 - 00:00:03.120 Text: understanding the types of data
+Timestamp: 00:00:03.120 - 00:00:04.590 Text: you're working with.
+Timestamp: 00:00:04.590 - 00:00:06.090 Text: Data can first be defined as
+Timestamp: 00:00:06.090 - 00:00:08.130 Text: quantitative or qualitative.
+Timestamp: 00:00:08.130 - 00:00:10.500 Text: Qualitative data is descriptive.
+Timestamp: 00:00:10.500 - 00:00:12.870 Text: It is typically represented as text,
+Timestamp: 00:00:12.870 - 00:00:14.760 Text: is non-numerical in nature,
+Timestamp: 00:00:14.760 - 00:00:16.320 Text: and is collected through surveys,
+Timestamp: 00:00:16.320 - 00:00:19.830 Text: questionnaires, interviews, or observations.
+Timestamp: 00:00:19.830 - 00:00:21.870 Text: An example of qualitative data
+Timestamp: 00:00:21.870 - 00:00:23.640 Text: is the reviews that are collected about
+Timestamp: 00:00:23.640 - 00:00:25.800 Text: various products on a shopping site.
+Timestamp: 00:00:25.800 - 00:00:28.560 Text: Quantitative data is numerical in nature.
+Timestamp: 00:00:28.560 - 00:00:30.577 Text: You are trying to quantify information.
+Timestamp: 00:00:30.577 - 00:00:31.410 Text: (upbeat music)
+Timestamp: 00:00:31.410 - 00:00:33.840 Text: Quantitative data can further be broken down
+Timestamp: 00:00:33.840 - 00:00:36.540 Text: into discrete and continuous data.
+Timestamp: 00:00:36.540 - 00:00:39.600 Text: Discrete data can only take on certain values,
+Timestamp: 00:00:39.600 - 00:00:41.520 Text: typically whole numbers.
+Timestamp: 00:00:41.520 - 00:00:43.590 Text: Examples of discrete data include
+Timestamp: 00:00:43.590 - 00:00:46.470 Text: account of transactions processed in a day
+Timestamp: 00:00:46.470 - 00:00:47.850 Text: or the number of people
+Timestamp: 00:00:47.850 - 00:00:50.070 Text: who visit a website each week.
+Timestamp: 00:00:50.070 - 00:00:52.170 Text: Continuous data is measured
+Timestamp: 00:00:52.170 - 00:00:54.330 Text: and can be represented in an infinite
+Timestamp: 00:00:54.330 - 00:00:55.950 Text: number of ways.
+Timestamp: 00:00:55.950 - 00:00:57.930 Text: An example of continuous data
+Timestamp: 00:00:57.930 - 00:00:59.940 Text: could be the average distance traveled
+Timestamp: 00:00:59.940 - 00:01:01.380 Text: by a moving car,
+Timestamp: 00:01:01.380 - 00:01:03.180 Text: which is constantly being updated
+Timestamp: 00:01:03.180 - 00:01:04.740 Text: as the car moves forward.
+Timestamp: 00:01:04.740 - 00:01:07.410 Text: Understanding quantitative versus qualitative data
+Timestamp: 00:01:07.410 - 00:01:09.330 Text: is an initial step,
+Timestamp: 00:01:09.330 - 00:01:11.760 Text: but strong familiarity with all types
+Timestamp: 00:01:11.760 - 00:01:13.500 Text: of data is necessary
+Timestamp: 00:01:13.500 - 00:01:15.757 Text: if you're going to be a versatile analyst.
+Timestamp: 00:01:15.757 - 00:01:18.424 Text: (upbeat music)

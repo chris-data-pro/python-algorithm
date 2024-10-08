@@ -1,0 +1,74 @@
+Module Number: 6249907130001_6
+Section Number: 6249907130001_6.5
+Video Number: 6249907130001_6.5.5
+Video Title: Address Resolution Protocol__eng
+Video URL: 
+ - In this video, we're going to introduce ARP, Address Resolution Protocol. ARP is used when we know the IPv4 address, where we want to send the packet. But what we don't know, is the device's Ethernet MAC address. For example, here we have PC 1, that wants to send a packet to the destination, IPv4 address of 192.168.1.9, the FTP server. PC 1 knows the IPv4 address of the FTP server. But what it needs to know is its MAC address. Because it needs to encapsulate this IPv4 packet, in an Ethernet frame. So what PC 1 does is it first looks in its ARP table. It looks for the IPv4 address of 192.168.1.9. If the address is not in its ARP table, it will send out an ARP request. So the animation shows PC 1 sending out the ARP request. Notice that the ARP request is an Ethernet broadcast. What that means, is when the switch receives this Ethernet broadcast, that's a destination MAC address of all 1 bits. The switch will flood the Ethernet broadcast, the ARP request out, all ports except the incoming port. The reason for the broadcast is, PC 1 needs to know who on this network has the IPv4 address, 192.168.1.9. It's saying, "Hey, everybody on my network, whoever has 192.168.1.9 as your IPv4 address, please reply back to me with your MAC address". So this ARP request, goes out to every device on the network. Including the router. Now when the router receives this Ethernet broadcast, it will not forward it out other networks. So the Ethernet broadcast, this ARP request, stays on this network. So as we can see, the ARP request goes to everyone and the FTP server says, "Hey that's my IPv4 address you're looking for. I'm going to send you back a ARP reply, with my MAC address". Now PC 1 has the Ethernet mac address of the FTP server at 192.168.1.9 and can now send that packet in an Ethernet frame, to the FTP server.
+Timestamp: 00:00:06.442 - 00:00:09.801 Text: - In this video, we're
+going to introduce ARP,
+Timestamp: 00:00:09.801 - 00:00:12.524 Text: Address Resolution Protocol.
+Timestamp: 00:00:12.524 - 00:00:16.740 Text: ARP is used when we know the IPv4 address,
+Timestamp: 00:00:16.740 - 00:00:19.485 Text: where we want to send the packet.
+Timestamp: 00:00:19.485 - 00:00:20.738 Text: But what we don't know,
+Timestamp: 00:00:20.738 - 00:00:23.821 Text: is the device's Ethernet MAC address.
+Timestamp: 00:00:26.256 - 00:00:28.883 Text: For example, here we have PC 1,
+Timestamp: 00:00:28.883 - 00:00:32.800 Text: that wants to send a
+packet to the destination,
+Timestamp: 00:00:34.097 - 00:00:36.264 Text: IPv4 address of 192.168.1.9,
+Timestamp: 00:00:37.513 - 00:00:39.261 Text: the FTP server.
+Timestamp: 00:00:39.261 - 00:00:43.094 Text: PC 1 knows the IPv4
+address of the FTP server.
+Timestamp: 00:00:45.668 - 00:00:49.334 Text: But what it needs to
+know is its MAC address.
+Timestamp: 00:00:49.334 - 00:00:53.417 Text: Because it needs to
+encapsulate this IPv4 packet,
+Timestamp: 00:00:54.413 - 00:00:56.163 Text: in an Ethernet frame.
+Timestamp: 00:00:57.429 - 00:01:02.194 Text: So what PC 1 does is it
+first looks in its ARP table.
+Timestamp: 00:01:02.194 - 00:01:05.777 Text: It looks for the IPv4
+address of 192.168.1.9.
+Timestamp: 00:01:09.528 - 00:01:12.414 Text: If the address is not in its ARP table,
+Timestamp: 00:01:12.414 - 00:01:15.081 Text: it will send out an ARP request.
+Timestamp: 00:01:16.055 - 00:01:20.222 Text: So the animation shows PC 1
+sending out the ARP request.
+Timestamp: 00:01:21.314 - 00:01:25.522 Text: Notice that the ARP request
+is an Ethernet broadcast.
+Timestamp: 00:01:25.522 - 00:01:28.482 Text: What that means, is
+when the switch receives
+Timestamp: 00:01:28.482 - 00:01:30.363 Text: this Ethernet broadcast,
+Timestamp: 00:01:30.363 - 00:01:34.280 Text: that's a destination MAC
+address of all 1 bits.
+Timestamp: 00:01:36.180 - 00:01:39.484 Text: The switch will flood
+the Ethernet broadcast,
+Timestamp: 00:01:39.484 - 00:01:44.052 Text: the ARP request out, all ports
+except the incoming port.
+Timestamp: 00:01:44.052 - 00:01:47.681 Text: The reason for the broadcast
+is, PC 1 needs to know
+Timestamp: 00:01:47.681 - 00:01:51.848 Text: who on this network has the
+IPv4 address, 192.168.1.9.
+Timestamp: 00:01:55.465 - 00:01:59.722 Text: It's saying, "Hey,
+everybody on my network,
+Timestamp: 00:01:59.722 - 00:02:03.305 Text: whoever has 192.168.1.9
+as your IPv4 address,
+Timestamp: 00:02:06.719 - 00:02:11.233 Text: please reply back to me
+with your MAC address".
+Timestamp: 00:02:11.233 - 00:02:15.263 Text: So this ARP request,
+goes out to every device
+Timestamp: 00:02:15.263 - 00:02:18.892 Text: on the network. Including the router.
+Timestamp: 00:02:18.892 - 00:02:22.634 Text: Now when the router receives
+this Ethernet broadcast,
+Timestamp: 00:02:22.634 - 00:02:26.052 Text: it will not forward it out other networks.
+Timestamp: 00:02:26.052 - 00:02:29.505 Text: So the Ethernet broadcast,
+this ARP request,
+Timestamp: 00:02:29.505 - 00:02:31.338 Text: stays on this network.
+Timestamp: 00:02:32.823 - 00:02:35.593 Text: So as we can see, the ARP
+request goes to everyone
+Timestamp: 00:02:35.593 - 00:02:39.760 Text: and the FTP server says,
+"Hey that's my IPv4 address
+Timestamp: 00:02:41.193 - 00:02:45.360 Text: you're looking for. I'm going to
+send you back a ARP reply,
+Timestamp: 00:02:46.476 - 00:02:48.226 Text: with my MAC address".
+Timestamp: 00:02:51.528 - 00:02:55.695 Text: Now PC 1 has the Ethernet
+mac address of the FTP server
+Timestamp: 00:02:57.557 - 00:03:00.974 Text: at 192.168.1.9 and can now send that packet
+Timestamp: 00:03:02.658 - 00:03:05.991 Text: in an Ethernet frame, to the FTP server.

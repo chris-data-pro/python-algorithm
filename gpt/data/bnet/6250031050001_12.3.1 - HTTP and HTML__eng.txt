@@ -1,0 +1,63 @@
+Module Number: 6250031050001_12
+Section Number: 6250031050001_12.3
+Video Number: 6250031050001_12.3.1
+Video Title: HTTP and HTML__eng
+Video URL: 
+ - In this video, we're going to take a look at HTTP and HTML. HTTP stands for Hypertext Transfer Protocol. These are the rules that govern how the information is transmitted between the client, the device asking for the webpage, and the web server that sends the webpage back to the client. HTML stands for Hypertext Markup Language. This is the coding, the information, that actually is used to display the webpage itself. Let's take a look. So we're going to start with the client asking for the webpage www.cisco.com, but like we said previously, the network, the internet, doesn't understand names, doesn't understand domain names. It needs the IP address associated with www.cisco.com. So the user, the system, is going to contact the DNS server. The DNS server is going to associate the domain name, www.cisco.com, with an IP address, and return that IP address to the user, to the system. Now the system can contact the web server, www.cisco.com, using this IP address. This request uses HTTP to request the webpage. It is sent to the web server, www.cisco.com, that uses HTTP to return the information, the HTML code, back to the user. Now the user can display the webpage www.cisco.com in its browser. So here we can see the www.cisco.com webpage. To take a look at the HTML code, we just go right over here to the menu, Developer. Click on page source. This page source, this is the actual HTML code. This HTML code was downloaded from the web server www.cisco.com to the client's system and displayed in its browser. The browser then takes this code, displays it, and we see the webpage www.cisco.com.
+Timestamp: 00:00:12.343 - 00:00:14.068 Text: - In this video, we're going to take a look
+Timestamp: 00:00:14.068 - 00:00:15.485 Text: at HTTP and HTML.
+Timestamp: 00:00:17.996 - 00:00:21.663 Text: HTTP stands for Hypertext
+Transfer Protocol.
+Timestamp: 00:00:22.658 - 00:00:25.509 Text: These are the rules that
+govern how the information
+Timestamp: 00:00:25.509 - 00:00:28.321 Text: is transmitted between the client,
+Timestamp: 00:00:28.321 - 00:00:31.020 Text: the device asking for the webpage,
+Timestamp: 00:00:31.020 - 00:00:32.967 Text: and the web server that sends
+Timestamp: 00:00:32.967 - 00:00:35.980 Text: the webpage back to the client.
+Timestamp: 00:00:35.980 - 00:00:39.480 Text: HTML stands for Hypertext Markup Language.
+Timestamp: 00:00:40.681 - 00:00:42.574 Text: This is the coding, the information,
+Timestamp: 00:00:42.574 - 00:00:46.436 Text: that actually is used to
+display the webpage itself.
+Timestamp: 00:00:46.436 - 00:00:47.917 Text: Let's take a look.
+Timestamp: 00:00:47.917 - 00:00:49.278 Text: So we're going to start with the client
+Timestamp: 00:00:49.278 - 00:00:52.361 Text: asking for the webpage www.cisco.com,
+Timestamp: 00:00:54.622 - 00:00:57.067 Text: but like we said previously,
+Timestamp: 00:00:57.067 - 00:00:58.618 Text: the network, the internet,
+Timestamp: 00:00:58.618 - 00:01:00.246 Text: doesn't understand names,
+Timestamp: 00:01:00.246 - 00:01:01.670 Text: doesn't understand domain names.
+Timestamp: 00:01:01.670 - 00:01:04.035 Text: It needs the IP address associated
+Timestamp: 00:01:04.035 - 00:01:05.618 Text: with www.cisco.com.
+Timestamp: 00:01:07.601 - 00:01:10.194 Text: So the user, the system,
+Timestamp: 00:01:10.194 - 00:01:13.111 Text: is going to contact the DNS server.
+Timestamp: 00:01:14.286 - 00:01:18.773 Text: The DNS server is going to
+associate the domain name,
+Timestamp: 00:01:18.773 - 00:01:19.940 Text: www.cisco.com,
+Timestamp: 00:01:21.396 - 00:01:23.151 Text: with an IP address,
+Timestamp: 00:01:23.151 - 00:01:27.981 Text: and return that IP address
+to the user, to the system.
+Timestamp: 00:01:27.981 - 00:01:31.233 Text: Now the system can contact the web server,
+Timestamp: 00:01:31.233 - 00:01:34.316 Text: www.cisco.com, using this IP address.
+Timestamp: 00:01:37.837 - 00:01:41.670 Text: This request uses HTTP
+to request the webpage.
+Timestamp: 00:01:44.099 - 00:01:45.474 Text: It is sent to the web server,
+Timestamp: 00:01:45.474 - 00:01:46.641 Text: www.cisco.com,
+Timestamp: 00:01:48.360 - 00:01:51.777 Text: that uses HTTP to return the information,
+Timestamp: 00:01:52.858 - 00:01:55.525 Text: the HTML code, back to the user.
+Timestamp: 00:01:57.365 - 00:02:00.197 Text: Now the user can display the webpage
+Timestamp: 00:02:00.197 - 00:02:02.614 Text: www.cisco.com in its browser.
+Timestamp: 00:02:04.416 - 00:02:08.166 Text: So here we can see the
+www.cisco.com webpage.
+Timestamp: 00:02:09.966 - 00:02:13.328 Text: To take a look at the HTML code,
+Timestamp: 00:02:13.328 - 00:02:16.282 Text: we just go right over here to the menu,
+Timestamp: 00:02:16.282 - 00:02:17.906 Text: Developer.
+Timestamp: 00:02:17.906 - 00:02:20.319 Text: Click on page source.
+Timestamp: 00:02:20.319 - 00:02:24.236 Text: This page source, this
+is the actual HTML code.
+Timestamp: 00:02:25.430 - 00:02:29.269 Text: This HTML code was downloaded
+from the web server
+Timestamp: 00:02:29.269 - 00:02:30.352 Text: www.cisco.com
+Timestamp: 00:02:31.996 - 00:02:34.438 Text: to the client's system
+Timestamp: 00:02:34.438 - 00:02:36.863 Text: and displayed in its browser.
+Timestamp: 00:02:36.863 - 00:02:39.268 Text: The browser then takes this code,
+Timestamp: 00:02:39.268 - 00:02:40.183 Text: displays it,
+Timestamp: 00:02:40.183 - 00:02:43.266 Text: and we see the webpage www.cisco.com.

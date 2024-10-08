@@ -1,0 +1,58 @@
+Module Number: 6249540868001_1
+Section Number: 6249540868001_1.3
+Video Number: 6249540868001_1.3.2
+Video Title: Throughput__eng
+Video URL: 
+ - Hi. In this video, we're going to demonstrate throughput using the website speedtest.net. There are other websites that do a similar sort of thing. So throughput. Throughput is the amount of data sent and received over a connection, including any delays that might occur. This includes delays in both directions. It can happen, delays sending the messages there, or receiving the messages. So let's go ahead and take a look using speedtest.net. We're going to go ahead and click on Begin Test. And as we can see that we're going to be downloading some messages. So you see the download speed. This is the number of bits per second that is being received. And as we're going to see in a moment, this is the millions of bits per second, known as megabits per second. So we see the download speed, or the bandwidth, is 35.70 megabits per second, millions of bits per second. The upload speed, or the upload bandwidth, that measures at 35.04 megabits per second. 35.04 millions of bits per second. Okay, we can see that our download speed is slightly higher, in this case, than our upload speed. Typically at home, you're going to experience that you're going to be able to receive data, receive messages, faster, higher download speed, than you are going to be able to upload. So here we've used www.speedtest.net. There are other sites as well. These are always a good tool to help measure the performance, the amount of data you can send and receive, not just over your network, but also through your internet service provider, your internet connection.
+Timestamp: 00:00:06.501 - 00:00:07.334 Text: - Hi.
+Timestamp: 00:00:07.334 - 00:00:10.204 Text: In this video, we're going to
+demonstrate throughput
+Timestamp: 00:00:10.204 - 00:00:12.871 Text: using the website speedtest.net.
+Timestamp: 00:00:13.764 - 00:00:16.964 Text: There are other websites that
+do a similar sort of thing.
+Timestamp: 00:00:16.964 - 00:00:18.131 Text: So throughput.
+Timestamp: 00:00:19.062 - 00:00:23.569 Text: Throughput is the amount
+of data sent and received
+Timestamp: 00:00:23.569 - 00:00:27.907 Text: over a connection, including
+any delays that might occur.
+Timestamp: 00:00:27.907 - 00:00:31.131 Text: This includes delays in both directions.
+Timestamp: 00:00:31.131 - 00:00:34.451 Text: It can happen, delays
+sending the messages there,
+Timestamp: 00:00:34.451 - 00:00:36.959 Text: or receiving the messages.
+Timestamp: 00:00:36.959 - 00:00:40.418 Text: So let's go ahead and take
+a look using speedtest.net.
+Timestamp: 00:00:40.418 - 00:00:44.988 Text: We're going to go ahead
+and click on Begin Test.
+Timestamp: 00:00:44.988 - 00:00:47.197 Text: And as we can see that we're going to be
+Timestamp: 00:00:47.197 - 00:00:49.364 Text: downloading some messages.
+Timestamp: 00:00:50.585 - 00:00:53.750 Text: So you see the download speed.
+Timestamp: 00:00:53.750 - 00:00:56.964 Text: This is the number of bits per second
+Timestamp: 00:00:56.964 - 00:00:59.627 Text: that is being received.
+Timestamp: 00:00:59.627 - 00:01:01.564 Text: And as we're going to see in a moment,
+Timestamp: 00:01:01.564 - 00:01:04.392 Text: this is the millions of bits per second,
+Timestamp: 00:01:04.392 - 00:01:06.809 Text: known as megabits per second.
+Timestamp: 00:01:09.472 - 00:01:12.825 Text: So we see the download
+speed, or the bandwidth,
+Timestamp: 00:01:12.825 - 00:01:16.992 Text: is 35.70 megabits per second,
+millions of bits per second.
+Timestamp: 00:01:21.437 - 00:01:25.649 Text: The upload speed, or the upload bandwidth,
+Timestamp: 00:01:25.649 - 00:01:29.232 Text: that measures at 35.04
+megabits per second.
+Timestamp: 00:01:33.293 - 00:01:36.126 Text: 35.04 millions of bits per second.
+Timestamp: 00:01:38.091 - 00:01:41.256 Text: Okay, we can see that our download speed
+Timestamp: 00:01:41.256 - 00:01:45.385 Text: is slightly higher, in this
+case, than our upload speed.
+Timestamp: 00:01:45.385 - 00:01:48.000 Text: Typically at home, you're going to experience
+Timestamp: 00:01:48.000 - 00:01:51.834 Text: that you're going to be able to receive data,
+Timestamp: 00:01:51.834 - 00:01:55.834 Text: receive messages, faster,
+higher download speed,
+Timestamp: 00:01:57.907 - 00:02:00.013 Text: than you are going to be able to upload.
+Timestamp: 00:02:00.013 - 00:02:03.096 Text: So here we've used www.speedtest.net.
+Timestamp: 00:02:04.353 - 00:02:06.210 Text: There are other sites as well.
+Timestamp: 00:02:06.210 - 00:02:08.644 Text: These are always a good tool to help
+Timestamp: 00:02:08.644 - 00:02:12.524 Text: measure the performance, the
+amount of data you can send
+Timestamp: 00:02:12.524 - 00:02:15.152 Text: and receive, not just over your network,
+Timestamp: 00:02:15.152 - 00:02:18.201 Text: but also through your
+internet service provider,
+Timestamp: 00:02:18.201 - 00:02:20.284 Text: your internet connection.

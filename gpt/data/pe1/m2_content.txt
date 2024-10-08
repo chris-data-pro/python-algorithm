@@ -1,0 +1,533 @@
+1
+11
+2
+Error
+Question 2
+LAB: Simple input and output
+Question 2
+1.9 Positional rguments
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Section 3 – Operators - data manipulation tools
+Scroll to begin   
+New Component Title
+New Component Title
+New Component Title
+Expected output
+Question 3
+Section 4 – Variables
+Scroll to begin   
+New Component Title
+New Component Title
+Sample input
+Question 1
+Question
+What is the output of the following snippet?
+y = 2 + 3 * 5.
+print(Y)
+ 
+the snippet will cause an execution error
+25.
+17
+17.0
+New Component Title
+Welcome to section two, where we will talk about Python literals.
+New Component Title
+Question
+ The print() function can output values of:
+any number of arguments (including zero)
+any number of arguments (excluding zero)
+just one argument
+not more than five arguments
+New Component Title
+Previous
+Home
+Back to menu
+Next 
+{{inc index}}
+Close
+New Component Title
+LAB The print() function and its arguments
+Question 2
+New Component Title
+New Component Title
+6.2 The input() function with an argument
+New Component Title
+Sample input
+New Component Title
+SECTION QUIZ
+1.7 Python escape and newline characters
+Sample input
+Question 2
+The subtraction operator, unary and binary operators
+SECTION SUMMARY
+2.4 Strings
+New Component Title
+New Component Title
+New Component Title
+Question
+Left-sided binding determines that the result of the following expression:
+1 // 2 * 3
+0
+4.5
+0.0
+0.16666666666666666
+New Component Title
+SECTION QUIZ
+Question 3
+Question
+The result of the following division:
+1 / 1
+is equal to 1.0
+is equal to 1
+cannot be evaluated
+cannot be predicted
+3.1 Python as a calculator
+SECTION SUMMARY
+Section 5 – Comments
+Scroll to begin   
+Question
+ The meaning of the keyword parameter is determined by:
+the argument's name specified along with its value
+its position within the argument list
+its connection with existing variables
+its value
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+4.6 Solving simple mathematical problems
+New Component Title
+New Component Title
+New Component Title
+1.3 Function arguments
+1.6 Instructions
+Question 1
+3
+2
+5
+New Component Title
+Question
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = int(input())
+y = int(input())
+ 
+x = x // y
+y = y // x
+ 
+print(y)
+ 
+the code will cause a runtime error
+2.0
+4.0
+8.0
+1.8 Using multiple arguments
+2.1 Literals – the data in itself
+1.10 Keyword arguments
+New Component Title
+New Component Title
+Well done! You've reached the end of Module 2 and completed a major milestone in your Python programming education. Here's a short summary of the topic areas you've covered in Module 2:how to write and run simple Python programs;what Python literals, operators, and expressions are;what variables are and what are the rules that govern them;how to perform basic input and output operations.You are now ready to take the module test, which will both help you gauge what you've learned so far.The following test is based on what you have just learned. There are twenty questions in total and you need to score at least 70% to pass.
+
+Good luck!
+
+LAB Variables ‒ a simple converter
+New Component Title
+Expected output
+Question 2
+New Component Title
+Question
+Which of the following variable names are illegal?  (Select two answers) 
+True
+and
+true
+TRUE
+LAB Comments
+SECTION QUIZ
+5.1 Comments – why, when, and how?
+SECTION SUMMARY
+New Component Title
+How not to divide
+Expected output
+New Component Title
+New Component Title
+Question 1
+In this section you will learn how to talk to a computer: you will familiarize yourself with the input() function, perform type conversions, and learn how to use string operators.
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+New Component Title
+6.3 The result of the input() function
+New Component Title
+Integer division (floor division)
+New Component Title
+New Component Title
+New Component Title
+4.5 How to assign a new value to an already existing variable
+Welcome to section three, where we will talk about Python operators.
+Question 4
+1.0
+1
+9
+6
+6.0
+1.2 The print() function
+Where do the functions come from?
+From Python itself
+They may come from Python itself; the print function is one of this kind; such a function is an added value received together with Python and its environment (it is built-in); you don't have to do anything special (e.g., ask anyone for anything) if you want to make use of it;
+From modules
+They may come from one or more of Python's add-ons named modules; some of the modules come with Python, others may require separate installation - whatever the case, they all need to be explicitly connected with your code (we'll show you how to do that soon);
+From your code
+You can write them yourself, placing as many functions as you want and need inside your program to make it simpler, clearer and more elegant.
+4.7 Shortcut operators
+New Component Title
+New Component Title
+New Component Title
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Text
+Section 1 – The "Hello, World!" Program
+New Component Title
+Text
+Section 6 – Interaction with the user
+New Component Title
+New Component Title
+Sample input
+New Component Title
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+Which of the following statements are true?  (Select two answers)
+The right argument of the % operator cannot be zero.
+The ** operator uses right-sided binding.
+The result of the / operator is always an integer value.
+Addition precedes multiplication.
+Module 2 Completion – MODULE TEST
+Scroll to begin   
+LAB: Operators and expressions - 2
+New Component Title
+Sample input
+New Component Title
+4.4 How to use a variable
+New Component Title
+Text
+Section 4 – Variables
+New Component Title
+New Component Title
+Question 2
+New Component Title
+New Component Title
+New Component Title
+SECTION SUMMARY
+1.5 The print() function and its effect, arguments, and values returned
+New Component Title
+Question
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = int(input())
+y = int(input())
+ 
+x = x / y
+y = y / x
+ 
+print(y)
+ 
+8.0
+4.0
+2.0
+the code will cause a runtime error
+6.1 The input() function
+LAB: Simple input and output
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+4.1 Variables – data-shaped boxes
+Expected output
+5.2 Marking fragments of code
+Division
+New Component Title
+Welcome to Module two! In the first section, we will learn about the most essential elements of syntax and semantics of the Python language, and use them to build your very first Python program – "Hello, World!".
+New Component Title
+1.4 Function invocation
+New Component Title
+Text
+Section 2 – Python literals
+Question
+ The 0o prefix means that the number after it is denoted as:
+octal
+binary
+decimal
+hexadecimal
+Expected output
+New Component Title
+Section 1 – The "Hello, World!" Program
+Scroll to begin   
+Keywords
+4.2 Variable names
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet if the user enters two lines containing 11 and 4 respectively?
+x = int(input())
+y = int(input())
+ 
+x = x % y
+x = x % y
+y = y % x
+ 
+print(y)
+ 
+1
+2
+3
+4
+New Component Title
+New Component Title
+Question 3
+Question 1
+New Component Title
+2.5 Boolean values
+Remainder (modulo)
+Question
+ The \n digraph forces the print() function to:
+break the output line
+output exactly two characters: \ and n
+duplicate the character next to the digraph
+stop its execution
+2.2 Integers
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+4.6 Solving simple mathematical problems
+2.3 Floats
+New Component Title
+LAB Formatting the output
+LAB Python literals - strings
+New Component Title
+Section 6 – Interaction with the user
+Scroll to begin   
+Section 2 – Python literals
+Scroll to begin   
+New Component Title
+Return
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+SECTION SUMMARY
+Question
+What is the output of the following snippet?
+x = 1 / 2 + 3 // 3 + 4 ** 2
+print(x)
+ 
+17.5
+17
+8
+8.5
+Question
+What is the output of the following snippet if the user enters two lines containing 3 and 6 respectively?
+x = input()
+y = int(input())
+ 
+print(x * y)
+ 
+333333
+18
+666
+36
+1.1 Your very first program
+New Component Title
+LAB Working with the print() function
+Text
+ Section 3 – Operators - data manipulation tools
+New Component Title
+6.6 More about input() and type casting
+Question
+What is the output of the following snippet?
+x = 1
+y = 2
+z = x
+x = y
+y = z
+print(x, y)
+ 
+2 1
+1 2
+1 1
+2 2
+3.2 Basic operators
+6.5 Type casting (type conversions)
+Welcome to section five where we will share with you a few comments on comments. You will learn here why it is important to document your code, and why you should leave comments. You will also learn how to do it, and when comments are considered good practice. Let's go!
+New Component Title
+New Component Title
+Sample input
+New Component Title
+SECTION SUMMARY
+LAB Operators and expressions – 2
+New Component Title
+New Component Title
+New Component Title
+6.4 The input() function – prohibited operations
+New Component Title
+New Component Title
+New Component Title
+SECTION QUIZ
+1.2 The print() function
+Look at the line of code below:
+LAB Operators and expressions
+Question
+ The value twenty point twelve times ten raised to the power of eight should be written as:
+20.12E8
+20.12*10^8
+20.12E8.0
+20E12.8
+New Component Title
+Previous
+Home
+Back to menu
+Next
+{{inc index}}
+Close
+New Component Title
+Question
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = int(input())
+y = int(input())
+ 
+print(x + y)
+ 
+6
+24
+2
+4
+Question
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = input()
+y = input()
+print(x + y)
+ 
+24
+2
+4
+6
+New Component Title
+Question 3
+Text
+Section 5 – Comments
+LAB Operators and expressions
+New Component Title
+4.3 How to create a variable
+3.3 Operators and their priorities
+Question
+ The ** operator:
+performs exponentiation
+does not exist
+performs floating-point multiplication
+performs duplicated multiplication
+New Component Title
+Question
+What is the output of the following snippet?
+z = y = x = 1
+print(x, y, z, sep='*')
+ 
+1*1*1
+1 1 1
+x*y*z
+x y z
+Question 2
+Question 2: Which of the following variable names are illegal in Python?  (Select three answers)
+my_var
+m
+101
+averylongVariablename
+m101
+m 101
+Del
+del
+New Component Title
+New Component Title
+Sample input
+New Component Title
+Addition
+Question 1
+Welcome to section four! This part of the course focuses on variables – we will learn what they are, how to use them, and what the rules are that govern them. Ready?
+New Component Title
+6.8 Type conversions once again Completed
+New Component Title
+Quiz Feedback
+Text
+Module 2 Completion – MODULE TEST
+New Component Title
+Question 3
+Expected output
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+1.4 Function invocation
+6.7 String operators
+New Component Title
+New Component Title
+Expected output
+Question 1
+Question 2
+New Component Title
+New Component Title
+New Component Title
+List of priorities
+New Component Title
+New Component Title
+New Component Title

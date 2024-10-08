@@ -1,0 +1,50 @@
+Module Number: 6249931165001_7
+Section Number: 6249931165001_7.2
+Video Number: 6249931165001_7.2.1
+Video Title: Router Packet Forwarding__eng
+Video URL: 
+ - In this video, we're going to take a look at how a router forwards packets from one network to another network. So in this example, we have Host at 10.0.0.1, wants to send a packet to 192.168.1.2, which is in another network. So the source IP address of the packet will be 10.0.0.1, the destination IPv4 address of the packet will be 192.168.1.2. So H1 sends the packet to its default gateway, the router. Now it sends it to the router because it knows-- H1 knows that the destination, H4 it's IPv4 address is on a different network. The router receives the packet, and it looks up the destination IPv4 address of the packet in its routing table. It notices that the IPv4 address, the destination IPv4 address, 192.168.1.2 is on the 192.168.1.0 network. And that network is on its Fast Ethernet 02 interface. So the router will go ahead and forward this packet out its Fast Ethernet 02 interface towards the final destination. Now in this case, H1 has a packet to send to the destination IPv4 address 255.255.255.255. If you remember, that's a broadcast address. So a broadcast will be sent to all devices on its network. You'll notice the router will receive this broadcast but will not forward this packet out to other networks.
+Timestamp: 00:00:06.579 - 00:00:09.617 Text: - In this video, we're going to
+take a look at how a router
+Timestamp: 00:00:09.617 - 00:00:14.360 Text: forwards packets from one
+network to another network.
+Timestamp: 00:00:14.360 - 00:00:18.110 Text: So in this example, we
+have Host at 10.0.0.1,
+Timestamp: 00:00:19.358 - 00:00:22.525 Text: wants to send a packet to 192.168.1.2,
+Timestamp: 00:00:24.930 - 00:00:27.339 Text: which is in another network.
+Timestamp: 00:00:27.339 - 00:00:31.635 Text: So the source IP address of
+the packet will be 10.0.0.1,
+Timestamp: 00:00:31.635 - 00:00:34.333 Text: the destination IPv4 address of the
+Timestamp: 00:00:34.333 - 00:00:36.583 Text: packet will be 192.168.1.2.
+Timestamp: 00:00:39.205 - 00:00:43.038 Text: So H1 sends the packet
+to its default gateway,
+Timestamp: 00:00:43.888 - 00:00:45.136 Text: the router.
+Timestamp: 00:00:45.136 - 00:00:47.816 Text: Now it sends it to the
+router because it knows--
+Timestamp: 00:00:47.816 - 00:00:50.304 Text: H1 knows that the destination,
+Timestamp: 00:00:50.304 - 00:00:54.221 Text: H4 it's IPv4 address is
+on a different network.
+Timestamp: 00:00:55.917 - 00:00:58.178 Text: The router receives the packet,
+Timestamp: 00:00:58.178 - 00:01:02.378 Text: and it looks up the
+destination IPv4 address
+Timestamp: 00:01:02.378 - 00:01:06.048 Text: of the packet in its routing table.
+Timestamp: 00:01:06.048 - 00:01:08.798 Text: It notices that the IPv4 address,
+Timestamp: 00:01:10.374 - 00:01:13.437 Text: the destination IPv4 address,
+Timestamp: 00:01:13.437 - 00:01:16.937 Text: 192.168.1.2 is on the 192.168.1.0 network.
+Timestamp: 00:01:21.684 - 00:01:25.851 Text: And that network is on its
+Fast Ethernet 02 interface.
+Timestamp: 00:01:26.997 - 00:01:31.364 Text: So the router will go ahead
+and forward this packet out its
+Timestamp: 00:01:31.364 - 00:01:35.531 Text: Fast Ethernet 02 interface
+towards the final destination.
+Timestamp: 00:01:38.405 - 00:01:41.915 Text: Now in this case, H1 has a packet to send
+Timestamp: 00:01:41.915 - 00:01:45.915 Text: to the destination IPv4
+address 255.255.255.255.
+Timestamp: 00:01:50.576 - 00:01:53.877 Text: If you remember, that's
+a broadcast address.
+Timestamp: 00:01:53.877 - 00:01:58.044 Text: So a broadcast will be sent
+to all devices on its network.
+Timestamp: 00:01:59.466 - 00:02:02.746 Text: You'll notice the router
+will receive this broadcast
+Timestamp: 00:02:02.746 - 00:02:06.913 Text: but will not forward this
+packet out to other networks.

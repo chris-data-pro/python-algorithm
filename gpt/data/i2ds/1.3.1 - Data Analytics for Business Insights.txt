@@ -1,0 +1,38 @@
+Module Number: 1
+Section Number: 1.3
+Video Number: 1.3.1
+Video Title: Data Analytics for Business Insights
+Video URL: 
+ Data science enables businesses to better understand the impact of their products and services, adjust their methods and goals and provide the customers with better products faster. The insights gain from data analysis can make a difference to the success of the business, as well as to the lives of their employees. There are multiple types of analysis that provide businesses with information that can drive innovation, improve efficiency and mitigate risk. The type of analytics to implement will depend on the problem that needs to be solved or questions that need to be answered. Trend analysis is one way to gain insights into key performance indicators, KPI, over time. One of our clients at Data Crunchers is a bicycle store that is having difficulty with attracting new customers. We can use analysis of the types of bicycles or services that their previous new customers purchased and during what time of the year they made their purchases. This analysis identifies trends in these purchases, such as many new customers are buying certain types of bikes at a specific time of the year. The store uses this information to purchase advertising during those time periods to target new buyers. Afterwards, store management can analyze sales data to determine the effectiveness of the advertising. Analytics can also be used to predict customer behaviors, gauge user satisfaction and even to identify patterns that can be used to train machines to perform complex functions.
+Timestamp: 00:00:00.000 - 00:00:02.010 Text: Data science enables businesses
+Timestamp: 00:00:02.010 - 00:00:03.630 Text: to better understand the impact
+Timestamp: 00:00:03.630 - 00:00:05.460 Text: of their products and services,
+Timestamp: 00:00:05.460 - 00:00:07.080 Text: adjust their methods and goals
+Timestamp: 00:00:07.080 - 00:00:10.710 Text: and provide the customers with better products faster.
+Timestamp: 00:00:10.710 - 00:00:12.900 Text: The insights gain from data analysis
+Timestamp: 00:00:12.900 - 00:00:15.630 Text: can make a difference to the success of the business,
+Timestamp: 00:00:15.630 - 00:00:18.330 Text: as well as to the lives of their employees.
+Timestamp: 00:00:18.330 - 00:00:21.450 Text: There are multiple types of analysis that provide businesses
+Timestamp: 00:00:21.450 - 00:00:24.450 Text: with information that can drive innovation,
+Timestamp: 00:00:24.450 - 00:00:27.420 Text: improve efficiency and mitigate risk.
+Timestamp: 00:00:27.420 - 00:00:29.940 Text: The type of analytics to implement will depend
+Timestamp: 00:00:29.940 - 00:00:32.070 Text: on the problem that needs to be solved
+Timestamp: 00:00:32.070 - 00:00:34.830 Text: or questions that need to be answered.
+Timestamp: 00:00:34.830 - 00:00:37.096 Text: Trend analysis is one way to gain insights
+Timestamp: 00:00:37.096 - 00:00:42.030 Text: into key performance indicators, KPI, over time.
+Timestamp: 00:00:42.030 - 00:00:44.940 Text: One of our clients at Data Crunchers is a bicycle store
+Timestamp: 00:00:44.940 - 00:00:48.150 Text: that is having difficulty with attracting new customers.
+Timestamp: 00:00:48.150 - 00:00:51.420 Text: We can use analysis of the types of bicycles or services
+Timestamp: 00:00:51.420 - 00:00:53.610 Text: that their previous new customers purchased
+Timestamp: 00:00:53.610 - 00:00:56.820 Text: and during what time of the year they made their purchases.
+Timestamp: 00:00:56.820 - 00:01:00.240 Text: This analysis identifies trends in these purchases,
+Timestamp: 00:01:00.240 - 00:01:03.720 Text: such as many new customers are buying certain types of bikes
+Timestamp: 00:01:03.720 - 00:01:05.550 Text: at a specific time of the year.
+Timestamp: 00:01:05.550 - 00:01:08.322 Text: The store uses this information to purchase advertising
+Timestamp: 00:01:08.322 - 00:01:12.150 Text: during those time periods to target new buyers.
+Timestamp: 00:01:12.150 - 00:01:14.966 Text: Afterwards, store management can analyze sales data
+Timestamp: 00:01:14.966 - 00:01:18.360 Text: to determine the effectiveness of the advertising.
+Timestamp: 00:01:18.360 - 00:01:21.810 Text: Analytics can also be used to predict customer behaviors,
+Timestamp: 00:01:21.810 - 00:01:25.230 Text: gauge user satisfaction and even to identify patterns
+Timestamp: 00:01:25.230 - 00:01:27.030 Text: that can be used to train machines
+Timestamp: 00:01:27.030 - 00:01:29.073 Text: to perform complex functions.

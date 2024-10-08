@@ -1,0 +1,73 @@
+Module Number: 6249543481001_1
+Section Number: 6249543481001_1.2
+Video Number: 6249543481001_1.2.1
+Video Title: Types of Data__eng
+Video URL: 
+ - We hear about data all the time, especially when we're talking about computer networks. You hear about data that's transmitted, data that's entered, data that's stored, and you even hear about big data that exists somewhere out in the cloud, but what exactly is data? Okay, data in its raw form is the information that you input. Every time you hit send or share or upload, you are sending data that you created somewhere out onto the network. Now, there are different types of data. I'm going to talk a little bit first about volunteer data. Volunteer data is data that you offer yourself. You realize the data is being collected about you, and you are agreeing to share it or to store it somewhere on the network. The second type of data that you may not realize is actually being collected about you is something we call inferred data. Inferred data is data that you generate by your activities. For example, your credit card. Every place that you use your credit card keeps a record, and therefore, if you move about and go to different stores, things are being collected about you, like your preferences, the places that you typically eat or shop, and also, information that helps pinpoint your location. For example, I'm here in Portland today, and I used my ATM card. Now, I live in Florida. So my bank has now data that indicates that I traveled from Florida to Portland, and that information then becomes part of a larger databank that is stored at the bank and also at the credit card processing company. So this data exists, even though I didn't intentionally volunteer it. Now, another type of data is observed data. For example, your phone probably keeps track of your location. Most people have their location services on. That information is also being stored and is being transmitted to your carrier. So you have a lot of information out there that is being collected and stored (laughs). Hence, the term big data out in the cloud. So we have to be careful sometimes when we click on the share or store buttons on our devices so that we know where things are going.
+Timestamp: 00:00:06.363 - 00:00:08.357 Text: - We hear about data all the time,
+Timestamp: 00:00:08.357 - 00:00:11.256 Text: especially when we're talking
+about computer networks.
+Timestamp: 00:00:11.256 - 00:00:13.496 Text: You hear about data that's transmitted,
+Timestamp: 00:00:13.496 - 00:00:16.751 Text: data that's entered, data that's stored,
+Timestamp: 00:00:16.751 - 00:00:18.744 Text: and you even hear about big data
+Timestamp: 00:00:18.744 - 00:00:21.187 Text: that exists somewhere out in the cloud,
+Timestamp: 00:00:21.187 - 00:00:23.270 Text: but what exactly is data?
+Timestamp: 00:00:24.197 - 00:00:26.614 Text: Okay, data in its raw form is
+Timestamp: 00:00:28.346 - 00:00:30.742 Text: the information that you input.
+Timestamp: 00:00:30.742 - 00:00:34.325 Text: Every time you hit send
+or share or upload,
+Timestamp: 00:00:36.350 - 00:00:39.433 Text: you are sending data that you created
+Timestamp: 00:00:40.855 - 00:00:43.939 Text: somewhere out onto the network.
+Timestamp: 00:00:43.939 - 00:00:47.846 Text: Now, there are different types of data.
+Timestamp: 00:00:47.846 - 00:00:52.651 Text: I'm going to talk a little bit
+first about volunteer data.
+Timestamp: 00:00:52.651 - 00:00:56.838 Text: Volunteer data is data
+that you offer yourself.
+Timestamp: 00:00:56.838 - 00:00:59.810 Text: You realize the data is
+being collected about you,
+Timestamp: 00:00:59.810 - 00:01:03.303 Text: and you are agreeing to share it
+Timestamp: 00:01:03.303 - 00:01:06.197 Text: or to store it somewhere on the network.
+Timestamp: 00:01:06.197 - 00:01:09.330 Text: The second type of data
+that you may not realize
+Timestamp: 00:01:09.330 - 00:01:11.116 Text: is actually being collected about you
+Timestamp: 00:01:11.116 - 00:01:13.967 Text: is something we call inferred data.
+Timestamp: 00:01:13.967 - 00:01:18.134 Text: Inferred data is data that you
+generate by your activities.
+Timestamp: 00:01:19.700 - 00:01:22.200 Text: For example, your credit card.
+Timestamp: 00:01:23.165 - 00:01:25.396 Text: Every place that you use your credit card
+Timestamp: 00:01:25.396 - 00:01:29.182 Text: keeps a record, and
+therefore, if you move about
+Timestamp: 00:01:29.182 - 00:01:31.865 Text: and go to different stores,
+things are being collected
+Timestamp: 00:01:31.865 - 00:01:34.797 Text: about you, like your preferences,
+Timestamp: 00:01:34.797 - 00:01:38.089 Text: the places that you typically eat or shop,
+Timestamp: 00:01:38.089 - 00:01:42.256 Text: and also, information that
+helps pinpoint your location.
+Timestamp: 00:01:44.918 - 00:01:48.947 Text: For example, I'm here in Portland today,
+Timestamp: 00:01:48.947 - 00:01:50.864 Text: and I used my ATM card.
+Timestamp: 00:01:52.369 - 00:01:55.092 Text: Now, I live in Florida.
+Timestamp: 00:01:55.092 - 00:01:58.383 Text: So my bank has now data that indicates
+Timestamp: 00:01:58.383 - 00:02:02.072 Text: that I traveled from Florida to Portland,
+Timestamp: 00:02:02.072 - 00:02:03.824 Text: and that information then becomes
+Timestamp: 00:02:03.824 - 00:02:07.564 Text: part of a larger databank that is stored
+Timestamp: 00:02:07.564 - 00:02:11.878 Text: at the bank and also at the
+credit card processing company.
+Timestamp: 00:02:11.878 - 00:02:14.646 Text: So this data exists, even though I
+Timestamp: 00:02:14.646 - 00:02:17.892 Text: didn't intentionally volunteer it.
+Timestamp: 00:02:17.892 - 00:02:21.475 Text: Now, another type of
+data is observed data.
+Timestamp: 00:02:22.693 - 00:02:25.987 Text: For example, your phone probably keeps
+Timestamp: 00:02:25.987 - 00:02:27.942 Text: track of your location.
+Timestamp: 00:02:27.942 - 00:02:30.669 Text: Most people have their
+location services on.
+Timestamp: 00:02:30.669 - 00:02:33.883 Text: That information is also being stored
+Timestamp: 00:02:33.883 - 00:02:37.053 Text: and is being transmitted to your carrier.
+Timestamp: 00:02:37.053 - 00:02:40.391 Text: So you have a lot of information out there
+Timestamp: 00:02:40.391 - 00:02:44.558 Text: that is being collected
+and stored (laughs).
+Timestamp: 00:02:46.447 - 00:02:50.548 Text: Hence, the term big data out in the cloud.
+Timestamp: 00:02:50.548 - 00:02:52.496 Text: So we have to be careful sometimes
+Timestamp: 00:02:52.496 - 00:02:56.079 Text: when we click on the
+share or store buttons
+Timestamp: 00:02:58.401 - 00:03:02.568 Text: on our devices so that we
+know where things are going.

@@ -1,0 +1,30 @@
+Module Number: 1
+Section Number: 1.3
+Video Number: 1.3.3
+Video Title: Humanitarian Insights from Data Analytics
+Video URL: 
+ Businesses aren't the only ones that benefit from analytics. There are many examples of how humanitarian organizations are using the power of data to better serve their communities and the world. (upbeat music) Humanitarian aid organizations use insights gained from data analysis to predict the impacts of droughts and other weather events. The information obtained enables them to muster the appropriate resources to minimize the impact of vulnerable populations. The data from satellites, sensors, cameras, and even social media posts inform organizations about the numbers and locations of displaced persons that may need aid. Data collected during the recent pandemic informs researchers and medical personnel of how a virus might spread and mutate, ensuring that they can be better prepared in the future. IoT sensors and everyday things such as water pumps enable social entrepreneurs to determine how the individual pumps are operating and predict failures before they impact water supplies.
+Timestamp: 00:00:00.000 - 00:00:01.650 Text: Businesses aren't the only ones
+Timestamp: 00:00:01.650 - 00:00:03.540 Text: that benefit from analytics.
+Timestamp: 00:00:03.540 - 00:00:06.960 Text: There are many examples of how humanitarian organizations
+Timestamp: 00:00:06.960 - 00:00:08.760 Text: are using the power of data
+Timestamp: 00:00:08.760 - 00:00:11.102 Text: to better serve their communities and the world.
+Timestamp: 00:00:11.102 - 00:00:11.935 Text: (upbeat music)
+Timestamp: 00:00:11.935 - 00:00:15.000 Text: Humanitarian aid organizations use insights
+Timestamp: 00:00:15.000 - 00:00:18.000 Text: gained from data analysis to predict the impacts
+Timestamp: 00:00:18.000 - 00:00:20.550 Text: of droughts and other weather events.
+Timestamp: 00:00:20.550 - 00:00:23.340 Text: The information obtained enables them to muster
+Timestamp: 00:00:23.340 - 00:00:25.980 Text: the appropriate resources to minimize
+Timestamp: 00:00:25.980 - 00:00:28.800 Text: the impact of vulnerable populations.
+Timestamp: 00:00:28.800 - 00:00:31.410 Text: The data from satellites, sensors, cameras,
+Timestamp: 00:00:31.410 - 00:00:34.740 Text: and even social media posts inform organizations
+Timestamp: 00:00:34.740 - 00:00:36.450 Text: about the numbers and locations
+Timestamp: 00:00:36.450 - 00:00:39.570 Text: of displaced persons that may need aid.
+Timestamp: 00:00:39.570 - 00:00:42.060 Text: Data collected during the recent pandemic
+Timestamp: 00:00:42.060 - 00:00:44.640 Text: informs researchers and medical personnel
+Timestamp: 00:00:44.640 - 00:00:47.040 Text: of how a virus might spread and mutate,
+Timestamp: 00:00:47.040 - 00:00:50.280 Text: ensuring that they can be better prepared in the future.
+Timestamp: 00:00:50.280 - 00:00:53.370 Text: IoT sensors and everyday things such as water pumps
+Timestamp: 00:00:53.370 - 00:00:55.647 Text: enable social entrepreneurs to determine
+Timestamp: 00:00:55.647 - 00:00:58.020 Text: how the individual pumps are operating
+Timestamp: 00:00:58.020 - 00:01:01.473 Text: and predict failures before they impact water supplies.

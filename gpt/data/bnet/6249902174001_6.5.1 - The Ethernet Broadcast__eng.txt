@@ -1,0 +1,31 @@
+Module Number: 6249902174001_6
+Section Number: 6249902174001_6.5
+Video Number: 6249902174001_6.5.1
+Video Title: The Ethernet Broadcast__eng
+Video URL: 
+ - In this video, we're going to take a look at an Ethernet broadcast. An Ethernet broadcast is when the destination MAC address is 48 one-bits, or in hexidecimal, all Fs. So looking at the animation here, we have H1 going to send a broadcast to all the other devices. This might be a message that it needs all the devices in its network to receive. So we can see H1 sends the broadcast. When a switch receives an Ethernet broadcast, it floods, or forwards, the Ethernet frame out all ports except the incoming port. The result is, all the devices in the network will receive the broadcast. If we have a router in the network, it will receive the broadcast also. However, the router will not forward the broadcast on to other networks.
+Timestamp: 00:00:06.519 - 00:00:08.448 Text: - In this video, we're going to take a look
+Timestamp: 00:00:08.448 - 00:00:10.531 Text: at an Ethernet broadcast.
+Timestamp: 00:00:11.541 - 00:00:15.301 Text: An Ethernet broadcast is when
+the destination MAC address
+Timestamp: 00:00:15.301 - 00:00:18.801 Text: is 48 one-bits, or in hexidecimal, all Fs.
+Timestamp: 00:00:21.240 - 00:00:22.821 Text: So looking at the animation here,
+Timestamp: 00:00:22.821 - 00:00:26.988 Text: we have H1 going to send a broadcast
+to all the other devices.
+Timestamp: 00:00:29.051 - 00:00:32.689 Text: This might be a message that
+it needs all the devices
+Timestamp: 00:00:32.689 - 00:00:34.856 Text: in its network to receive.
+Timestamp: 00:00:38.011 - 00:00:40.269 Text: So we can see H1 sends the broadcast.
+Timestamp: 00:00:40.269 - 00:00:43.851 Text: When a switch receives
+an Ethernet broadcast,
+Timestamp: 00:00:43.851 - 00:00:47.429 Text: it floods, or forwards,
+the Ethernet frame out
+Timestamp: 00:00:47.429 - 00:00:50.469 Text: all ports except the incoming port.
+Timestamp: 00:00:50.469 - 00:00:53.760 Text: The result is, all the
+devices in the network
+Timestamp: 00:00:53.760 - 00:00:55.800 Text: will receive the broadcast.
+Timestamp: 00:00:55.800 - 00:00:57.931 Text: If we have a router in the network,
+Timestamp: 00:00:57.931 - 00:01:00.509 Text: it will receive the broadcast also.
+Timestamp: 00:01:00.509 - 00:01:03.701 Text: However, the router will
+not forward the broadcast
+Timestamp: 00:01:03.701 - 00:01:05.451 Text: on to other networks.

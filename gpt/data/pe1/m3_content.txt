@@ -1,0 +1,676 @@
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Sample input
+Question 1
+New Component Title
+Question
+After execution of the following snippet, the sum of all vals elements will be equal to:
+vals = [0, 1, 2]
+vals.insert(0, 1)
+del vals[1]
+ 
+4
+3
+2
+5
+New Component Title
+Expected output
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+3.1 Computer logic
+New Component Title
+New Component Title
+LAB   The break statement – Stuck in a loop
+New Component Title
+Expected output
+New Component Title
+Sample input
+New Component Title
+1.4 Operators
+LAB   Essentials of the while loop
+New Component Title
+New Component Title
+ LAB   Operating with lists ‒ basics
+Question
+How many stars (*) will the following snippet send to the console?
+i = 0
+while i <= 5 :
+    i += 1
+    if i % 2 == 0:
+      break
+    print("*")
+ 
+one
+two
+three
+zero
+In this section you will learn about arrays, nested lists (matrices), and list comprehensions.
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+LAB   The continue statement – the Pretty Vowel Eater
+Sample input
+4.4 Removing elements from a list
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Section 6 – Operations on lists
+Scroll to begin   
+New Component Title
+Text
+Section 3 – Logic and bit operations in Python
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+New Component Title
+Question 7
+New Component Title
+SECTION SUMMARY
+Welcome to section four! Here you will learn about Python lists and how to perform various operations on them. You will learn how to index, update, and delete list elements, how to perform slices, and how to use some of the most important list functions and methods.
+New Component Title
+4.7 Adding elements to a list: append() and insert()
+New Component Title
+Question
+Which of the following sentences are true?  (Select two answers)
+nums = [1, 2, 3]
+vals = nums[-1:-2]
+ 
+nums is longer than vals
+nums and vals are of the same length
+vals is longer than nums
+nums and vals are two different lists
+Question
+What is the output of the following snippet?
+my_list = [[0, 1, 2, 3] for i in range(2)]
+print(my_list[2][0])
+ 
+the snippet will cause a runtime error
+0
+1
+2
+Question 3
+Question 5
+New Component Title
+Sample input
+Question 6
+SECTION SUMMARY
+New Component Title
+4.2 Indexing lists
+Sample input
+New Component Title
+New Component Title
+Expected output
+New Component Title
+New Component Title
+Expected output
+New Component Title
+New Component Title
+New Component Title
+Question 3
+2.7 The for loop and the else branch
+New Component Title
+4.5 Negative indices are legal
+New Component Title
+Question
+What value will be assigned to the x variable?
+z = 10
+y = 0
+x = y  y or y > z and z < y
+ 
+True
+False
+1
+0
+Welcome to section 5 where you will learn how to sort simple lists using the Bubble sort algorithm.
+Question 3
+New Component Title
+New Component Title
+New Component Title
+Question 5
+New Component Title
+New Component Title
+New Component Title
+Question 2
+New Component Title
+Sample input
+Expected output
+New Component Title
+New Component Title
+New Component Title
+Question 3
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+Expected output
+1.5 Making use of the answers
+Expected output
+Question 1
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+LAB   The basics of lists
+LAB   Comparison operators and conditional execution
+6.5 Lists – some simple programs
+New Component Title
+Question 2
+Question 6
+Sample input
+New Component Title
+New Component Title
+In the second section you will learn about loops in Python, and specifically – the while and for loops. You will learn how to create (and avoid falling into) infinite loops, how to exit loops, and skip particular loop iterations. Ready?
+Question 1
+3.3 Logical values vs. single bits
+New Component Title
+New Component Title
+New Component Title
+Question 4
+Expected output
+New Component Title
+Section 5 – Sorting simple lists: the bubble sort algorithm
+Scroll to begin   
+New Component Title
+Sample input
+New Component Title
+Question 2
+New Component Title
+1.3 Exercises
+New Component Title
+New Component Title
+Question 2
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 2
+New Component Title
+Question 3
+Section 1 – Making decisions in Python
+Scroll to begin   
+The break and continue statements: more examples
+Question 4
+Sample input
+New Component Title
+In this section you will learn how to process lists using slices and the in and not in operators. You will also analyze a few simple programs utilizing the concept of lists to learn how to apply them in more challenging projects.
+1.7 Analyzing code samples
+New Component Title
+Question 2
+Sample input
+3.6 Binary left shift and binary right shift
+New Component Title
+Welcome to Module three! In the first section we will learn about conditional statements and how to use them to make decisions in Python.
+New Component Title
+Section 7 – Lists in advanced applications
+Scroll to begin   
+2.3 The while loop: more examples
+Question 3
+New Component Title
+New Component Title
+New Component Title
+Question 4
+5.1 The bubble sort
+Question 1
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+New Component Title
+3.5 How do we deal with single bits?
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+SECTION SUMMARY
+4.8 Making use of lists
+Expected output
+Question 6
+New Component Title
+Question 4
+New Component Title
+Question 5
+SECTION SUMMARY
+New Component Title
+Sample input
+Question 1
+7.2 Two-dimensional arrays
+New Component Title
+Question 2
+Question 3
+7.3 Multidimensional nature of lists: advanced applications
+New Component Title
+New Component Title
+Section 2 – Loops in Python
+Scroll to begin   
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+SECTION SUMMARY
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 2
+Expected output
+Question 2
+New Component Title
+Text
+Section 7 – Lists in advanced applications
+New Component Title
+2.6 The while loop and the else branch
+3.4 Bitwise operators
+Question 4
+LAB   Variables ‒ Questions and answers
+New Component Title
+LAB   Essentials of the if-elif-else statement
+New Component Title
+New Component Title
+6.2 Powerful slices
+Expected output
+New Component Title
+3.2 Logical expressions
+New Component Title
+New Component Title
+New Component Title
+Module 3 Completion – Module Test
+Scroll to begin   
+Question 4
+Expected output
+Expected output
+New Component Title
+New Component Title
+In this section, you will learn about logical and bitwise operators in Python, and such concepts as the truth table and bit shifting.
+New Component Title
+New Component Title
+Expected output
+New Component Title
+Question #3
+New Component Title
+New Component Title
+Question 5
+2.5 More about the for loop and the range() function with three arguments
+Text
+Section 2 – Loops in Python
+New Component Title
+5.2 Sorting a list
+New Component Title
+2.2 An infinite loop
+New Component Title
+Question 4
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+Section 3 – Logic and bit operations in Python
+Scroll to begin   
+New Component Title
+Expected output
+Sample input
+Expected output
+LAB   Essentials of the for loop – counting mississippily
+Expected output
+New Component Title
+Question
+How many hashes (#) will the following snippet send to the console?
+for i in range(1):
+    print("#")
+else:
+    print("#")
+ 
+two
+one
+three
+zero
+New Component Title
+New Component Title
+New Component Title
+4.9 Lists in action
+6.1 The inner life of lists
+1.8 Pseudocode and introduction to loops
+New Component Title
+Question #2
+Sample input
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+2.4 Looping your code with for
+New Component Title
+2.5 The break and continue statements
+New Component Title
+New Component Title
+Expected output
+New Component Title
+Question
+How many hashes (#) will the following snippet send to the console?
+var = 0
+while var < 6:
+    var += 1
+    if var % 2 == 0:
+        continue
+    print("#")
+ 
+three
+zero
+one
+two
+7.1 Lists in lists
+1.1 Questions and answers
+Question
+How many stars (*) will the following snippet send to the console?
+i = 0
+while i <= 3 :
+    i += 2
+    print("*")
+ 
+two
+one
+zero
+three
+New Component Title
+New Component Title
+New Component Title
+1.2 Comparison: equality operator
+New Component Title
+New Component Title
+Sample input
+Question
+What is the output of the following snippet?
+my_list = [1, 2, 3]
+for v in range(len(my_list)):
+    my_list.insert(1, my_list[v])
+print(my_list)
+ 
+[1, 1, 1, 1, 2, 3]
+[1, 2, 3, 3, 2, 1]
+[1, 2, 3, 1, 2, 3]
+[3, 2, 1, 1, 2, 3]
+New Component Title
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+New Component Title
+New Component Title
+Question 2
+Question
+Take a look at the snippet, and choose the true statements:  (Select two answers)
+nums = [1, 2, 3]
+vals = nums
+del vals[1:2]
+ 
+nums and vals are of the same length
+nums is longer than vals
+nums is replicated and assigned to vals
+nums and vals refer to the same list
+New Component Title
+Question 1
+New Component Title
+New Component Title
+New Component Title
+Section 4 – Lists
+Scroll to begin   
+Sample input
+Question 5
+Question 3
+New Component Title
+New Component Title
+Question 1
+Text
+Section 5 – Sorting simple lists: the bubble sort algorithm
+Question
+What is the output of the following snippet?
+my_list = [1, 2, 3, 4]
+print(my_list[-3:-2])
+ 
+[2]
+[]
+[2, 3]
+[2, 3, 4]
+New Component Title
+Return
+Previous
+Home
+Menu
+Next
+{{inc index}}
+Close
+Question 2
+LAB   The basics of lists ‒ the Beatles
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+t = [[3-i for i in range (3)] for j in range (3)]
+s = 0
+for i in range(3):
+    s += t[i][i]
+print(s)
+ 
+6
+2
+4
+7
+New Component Title
+New Component Title
+New Component Title
+5.3 The bubble sort – interactive version
+SECTION SUMMARY
+New Component Title
+Question
+The second assignment:
+vals = [0, 1, 2]
+vals[0], vals[2] = vals[2], vals[0]
+ 
+reverses the list
+shortens the list
+extends the list
+doesn't change the list
+New Component Title
+Expected output
+Question 3
+New Component Title
+6.3 Slices – negative indices
+Question 1
+4.1 Why do we need lists?
+Question 3
+Question
+How many hashes (#) will the following snippet send to the console?
+var = 1
+while var < 10:
+    print("#")
+    var = var << 1
+ 
+four
+one
+two
+eight
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question 1
+New Component Title
+Sample input
+New Component Title
+New Component Title
+New Component Title
+Expected output
+New Component Title
+Sample input
+New Component Title
+SECTION SUMMARY
+Question
+What is the output of the following snippet?
+a = 1
+b = 0
+c = a & b
+d = a | b
+e = a ^ b
+ 
+print(c + d + e)
+ 
+2
+1
+3
+0
+Question 1
+New Component Title
+New Component Title
+New Component Title
+Sample input
+6.4 The in and not in operators
+Text
+Section 6 – Operations on lists
+New Component Title
+New Component Title
+Question
+An operator able to check whether two values are equal is coded as:
+==
+=
+===
+!=
+New Component Title
+Quiz Feedback
+4.3 Accessing list content
+Text
+Module 3 Completion – Module Test
+2.1 Looping your code with while
+New Component Title
+New Component Title
+Expected output
+Question 2
+New Component Title
+New Component Title
+Text
+Section 1 – Making decisions in Python
+New Component Title
+New Component Title
+New Component Title
+Question 6
+4.6 Functions vs. methods
+Sample input
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Text
+Section 4 – Lists
+Question 7
+Question 5
+1.6 Conditions and conditional execution
+Question
+How many elements does the my_list list contain?
+my_list = [i for i in range(-1, 2)]
+ 
+three
+two
+four
+one
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+my_list = [3, 1, -2]
+print(my_list[my_list[-1]])
+ 
+1
+3
+-2
+-1
+New Component Title
+MODULE 3 TEST
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+New Component Title
+LAB   Collatz's hypothesis
+Expected output
+Question
+The value eventually assigned to x is equal to:
+x = 1
+x = x == x
+ 
+True
+False
+0
+1
+LAB   The continue statement – the Ugly Vowel Eater
+Sample input
+New Component Title
+New Component Title
+Question
+What is the output of the following snippet?
+my_list_1 = [1, 2, 3]
+my_list_2 = []
+for v in my_list_1:
+    my_list_2.insert(0, v)
+print(my_list_2)
+ 
+[3, 2, 1]
+[1, 2, 3]
+[1, 1, 1]
+[3, 3, 3]
+Sample input
+New Component Title

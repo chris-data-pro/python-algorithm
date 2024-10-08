@@ -1,0 +1,138 @@
+Module Number: 4
+Section Number: 4.4
+Video Number: 4.4.4 Video
+Video Title: Configure a Wireless Router and Clients
+Video URL: 
+ In this Packet Tracer activity, you play the role of a student who is studying networking. A friend has asked you to help her connect her home to the internet service provider or ISP. The ISP is a cable company offering both TV and internet access. To help her, you will connect the devices, configure the wireless router and configure IP addressing and test connectivity. For connecting the devices, you will use coaxial and copper straight through cables. They are both down here in the connections menu. Let's connect the cable splitter to the TV and the cable modem. First, connect the cable modem to the cable splitter. Select a coaxial cable, click the cable splitter, choose the coaxial one port, then click the cable modem and select port zero. Next, connect the TV to the cable splitter. Select another coaxial cable and connect it to the TV, and then to coaxial two port on the cable splitter. You should now be able to turn on the TV and see a picture. Now let's connect the cable modem to the home wireless router and the office PC to the home wireless router. Select a copper straight through cable and connect it to the remaining port on the cable modem. Connect the other end to the internet port on the home wireless router. Select another copper straight through cable and connect it to the fast ethernet zero port on the office PC. Connect the other end to the gigabit ethernet one port on the home wireless router. I'll leave you to connect the bedroom PC on your own. To configure the home wireless router for wireless connectivity, you will need to connect to it using the web browser on the office PC. First, let's make sure the office PC has IP addressing. Click the office PC, then desktop tab, then IP configuration. It's currently set to static. Click DHCP to have it automatically request IP addressing from a DHCP server, which is typically configured by default on the home wireless router at the factory. If the office PC does not receive IP addressing right away, you can click fast forward to speed up time. Take note of the default gateway address which is 192.168.0.1. This is the IP address for the home wireless router. Close the IP configuration window and open the web browser. Enter the default gateway address and then click go. Newly installed home routers are configured with default credentials. For example, here is a list of all the default passwords for net gear routers. For the packet tracer wireless router, admin is both the username and password. Expand the window so you can see more of the routers user interface. Notice the menus at the top. Some menus also have sub menus. For example, click wireless. There are five sub menus for configuring your wireless network. Explore all the menus at your leisure. Back on the setup tab, let's limit the number of users to 10. After any configuration change, you must click save settings at the bottom of the page to apply the change. When you change the DHCP settings on a router from a device that uses that DHCP server, you may lose connectivity. Reenter the router's IP address to reestablish connection. Sometimes you may need to renew your IP configuration. Let's change the default password for the router to MyPassword1!. You'll find these fields in the administration menu. Click save settings. Reenter admin as the username and the new password, MyPassword1! and then click continue. Now let's configure the wireless network for wireless devices. To do this, you will activate a network radio for the 2.4 gigahertz network, change the name of the wireless network to MyHome, and configure WPA2 personal security with the passphrase MyPassPhrase1!. You can find all these settings in sub menus under wireless. Enable the 2.4 gigahertz network and change the network name to MyHome. Click save settings. Click the wireless security sub menu. For the 2.4 gigahertz security mode, set it to WPA2 personal and enter the passphrase MyPassPhrase1!. Click save settings. Let's now connect the laptop to the wireless network. Click the laptop, desktop tab, and then PC wireless. Click the connect menu, and then the connect button. Enter MyPassPhrase1! as the pre shared key, and then click connect. Click the link information menu to see the message, you have successfully connected to the access point. Close the PC wireless app and open IP configuration. The laptop should now have an IP address that begins with 192. If not, click fast forward to speed up time. The final step is to test connectivity on all the devices. I'll show you how to do that on the laptop and leave it to you to do it for the office PC and bedroom PC. Close the IP configuration window and open the web browser. Enter the address skillsforall.srv and click go. In Packet Tracer, it can take some time to converge on a new address. Click fast forward to speed up time. You should receive a message from the server that says welcome to skills for all. At this point, your completion percentage should be 100%. If not, check results to see which items are still not complete. If you'd like to add some more wired and wireless devices to the network, you'll find them in the end devices menu. Add a tablet or smartphone. Connect it, configure it and test connectivity to the skills for all server. Have fun configuring a home network in Packet Tracer.
+Timestamp: 00:00:00.130 - 00:00:02.110 Text: In this Packet Tracer activity,
+Timestamp: 00:00:02.110 - 00:00:05.910 Text: you play the role of a student who is studying networking.
+Timestamp: 00:00:05.910 - 00:00:08.030 Text: A friend has asked you to help her
+Timestamp: 00:00:08.030 - 00:00:11.833 Text: connect her home to the internet service provider or ISP.
+Timestamp: 00:00:12.770 - 00:00:15.090 Text: The ISP is a cable company
+Timestamp: 00:00:15.090 - 00:00:18.270 Text: offering both TV and internet access.
+Timestamp: 00:00:18.270 - 00:00:22.090 Text: To help her, you will connect the devices,
+Timestamp: 00:00:22.090 - 00:00:24.390 Text: configure the wireless router
+Timestamp: 00:00:24.390 - 00:00:28.300 Text: and configure IP addressing and test connectivity.
+Timestamp: 00:00:28.300 - 00:00:30.120 Text: For connecting the devices,
+Timestamp: 00:00:30.120 - 00:00:33.480 Text: you will use coaxial and copper straight through cables.
+Timestamp: 00:00:33.480 - 00:00:36.003 Text: They are both down here in the connections menu.
+Timestamp: 00:00:37.080 - 00:00:39.110 Text: Let's connect the cable splitter
+Timestamp: 00:00:39.110 - 00:00:41.720 Text: to the TV and the cable modem.
+Timestamp: 00:00:41.720 - 00:00:45.540 Text: First, connect the cable modem to the cable splitter.
+Timestamp: 00:00:45.540 - 00:00:49.653 Text: Select a coaxial cable, click the cable splitter,
+Timestamp: 00:00:50.500 - 00:00:53.430 Text: choose the coaxial one port,
+Timestamp: 00:00:53.430 - 00:00:56.910 Text: then click the cable modem and select port zero.
+Timestamp: 00:00:56.910 - 00:01:00.130 Text: Next, connect the TV to the cable splitter.
+Timestamp: 00:01:00.130 - 00:01:04.373 Text: Select another coaxial cable and connect it to the TV,
+Timestamp: 00:01:05.290 - 00:01:08.363 Text: and then to coaxial two port on the cable splitter.
+Timestamp: 00:01:10.060 - 00:01:14.140 Text: You should now be able to turn on the TV and see a picture.
+Timestamp: 00:01:14.140 - 00:01:15.900 Text: Now let's connect the cable modem
+Timestamp: 00:01:15.900 - 00:01:18.010 Text: to the home wireless router
+Timestamp: 00:01:18.010 - 00:01:21.490 Text: and the office PC to the home wireless router.
+Timestamp: 00:01:21.490 - 00:01:23.620 Text: Select a copper straight through cable
+Timestamp: 00:01:23.620 - 00:01:26.800 Text: and connect it to the remaining port on the cable modem.
+Timestamp: 00:01:26.800 - 00:01:29.370 Text: Connect the other end to the internet port
+Timestamp: 00:01:29.370 - 00:01:31.780 Text: on the home wireless router.
+Timestamp: 00:01:31.780 - 00:01:34.400 Text: Select another copper straight through cable
+Timestamp: 00:01:34.400 - 00:01:37.410 Text: and connect it to the fast ethernet zero port
+Timestamp: 00:01:37.410 - 00:01:39.060 Text: on the office PC.
+Timestamp: 00:01:39.060 - 00:01:42.700 Text: Connect the other end to the gigabit ethernet one port
+Timestamp: 00:01:42.700 - 00:01:44.600 Text: on the home wireless router.
+Timestamp: 00:01:44.600 - 00:01:48.380 Text: I'll leave you to connect the bedroom PC on your own.
+Timestamp: 00:01:48.380 - 00:01:50.440 Text: To configure the home wireless router
+Timestamp: 00:01:50.440 - 00:01:52.370 Text: for wireless connectivity,
+Timestamp: 00:01:52.370 - 00:01:53.870 Text: you will need to connect to it
+Timestamp: 00:01:53.870 - 00:01:57.000 Text: using the web browser on the office PC.
+Timestamp: 00:01:57.000 - 00:02:01.170 Text: First, let's make sure the office PC has IP addressing.
+Timestamp: 00:02:01.170 - 00:02:05.200 Text: Click the office PC, then desktop tab,
+Timestamp: 00:02:05.200 - 00:02:06.843 Text: then IP configuration.
+Timestamp: 00:02:07.700 - 00:02:09.610 Text: It's currently set to static.
+Timestamp: 00:02:09.610 - 00:02:13.030 Text: Click DHCP to have it automatically request
+Timestamp: 00:02:13.030 - 00:02:15.850 Text: IP addressing from a DHCP server,
+Timestamp: 00:02:15.850 - 00:02:18.170 Text: which is typically configured by default
+Timestamp: 00:02:18.170 - 00:02:20.960 Text: on the home wireless router at the factory.
+Timestamp: 00:02:20.960 - 00:02:24.860 Text: If the office PC does not receive IP addressing right away,
+Timestamp: 00:02:24.860 - 00:02:28.110 Text: you can click fast forward to speed up time.
+Timestamp: 00:02:28.110 - 00:02:30.710 Text: Take note of the default gateway address
+Timestamp: 00:02:30.710 - 00:02:34.560 Text: which is 192.168.0.1.
+Timestamp: 00:02:34.560 - 00:02:38.120 Text: This is the IP address for the home wireless router.
+Timestamp: 00:02:38.120 - 00:02:41.913 Text: Close the IP configuration window and open the web browser.
+Timestamp: 00:02:42.900 - 00:02:47.020 Text: Enter the default gateway address and then click go.
+Timestamp: 00:02:47.020 - 00:02:48.870 Text: Newly installed home routers
+Timestamp: 00:02:48.870 - 00:02:51.190 Text: are configured with default credentials.
+Timestamp: 00:02:51.190 - 00:02:54.750 Text: For example, here is a list of all the default passwords
+Timestamp: 00:02:54.750 - 00:02:56.083 Text: for net gear routers.
+Timestamp: 00:02:57.870 - 00:03:00.050 Text: For the packet tracer wireless router,
+Timestamp: 00:03:00.050 - 00:03:03.390 Text: admin is both the username and password.
+Timestamp: 00:03:03.390 - 00:03:04.730 Text: Expand the window
+Timestamp: 00:03:04.730 - 00:03:08.240 Text: so you can see more of the routers user interface.
+Timestamp: 00:03:08.240 - 00:03:10.770 Text: Notice the menus at the top.
+Timestamp: 00:03:10.770 - 00:03:13.480 Text: Some menus also have sub menus.
+Timestamp: 00:03:13.480 - 00:03:15.770 Text: For example, click wireless.
+Timestamp: 00:03:15.770 - 00:03:17.080 Text: There are five sub menus
+Timestamp: 00:03:17.080 - 00:03:19.500 Text: for configuring your wireless network.
+Timestamp: 00:03:19.500 - 00:03:22.200 Text: Explore all the menus at your leisure.
+Timestamp: 00:03:22.200 - 00:03:24.460 Text: Back on the setup tab,
+Timestamp: 00:03:24.460 - 00:03:27.033 Text: let's limit the number of users to 10.
+Timestamp: 00:03:27.950 - 00:03:31.860 Text: After any configuration change, you must click save settings
+Timestamp: 00:03:31.860 - 00:03:34.930 Text: at the bottom of the page to apply the change.
+Timestamp: 00:03:34.930 - 00:03:37.760 Text: When you change the DHCP settings on a router
+Timestamp: 00:03:37.760 - 00:03:40.850 Text: from a device that uses that DHCP server,
+Timestamp: 00:03:40.850 - 00:03:43.080 Text: you may lose connectivity.
+Timestamp: 00:03:43.080 - 00:03:47.720 Text: Reenter the router's IP address to reestablish connection.
+Timestamp: 00:03:47.720 - 00:03:51.623 Text: Sometimes you may need to renew your IP configuration.
+Timestamp: 00:03:58.930 - 00:04:01.810 Text: Let's change the default password for the router
+Timestamp: 00:04:01.810 - 00:04:05.010 Text: to MyPassword1!.
+Timestamp: 00:04:05.010 - 00:04:08.163 Text: You'll find these fields in the administration menu.
+Timestamp: 00:04:12.160 - 00:04:13.483 Text: Click save settings.
+Timestamp: 00:04:15.440 - 00:04:17.880 Text: Reenter admin as the username
+Timestamp: 00:04:17.880 - 00:04:22.880 Text: and the new password, MyPassword1! and then click continue.
+Timestamp: 00:04:24.440 - 00:04:26.390 Text: Now let's configure the wireless network
+Timestamp: 00:04:26.390 - 00:04:28.400 Text: for wireless devices.
+Timestamp: 00:04:28.400 - 00:04:32.140 Text: To do this, you will activate a network radio
+Timestamp: 00:04:32.140 - 00:04:35.040 Text: for the 2.4 gigahertz network,
+Timestamp: 00:04:35.040 - 00:04:38.920 Text: change the name of the wireless network to MyHome,
+Timestamp: 00:04:38.920 - 00:04:42.180 Text: and configure WPA2 personal security
+Timestamp: 00:04:42.180 - 00:04:47.180 Text: with the passphrase MyPassPhrase1!.
+Timestamp: 00:04:47.480 - 00:04:51.420 Text: You can find all these settings in sub menus under wireless.
+Timestamp: 00:04:51.420 - 00:04:54.160 Text: Enable the 2.4 gigahertz network
+Timestamp: 00:04:54.160 - 00:04:57.420 Text: and change the network name to MyHome.
+Timestamp: 00:04:57.420 - 00:04:59.030 Text: Click save settings.
+Timestamp: 00:04:59.030 - 00:05:01.810 Text: Click the wireless security sub menu.
+Timestamp: 00:05:01.810 - 00:05:04.670 Text: For the 2.4 gigahertz security mode,
+Timestamp: 00:05:04.670 - 00:05:07.160 Text: set it to WPA2 personal
+Timestamp: 00:05:07.160 - 00:05:12.160 Text: and enter the passphrase MyPassPhrase1!.
+Timestamp: 00:05:12.200 - 00:05:14.330 Text: Click save settings.
+Timestamp: 00:05:14.330 - 00:05:17.820 Text: Let's now connect the laptop to the wireless network.
+Timestamp: 00:05:17.820 - 00:05:22.820 Text: Click the laptop, desktop tab, and then PC wireless.
+Timestamp: 00:05:24.170 - 00:05:28.233 Text: Click the connect menu, and then the connect button.
+Timestamp: 00:05:29.350 - 00:05:34.070 Text: Enter MyPassPhrase1! as the pre shared key,
+Timestamp: 00:05:34.070 - 00:05:35.640 Text: and then click connect.
+Timestamp: 00:05:35.640 - 00:05:38.570 Text: Click the link information menu to see the message,
+Timestamp: 00:05:38.570 - 00:05:42.460 Text: you have successfully connected to the access point.
+Timestamp: 00:05:42.460 - 00:05:47.380 Text: Close the PC wireless app and open IP configuration.
+Timestamp: 00:05:47.380 - 00:05:50.190 Text: The laptop should now have an IP address
+Timestamp: 00:05:50.190 - 00:05:52.790 Text: that begins with 192.
+Timestamp: 00:05:52.790 - 00:05:56.920 Text: If not, click fast forward to speed up time.
+Timestamp: 00:05:56.920 - 00:06:01.590 Text: The final step is to test connectivity on all the devices.
+Timestamp: 00:06:01.590 - 00:06:04.650 Text: I'll show you how to do that on the laptop
+Timestamp: 00:06:04.650 - 00:06:07.690 Text: and leave it to you to do it for the office PC
+Timestamp: 00:06:07.690 - 00:06:09.550 Text: and bedroom PC.
+Timestamp: 00:06:09.550 - 00:06:11.510 Text: Close the IP configuration window
+Timestamp: 00:06:11.510 - 00:06:13.550 Text: and open the web browser.
+Timestamp: 00:06:13.550 - 00:06:18.550 Text: Enter the address skillsforall.srv and click go.
+Timestamp: 00:06:19.330 - 00:06:21.560 Text: In Packet Tracer, it can take some time
+Timestamp: 00:06:21.560 - 00:06:23.840 Text: to converge on a new address.
+Timestamp: 00:06:23.840 - 00:06:26.530 Text: Click fast forward to speed up time.
+Timestamp: 00:06:26.530 - 00:06:28.680 Text: You should receive a message from the server
+Timestamp: 00:06:28.680 - 00:06:31.580 Text: that says welcome to skills for all.
+Timestamp: 00:06:31.580 - 00:06:36.160 Text: At this point, your completion percentage should be 100%.
+Timestamp: 00:06:36.160 - 00:06:37.770 Text: If not, check results
+Timestamp: 00:06:37.770 - 00:06:40.700 Text: to see which items are still not complete.
+Timestamp: 00:06:40.700 - 00:06:42.610 Text: If you'd like to add some more wired
+Timestamp: 00:06:42.610 - 00:06:44.600 Text: and wireless devices to the network,
+Timestamp: 00:06:44.600 - 00:06:46.863 Text: you'll find them in the end devices menu.
+Timestamp: 00:06:48.160 - 00:06:50.710 Text: Add a tablet or smartphone.
+Timestamp: 00:06:50.710 - 00:06:52.360 Text: Connect it, configure it
+Timestamp: 00:06:52.360 - 00:06:55.790 Text: and test connectivity to the skills for all server.
+Timestamp: 00:06:55.790 - 00:06:59.183 Text: Have fun configuring a home network in Packet Tracer.

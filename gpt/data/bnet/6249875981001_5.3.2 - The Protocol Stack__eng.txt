@@ -1,0 +1,56 @@
+Module Number: 6249875981001_5
+Section Number: 6249875981001_5.3
+Video Number: 6249875981001_5.3.2
+Video Title: The Protocol Stack__eng
+Video URL: 
+ - Successful communications requires the use of several protocols. So when a device sends a message, it is actually using several protocols. So here we have what is known as a, "Protocol Stack". In this example here I am showing the TCP/IP Model, which has different layers; The Network Access layer, Internet layer, Transport layer, and the Application layer. So when a device creates a message, it is actually using protocols from these different layers. For example, this message over here. It is utilizing at the Network Access layer, the Ethernet protocol. The Ethernet protocol is used for NIC card, network interface card to network interface card communications in the same network. The next protocol that's used, is an Internet layer protocol, IP. This can be IP version 4 or IP version 6. This makes sure that the message gets from the original source to the final destination. Whether or not that message is within the same network or has to go across multiple networks. Another protocol that's used is, a protocol from the Transport layer. In this example, we're using TCP, transmission control protocol. This makes sure that the information, the message, gets there reliably. Then the last protocol is from the Application layer. This case, HTTP. HTTP governs the exchange or transfer of HTML. So as you can see, sending a message requires the use of multiple protocols from the Protocol Stack.
+Timestamp: 00:00:06.494 - 00:00:08.775 Text: - Successful communications
+requires the use
+Timestamp: 00:00:08.775 - 00:00:10.374 Text: of several protocols.
+Timestamp: 00:00:10.374 - 00:00:12.473 Text: So when a device sends a message,
+Timestamp: 00:00:12.473 - 00:00:16.478 Text: it is actually using several protocols.
+Timestamp: 00:00:16.478 - 00:00:20.011 Text: So here we have what is
+known as a, "Protocol Stack".
+Timestamp: 00:00:20.011 - 00:00:24.178 Text: In this example here I am
+showing the TCP/IP Model,
+Timestamp: 00:00:25.715 - 00:00:29.107 Text: which has different layers;
+The Network Access layer,
+Timestamp: 00:00:29.107 - 00:00:33.541 Text: Internet layer, Transport layer,
+and the Application layer.
+Timestamp: 00:00:33.541 - 00:00:36.906 Text: So when a device creates a message,
+Timestamp: 00:00:36.906 - 00:00:41.785 Text: it is actually using protocols
+from these different layers.
+Timestamp: 00:00:41.785 - 00:00:44.716 Text: For example, this message over here.
+Timestamp: 00:00:44.716 - 00:00:48.233 Text: It is utilizing at the
+Network Access layer,
+Timestamp: 00:00:48.233 - 00:00:50.066 Text: the Ethernet protocol.
+Timestamp: 00:00:51.393 - 00:00:54.431 Text: The Ethernet protocol
+is used for NIC card,
+Timestamp: 00:00:54.431 - 00:00:57.426 Text: network interface card
+to network interface card
+Timestamp: 00:00:57.426 - 00:01:00.960 Text: communications in the same network.
+Timestamp: 00:01:00.960 - 00:01:03.362 Text: The next protocol that's used,
+Timestamp: 00:01:03.362 - 00:01:06.195 Text: is an Internet layer protocol, IP.
+Timestamp: 00:01:07.897 - 00:01:11.710 Text: This can be IP version 4 or IP version 6.
+Timestamp: 00:01:11.710 - 00:01:14.535 Text: This makes sure that the message gets
+Timestamp: 00:01:14.535 - 00:01:17.931 Text: from the original source
+to the final destination.
+Timestamp: 00:01:17.931 - 00:01:21.045 Text: Whether or not that message
+is within the same network
+Timestamp: 00:01:21.045 - 00:01:24.212 Text: or has to go across multiple networks.
+Timestamp: 00:01:25.133 - 00:01:27.818 Text: Another protocol that's used is,
+Timestamp: 00:01:27.818 - 00:01:31.209 Text: a protocol from the Transport layer.
+Timestamp: 00:01:31.209 - 00:01:34.553 Text: In this example, we're using TCP,
+Timestamp: 00:01:34.553 - 00:01:36.960 Text: transmission control protocol.
+Timestamp: 00:01:36.960 - 00:01:39.662 Text: This makes sure that the
+information, the message,
+Timestamp: 00:01:39.662 - 00:01:41.329 Text: gets there reliably.
+Timestamp: 00:01:43.283 - 00:01:46.987 Text: Then the last protocol is
+from the Application layer.
+Timestamp: 00:01:46.987 - 00:01:48.320 Text: This case, HTTP.
+Timestamp: 00:01:49.669 - 00:01:53.502 Text: HTTP governs the exchange
+or transfer of HTML.
+Timestamp: 00:01:55.201 - 00:01:59.377 Text: So as you can see, sending
+a message requires the use
+Timestamp: 00:01:59.377 - 00:02:03.210 Text: of multiple protocols
+from the Protocol Stack.

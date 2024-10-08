@@ -1,0 +1,128 @@
+Module Number: 6250042481001_14
+Section Number: 6250042481001_14.3
+Video Number: 6250042481001_14.3.5
+Video Title: Bluetooth Configuration__eng
+Video URL: 
+ - [Man] Hello, everyone. You want to get some Bluetooth connectivity going here with our computer. Now, to do this there's a couple of ways to go about it. There's really, like, three common ways we can go. Now, it depends on your Windows operating system, but here in Windows 10, the first thing I can do is click on my Action Center on the bottom right corner, and I can make sure that my Bluetooth is even on, which is in Bluetooth and not connected. I can click on that to turn off Bluetooth, or again, I can click on it to turn it on. I can even right click on it, and click on Go to Settings, and that's going to take me to my Bluetooth settings immediately, which is great. But let's go two other methods. What I can do in Windows, is I can click on the Start button, and I can go to the Control Panel, and in the Control Panel I can go to Add a device, which is inside of Hardware and Sound, and I can add a device, including Bluetooth, that way. Another way I can do it, is I can go to Start, then I can type in settings, then I can click on Settings. Inside of Settings, I can go to Devices, and in Devices, we'll be here at the Bluetooth settings. Whichever way you prefer, there's multiple ways to get to the same destination. At this point, what I want to do is add a Bluetooth device. So we're going to pause here, and I want to turn on my Bluetooth headset. So I've got my Bluetooth headset, and every model will be a little bit different, we're not here to do a video on a Bluetooth headset, but in general, this is the Bluetooth device I'm going to connect. So, after researching my device and pulling up the manufacturer's manual for this, I need to put this headset into pairing mode. In pairing mode, it will be able to connect with our computer. So I have the power button here and there's an indicator light, I can press and hold that power button, and according to my manual, when the light starts flashing red and blue alternating, then it's in pairing mode. There we go, it's red and blue, now it's in pairing mode and we can continue by adding it to our computer. Okay, so to continue, the Bluetooth headset is on, and it's going to be in a pairing mode, what I need to do now is click Add Bluetooth or other device. When I click on that, it wants to know what type of device I'm going to be adding on, I'm going to click on Bluetooth, because it's going to be an audio device for a headset. So it's looking for the devices, here it finds some. This is the headset that I have connected, I want to hook up via Bluetooth. I can click on that audio headset, and it's going to connect to it and pair with that headset. The device is ready to go, it says we're connected with voice and music for my headset wirelessly using Bluetooth with my computer. I'll click on done, and we can even verify this by going back to our Action Center, here, in Windows 10, and we can see Bluetooth and the name of the device that's connected. When I'm done for the day, I can always turn off my Bluetooth adapter, which will disconnect it from my headset. Also, in the future, if I turn on my Bluetooth on my computer, if that headset is nearby, it should be able to connect back to it automatically. And there it is, Bluetooth is on, and the headset is connected again.
+Timestamp: 00:00:07.090 - 00:00:08.120 Text: - [Man] Hello, everyone.
+Timestamp: 00:00:08.120 - 00:00:10.800 Text: You want to get some Bluetooth
+connectivity going here
+Timestamp: 00:00:10.800 - 00:00:12.010 Text: with our computer.
+Timestamp: 00:00:12.010 - 00:00:14.200 Text: Now, to do this there's a
+couple of ways to go about it.
+Timestamp: 00:00:14.200 - 00:00:16.520 Text: There's really, like, three
+common ways we can go.
+Timestamp: 00:00:16.520 - 00:00:18.750 Text: Now, it depends on your
+Windows operating system,
+Timestamp: 00:00:18.750 - 00:00:20.670 Text: but here in Windows 10,
+the first thing I can do is
+Timestamp: 00:00:20.670 - 00:00:23.650 Text: click on my Action Center
+on the bottom right corner,
+Timestamp: 00:00:23.650 - 00:00:25.940 Text: and I can make sure that
+my Bluetooth is even on,
+Timestamp: 00:00:25.940 - 00:00:28.100 Text: which is in Bluetooth and not connected.
+Timestamp: 00:00:28.100 - 00:00:30.730 Text: I can click on that to turn
+off Bluetooth, or again,
+Timestamp: 00:00:30.730 - 00:00:32.850 Text: I can click on it to turn it on.
+Timestamp: 00:00:32.850 - 00:00:34.760 Text: I can even right click on it,
+Timestamp: 00:00:34.760 - 00:00:36.350 Text: and click on Go to Settings,
+Timestamp: 00:00:36.350 - 00:00:38.430 Text: and that's going to take
+me to my Bluetooth settings
+Timestamp: 00:00:38.430 - 00:00:40.940 Text: immediately, which is great.
+Timestamp: 00:00:40.940 - 00:00:43.120 Text: But let's go two other methods.
+Timestamp: 00:00:43.120 - 00:00:44.540 Text: What I can do in Windows,
+Timestamp: 00:00:44.540 - 00:00:47.540 Text: is I can click on the Start button,
+Timestamp: 00:00:47.540 - 00:00:49.343 Text: and I can go to the Control Panel,
+Timestamp: 00:00:50.280 - 00:00:53.770 Text: and in the Control Panel
+I can go to Add a device,
+Timestamp: 00:00:53.770 - 00:00:56.230 Text: which is inside of Hardware and Sound,
+Timestamp: 00:00:56.230 - 00:00:58.930 Text: and I can add a device,
+including Bluetooth, that way.
+Timestamp: 00:00:59.850 - 00:01:02.820 Text: Another way I can do it,
+is I can go to Start,
+Timestamp: 00:01:02.820 - 00:01:06.763 Text: then I can type in settings,
+then I can click on Settings.
+Timestamp: 00:01:07.850 - 00:01:12.610 Text: Inside of Settings, I can go
+to Devices, and in Devices,
+Timestamp: 00:01:12.610 - 00:01:15.430 Text: we'll be here at the Bluetooth settings.
+Timestamp: 00:01:15.430 - 00:01:17.430 Text: Whichever way you prefer,
+there's multiple ways
+Timestamp: 00:01:17.430 - 00:01:19.500 Text: to get to the same destination.
+Timestamp: 00:01:19.500 - 00:01:22.562 Text: At this point, what I want to
+do is add a Bluetooth device.
+Timestamp: 00:01:22.562 - 00:01:25.053 Text: So we're going to pause
+here, and I want to turn
+Timestamp: 00:01:25.053 - 00:01:27.320 Text: on my Bluetooth headset.
+Timestamp: 00:01:27.320 - 00:01:29.080 Text: So I've got my Bluetooth headset,
+Timestamp: 00:01:29.080 - 00:01:30.560 Text: and every model will be
+a little bit different,
+Timestamp: 00:01:30.560 - 00:01:32.680 Text: we're not here to do a video
+on a Bluetooth headset,
+Timestamp: 00:01:32.680 - 00:01:34.360 Text: but in general, this
+is the Bluetooth device
+Timestamp: 00:01:34.360 - 00:01:35.380 Text: I'm going to connect.
+Timestamp: 00:01:35.380 - 00:01:37.420 Text: So, after researching
+my device and pulling up
+Timestamp: 00:01:37.420 - 00:01:40.100 Text: the manufacturer's manual
+for this, I need to put
+Timestamp: 00:01:40.100 - 00:01:42.220 Text: this headset into pairing mode.
+Timestamp: 00:01:42.220 - 00:01:44.210 Text: In pairing mode, it
+will be able to connect
+Timestamp: 00:01:44.210 - 00:01:45.410 Text: with our computer.
+Timestamp: 00:01:45.410 - 00:01:46.860 Text: So I have the power
+button here and there's
+Timestamp: 00:01:46.860 - 00:01:50.100 Text: an indicator light, I can press
+and hold that power button,
+Timestamp: 00:01:50.100 - 00:01:52.060 Text: and according to my manual,
+when the light starts
+Timestamp: 00:01:52.060 - 00:01:54.720 Text: flashing red and blue
+alternating, then it's
+Timestamp: 00:01:54.720 - 00:01:56.012 Text: in pairing mode.
+Timestamp: 00:01:56.012 - 00:01:58.470 Text: There we go, it's red and blue,
+Timestamp: 00:01:58.470 - 00:02:00.760 Text: now it's in pairing
+mode and we can continue
+Timestamp: 00:02:00.760 - 00:02:02.793 Text: by adding it to our computer.
+Timestamp: 00:02:03.890 - 00:02:06.610 Text: Okay, so to continue, the
+Bluetooth headset is on,
+Timestamp: 00:02:06.610 - 00:02:08.450 Text: and it's going to be in a pairing mode,
+Timestamp: 00:02:08.450 - 00:02:09.310 Text: what I need to do now is
+Timestamp: 00:02:09.310 - 00:02:11.776 Text: click Add Bluetooth or other device.
+Timestamp: 00:02:11.776 - 00:02:13.480 Text: When I click on that, it
+wants to know what type
+Timestamp: 00:02:13.480 - 00:02:15.480 Text: of device I'm going to be
+adding on, I'm going to click
+Timestamp: 00:02:15.480 - 00:02:18.210 Text: on Bluetooth, because it's
+going to be an audio device
+Timestamp: 00:02:18.210 - 00:02:19.600 Text: for a headset.
+Timestamp: 00:02:19.600 - 00:02:22.220 Text: So it's looking for the
+devices, here it finds some.
+Timestamp: 00:02:22.220 - 00:02:23.990 Text: This is the headset that I have connected,
+Timestamp: 00:02:23.990 - 00:02:25.840 Text: I want to hook up via Bluetooth.
+Timestamp: 00:02:25.840 - 00:02:28.130 Text: I can click on that audio headset,
+Timestamp: 00:02:28.130 - 00:02:31.780 Text: and it's going to connect to
+it and pair with that headset.
+Timestamp: 00:02:31.780 - 00:02:33.680 Text: The device is ready to go,
+it says we're connected
+Timestamp: 00:02:33.680 - 00:02:36.558 Text: with voice and music for
+my headset wirelessly
+Timestamp: 00:02:36.558 - 00:02:39.370 Text: using Bluetooth with my computer.
+Timestamp: 00:02:39.370 - 00:02:42.590 Text: I'll click on done, and
+we can even verify this by
+Timestamp: 00:02:42.590 - 00:02:46.040 Text: going back to our Action
+Center, here, in Windows 10,
+Timestamp: 00:02:46.040 - 00:02:48.210 Text: and we can see Bluetooth
+and the name of the
+Timestamp: 00:02:48.210 - 00:02:49.850 Text: device that's connected.
+Timestamp: 00:02:49.850 - 00:02:51.550 Text: When I'm done for the
+day, I can always turn off
+Timestamp: 00:02:51.550 - 00:02:53.570 Text: my Bluetooth adapter,
+which will disconnect
+Timestamp: 00:02:53.570 - 00:02:55.170 Text: it from my headset.
+Timestamp: 00:02:55.170 - 00:02:57.218 Text: Also, in the future, if
+I turn on my Bluetooth
+Timestamp: 00:02:57.218 - 00:03:00.660 Text: on my computer, if that
+headset is nearby,
+Timestamp: 00:03:00.660 - 00:03:03.670 Text: it should be able to connect
+back to it automatically.
+Timestamp: 00:03:03.670 - 00:03:05.110 Text: And there it is, Bluetooth is on,
+Timestamp: 00:03:05.110 - 00:03:06.923 Text: and the headset is connected again.

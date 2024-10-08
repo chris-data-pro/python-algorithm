@@ -1,0 +1,42 @@
+Module Number: 1
+Section Number: 1.0
+Video Number: 1.0.1
+Video Title: The Data Analyst
+Video URL: 
+ Data analytics is changing our world right now while you're watching this video. It is helping us make decisions, navigate through traffic, and even predict the best match-ups in your favorite team's lineup. Analytics are enabling us to address challenges that seemed impossible just a short time ago. Every day in the news, there are exciting stories about data-driven innovations in manufacturing, healthcare, space exploration, and many more. Data collected during the COVID-19 pandemic enabled governments and organizations across the globe to track outbreaks and mobilize resources. Taiwan, for example, used their National Health Insurance and Immigration Databases to create an outline of travel histories and symptoms of every person that left or entered the country. This type of creative analytical problem solving allowed health professionals to be better prepared to diagnose and identify the disease. In this course, you will learn the basic features and functions of data analytics, how data is collected and where it is stored, how data enables artificial intelligence and machine learning, and you will begin your journey to become a data professional. There are many opportunities to help drive forward these innovations as data analysts, scientists, and engineers. This is a rewarding career with the potential to really make a difference. Join us as we explore what is possible. (light music continues)
+Timestamp: 00:00:00.660 - 00:00:02.880 Text: Data analytics is changing our world
+Timestamp: 00:00:02.880 - 00:00:05.340 Text: right now while you're watching this video.
+Timestamp: 00:00:05.340 - 00:00:07.080 Text: It is helping us make decisions,
+Timestamp: 00:00:07.080 - 00:00:08.370 Text: navigate through traffic,
+Timestamp: 00:00:08.370 - 00:00:10.140 Text: and even predict the best match-ups
+Timestamp: 00:00:10.140 - 00:00:11.640 Text: in your favorite team's lineup.
+Timestamp: 00:00:11.640 - 00:00:14.400 Text: Analytics are enabling us to address challenges
+Timestamp: 00:00:14.400 - 00:00:17.250 Text: that seemed impossible just a short time ago.
+Timestamp: 00:00:17.250 - 00:00:18.690 Text: Every day in the news,
+Timestamp: 00:00:18.690 - 00:00:21.570 Text: there are exciting stories about data-driven innovations
+Timestamp: 00:00:21.570 - 00:00:25.080 Text: in manufacturing, healthcare, space exploration,
+Timestamp: 00:00:25.080 - 00:00:26.580 Text: and many more.
+Timestamp: 00:00:26.580 - 00:00:29.520 Text: Data collected during the COVID-19 pandemic
+Timestamp: 00:00:29.520 - 00:00:32.760 Text: enabled governments and organizations across the globe
+Timestamp: 00:00:32.760 - 00:00:36.240 Text: to track outbreaks and mobilize resources.
+Timestamp: 00:00:36.240 - 00:00:39.660 Text: Taiwan, for example, used their National Health Insurance
+Timestamp: 00:00:39.660 - 00:00:41.370 Text: and Immigration Databases
+Timestamp: 00:00:41.370 - 00:00:44.490 Text: to create an outline of travel histories and symptoms
+Timestamp: 00:00:44.490 - 00:00:47.610 Text: of every person that left or entered the country.
+Timestamp: 00:00:47.610 - 00:00:50.280 Text: This type of creative analytical problem solving
+Timestamp: 00:00:50.280 - 00:00:52.800 Text: allowed health professionals to be better prepared
+Timestamp: 00:00:52.800 - 00:00:55.020 Text: to diagnose and identify the disease.
+Timestamp: 00:00:55.020 - 00:00:57.090 Text: In this course, you will learn the basic features
+Timestamp: 00:00:57.090 - 00:00:59.250 Text: and functions of data analytics,
+Timestamp: 00:00:59.250 - 00:01:01.770 Text: how data is collected and where it is stored,
+Timestamp: 00:01:01.770 - 00:01:04.080 Text: how data enables artificial intelligence
+Timestamp: 00:01:04.080 - 00:01:05.490 Text: and machine learning,
+Timestamp: 00:01:05.490 - 00:01:06.840 Text: and you will begin your journey
+Timestamp: 00:01:06.840 - 00:01:08.670 Text: to become a data professional.
+Timestamp: 00:01:08.670 - 00:01:11.130 Text: There are many opportunities to help drive forward
+Timestamp: 00:01:11.130 - 00:01:13.410 Text: these innovations as data analysts,
+Timestamp: 00:01:13.410 - 00:01:15.810 Text: scientists, and engineers.
+Timestamp: 00:01:15.810 - 00:01:17.610 Text: This is a rewarding career
+Timestamp: 00:01:17.610 - 00:01:20.250 Text: with the potential to really make a difference.
+Timestamp: 00:01:20.250 - 00:01:22.710 Text: Join us as we explore what is possible.
+Timestamp: 00:01:22.710 - 00:01:26.127 Text: (light music continues)

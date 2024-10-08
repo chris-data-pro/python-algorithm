@@ -1,0 +1,97 @@
+Module Title: Module 4: Embarking on Your Career in Data Analytics
+Module URL: "https://cisco-i2ds-m4-v1"
+Module 4: Embarking on Your Career in Data Analytics
+Explain the duties of the different job roles in data science.Scroll down  and select ‘Introduction’ to begin.
+4.0 Introduction
+4.0 Introduction 
+4.0 Introduction
+Scroll to begin   
+New Component Title
+
+4.1 Preparing for a Career in Data Analytics
+4.1 Preparing for a Career in Data Analytics
+4.1 Preparing for a Career in Data Analytics
+Scroll to begin   
+4.1.1 Roles in the Data Analytics Professions
+4.1.1 Roles in the Data Analytics Professions
+Throughout this course, you experienced how data transforms from raw facts, measurements, or observations into valuable insights for businesses and humanitarian organizations. Talented data professionals accomplish this work. Although there is some overlap between the responsibilities, data professionals fill three primary roles in organizations.Select each job role for more information.
+4.1.3 The Job Market
+The uses for data, and especially Big Data, are multiplying rapidly. A report by FinancesOnline (2022) notes that 52% of businesses worldwide view data analytics and predictive analytics as primary components of their operations. The dependency on data usage is not surprising since the number of data businesses generate, store, sell, and share is more significant than ever. Consequently, the job market for data analytics professionals who interpret and transform this data is also growing. Source: Search the internet for the FinancesOnline report, 70 Relevant Analytics Statistics: 2021/2022 Market Share Analysis &amp; Data.According to the World Economic Forum Future of Jobs Survey 2020, the top three jobs with the highest increased demand were Data Analysts and Scientists, AI and Machine Learning Specialists, and Big Data Specialists. Projections by the US Department of Labor Statistics expect the job opportunities in the field to increase by at least 22% by 2030. Industries expected to increase their employment in this sector by at least 50% include motor vehicle manufacturing, online retailers, and healthcare-related businesses.Data Source for Graph: US Bureau of Labor Statistics
+New Component Title
+
+4.1.4 Tools and Skills
+Because of the high projected job growth, there are many opportunities for entry-level positions in the data analytics field, some of which may not require previous experience. To prepare for this profession, become familiar with the job responsibilities and tools commonly used on the job. An excellent way to do this is by reviewing postings on job search platforms. If you are new to data analysis, you may start in an entry-level role as a junior analyst. Data analysts can often begin with no prior experience; however, they will need more on-the-job training to become familiar with company policies and procedures and to learn how to apply what they learned in school to a business setting.  Before you apply for that first job, it is a good idea to develop some of the core data analyst skills introduced in this course, including SQL, data management, statistical analysis, and data visualization. A few tools and skills commonly mentioned in job advertisements for entry-level positions include:  Demonstrated attention to detail  Solid verbal and written communication skills  Ability to work in a team  Proficiency with spreadsheets, such as Excel  Familiarity with SQL and databases Some experience with object-oriented programming (OOP) languages such as Python and Java Familiarity with visualization tools and presentations  As you gain experience, you will have opportunities to advance your career into other areas, such as data science, management, consulting, or different roles as a specialist in a specific field – healthcare, finance, or machine learning. Your career path as a data analytics professional will depend on your skills and interests. There is no one best approach when pursuing your career path. However, every data analytics career path begins with the fundamentals: Learning the essential tools, skills, processes, and of course, building a professional portfolio.
+New Component Title
+
+4.2 Taking the Next Steps
+4.2 Taking the Next Steps
+4.2 Taking the Next Steps
+Scroll to begin   
+Figure
+4.2.3 Starting Your Project Portfolio
+The three courses in the Cisco Data Essentials Pathway will help you start a strong portfolio and build your personal brand. Each course in the series is project-based, so as you proceed through the course, you will create work products that you can add to your portfolio. Document the process that you use to work through each project, including:  the question to answer or problem to solve  how you chose data that could inform your analysis  the methods you used to analyze the data  your observations and conclusions  reports and presentations that you created  
+New Component Title
+
+4.2.4 Your Pathway to a New Career
+Completing this course is your first step to an exciting new career as a data professional. We encourage you to continue your journey and enroll in the next course in the three-course Data Essentials pathway, Data Analytics Essentials. Each of the three courses in the series presents skills associated with various roles in the workforce and provides practice using the real-world tools recognized within the industry. As you work through the activities, you will learn the processes involved in each project step, from the initial problem description to the outcomes.
+4.2.1 Video - The Importance of Project Portfolios
+
+New Component Title
+
+4.3 Embarking on Your Career in Data Analytics
+4.3 Embarking on Your Career in Data Analytics
+4.3 Embarking on Your Career in Data Analytics
+Scroll to begin   
+4.3.2 Reflection
+Planning a road trip takes time and thoughtful consideration. You must choose your final destination, set accommodations, map your route, and choose a reliable mode of transportation. Setting aside time to plan your trip will prepare you for a successful adventure.  Planning a road trip is similar to building a portfolio. You are embarking on a new career journey with the end goal of having a career in data science.  Start brainstorming what type of work interests you, what projects you might like to work on, and what branding and designing you want for your portfolio. This is an exciting time to start your career in data science. You have the opportunity to personalize your path and determine your future! 
+Quiz feedback
+
+Question
+Question
+What is the role of a data analyst?
+Data analysts query and process data&#44; provide reports&#44; summarize and visualize data. They leverage existing tools and methods to solve a problem. Data analysts need to understand basic statistical principles&#44; cleaning different types of data&#44; data visualization&#44; and exploratory data analysis.
+Question
+Question
+What is the role of a data scientist?
+Data scientists apply statistics&#44; machine learning&#44; and analytic approaches to answer critical business questions.
+New Component Title
+
+Question
+Question
+What tool is commonly used to showcase data analytic skills to a prospective employer?
+A project portfolio is the main tool used to showcase Data Analytic skills. Along with your biography and education&#44; a portfolio provide examples of current and completed projects&#44; skill sets&#44; topics of interest&#44; collaboration with others and even experience with different data analyst tools.
+Question
+Question
+What is the role of a data engineer?
+Data engineers are responsible collecting and organizing data while building and operationalizing data pipelines. They ensure the accessibility and availability of quality data for data scientists and data analysts.
+Question
+Question
+Which three are skills that are typical for an entry level data analyst position? (Choose three.)
+The skill sets that are commonly mentioned in job advertisements for entry-level positions with respect to big data are: &#10;&#10;Demonstrated attention to detail&#10;Communication skills&#10;Ability to work in a team&#10;Proficiency with spreadsheets&#44; such as Excel&#10;Familiarity with SQL and databases&#10;Familiarity with visualization tools and presentations&#10;
+4.3.1 What Did I Learn in This Module?
+In this module, you learned how to explain the roles and responsibilities of the various careers in data analytics and how to take the next steps on the pathway to your new career. 
+4.0.1 Video - Introduction to Job Roles in Data Science
+Click Play to watch the video.
+4.0.2 What Will I Learn in this Module?
+In this module, you will embark on your career in data analytics, learning about the job market, and the importance of a project portfolio.   Module Title: Embarking on Your Career in Data AnalyticsModule Objective: Explain the duties of the different job roles in data science.
+New Component Title
+
+New Component Title
+
+New Component Title
+
+More on Starting Your Portfolio
+A portfolio is a website that contains examples of your work at a basic level. Web sites are an excellent way to introduce yourself, provide contact information (including social media links), and relate to various projects you have completed or are currently developing. Data professionals use multiple methods to share their portfolios. Public repositories, such as GitHub, are where you can find many examples of ongoing projects, some complete with code samples and step-by-step processes used to create the work. In the next course, Data Analytics Essentials, you will learn how to organize your projects and share them with potential employers.
+Scenario 1
+There are three prominent career fields in data science: data analyst, data engineer, and data scientist. While the practice defined roles for these three types of data professionals varies from company to company, there are significant differences between them.Select the appropriate data analytics job role for each of the following scenarios.Scenario 1
+Correct! Data scientists design data modeling processes and create algorithms and predictive models used to extract insights to address business needs. 
+Scenario 2
+Scenario 2
+Correct! Data analysts take processed data, use it to answer questions, and communicate the results to help make business decisions.
+Scenario 3
+Scenario 3
+Correct! Data engineers design, build, and optimize systems for data collection, storage, access, and analytics.
+Free Response
+Getting hired as a data analyst is the first step in your data analytics career.  Research career paths in data analytics on internet job sites, such as indeed.com, DataJobs.com, and LinkedIn.com. Then write in the box below one or more paths that fit your interests. After you Submit your answer, you can select Show model answer to review some common data professional career path examples.
+Free Response
+Posting or sharing a portfolio showcasing your data analytics skills and abilities is an essential step in furthering your career as a data professional—research platforms for hosting and sharing your portfolio. Describe the platform that appealed to you most. What seemed most useful about it? 
