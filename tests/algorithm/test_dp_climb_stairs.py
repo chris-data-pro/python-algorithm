@@ -1,5 +1,5 @@
 import unittest
-from algorithm.dp_climb_stairs import DPClimbStairs
+from algorithm.dp_numbers import DPClimbStairs
 
 
 class TestDPClimbStairs(unittest.TestCase):

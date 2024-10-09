@@ -1,5 +1,5 @@
 import unittest
-from algorithm.dp_longest_common_subsequence import DPLongestCommonSubsequence
+from algorithm.dp_2_strings import DPLongestCommonSubsequence
 
 
 class TestDPLongestCommonSubsequence(unittest.TestCase):

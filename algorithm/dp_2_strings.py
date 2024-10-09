@@ -13,11 +13,11 @@ e.g. str1 = "abcde", str2 = "ace" the longest common sub-sequence is "ace", retu
 @return: int length of lcs
 """
 def length_of_lcs_bf(str1, str2):
-    def dp(i, j):
+    def dp(i, j):  # meaning the first i letters in str1 and the first j letters in str2, the longest css
         if i == 0 or j == 0:
             return 0
-        if str1[i - 1] == str2[j - 1]:
-            return dp(i - 1, j - 1) + 1
+        if str1[i - 1] == str2[j - 1]:  # if the 1th letter in st1 equals the jth letter in str2
+            return dp(i - 1, j - 1) + 1  # then the length just increases by 1
         else:
             return max(dp(i, j - 1), dp(i - 1, j))
 
@@ -32,12 +32,12 @@ def length_of_lcs_bf(str1, str2):
 def length_of_lcs(str1, str2):
     m, n = len(str1), len(str2)
     dp = [[0] * (m + 1) for _ in range(n + 1)]  # (n + 1) rows X (m + 1) cols
-    ss = ""
+    # ss = ""
     for i in range(1, n + 1):  # ith row
         for j in range(1, m + 1):  # jth col
             if str2[i - 1] == str1[j - 1]:
                 dp[i][j] = dp[i - 1][j - 1] + 1
-                ss += str1[j - 1]
+                # ss += str1[j - 1]
             else:
                 dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
     # print(ss)
@@ -88,14 +88,14 @@ def solution(P, Q):
             return len(used_letters)
 
         while P[i] == Q[i] and i <= len(P) - 2:
-            used_letters += (P[i],)
+            used_letters += (P[i],)  # to add tuples
             i += 1
 
         # Convert used_letters set to tuple for hashing
         used_letters_set = set(used_letters)
 
         # Case 1: Choose P[i]
-        used_letters_p = used_letters_set | {P[i]}
+        used_letters_p = used_letters_set | {P[i]}  # to add P[i] to set, if it's already in set, do nothing
         result_p = dp(i + 1, tuple(used_letters_p))
 
         # Case 2: Choose Q[i]
