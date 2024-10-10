@@ -63,3 +63,7 @@ if __name__ == '__main__':
     print(number_of_ways_dp(39))
     for n in range(10):
         print(fibonacci_dp(n))
+    # import requests
+    # url = "www.google.com"
+    # response = requests.get(url)
+    # print(response)
