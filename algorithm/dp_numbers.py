@@ -11,7 +11,7 @@ Return how many distinct ways can you climb to the top
 @param n: integer
 @return: integer number of ways
 """
-def number_of_ways_bf(n):  # brute force
+def number_of_ways_bf(n):  # brute force: from big number to small number O(x^n)
     if not n:
         return 0
     if n <= 0:
@@ -28,7 +28,7 @@ def number_of_ways_bf(n):  # brute force
 @param n: integer
 @return: integer number of ways
 """
-def number_of_ways_dp(n):
+def number_of_ways_dp(n):  # from small number to big number: only calculate once O(n), Space Complexity O(n)
     if not n:
         return 0
     if n <= 0:
@@ -63,7 +63,3 @@ if __name__ == '__main__':
     print(number_of_ways_dp(39))
     for n in range(10):
         print(fibonacci_dp(n))
-    # import requests
-    # url = "www.google.com"
-    # response = requests.get(url)
-    # print(response)

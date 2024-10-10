@@ -12,7 +12,7 @@ e.g. str1 = "abcde", str2 = "ace" the longest common sub-sequence is "ace", retu
 @param str2: string
 @return: int length of lcs
 """
-def length_of_lcs_bf(str1, str2):
+def length_of_lcss_bf(str1, str2):  # brute force
     def dp(i, j):  # meaning the first i letters in str1 and the first j letters in str2, the longest css
         if i == 0 or j == 0:
             return 0
@@ -24,12 +24,7 @@ def length_of_lcs_bf(str1, str2):
     return dp(len(str1), len(str2))
 
 
-"""
-@param str1: string
-@param str2: string
-@return: int length of lcs
-"""
-def length_of_lcs(str1, str2):
+def length_of_lcss(str1, str2):
     m, n = len(str1), len(str2)
     dp = [[0] * (m + 1) for _ in range(n + 1)]  # (n + 1) rows X (m + 1) cols
     # ss = ""
@@ -77,7 +72,7 @@ Examples:
    The input strings are identical, so the only possible S that can be constructed is "amz", 
    and its number of distinct letters is 3.
 """
-def solution(P, Q):
+def min_distict_letters_combine_2_strings_bf(P, Q):
     # Implement your solution here
     from functools import lru_cache
 
@@ -109,6 +104,44 @@ def solution(P, Q):
     return dp(0, tuple())
 
 
+def min_distict_letters_combine_2_strings(P, Q):
+    N = len(P)
+    dp = [{} for _ in range(N + 1)]  # list of N + 1 dicts
+    # Base case: no letters chosen, zero distinct letters. dp[i] is a dict tuple(used_set) -> its len
+    dp[0][tuple(set())] = 0  # set can NOT be used a key in a dictionary
+
+    for i in range(1, N + 1):  # 1 to N
+        for used_set_tuple, distinct_count in dp[i - 1].items():  # first iteration: tuple(set()), 0
+            used_set = set(used_set_tuple)
+            # choose from P
+            if P[i - 1] not in used_set:
+                used_set_p = used_set | {P[i - 1]}
+                dp[i][tuple(used_set_p)] = min(distinct_count + 1, dp[i].get(tuple(used_set_p), float('inf')))
+            else:
+                dp[i][used_set_tuple] = min(distinct_count, dp[i].get(used_set_tuple, float('inf')))
+
+            # choose from Q
+            if Q[i - 1] not in used_set:
+                used_set_q = used_set | {Q[i - 1]}
+                dp[i][tuple(used_set_q)] = distinct_count + 1
+            else:
+                dp[i][used_set_tuple] = min(distinct_count, dp[i].get(used_set_tuple, float('inf')))
+
+    res = min(dp[N].values())
+    print([t for t, v in dp[N].items() if v == res])
+    return res
+
+
 if __name__ == '__main__':
-    print(length_of_lcs("daabeddbcedeabcbcbec", "daceeaeeaabbabbacedd"))  # daced daabed daabbabbce
-    print(length_of_lcs("abcdekk", "acexxxk"))  # acek
+    print(length_of_lcss("daabeddbcedeabcbcbec", "daceeaeeaabbabbacedd"))  # daced daabed daabbabbce 10
+    print(length_of_lcss("abcdekk", "acexxxk"))  # acek 4
+    print()
+    print(min_distict_letters_combine_2_strings_bf("abc", "bcd"))  # 2
+    print(min_distict_letters_combine_2_strings_bf("axxz", "yzwy"))  # 2
+    print(min_distict_letters_combine_2_strings_bf("bacad", "abada"))  # 1
+    print(min_distict_letters_combine_2_strings_bf("amz", "amz"))  # 3
+    print()
+    print(min_distict_letters_combine_2_strings("abc", "bcd"))  # 2
+    print(min_distict_letters_combine_2_strings("axxz", "yzwy"))  # 2
+    print(min_distict_letters_combine_2_strings("bacad", "abada"))  # 1
+    print(min_distict_letters_combine_2_strings("amz", "amz"))  # 3

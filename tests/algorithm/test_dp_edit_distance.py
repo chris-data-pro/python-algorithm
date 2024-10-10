@@ -1,5 +1,5 @@
 import unittest
-from algorithm.dp_edit_distance import DPEditDistance
+from algorithm.dp_2_strings_edit_distance import DPEditDistance
 
 
 class TestDPEditDistance(unittest.TestCase):
