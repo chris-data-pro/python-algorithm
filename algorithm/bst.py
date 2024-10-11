@@ -37,6 +37,29 @@ class BSTIterator:
             root = root.left
 
 
+"""
+910
+Given a BT, find the largest subtree which is a BST, largest means subtree with largest number of nodes in it.
+The subtree which you find must be a full binary tree.
+A binary tree is full if each node is either a leaf or possesses exactly two child nodes.
+
+Input: {10,5,15,1,8,#,7}
+Output：3
+
+Explanation:
+    10
+    / \
+   5  15
+  / \   \ 
+ 1   8   7
+The Largest BST Subtree in this case is :
+   5
+  / \
+ 1   8. 
+The return value is the subtree's size, which is 3.
+"""
+
+
 class SubTree():
     def __init__(self, largest, n, min, max):
         self.largest = largest  # number of nodes in the largest subtree which is a BST
@@ -45,49 +68,30 @@ class SubTree():
         self.max = max  # biggest node value under node
 
 
+def largest_bst_subtree(root):
+    res = dfs_largest_bst_subtree(root)
+    return res.largest
+
+
+def dfs_largest_bst_subtree(node):
+    if not node:
+        return SubTree(0, 0, float('inf'), float('-inf'))
+    left = dfs_largest_bst_subtree(node.left)
+    right = dfs_largest_bst_subtree(node.right)
+
+    if left.max < node.val < right.min:  # valid BST
+        n = left.n + right.n + 1
+    else:
+        n = float('-inf')
+    largest = max(n, left.largest, right.largest)
+    return SubTree(largest, n, min(node.val, left.min), max(node.val, right.max))
+
+
 class BST:
     """
     methods starts with 'bst_' are binary search tree implementations
     others are for normal binary tree
     """
-
-    """
-    910
-    Given a BT, find the largest subtree which is a BST, largest means subtree with largest number of nodes in it.
-    The subtree which you find must be a full binary tree.
-    A binary tree is full if each node is either a leaf or possesses exactly two child nodes.
-        
-    Input: {10,5,15,1,8,#,7}
-    Output：3
-    
-    Explanation:
-        10
-        / \
-       5  15
-      / \   \ 
-     1   8   7
-    The Largest BST Subtree in this case is :
-       5
-      / \
-     1   8. 
-    The return value is the subtree's size, which is 3.
-    """
-    def largest_bst_subtree(self, root):
-        res = self.dfs_largest_bst_subtree(root)
-        return res.largest
-
-    def dfs_largest_bst_subtree(self, node):
-        if not node:
-            return SubTree(0, 0, float('inf'), float('-inf'))
-        left = self.dfs_largest_bst_subtree(node.left)
-        right = self.dfs_largest_bst_subtree(node.right)
-
-        if left.max < node.val < right.min:  # valid BST
-            n = left.n + right.n + 1
-        else:
-            n = float('-inf')
-        largest = max(n, left.largest, right.largest)
-        return SubTree(largest, n, min(node.val, left.min), max(node.val, right.max))
 
     """
     bst, insert node of val under root. 
@@ -113,7 +117,7 @@ class BST:
             if (not root.left) and (not root.right): return  # the node is a leaf
             if (not root.left) and root.right: return root.right
             if root.left and (not root.right): return root.left
-            rmin = self.bst_get_min(root.right)  # always left get the min
+            rmin = self.bst_get_min(root.right)  # choose the min value of its right, which is closest to key
             root.val = rmin.val
             root.right = self.bst_delete(root.right, rmin.val)
         elif root.val > key:  # delete from the left subtree
@@ -125,7 +129,7 @@ class BST:
     """
     get the the node with min val under node in bst
     """
-    def bst_get_min(self, node):
+    def bst_get_min(self, node):  # always left to get the min
         if not node:
             return
         while node.left:
@@ -133,7 +137,7 @@ class BST:
         return node
 
     """
-    convert all nodes in a bt into a list, left - root - right
+    convert all nodes in a bt into a list, left - root - right, this is called inorder
     
     Input: root of tree Node(27)
          27
@@ -155,7 +159,7 @@ class BST:
         return res
 
     """
-    convert all nodes in a bt into a list, root - left - right
+    convert all nodes in a bt into a list, root - left - right, this is called preorder
     
          27
         /  \
@@ -245,7 +249,7 @@ class BST:
         return ans
 
     def deserialize_preorder(self, data):
-        ch = data.pop(0)
+        ch = data.pop(0)  # always pop from the beginning
         if ch == '#':
             return None
         else:
@@ -255,7 +259,7 @@ class BST:
         return root
 
     """
-    deserialize inorder array without #
+    deserialize inorder array without # to a bst
     
     Input: [4, 5, 6, 7]
     
@@ -288,13 +292,14 @@ class BST:
         return root
 
     """
+    input is a bst
          1
         /  \
        2    3
         \
          4 
     
-    ['1', '2', '3', '#', '4', '#', '#']
+    output: ['1', '2', '3', '#', '4', '#', '#']
     commented: [['1'], ['2', '3'], ['#', '4', '#', '#']]
     """
     def serialize_horizontal_order(self, root):
@@ -303,9 +308,9 @@ class BST:
         res = self.horizontal_nodes(root)
 
         ans = []
-        for values in res.values():
-            if values.count(None) == len(values) or not values:  # 此层为空 或 全是None
-                continue
+        for values in res.values():  # res.values() is a list of lists
+            if values.count(None) == len(values) or not values:  # 此层 全是None or 此层为空
+                continue  # skip the rest of the current iteration in for loop, go to next iteration
             for node in values:
                 if node:
                     ans.append(str(node.val))
@@ -327,18 +332,18 @@ class BST:
         #     anses.append(ans)
         # return anses  # [['1'], ['2', '3'], ['#', '4', '#', '#']]
 
-    def horizontal_nodes(self, root):
+    def horizontal_nodes(self, root):  # {0: [TreeNode(1)], 1: [TreeNode(2), TreeNode(3)], 2: [None, TreeNode(4), None, None], 3: [None, None]}
         if not root:
             return []
 
-        res = {0: [root]}  # 层数 -> [本层所有nodes从左到右]
+        res = {0: [root]}  # dict 层数 -> [本层所有nodes从左到右]
         level = 1
         while res[level - 1]:  # 上一层的 [nodes] 不为空
             if res[level - 1].count(None) == len(res[level - 1]):  # 上一层 [nodes] 都是None
-                break
+                break  # terminates the entire while loop
             res[level] = []
             for i in res[level - 1]:
-                if not i:  # or not (i.left or i.right):  加这句3下边不会有 '#', '#'
+                if not i:  # or not (i.left or i.right):  加这句第3层不会有 None, None
                     continue
                 if i.left:
                     res[level].append(i.left)
@@ -349,6 +354,7 @@ class BST:
                 else:
                     res[level].append(None)
             level += 1
+
         return res
 
     """
@@ -1055,6 +1061,8 @@ if __name__ == '__main__':
     root_2.right = node_2
     node_2.left = TreeNode(6)
     node_2.right = TreeNode(20)
+    print(f"\n!!!!!!!!!!!!!!!\n{largest_bst_subtree(root_2)}\n!!!!!!!!!!!!!!!\n")  # 3
+
     print('root_2 is bst: {}'.format(bst.bst_is_valid(root_2, None, None)))
     print(bst.bst_val_in_tree(root_2, 20))
     print(bst.horizontal_order(root_2))  # will print intermediate res, expect [[10], [-5, 15], [6, 20]]
@@ -1102,7 +1110,8 @@ if __name__ == '__main__':
     print(bst.serialize_horizontal_order(root_4))
     print(bst.horizontal_order(root_4))
     print(bst.serialize_horizontal_order_dfs(root_4))
-    print(bst.horizontal_nodes(root_4))
+    print(bst.horizontal_nodes(root_4))  # {0: [TreeNode(1)], 1: [TreeNode(2), TreeNode(3)], 2: [None, TreeNode(4), None, None], 3: [None, None]}
+    print("%%%%%%%%%%%%%")
 
     graph = {}
     # use dfs to build graph
