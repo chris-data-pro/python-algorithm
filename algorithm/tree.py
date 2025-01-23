@@ -37,3 +37,6 @@ def horizontal_order_bfs(root):
     # result = {0: [root], 1: [TreeNode(2), TreeNode(3)], 2: [TreeNode(4)], 3: []}
     # result.values() = dict_values([ [TreeNode(1)], [TreeNode(2), TreeNode(3)], [TreeNode(4)], [] ])
     return [[x.val for x in nodelist] for nodelist in result.values() if nodelist]
+
+if __name__ == '__main__':
+    print("")
