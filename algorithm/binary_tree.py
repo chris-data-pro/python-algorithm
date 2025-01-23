@@ -158,7 +158,7 @@ def horizontal_order_all_bfs(root):
     
 
 """
-Calculate number of nodes under the given node
+Calculate number of nodes under the given binary tree
 
 @param root: A TreeNode
 @return: Int - the number of nodes under the given node
