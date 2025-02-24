@@ -1,7 +1,7 @@
 import heapq
 from collections import defaultdict
 
-class MF:
+class MedianFinder:
     def __init__(self):
         self.max_left = []
         self.min_right = []
@@ -52,7 +52,7 @@ class MF:
     
 
 def median_sliding_window(s, k):
-    mf = MF()
+    mf = MedianFinder()
     for i in range(k):
         mf.add(s[i])
     res = [mf.get_median()]
