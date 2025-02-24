@@ -62,6 +62,7 @@ def median_sliding_window(s, k):
         res.append(mf.get_median())
     return res
 
+
 # time complexity for the median_sliding_window is O(n log k)
 # space complexity of the MedianFinder class is O(k)
 
