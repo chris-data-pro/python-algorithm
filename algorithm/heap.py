@@ -1,4 +1,86 @@
 import heapq
+from collections import defaultdict
+
+class MF:
+    def __init__(self):
+        self.max_left = []
+        self.min_right = []
+        self.to_delete = defaultdict(int)
+        self.left_size = 0
+        self.right_size = 0
+    
+    def add(self, c: str):
+        if not self.max_left or ord(c) <= -self.max_left[0]:
+            heapq.heappush(self.max_left, -ord(c))
+            self.left_size += 1
+        else:
+            heapq.heappush(self.min_right, ord(c))
+            self.right_size += 1
+        self.rebalance()
+    
+    def remove(self, c: str):
+        self.to_delete[ord(c)] += 1
+        if ord(c) <= -self.max_left[0]:
+            self.left_size -= 1
+        else:
+            self.right_size -= 1
+        self.delete()
+        self.rebalance()
+    
+    def delete(self):
+        while self.max_left and self.to_delete[-self.max_left[0]] > 0:
+            self.to_delete[-self.max_left[0]] -= 1
+            heapq.heappop(self.max_left)
+        while self.min_right and self.to_delete[self.min_right[0]] > 0:
+            self.to_delete[self.min_right[0]] -= 1
+            heapq.heappop(self.min_right)
+    
+    def rebalance(self):
+        while self.left_size > self.right_size + 1:
+            heapq.heappush(self.min_right, -heapq.heappop(self.max_left))
+            self.left_size -= 1
+            self.right_size += 1
+            self.delete()
+        while self.left_size < self.right_size:
+            heapq.heappush(self.max_left, -heapq.heappop(self.min_right))
+            self.left_size += 1
+            self.right_size -= 1
+            self.delete()
+    
+    def get_median(self):
+        return chr(-self.max_left[0])
+    
+
+def median_sliding_window(s, k):
+    mf = MF()
+    for i in range(k):
+        mf.add(s[i])
+    res = [mf.get_median()]
+    for j in range(k, len(s)):
+        mf.add(s[j])
+        mf.remove(s[j-k])
+        res.append(mf.get_median())
+    return res
+
+
+if __name__ == '__main__':
+    s = "aaaabbbb"
+    print(median_sliding_window(s, 3))  # ['a', 'a', 'a', 'b', 'b', 'b']
+    print(median_sliding_window(s, 4))  # ['a', 'a', 'a', 'b', 'b']
+    
+    # # given a character 'a', return the ordinal value of the character 97
+    # ord('a')
+    
+    # # Given a the ordinal value of the character 97, return the character 'a'
+    # chr(97)
+    
+    ss = "abcabc"
+    print(median_sliding_window(ss, 3))  # ['b', 'b', 'b', 'b']
+    print(median_sliding_window(ss, 4))  # ['a', 'b', 'b']
+
+
+======================================================================================
+
 
 """
 # Giving a list of integer coming in Radom order. Compute the median value of the list ?
