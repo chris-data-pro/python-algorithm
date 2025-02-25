@@ -3,24 +3,24 @@ from collections import defaultdict
 
 class MedianFinder:
     def __init__(self):
-        self.max_left = []
-        self.min_right = []
-        self.to_delete = defaultdict(int)
+        self.left = []  # left half of the window, negative ordinal, e.g. [-99, -98, -97, ...]
+        self.right = []  # right half of the window, ordinal e.g. [100, 100, 101, ..., 122]
+        self.to_delete = defaultdict(int)  # only pop element when it gets to the top of the heap, O(1)
         self.left_size = 0
         self.right_size = 0
     
     def add(self, c: str):
-        if not self.max_left or ord(c) <= -self.max_left[0]:
-            heapq.heappush(self.max_left, -ord(c))
+        if not self.left or ord(c) <= -self.left[0]:
+            heapq.heappush(self.left, -ord(c))
             self.left_size += 1
         else:
-            heapq.heappush(self.min_right, ord(c))
+            heapq.heappush(self.right, ord(c))
             self.right_size += 1
         self.rebalance()
     
     def remove(self, c: str):
         self.to_delete[ord(c)] += 1
-        if ord(c) <= -self.max_left[0]:
+        if ord(c) <= -self.left[0]:
             self.left_size -= 1
         else:
             self.right_size -= 1
@@ -28,34 +28,36 @@ class MedianFinder:
         self.rebalance()
     
     def delete(self):
-        while self.max_left and self.to_delete[-self.max_left[0]] > 0:
-            self.to_delete[-self.max_left[0]] -= 1
-            heapq.heappop(self.max_left)
-        while self.min_right and self.to_delete[self.min_right[0]] > 0:
-            self.to_delete[self.min_right[0]] -= 1
-            heapq.heappop(self.min_right)
+        while self.left and self.to_delete[-self.left[0]] > 0:
+            self.to_delete[-self.left[0]] -= 1
+            heapq.heappop(self.left)
+        while self.right and self.to_delete[self.right[0]] > 0:
+            self.to_delete[self.right[0]] -= 1
+            heapq.heappop(self.right)
     
     def rebalance(self):
         while self.left_size > self.right_size + 1:
-            heapq.heappush(self.min_right, -heapq.heappop(self.max_left))
+            heapq.heappush(self.right, -heapq.heappop(self.left))
             self.left_size -= 1
             self.right_size += 1
             self.delete()
         while self.left_size < self.right_size:
-            heapq.heappush(self.max_left, -heapq.heappop(self.min_right))
+            heapq.heappush(self.left, -heapq.heappop(self.right))
             self.left_size += 1
             self.right_size -= 1
             self.delete()
     
     def get_median(self):
-        return chr(-self.max_left[0])
+        return chr(-self.left[0])
     
 
 def median_sliding_window(s, k):
     mf = MedianFinder()
+    
     for i in range(k):
         mf.add(s[i])
     res = [mf.get_median()]
+    
     for j in range(k, len(s)):
         mf.add(s[j])
         mf.remove(s[j-k])
