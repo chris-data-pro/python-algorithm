@@ -53,7 +53,7 @@ class MedianFinder:
     
 
 def median_sliding_window(s, k):
-    if not s:
+    if not s or k <= 0:
         return []  # ''
 
     mf = MedianFinder()
