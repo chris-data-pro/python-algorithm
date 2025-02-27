@@ -71,7 +71,12 @@ def median_sliding_window(s, k):
 
 
 # time complexity for the median_sliding_window is O(n log k)
-# space complexity of the MedianFinder class is O(k)
+# space complexity of the MedianFinder class is O(k)  (worst case O(n))
+
+# median_sliding_window(
+#    input().strip(), 
+#    int(input())
+# )
 
 
 if __name__ == '__main__':
